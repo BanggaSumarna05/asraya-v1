@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-8 col-md-8 col-lg-4">
                     <h1 class="mb-0"><a href="{{ route('index') }}" class="text-white h2 mb-0">
-                            <img class="w-50 mx-auto img-fluid" src="old/assets/img/asraya-1.png" alt=""
+                            <img class="w-50 mx-auto img-fluid" src="img/asraya-1.png" alt=""
                                 srcset=""></a>
                     </h1>
                 </div>
