@@ -1,0 +1,133 @@
+.rapih {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    margin: auto;
+    width: 100%;
+}
+
+.site-section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+a:hover {
+    color: #d09d6e !important;
+}
+
+.padding-0 {
+    padding: 0;
+    margin: 0;
+}
+
+.max-120 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.padded-multi-line-primary,
+.unit-9 h2 {
+    background-color: rgba(0, 38, 28, 0.7);
+    box-shadow: 10px 0 0 rgba(0, 38, 28, 0.7), 0px 0 0 rgba(0, 38, 28, 0.7);
+}
+
+/* custom scrollbar below */
+/* width */
+::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00261c;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00261c;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00261c;
+}
+
+.accordion-button {
+    background-color: rgba(0, 38, 28, 1) !important;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 8;
+}
+
+/* album */
+.album {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.month-header {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    min-width: 16vh; /* Fixed width for the container */
+    min-height: 16vh; /* Fixed height for the container */
+    max-width: 16vh; /* Fixed width for the container */
+    max-height: 16vh; /* Fixed height for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent; /* Optional, for better visibility */
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
