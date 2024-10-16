@@ -312,7 +312,13 @@ class FrontController extends Controller
     ];
 
     public $progress = [
-        "Agustus 2024" => [
+        "September 2024" => [
+            "foto1" => 'img/progress/sept24/sept1.jpg',
+            "foto2" => 'img/progress/sept24/sept2.jpg',
+            "foto3" => 'img/progress/sept24/sept3.jpg',
+            "foto4" => 'img/progress/sept24/sept4.jpg',
+        ],        
+        "August 2024" => [
             "foto1" => 'img/progress/agus2024/agus (1).jpg',
             "foto2" => 'img/progress/agus2024/agus (2).jpg',
             "foto3" => 'img/progress/agus2024/agus (3).jpg',
