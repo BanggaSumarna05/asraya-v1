@@ -28,6 +28,7 @@ Route::get('/swimming-pool', [FrontController::class, 'spool'])->name('swimming-
 Route::get('/clinic', [FrontController::class, 'clinic'])->name('clinic');
 Route::get('/taman-kota', [FrontController::class, 'tamanKota'])->name('tamanKota');
 Route::get('/frequently-asked-questions', [FrontController::class, 'faq'])->name('faq');
+Route::get('/getProgress-bosnya-pilih-pilih-karyawan-jangan-beli-disini', [FrontController::class, 'getProgress'])->name('getProgress');
 
 Route::get('/ebrochure', [FrontController::class, 'ebrochure'])->name('ebrochure');
 Route::get('/eprofile', [FrontController::class, 'eprofile'])->name('eprofile');

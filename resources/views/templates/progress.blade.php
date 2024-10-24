@@ -6,9 +6,9 @@
             </div>
         </div>
         <div class="gallery" style="margin: 2vh;">
-            <div class="row portfolio-container aos-init aos-animate" style="">
+            <div class="row portfolio-container aos-init aos-animate" style="" id='albumProgress'>
                 @foreach ($progress as $i => $item)
-                    <div class="col-12 col-md-4 col-lg-4" style="padding: 10px;">
+                    <div class="col-12 col-md-4 col-lg-4" style="padding: 10px;" id="albumProgress">
                         <h4>&nbsp;&nbsp;{{ $i }}</h4>
                         <div class="row" style="border: 2px solid rgb(0, 38, 28); margin: 10px;">
                             @foreach ($item as $img)
@@ -32,7 +32,19 @@
                     </div>
                 @endforeach
             </div>
-
         </div>
+        <center><button class="btn btn-block primary" onclick='loadMore()'>Load More </button></center>
     </div>
 </div>
+<script>
+    // $(document).ready(function() {
+    var i = 1;
+
+    function loadMore() {
+        i++;
+        const response = fetch('/getProgress-bosnya-pilih-pilih-karyawan-jangan-beli-disini?page=' + i);
+        var album = document.getElementById('#albumProgress');
+        album.insertAdjacentHTML(response);
+    }
+    // });
+</script>

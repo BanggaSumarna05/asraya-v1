@@ -132,7 +132,7 @@
     </div>
     @include('templates/units')
     @include('templates/facilities')
-    @include('templates/progress')
+    {{-- @include('templates/progress') --}}
     @include('templates/galery')
     @include('templates/bankList')
     @include('templates/igFeeds')

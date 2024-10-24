@@ -9,10 +9,9 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Barryvdh\DomPDF\Facade\Pdf;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Mail;
+use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\LengthAwarePaginator as PaginationLengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class FrontController extends Controller
 {
@@ -317,7 +316,7 @@ class FrontController extends Controller
             "foto2" => 'img/progress/sept24/sept2.jpg',
             "foto3" => 'img/progress/sept24/sept3.jpg',
             "foto4" => 'img/progress/sept24/sept4.jpg',
-        ],        
+        ],
         "August 2024" => [
             "foto1" => 'img/progress/agus2024/agus (1).jpg',
             "foto2" => 'img/progress/agus2024/agus (2).jpg',
@@ -470,6 +469,8 @@ class FrontController extends Controller
             ];
 
         $this->seo();
+        $collection = $this->getProgress();
+        // return $collection;
         return view('index')
             ->with([
                 'managements' => $managements,
@@ -480,7 +481,7 @@ class FrontController extends Controller
                 'banks' => $this->banks,
                 'igs' => $this->igs,
                 'promos' => $this->promos,
-                'progress' => $this->progress,
+                'progress' => $collection, //$this->progress,
                 'facilities' => $this->facilities,
             ]);
     }
@@ -911,5 +912,30 @@ class FrontController extends Controller
             'igs' => $this->igs,
             'facilities' => $this->facilities,
         ]);
+    }
+
+    public function getProgress()
+    {
+
+        $collection = collect($this->progress);
+
+        // Tentukan berapa banyak item per halaman
+        $perPage = 3;
+
+        // Dapatkan halaman saat ini dari query string (?page=)
+        $currentPage = \Illuminate\Pagination\LengthAwarePaginator::resolveCurrentPage();
+
+        // Bagian dari collection yang akan ditampilkan untuk halaman saat ini
+        $currentPageItems = $collection->forPage($currentPage, $perPage);
+
+        // Buat instance paginator
+        $paginatedItems = new PaginationLengthAwarePaginator(
+            $currentPageItems, // Item untuk halaman saat ini
+            $collection->count(), // Total items
+            $perPage, // Items per halaman
+            $currentPage, // Halaman saat ini
+            ['path' => route('getProgress')] // URL untuk pagination links
+        );
+        return $paginatedItems;
     }
 }
