@@ -32,9 +32,11 @@
                 {{ $data['name'] }}
             </h1>
             <p class="rapih">
-                Fitness enthusiasts will appreciate our state-of-the-art gym, equipped with cutting-edge machines and
-                expert trainers to help you achieve your health and wellness goals. From cardio workouts to strength
-                training, our gym offers a comprehensive fitness experience for all levels.
+
+                Penggemar kebugaran akan menghargai gym kami yang canggih, dilengkapi dengan mesin-mesin mutakhir dan
+                dan pelatih ahli untuk membantu Anda mencapai tujuan kesehatan dan kebugaran Anda. Dari latihan kardio
+                hingga latihan kekuatan
+                kekuatan, gym kami menawarkan pengalaman kebugaran yang komprehensif untuk semua tingkatan.
             </p>
         </div>
         @include('templates/units')

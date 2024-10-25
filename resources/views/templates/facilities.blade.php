@@ -4,9 +4,9 @@
             <div class="site-section-heading text-center w-border col-md-8 mx-auto">
                 <h2 class="mb-5">FACILITIES</h2>
                 <p class="rapih">
-                    Welcome to PESONA HUTAN ASRAYA, where luxury living meets convenience and comfort. Nestled in the
-                    heart
-                    of Riau, our exquisite property offers an unparalleled lifestyle experience.
+                    Selamat datang di PESONA HUTAN ASRAYA, di mana kehidupan mewah bertemu dengan kenyamanan dan
+                    kemudahan. Terletak di jantung Riau, properti kami yang menakjubkan menawarkan pengalaman gaya hidup
+                    yang tak tertandingi.
                 </p>
             </div>
         </div>

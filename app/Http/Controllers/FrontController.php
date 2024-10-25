@@ -446,23 +446,16 @@ class FrontController extends Controller
                     'name' => 'O\'zaro B. Larosa',
                     'pos' => 'Managing Director',
                     'text' => '
-                    Professional management team and employee
-                        proudly presents, Mr. O’ozaro Larosa, a graduate of the Institut Teknologi Bandung, who
-                        became the Managing Director of one of our subsidiaries, PT Casa Asraya Properti.
-                        <br>
-                        A professional with a passion for excellence and experience unleashing global
-                        markets in engineering, mining, and EPC companies across Southeast Asia &
-                        Middle East since 2007, Mr. O\'ozaro Larosa becoming one of our reliable
-                        overseas business experts.',
+                    Tim manajemen profesional dan karyawan dengan bangga mempersembahkan Bapak O’ozaro Larosa, lulusan Institut Teknologi Bandung, yang kini menjabat sebagai Managing Director di salah satu anak perusahaan kami, PT Casa Asraya Properti.
+                    </br>
+Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam membuka pasar global di bidang teknik, pertambangan, dan perusahaan EPC di Asia Tenggara & Timur Tengah sejak 2007, Bapak O’ozaro Larosa telah menjadi salah satu pakar bisnis luar negeri andalan kami.
+                    ',
                 ],
                 [
                     'img' => 'img/reduce/management-02.png',
                     'name' => 'Atelier Riri',
                     'pos' => 'Architecture & Design Partner',
-                    'text' => 'Atelier Riri is a design and architecture firm founded by 
-                    Novriansyah Yakub (Riri) in Jakarta. This Firm is a broadening notion to 
-                    what Riri belived and do since he begin his architectural debute in 2005. Until now the firm has been evolve with the 
-                    work of architecture, interior, landscape, and product design.',
+                    'text' => 'Atelier Riri adalah firma desain dan arsitektur yang didirikan oleh Novriansyah Yakub (Riri) di Jakarta. Firma ini merupakan perluasan gagasan dari apa yang Riri yakini dan lakukan sejak memulai debut arsitekturnya pada tahun 2005. Hingga kini, firma tersebut terus berkembang dengan karya di bidang arsitektur, interior, lanskap, dan desain produk.',
                     'ref' => 'https://atelierriri.com/asraya-townhouse/',
                     'refText' => 'Atelier Riri'
                 ],

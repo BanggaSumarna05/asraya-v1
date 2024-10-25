@@ -40,26 +40,29 @@
                 <div class="col-md-7">
                     <div class="video-container">
                         <iframe width="610" height="100%"
-                        src="https://www.youtube.com/embed/ntQcdtnWgds?si=y0dyMfkvTF9QyfHD?autoplay=1"
-                        title="ASRAYA PROPERTY - LIVING HARMONY IN NATURE" frameborder="0"
-                        allow="autoplay; encrypted-media;"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            src="https://www.youtube.com/embed/ntQcdtnWgds?si=y0dyMfkvTF9QyfHD?autoplay=1"
+                            title="ASRAYA PROPERTY - LIVING HARMONY IN NATURE" frameborder="0"
+                            allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-md-5 text-center mb-5 w-border mx-auto" style="padding-top: 12px">
-                    <p class="rapih">Where exceptional living meets contemporary design in the
-                        realm of premier real estate and property ventures. We take pride in crafting a world
-                        where excellence resides in every intricate detail of our properties. Our commitment to
-                        innovation and quality shines through our avant-garde designs and the meticulously
-                        curated high-grade materials we employ. <br><br>
-                        Beyond redefining real estate, we’re venturing into new horizons. Introducing an
-                        extension of our vision, we’re delighted to unveil our upcoming ventures - a captivating
-                        hotel business and a sprawling forestry park. Envision a stay that seamlessly blends
-                        opulence and refinement, mirroring the same sophistication and elegance that define
-                        our real estate marvels. <br><br>
-                        Casa Asraya stands as a testament to a holistic lifestyle experience, where
-                        architectural brilliance converges with unparalleled hospitality. Join us in this journey of
-                        luxury, innovation, and limitless possibilities.</p>
+                    <p class="rapih">
+                        Di mana kehidupan yang luar biasa bertemu dengan desain kontemporer dalam dunia real estat dan
+                        properti unggulan. Kami bangga menciptakan sebuah dunia di mana keunggulan hadir di setiap
+                        detail rumit dari properti kami. Komitmen kami terhadap inovasi dan kualitas tercermin melalui
+                        desain avant-garde kami dan pemilihan material berkualitas tinggi yang dirancang dengan sangat
+                        teliti.
+                        <br><br>
+                        Lebih dari sekadar mendefinisikan ulang real estat, kami juga merambah ke cakrawala baru. Dengan
+                        bangga kami memperkenalkan proyek baru kami—sebuah bisnis hotel yang memukau dan taman hutan
+                        yang luas. Bayangkan sebuah penginapan yang memadukan kemewahan dan keanggunan, mencerminkan
+                        tingkat kecanggihan dan keindahan yang sama dengan keajaiban properti real estat kami.
+                        {{-- <br><br>
+                        Casa Asraya berdiri sebagai bukti dari pengalaman gaya hidup holistik, di mana keunggulan
+                        arsitektur berpadu dengan keramahan yang tiada banding. Bergabunglah dengan kami dalam
+                        perjalanan kemewahan, inovasi, dan peluang tanpa batas ini. --}}
+                    </p>
                 </div>
             </div>
         </div>
@@ -119,11 +122,13 @@
                 </div>
                 <div class="col-sm-6 mb-10 mb-sm-0">
                     <br><br><br>
-                    <p class="rapih">Casa Asraya Property presents an exquisite real estate block plan in Pekanbaru,
-                        offering a luxurious and exclusive living experience. This meticulously designed property boasts
-                        top-notch amenities, spacious layouts, and breathtaking surroundings, making it the perfect
-                        choice for those seeking opulence in their lifestyle. With its prime location and premium
-                        features, Casa Asraya Property redefines upscale living in Pekanbaru.
+                    <p class="rapih">
+                        Casa Asraya Properti mempersembahkan rencana blok real estate yang luar biasa di Pekanbaru,
+                        menawarkan pengalaman hidup mewah dan eksklusif. Properti yang dirancang dengan cermat ini
+                        memiliki fasilitas kelas atas, tata letak yang luas, dan pemandangan yang memukau, menjadikannya
+                        pilihan sempurna bagi mereka yang mencari kemewahan dalam gaya hidup mereka. Dengan lokasi
+                        strategis dan fitur premium, Casa Asraya Properti mendefinisikan ulang gaya hidup kelas atas di
+                        Pekanbaru.
                     </p>
                     <br><br><br>
                 </div>

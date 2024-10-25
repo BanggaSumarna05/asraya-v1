@@ -4,9 +4,9 @@
             <div class="site-section-heading text-center w-border col-md-8 mx-auto">
                 <h2 class="mb-5">FEATURED HOUSE</h2>
                 <p class="rapih">
-                    Casa Asraya stands as a testament to a holistic lifestyle experience, where architectural brilliance
-                    converges with unparalleled hospitality. Join us in this journey of luxury, innovation, and
-                    limitless possibilities.
+                    Casa Asraya berdiri sebagai bukti pengalaman gaya hidup holistik, di mana keunggulan arsitektur
+                    berpadu dengan keramahan yang tiada banding. Bergabunglah dengan kami dalam perjalanan kemewahan,
+                    inovasi, dan peluang tanpa batas ini.
                 </p>
             </div>
         </div>

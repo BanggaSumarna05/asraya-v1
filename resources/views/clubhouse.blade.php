@@ -32,15 +32,18 @@
                 Clubhouse
             </h1>
             <p class="rapih">
-                Located within a beautiful residential community, this clubhouse stands as the epitome of luxury living
-                in the real estate sector in Pekanbaru, Riau. This area serves as the heart of the neighborhood,
-                offering residents an array of amenities and a sense of community that truly defines the modern living
-                experience. <br> <br>
-                From the elegant and spacious clubhouse, ideal for enjoying nature, to the state-of-the-art gym and warm
-                yoga club that promotes a healthy lifestyle, this clubhouse caters to a wide range of interests and
-                needs. Beautifully landscaped outdoor areas, including a natural swimming pool and tranquil restaurant &
-                lounge area, provide residents with a place to relax and socialize. It is a prominent feature in the
-                real estate landscape.
+                Terletak di dalam komunitas perumahan yang indah, clubhouse ini berdiri sebagai lambang kehidupan mewah
+                di sektor real estate di Pekanbaru, Riau. Area ini berfungsi sebagai jantung dari lingkungan tersebut,
+                menawarkan penghuni berbagai fasilitas dan rasa kebersamaan yang benar-benar mendefinisikan kehidupan
+                modern
+                pengalaman hidup modern. <br> <br>
+                Dari clubhouse yang elegan dan luas, ideal untuk menikmati alam, hingga pusat kebugaran yang canggih dan
+                dan klub yoga yang mempromosikan gaya hidup sehat, clubhouse ini melayani berbagai macam minat dan
+                kebutuhan. Area outdoor yang ditata dengan indah, termasuk kolam renang alami dan restoran yang tenang &
+                area
+                area lounge, memberikan penghuni tempat untuk bersantai dan bersosialisasi. Ini adalah fitur yang
+                menonjol di
+                lanskap real estat.
             </p>
             <br><br>
             @include('templates/spesifikasi')

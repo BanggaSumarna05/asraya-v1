@@ -32,11 +32,11 @@
                 {{ $data['name'] }}
             </h1>
             <p class="rapih">
-                Venture beyond our gates and discover the vibrant energy of the city at our neighboring city park.
-                Positioned behind Mahogany, this beloved public space is cherished by residents of all ages for its
-                versatility in accommodating various activities. From picnics to outdoor sports, immerse yourself in the
-                cultural tapestry of Pesona Hutan Asraya as you explore the endless possibilities that await just steps
-                from your doorstep.
+                Jelajahi luar gerbang kami dan temukan energi semarak kota di taman kota tetangga kami. Terletak di
+                belakang Mahoni, ruang publik yang dicintai ini disukai oleh penduduk dari segala usia karena
+                fleksibilitasnya dalam mengakomodasi berbagai kegiatan. Dari piknik hingga olahraga luar ruangan,
+                benamkan diri Anda dalam permadani budaya Pesona Hutan Asraya saat Anda menjelajahi berbagai kemungkinan
+                yang menanti hanya beberapa langkah dari depan pintu Anda.
             </p>
         </div>
         @include('templates/units')

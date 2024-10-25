@@ -32,11 +32,10 @@
                 {{ $data['name'] }}
             </h1>
             <p class="rapih">
-                Brandgang is one of the facilities presented in the residential area of Pesona Hutan Asraya.
-                This Brandgang area functions as a garden area between Block A & Block B of the Cendana unit.
-                specifically in this brandgang area we will design it as a garden planted with shady trees to add value
-                to the beauty of the environment in order to realize the residential concept of Enchanting Asraya
-                Forest.
+                Brandgang merupakan salah satu fasilitas yang dihadirkan di kawasan perumahan Pesona Hutan Asraya. Area
+                Brandgang ini difungsikan sebagai area taman di antara Blok A & Blok B unit Cendana. secara khusus di
+                area brandgang ini akan kami desain sebagai taman yang ditanami pepohonan yang rindang untuk menambah
+                nilai keasrian lingkungan demi mewujudkan konsep hunian Pesona Hutan Asraya.
             </p>
         </div>
         @include('templates/units')

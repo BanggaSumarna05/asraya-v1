@@ -32,9 +32,10 @@
                 {{ $data['name'] }}
             </h1>
             <p class="rapih">
-                Take a dip in our sparkling swimming pool, the ideal spot to cool off on a sunny day or simply soak in
-                the serene surroundings. Whether you prefer to swim laps or lounge by the poolside with a refreshing
-                drink, our pool area promises endless enjoyment for residents of all ages.
+                Berenanglah di kolam renang kami yang berkilau, tempat yang ideal untuk menyejukkan diri di hari yang
+                cerah atau sekadar berendam di lingkungan yang tenang. Apakah Anda lebih suka berenang atau bersantai di
+                tepi kolam renang dengan minuman yang menyegarkan, area kolam renang kami menjanjikan kenikmatan tanpa
+                akhir bagi penghuni segala usia.
             </p>
         </div>
         @include('templates/units')

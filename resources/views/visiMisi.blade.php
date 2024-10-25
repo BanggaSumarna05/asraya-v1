@@ -38,11 +38,8 @@
                         </div>
                     </center>
                     <p class="rapih">
-                        We are dedicated to crafting
-                        sanctuaries of serene living,
-                        where tranquility and comfort
-                        intertwine to elevate the
-                        human experience.
+                        Kami berdedikasi untuk menciptakan tempat tinggal yang tenang, di mana ketenangan dan kenyamanan
+                        terjalin untuk meningkatkan pengalaman kedamaian rumah.
                     </p>
                 </div>
                 <div class="col-6">
@@ -53,15 +50,14 @@
                     </center>
                     <p class="rapih">
                     <ul>
-                        <li>Integrate tranquility from city
-                            forests into vibrant urban
-                            spaces, harmonizing nature
-                            with modern living.
+                        <li>
+                            Mengintegrasikan ketenangan dari hutan kota ke dalam ruang kota yang semarak, menyelaraskan
+                            alam dengan kehidupan modern.
                         </li>
-                        <li>Prioritize added value,
-                            commitment, and relentless
-                            excellence to earn trust from
-                            customers and partners.</li>
+                        <li>
+                            Memprioritaskan nilai tambah, komitmen, dan keunggulan tanpa henti untuk mendapatkan
+                            kepercayaan dari pelanggan dan mitra.
+                        </li>
                     </ul>
                     </p>
                 </div>
@@ -82,32 +78,28 @@
                         </div>
                     </center>
                     <p class="rapih">
-                        By upholding the core value of HARMONY,
-                        Casa Asraya can establish itself as a
-                        property company committed to creating
-                        spaces that not only meet practical needs
-                        but also enrich the lives
-                        of
-                        individuals and
-                        communities by promoting harmony in all
-                        aspects of its operations and developmentswhere people feel valued, supported,
-                        and
-                        inspired.
+                        Dengan menjunjung tinggi nilai inti HARMONI, Casa Asraya dapat memantapkan dirinya sebagai
+                        perusahaan properti yang berkomitmen untuk menciptakan ruang yang tidak hanya memenuhi kebutuhan
+                        praktis tetapi juga memperkaya kehidupan individu dan masyarakat dengan mengedepankan
+                        keselarasan dalam semua aspek operasi dan pengembangannya, di mana orang merasa dihargai,
+                        didukung, dan menginspirasi.
                     </p>
                 </div>
                 <div class="col-6">
                     <h4>
                         Humanity
                     </h4>
-                    <p class="rapih">Prioritizing the well-being of all individuals by recognizing the importance of
-                        tranquility and the interconnectedness between humans and nature.</p>
+                    <p class="rapih">
+                        Memprioritaskan kesejahteraan semua individu dengan mengakui pentingnya ketenangan dan
+                        keterkaitan antara manusia dan alam.
+                    </p>
                 </div>
                 <div class="col-6">
                     <h4>
                         Authenticity
                     </h4>
                     <p class="rapih">
-                        Striving to be unique and original in all of our product aspects of the business.
+                        Berusaha untuk menjadi unik dan orisinil dalam semua aspek produk bisnis kami.
                     </p>
                 </div>
                 <div class="col-6">
@@ -115,8 +107,9 @@
                         Respect
                     </h4>
                     <p class="rapih">
-                        Commitment to fairness, consideration, and providing added value for all stakeholders
-                        to build and maintain a harmonical relationships.
+                        Komitmen terhadap keadilan, pertimbangan, dan memberikan nilai tambah bagi semua pemangku
+                        kepentingan
+                        membangun dan memelihara hubungan yang harmonis.
                     </p>
                 </div>
                 <div class="col-6">
@@ -124,8 +117,8 @@
                         Mastery
                     </h4>
                     <p class="rapih">
-                        Pursuing excellence and continuous improvement, striving for the highest standards of
-                        expertise and professionalism.
+                        Mengejar keunggulan dan peningkatan berkelanjutan, berjuang untuk mencapai standar tertinggi
+                        keahlian dan profesionalisme.
                     </p>
                 </div>
                 <div class="col-6">
@@ -133,17 +126,19 @@
                         Openness
                     </h4>
                     <p class="rapih">
-                        Incorporating transparency, communication, and collaboration within the
-                        organization and with external partners.
+                        Mengedepankan transparansi, komunikasi, dan kolaborasi di dalam
+                        dalam organisasi dan dengan mitra eksternal.
                     </p>
                 </div>
                 <div class="col-6">
                     <h4>
                         NoveltY
                     </h4>
-                    <p class="rapih">Embracing innovation, creativity, and the exploration of new ideas and solutions
-                        to
-                        address challenges and opportunity in market dynamics.</p>
+                    <p class="rapih">
+                        Merangkul inovasi, kreativitas, dan eksplorasi ide dan solusi baru
+                        untuk
+                        mengatasi tantangan dan peluang dalam dinamika pasar.
+                    </p>
                 </div>
             </div>
         </div>

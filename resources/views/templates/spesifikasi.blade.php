@@ -13,10 +13,10 @@
     </p> --}}
     <div class="" id="collapseExample active">
         <p class="rapih">
-            Every detail of Pesona Hutan Asraya is designed for the satisfaction, with your family
-            because we always do prioritizing the quality of the building architecture to the feel
-            of a
-            resort in your bathroom.
+            Setiap detail dari Pesona Hutan Asraya dirancang untuk kepuasan Anda sekeluarga
+            karena kami selalu mengutamakan kualitas arsitektur bangunan hingga nuansa
+            dari sebuah
+            resor di kamar mandi Anda.
         </p>
         <br>
         <h4 style="color: #C77850">Outline Specifications</h4>
