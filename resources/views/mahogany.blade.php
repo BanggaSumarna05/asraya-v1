@@ -5,19 +5,22 @@
     @include('templates/head')
     <style>
         .carousel-control-next,
-        .carousel-control-prev
-
-        /*, .carousel-indicators */
-            {
+        .carousel-control-prev,
+        .carousel-indicators {
             filter: invert(100%);
+        }
+
+        .icx {
+            width: 36px;
+            height: 36px;
         }
     </style>
 </head>
 
 <body>
     @include('templates/navbar')
-    <div class="site-blocks-cover overlay unit-1 lazy-bg" style="background-image:url({{ $data['cover'] }})" data-aos="fade"
-        data-stellar-background-ratio="0.5" data-aos="fade">
+    <div class="site-blocks-cover overlay unit-1 lazy-bg" style="background-image:url({{ $data['cover'] }})"
+        data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
@@ -28,64 +31,7 @@
     </div>
     <div class="site-section" id="home">
         <div class="container py-4" data-aos="fade-up">
-            <h1 class="mb-4">
-                Facility
-            </h1>
-            <div class="row" style="margin-left: 0.2vh;">
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/sleeping.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    3 Master Rooms <br>
-                    1 Housekeeper’s room
-                </div>
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/dinner-table.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    1 Dining Room
-                </div>
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/kitchen-table.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    1 Kitchen
-                </div>
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/car-in-garage.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    1 Carport
-                </div>
-                {{-- --}}
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/bathroom.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    4 Bathroom
-                </div>
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/livingroom.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    3 Living Room
-                </div>
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/balcony.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    1 Balcony
-                </div>
-                <div class="col-1 col-md-1 padding-0">
-                    <img class="w-50 mx-auto lazy" src="img/reduce/icons/private-garage.png" alt="">
-                </div>
-                <div class="col-2 col-md-2">
-                    1 Garage
-                </div>
-
-            </div>
-            <br><br>
-            @include('templates/spesifikasi')
+            {{-- @include('templates/spesifikasi') --}}
 
             <div class="container">
                 <div class="site-block-retro d-block d-md-flex">
@@ -115,10 +61,119 @@
                         </div>
                     </div>
                 </div>
+                <div class="site-block-retro d-block d-md-flex">
+                    <h1 class="mb-4">Lantai Dasar</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <img class="image-fluid w-100 lazy" src="img/mahogany/lt1.png">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <img class="image-fluid w-100 lazy" src="img/mahogany/lt2.png">
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <img class="image-fluid w-100 lazy" src="img/mahogany/lt3.png">
+                    </div>
+                </div>
+            </div>
+
+            {{-- facility --}}
+            <br>
+            <div>
+                <h1 class="mb-4">
+                    Facility
+                </h1>
+                {{--  --}}
+                <table class="table table-row-dashed align-middle gs-0 gy-3 my-0">                    
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/sleeping.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td class="text-end pe-0">
+                                3 Master Rooms <br>
+                                1 Housekeeper’s room
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/dinner-table.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                1 Dining Room
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/kitchen-table.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                1 Kitchen
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/car-in-garage.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                1 Carport
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/bathroom.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                4 Bathroom
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/livingroom.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                3 Living Room
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/balcony.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                1 Balcony
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="symbol symbol-4px me-3">
+                                    <img src="img/reduce/icons/private-garage.png" class="icx" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                1 Garage
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!--end::Table body-->
+                </table>
             </div>
         </div>
-        @include('templates/units')
-        @include('templates/igFeeds')
+        {{-- @include('templates/units') --}}
+        {{-- @include('templates/igFeeds') --}}
     </div>
 
     @include('templates/footer')

@@ -398,6 +398,8 @@ a:hover {
   border-bottom: none;
   position: absolute;
   z-index: 99;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navbar .site-logo {

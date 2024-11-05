@@ -28,7 +28,8 @@
                                 <b>Āśraya (Sanskrit: आश्रय)</b>
                             </div>
                             <p class="rapih">
-                                Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan, naungan,
+                                Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan,
+                                naungan,
                                 tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada sesuatu.
                                 Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya, sedangkan Brahman atau Sang
                                 Tertinggi, Tuhan, adalah viśaya, tujuan tertinggi, sasaran hidup. Ini dinyatakan dalam
@@ -38,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="mb-5">
                     <h3 class="footer-heading mb-4">OUR LOCATION</h3>
                     <div class="block-16">
@@ -49,13 +50,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-5 mb-lg-0">
+            <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="row mb-5">
                     <div class="col-md-12">
                         <h3 class="footer-heading mb-4">Usefull Link</h3>
                     </div>
                     <div class="col-md-6 col-lg-6" style="color: #00261C!important;">
-                        <li class="active"><a href="/">Home</a>
+                        <li class="active"><a href="{{ Route::is('index') ? '#home' : route('index') }}">Halaman Utama</a></li>
+                        <li class="active"><a href="#">Unit Unggulan</a></li>
+                        <ul>
+                            <li class="active"><a href="{{ route('mahogany') }}">Mahogany</a></li>
+                            <li class="active"><a href="{{ route('cendana') }}">Cendana</a></li>
+                        </ul>
+                        <li class="active"><a href="{{ route('fasilitas') }}">Fasilitas</a></li>
+                        <li class="active"><a href="/">Pertanyaan Umum</a></li>
                         <li><a href="assets/ebrochure/asraya.pdf" target="_blank">E-Brochure</a></li>
                         <li>
                             <a href="https://wa.me/6281399998066?text=I'm%20interested%20in%20your%20property%20for%20sale"

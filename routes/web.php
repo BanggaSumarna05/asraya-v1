@@ -18,6 +18,9 @@ use Barryvdh\DomPDF\PDF;
 // require __DIR__ . '/auth.php';
 
 Route::get('/', [FrontController::class, 'index'])->name('index');
+Route::get('/featured-house', [FrontController::class, 'featuredHouse'])->name('featured-house');
+Route::get('/fasilitas', [FrontController::class, 'fasilitas'])->name('fasilitas');
+Route::get('/unit-unggulan', [FrontController::class, 'unitUnggulan'])->name('unitUnggulan');
 Route::get('/mahogany', [FrontController::class, 'mahogany'])->name('mahogany');
 Route::get('/cendana', [FrontController::class, 'cendana'])->name('cendana');
 Route::get('/clubhouse', [FrontController::class, 'clubhouse'])->name('clubhouse');
@@ -28,7 +31,6 @@ Route::get('/swimming-pool', [FrontController::class, 'spool'])->name('swimming-
 Route::get('/clinic', [FrontController::class, 'clinic'])->name('clinic');
 Route::get('/taman-kota', [FrontController::class, 'tamanKota'])->name('tamanKota');
 Route::get('/frequently-asked-questions', [FrontController::class, 'faq'])->name('faq');
-Route::get('/getProgress-bosnya-pilih-pilih-karyawan-jangan-beli-disini', [FrontController::class, 'getProgress'])->name('getProgress');
 
 Route::get('/ebrochure', [FrontController::class, 'ebrochure'])->name('ebrochure');
 Route::get('/eprofile', [FrontController::class, 'eprofile'])->name('eprofile');

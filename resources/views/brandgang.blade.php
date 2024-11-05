@@ -38,9 +38,9 @@
                 nilai keasrian lingkungan demi mewujudkan konsep hunian Pesona Hutan Asraya.
             </p>
         </div>
-        @include('templates/units')
+        {{-- @include('templates/units')
         @include('templates/facilities')
-        @include('templates/igFeeds')
+        @include('templates/igFeeds') --}}
     </div>
     @include('templates/footer')
 </body>

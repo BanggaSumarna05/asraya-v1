@@ -38,9 +38,9 @@
                 akhir bagi penghuni segala usia.
             </p>
         </div>
-        @include('templates/units')
+        {{-- @include('templates/units')
         @include('templates/facilities')
-        @include('templates/igFeeds')
+        @include('templates/igFeeds') --}}
     </div>
     @include('templates/footer')
 </body>

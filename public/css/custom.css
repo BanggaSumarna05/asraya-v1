@@ -48,6 +48,7 @@ a:hover {
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px #00261c;
     border-radius: 10px;
+    background-color: black;
 }
 
 /* Handle */
@@ -130,4 +131,40 @@ a:hover {
     max-height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url("img_parallax.jpg"); */
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    /* padding: 50px; */
+    font-size: 20px;
+}
+
+.header {
+    z-index: 99999;
+    position: fixed;
+    /* padding: 30px 0; */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.cust-icon {
+    max-width: 64px !important;
+    max-height: 64px !important;
 }

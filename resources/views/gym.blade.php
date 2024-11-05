@@ -32,7 +32,6 @@
                 {{ $data['name'] }}
             </h1>
             <p class="rapih">
-
                 Penggemar kebugaran akan menghargai gym kami yang canggih, dilengkapi dengan mesin-mesin mutakhir dan
                 dan pelatih ahli untuk membantu Anda mencapai tujuan kesehatan dan kebugaran Anda. Dari latihan kardio
                 hingga latihan kekuatan

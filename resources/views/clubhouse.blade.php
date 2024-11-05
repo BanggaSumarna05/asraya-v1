@@ -46,10 +46,10 @@
                 lanskap real estat.
             </p>
             <br><br>
-            @include('templates/spesifikasi')
+            {{-- @include('templates/spesifikasi') --}}
         </div>
-        @include('templates/units')
-        @include('templates/igFeeds')
+        {{-- @include('templates/units') --}}
+        {{-- @include('templates/igFeeds') --}}
     </div>
     @include('templates/footer')
 </body>

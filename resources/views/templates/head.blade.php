@@ -57,8 +57,8 @@
 {{-- lazylaoad --}}
 <style>
     .lazy-bg {
-        background-size: cover;
-        background-position: center;
+        /* background-size: cover;
+        background-position: center; */
     }
 
     .sprite {

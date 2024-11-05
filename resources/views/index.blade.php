@@ -68,10 +68,9 @@
         </div>
     </div>
 
-    <div id="about" class="site-section p-4 lazy-bg"
-        style="background-image:url(img/reduce/bg-01.png);
+    <div id="about" class="site-section p-4 lazy-bg" {{-- style="background-image:url(img/reduce/bg-01.png);
     background-position: center;
-  background-size: cover;">
+  background-size: cover;" --}}>
         <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
@@ -90,7 +89,7 @@
                                 <p class="font-italic rapih">{!! html_entity_decode($item['text']) !!}</p>
                                 @if (!empty($item['ref']))
                                     <div class="d-flex flex-row-reverse">
-                                        <a href="{{ $item['ref'] }}" class="btn btn-primary btn-sm px-4 py-3"
+                                        <a href="{{ $item['ref'] }}" class="btn btn-primary btn btn-xs px-4 py-3"
                                             target="_blank" rel="noopener noreferrer">
                                             {{ $item['refText'] }}</a>
                                     </div>
@@ -128,19 +127,28 @@
                         memiliki fasilitas kelas atas, tata letak yang luas, dan pemandangan yang memukau, menjadikannya
                         pilihan sempurna bagi mereka yang mencari kemewahan dalam gaya hidup mereka. Dengan lokasi
                         strategis dan fitur premium, Casa Asraya Properti mendefinisikan ulang gaya hidup kelas atas di
-                        Pekanbaru.
-                    </p>
+                        Pekanbaru. 
+                        <br><br>
+                        Berikut 5 lokasi terjangkau di Pesona Hutan Asraya : 
+                    </p>                    
+                    <ul>
+                        <li>15 Minutes to Airport</li>
+                        <li>10 Minutes to Mall Pekanbaru</li>
+                        <li>10 Minutes to HS Soeman Library</li>
+                        <li>10 Minutes to Central Business District</li>
+                        <li>3 Minutes to Regional Police Station</li>
+                    </ul>
                     <br><br><br>
                 </div>
             </div>
         </div>
     </div>
-    @include('templates/units')
-    @include('templates/facilities')
+    {{-- @include('templates/units') --}}
+    {{-- @include('templates/facilities') --}}
     {{-- @include('templates/progress') --}}
-    @include('templates/galery')
+    {{-- @include('templates/galery')
     @include('templates/bankList')
-    @include('templates/igFeeds')
+    @include('templates/igFeeds') --}}
     @include('templates/footer')
 </body>
 

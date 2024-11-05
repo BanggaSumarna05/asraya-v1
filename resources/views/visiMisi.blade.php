@@ -31,7 +31,7 @@
     <div id="harmony" class="site-section" style="margin: 0px;padding: 0px">
         <div class="container" data-aos="fade-up">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <center>
                         <div class="site-section-heading text-center w-border">
                             <h2>Vision</h2>
@@ -42,7 +42,7 @@
                         terjalin untuk meningkatkan pengalaman kedamaian rumah.
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-12">
                     <center>
                         <div class="site-section-heading text-center w-border">
                             <h2>Mission</h2>
@@ -66,6 +66,7 @@
     </div>
     <br>
     <div id="harmony" class="site-section" style="margin: 0px;padding: 0px">
+        <br>
         <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="col-12">

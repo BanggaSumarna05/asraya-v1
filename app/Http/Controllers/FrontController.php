@@ -457,7 +457,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                     'pos' => 'Architecture & Design Partner',
                     'text' => 'Atelier Riri adalah firma desain dan arsitektur yang didirikan oleh Novriansyah Yakub (Riri) di Jakarta. Firma ini merupakan perluasan gagasan dari apa yang Riri yakini dan lakukan sejak memulai debut arsitekturnya pada tahun 2005. Hingga kini, firma tersebut terus berkembang dengan karya di bidang arsitektur, interior, lanskap, dan desain produk.',
                     'ref' => 'https://atelierriri.com/asraya-townhouse/',
-                    'refText' => 'Atelier Riri'
+                    'refText' => 'More Information'
                 ],
             ];
 
@@ -497,10 +497,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $data['cover'] = 'new/assets/img/F7.jpg';
         $data['name'] = 'MAHOGANY';
         $data['slide'] = [];
-        array_push($data['slide'], 'img/mahogany/Denah_Mahogany.jpg');
+        // array_push($data['slide'], 'img/mahogany/Denah_Mahogany.jpg');
         array_push($data['slide'], 'img/mahogany/floor.jpg');
         array_push($data['slide'], 'img/mahogany/floor side.jpg');
-
+        $data['floors'] = 'img/mahogany/Denah_Mahogany.jpg';
         $this->seo();
 
         return view('mahogany')->with([
@@ -520,10 +520,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $data['name'] = 'CENDANA';
         $data['slide'] = [];
         // array_push($data['slide'], 'new/assets/img/F7.jpg');
-        array_push($data['slide'], 'img/cendana/Denah Cendana.jpg');
+        // array_push($data['slide'], 'img/cendana/Denah Cendana.jpg');
         array_push($data['slide'], 'img/cendana/FLOOR SIDE.png');
         array_push($data['slide'], 'img/cendana/FLOOR.jpg');
-
+        $data['floors'] = 'img/cendana/Denah Cendana.jpg';
         $this->seo();
 
         return view('cendana')->with([
@@ -617,7 +617,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $data = [];
         $data['cover'] = 'new/assets/img/gym1.jpg';
-        $data['name'] = 'Gymnastic';
+        $data['name'] = 'Gymn';
         $data['slide'] = [];
         array_push($data['slide'], 'new/assets/img/gym1.jpg');
 
@@ -930,5 +930,77 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             ['path' => route('getProgress')] // URL untuk pagination links
         );
         return $paginatedItems;
+    }
+
+    public function featuredHouse()
+    {
+        $header = [
+            'header' => 'Pesona Hutan Asraya',
+            'location' => 'LIVING HARMONY IN NATURE',
+            'img' => 'new/assets/img/F11.jpg',
+            'low' => 'new/assets/img/aa.png'
+        ];
+
+        $sliders = [
+            'img/reduce/slider/F2.jpg',
+            'img/reduce/slider/F3.jpg',
+            'img/reduce/slider/F5.jpg',
+            'img/reduce/slider/F6.jpg',
+            // 'new/assets/img/F7.jpg',
+            'img/reduce/slider/F10.jpg',
+        ];
+        $managements =
+            [
+                [
+                    'img' => 'img/reduce/management-01.webp',
+                    'name' => 'O\'zaro B. Larosa',
+                    'pos' => 'Managing Director',
+                    'text' => '
+                    Tim manajemen profesional dan karyawan dengan bangga mempersembahkan Bapak O’ozaro Larosa, lulusan Institut Teknologi Bandung, yang kini menjabat sebagai Managing Director di salah satu anak perusahaan kami, PT Casa Asraya Properti.
+                    </br>
+Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam membuka pasar global di bidang teknik, pertambangan, dan perusahaan EPC di Asia Tenggara & Timur Tengah sejak 2007, Bapak O’ozaro Larosa telah menjadi salah satu pakar bisnis luar negeri andalan kami.
+                    ',
+                ],
+                [
+                    'img' => 'img/reduce/management-02.png',
+                    'name' => 'Atelier Riri',
+                    'pos' => 'Architecture & Design Partner',
+                    'text' => 'Atelier Riri adalah firma desain dan arsitektur yang didirikan oleh Novriansyah Yakub (Riri) di Jakarta. Firma ini merupakan perluasan gagasan dari apa yang Riri yakini dan lakukan sejak memulai debut arsitekturnya pada tahun 2005. Hingga kini, firma tersebut terus berkembang dengan karya di bidang arsitektur, interior, lanskap, dan desain produk.',
+                    'ref' => 'https://atelierriri.com/asraya-townhouse/',
+                    'refText' => 'More Information'
+                ],
+            ];
+
+        $this->seo();
+        $collection = $this->getProgress();
+        return view('featured-house')
+            ->with([
+                'managements' => $managements,
+                'header' => $header,
+                'sliders' => $sliders,
+                // 
+                'units' => $this->units,
+                'banks' => $this->banks,
+                'igs' => $this->igs,
+                'promos' => $this->promos,
+                'progress' => $collection, //$this->progress,
+                'facilities' => $this->facilities,
+            ]);
+    }
+
+    public function fasilitas()
+    {
+        // return $this->facilities;
+        return view('templates/facilities')->with([
+            'facilities' => $this->facilities,
+        ]);
+    }
+
+    public function unitUnggulan()
+    {
+        // return $this->facilities;
+        return view('templates/units')->with([
+            'units' => $this->units,
+        ]);
     }
 }

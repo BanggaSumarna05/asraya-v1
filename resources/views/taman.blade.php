@@ -39,9 +39,9 @@
                 yang menanti hanya beberapa langkah dari depan pintu Anda.
             </p>
         </div>
-        @include('templates/units')
+        {{-- @include('templates/units')
         @include('templates/facilities')
-        @include('templates/igFeeds')
+        @include('templates/igFeeds') --}}
     </div>
     @include('templates/footer')
 </body>
