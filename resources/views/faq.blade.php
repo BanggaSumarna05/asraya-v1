@@ -23,10 +23,10 @@
         <div class="container" data-aos="fade-up">
             <hr>
             <nav class="nav nav-pills nav-fill" style="margin:4vh;">
-            <a class="accordion-button" data-toggle="tab" href="#menu1">Pertanyaan Umum</a>
-                <a class="accordion-button" data-toggle="tab" href="#menu2">Tentang Spesifikasi</a>
-                <a class="accordion-button" data-toggle="tab" href="#menu3">Fasilitas Kami</a>
-                <a class="accordion-button" data-toggle="tab" href="#menu4">Cara Pembelian</a>
+            <a class="accordion-button" data-toggle="tab" href="#menu1"><h3>Pertanyaan Umum</h3></a>
+                <a class="accordion-button" data-toggle="tab" href="#menu2"><h3>Tentang Spesifikasi</h3></a>
+                <a class="accordion-button" data-toggle="tab" href="#menu3"><h3>Fasilitas Kami</h3></a>
+                <a class="accordion-button" data-toggle="tab" href="#menu4"><h3>Cara Pembelian</h3></a>
             </nav>
             <hr>
             <div class="tab-content">
