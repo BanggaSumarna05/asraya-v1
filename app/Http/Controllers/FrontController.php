@@ -258,11 +258,11 @@ class FrontController extends Controller
             'cover' => 'img/cendana/F10.jpg',
             'link' => 'cendana',
         ],
-        [
-            'name' => 'INTERIOR',
-            'cover' => 'img/reduce/F8.jpg',
-            'link' => '',
-        ]
+        // [
+        //     'name' => 'INTERIOR',
+        //     'cover' => 'img/reduce/F8.jpg',
+        //     'link' => '',
+        // ]
     ];
 
     public $banks = [
@@ -497,9 +497,11 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $data['cover'] = 'new/assets/img/F7.jpg';
         $data['name'] = 'MAHOGANY';
         $data['slide'] = [];
-        // array_push($data['slide'], 'img/mahogany/Denah_Mahogany.jpg');
-        array_push($data['slide'], 'img/mahogany/floor.jpg');
-        array_push($data['slide'], 'img/mahogany/floor side.jpg');
+        array_push($data['slide'], 'img/mahogany/new/mahogany-f.png');
+        array_push($data['slide'], 'img/mahogany/new/mahogany-r.png');
+        array_push($data['slide'], 'img/mahogany/new/mahogany-b.png');
+        array_push($data['slide'], 'img/mahogany/new/mahogany-l.png');
+        // array_push($data['slide'], 'img/mahogany/mahogany-b.png');
         $data['floors'] = 'img/mahogany/Denah_Mahogany.jpg';
         $this->seo();
 
@@ -516,13 +518,15 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     public function cendana()
     {
         $data = [];
-        $data['cover'] = 'img/cendana/F10.jpg';
+        $data['cover'] = 'img/cendana/f10-1.jpg';
         $data['name'] = 'CENDANA';
         $data['slide'] = [];
         // array_push($data['slide'], 'new/assets/img/F7.jpg');
         // array_push($data['slide'], 'img/cendana/Denah Cendana.jpg');
-        array_push($data['slide'], 'img/cendana/FLOOR SIDE.png');
-        array_push($data['slide'], 'img/cendana/FLOOR.jpg');
+        array_push($data['slide'], 'img/cendana/cendana-f.png');
+        array_push($data['slide'], 'img/cendana/cendana-r.png');
+        array_push($data['slide'], 'img/cendana/cendana-b.png');
+        array_push($data['slide'], 'img/cendana/cendana-l.png');
         $data['floors'] = 'img/cendana/Denah Cendana.jpg';
         $this->seo();
 
@@ -586,7 +590,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $header = [
             'header' => 'Pesona Hutan Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
-            'img' => 'new/assets/img/F11.jpg',
+            'img' => 'img/f6.png',
             'low' => 'new/assets/img/aa.png'
         ];
 
@@ -617,7 +621,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $data = [];
         $data['cover'] = 'new/assets/img/gym1.jpg';
-        $data['name'] = 'Gymn';
+        $data['name'] = 'Gym';
         $data['slide'] = [];
         array_push($data['slide'], 'new/assets/img/gym1.jpg');
 
@@ -707,7 +711,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
 
     public function faq()
     {
-        $generals = [
+        $generals = collect([
             [
                 "question" => "Apakah konsep yang ditawarkan oleh Pesona Hutan Asraya?",
                 "answer" => "Pesona Hutan Asraya adalah hunian pertama di kota Pekanbaru yang menggunakan konsep hutan kota, dengan sentuhan design dari arsitek Atelier Riri yang mempunyai fasilitas lengkap diantaranya Clubhouse, Swimming Pool, Yoga Club, Gym & Resto and Lounge."
@@ -748,9 +752,9 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 "question" => "Bagaimana untuk cara pembayaran listrik di unit yang akan kami tempati?",
                 "answer" => "Untuk setiap unit menggunakan sistem token, yang juga dapat dibayarkan melalui fitur Mobile Banking/ Internet Banking."
             ]
-        ];
+        ]);
 
-        $specs = [
+        $specs = collect([
             [
                 "question" => "Berapakah luas bangunan dari unit Pesona Hutan Asraya?",
                 "answer" => "Untuk Type Mahogany ukuran luas bangunan adalah 220 M²; Untuk Type Cendana luas bangunan adalah 138 M²."
@@ -787,9 +791,9 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 "question" => "Ada berapa unit type Mahogany & Type Cendana?",
                 "answer" => "Untuk type Mahogany tersedia sebanyak 8 Unit dan Untuk type Cendana tersedia sebanyak 25 Unit."
             ]
-        ];
+        ]);
 
-        $facs = [
+        $facs = collect([
             [
                 "question" => "Bagaimanakah sistem keamanan di lingkungan Pesona Hutan Asraya?",
                 "answer" => "Cluster Pesona Hutan Asraya mempunyai fasilitas One Gate System, fasilitas CCTV di lingkungan area komplek dan terdapat Security yang berjaga 24 Jam."
@@ -838,9 +842,9 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 "question" => "Berapakah kapasitas water heater yang digunakan dalam setiap unit?",
                 "answer" => "Untuk setiap unit Pesona Hutan Asraya menggunakan water heater Solahart dengan kapasitas 100L."
             ]
-        ];
+        ]);
 
-        $buys = [
+        $buys = collect([
             [
                 "question" => "Berapa lama proses dari akad untuk bisa dilakukan proses handover?",
                 "answer" => "Untuk proses handover membutuhkan waktu kurang lebih 8-9 bulan."
@@ -881,7 +885,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 "question" => "Dokumen apa saja yang harus dipersiapkan dalam proses pembelian unit Pesona Hutan Asraya?",
                 "answer" => "Document yang dibutuhkan: \n1. Bagi Karyawan:\n• KTP\n• KK\n• Surat Nikah (Jika pembeli sudah menikah wajib melampirkan surat nikah)\n• NPWP\n• Slip Gaji 3 Bulan\n• Surat Keterangan Kerja di Perusahaan\n• Fotokopi Rekening Tabungan (Selama 3 bulan terakhir)\n• Pas Foto 3x4\n2. Bagi Wiraswasta\n• KTP\n• KK\n• Surat Nikah (Jika pembeli sudah menikah wajib melampirkan surat nikah)\n• SIUP (Surat Izin Usaha Perorangan)\n• TDP (Tanda Daftar Perusahaan)\n• NPWP\n• Laporan Perusahaan (2 Tahun terakhir)\n• Akta Pendirian Perusahaan (Jika PT)\n• Akta Pengesahan dari Menteri Kehakiman dan Hak Asasi Manusia Surat Izin Praktek (jika Profesi)\n• Pas Foto 3x4"
             ]
-        ];
+        ]);
 
         $header = [
             'header' => 'Pesona Hutan Asraya',

@@ -40,20 +40,9 @@
                 </div>
             </div>
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <div class="mb-5">
-                    <h3 class="footer-heading mb-4">OUR LOCATION</h3>
-                    <div class="block-16">
-                        <div style="width: 100%"><iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.4139020305769!2d101.46526836995564!3d0.5174550533018407!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5afabef7d382b%3A0x710ef0e26bb807f0!2sPESONA%20HUTAN%20BY%20ASRAYA!5e0!3m2!1sen!2sid!4v1694396218830!5m2!1sen!2sid"
-                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe></iframe></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="row mb-5">
                     <div class="col-md-12">
-                        <h3 class="footer-heading mb-4">Usefull Link</h3>
+                        <h3 class="footer-heading mb-4">Sitemap</h3>
                     </div>
                     <div class="col-md-6 col-lg-6" style="color: #00261C!important;">
                         <li class="active"><a href="{{ Route::is('index') ? '#home' : route('index') }}">Halaman Utama</a></li>
@@ -73,6 +62,18 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="mb-5">
+                    <h3 class="footer-heading mb-4">OUR LOCATION</h3>
+                    <div class="block-16">
+                        <div style="width: 100%"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.4139020305769!2d101.46526836995564!3d0.5174550533018407!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5afabef7d382b%3A0x710ef0e26bb807f0!2sPESONA%20HUTAN%20BY%20ASRAYA!5e0!3m2!1sen!2sid!4v1694396218830!5m2!1sen!2sid"
+                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></iframe></div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="col-md-12">
                 <center>
                     <p>Copyright &copy;

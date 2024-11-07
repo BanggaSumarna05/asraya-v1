@@ -11,23 +11,72 @@
 
 <body>
     @include('templates/navbar')
+    <style>
+        .accordion-button:not(.collapsed) {
+            color: #FFF !important;
+            background-color: rgb(159, 145, 124) !important;
+        }
+
+
+
+        .accordion-button:link,
+        .accordion-button:visited,
+        .accordion-button:hover,
+        .accordion-button:active {
+            background-color: rgb(159, 145, 124) !important;
+            color: #FFF !important;
+            text-decoration: none !important;
+            border: hidden !important;
+            border-color: #FFF !important;
+            box-shadow: 0px !important;
+
+
+        }
+
+        .accordion-button:focus {
+            z-index: 3;
+            border-color: #FFF !important;
+            outline: 0;
+            box-shadow: 0 0 0 .25rem #FFF !important;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+    </style>
     {{-- content below --}}
     <div class="container" style="margin-top: 12vh;">
+        <br><br><br><br>
         <div class="row align-items-center justify-content-center">
             <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
-                <h1 class="mb-4">Frequently Asked Questions</h1>
+                <h1 class="mb-4">
+                    Pertanyaan Umum</h1>
             </div>
         </div>
     </div>
     <div class="site-section" id="home">
         <div class="container" data-aos="fade-up">
-            <hr>
-            <nav class="nav nav-pills nav-fill" style="margin:4vh;">
-            <a class="accordion-button" data-toggle="tab" href="#menu1"><h3>Pertanyaan Umum</h3></a>
-                <a class="accordion-button" data-toggle="tab" href="#menu2"><h3>Tentang Spesifikasi</h3></a>
-                <a class="accordion-button" data-toggle="tab" href="#menu3"><h3>Fasilitas Kami</h3></a>
-                <a class="accordion-button" data-toggle="tab" href="#menu4"><h3>Cara Pembelian</h3></a>
-            </nav>
+            <center>
+                <nav class="nav nav-pills nav-fill" style="margin:4vh;">
+                    <a class="active" data-toggle="tab" href="#menu1" style="padding: 3vh; ">
+                        <h3>Pertanyaan Umum</h3>
+                    </a>
+                    <a class="" data-toggle="tab" href="#menu2" style="padding: 3vh; ">
+                        <h3>Tentang Spesifikasi</h3>
+                    </a>
+                    <a class="" data-toggle="tab" href="#menu3" style="padding: 3vh; ">
+                        <h3>Fasilitas Kami</h3>
+                    </a>
+                    <a class="" data-toggle="tab" href="#menu4" style="padding: 3vh; ">
+                        <h3>Cara Pembelian</h3>
+                    </a>
+                </nav>
+            </center>
             <hr>
             <div class="tab-content">
                 <div id="menu1" class="tab-pane active">
@@ -40,16 +89,16 @@
                                         aria-controls="flush-collapseOne">
                                         {{ $item['question'] }}
                                     </button>
-                                    </h2>
-                                    <div id="flush-1-{{ $i }}" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"
-                                        style="background-color: whitesmoke">
-                                        <div class="accordion-body">
-                                            <div class="container" style="padding: 14px; font-size: 18px;">
-                                                <p class="rapih">{{ $item['answer'] }}</p>
-                                            </div>
+                                </h4>
+                                <div id="flush-1-{{ $i }}" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"
+                                    style="background-color: whitesmoke">
+                                    <div class="accordion-body">
+                                        <div class="container" style="padding: 14px; font-size: 18px;">
+                                            <p class="rapih">{{ $item['answer'] }}</p>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         @endforeach
                     </div>

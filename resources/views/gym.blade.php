@@ -26,22 +26,6 @@
             </div>
         </div>
     </div>
-    <div class="site-section" id="home">
-        <div class="container py-4" data-aos="fade-up">
-            <h1 class="mb-4">
-                {{ $data['name'] }}
-            </h1>
-            <p class="rapih">
-                Penggemar kebugaran akan menghargai gym kami yang canggih, dilengkapi dengan mesin-mesin mutakhir dan
-                dan pelatih ahli untuk membantu Anda mencapai tujuan kesehatan dan kebugaran Anda. Dari latihan kardio
-                hingga latihan kekuatan
-                kekuatan, gym kami menawarkan pengalaman kebugaran yang komprehensif untuk semua tingkatan.
-            </p>
-        </div>
-        @include('templates/units')
-        @include('templates/facilities')
-        @include('templates/igFeeds')
-    </div>
     @include('templates/footer')
 </body>
 

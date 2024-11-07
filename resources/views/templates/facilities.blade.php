@@ -14,19 +14,19 @@
     </style>
 </head>
 
-<body>
+<body style="font-family: 'Archivo'!important">
     @include('templates/navbar')
-    <div class="site-blocks-cover overlay" style="background-image:url('new/assets/img/cover-clubhouse.jpg')"
-        data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+    <div class="site-blocks-cover overlay lazy-bg" style="background-image:url('new/assets/img/cover-clubhouse.jpg')" data-aos="fade"
+        data-stellar-background-ratio="0.5" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
-                    <h1 class="mb-4">Fasilitas</h1>
-                    <h3 class="align-center text-white">
+                    <h1 style="font-family: 'Archivo'; font-size: 50px">Fasilitas</h1>
+                    <h4 class="align-center text-white">
                         Selamat datang di PESONA HUTAN ASRAYA dimana
                         kehidupan mewah berpadu dengan kemudahan dan kenyamanan. Terletak di hati
                         di Riau, properti indah kami menawarkan pengalaman gaya hidup yang tak tertandingi.
-                    </h3>
+                    </h4>
                 </div>
             </div>
         </div>
