@@ -35,13 +35,13 @@
     </div>
     <div class="site-section" id="home">
         <div class="container text-white">
-            <div class="row" {{-- secondary color --}} style="background-color: rgba(159, 145, 124, 0.767);padding 3vh">
+            <div class="row" {{-- secondary color --}} style="background-color: #ad8e79;padding 3vh">
                 <div class="col-5">
                     <div class="align-items-center justify-content-center"
                         style="padding-top: 8vh;padding-bottom: 8vh;">
-                        <h2 class="" style="padding-right: 40px;padding-left: 40px;color: rgb(114,104,102)">
+                        <h2 class="" style="padding-right: 40px;padding-left: 40px;color: whitesmoke">
                             TIPE CENDANA</h2>
-                        <p style="color: rgb(114,104,102);padding-right: 40px;padding-left: 40px; position: -20px"
+                        <p style="color: whitesmoke;padding-right: 40px;padding-left: 40px; position: -20px"
                             class="mb-4">
                             LT: 90m² | LB: 138m²
                         </p>
@@ -81,10 +81,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-5" style="background-color: rgba(159, 145, 124, 0.767); padding:0px">
+                <div class="col-5" style="background-color: #ad8e79; padding:0px">
                     <div class="align-items-center justify-content-center"
                         style="padding-top: 8vh;padding-bottom: 8vh;">
-                        <h2 class="" style="padding-right: 40px;padding-left: 40px;color: rgb(114,104,102)">
+                        <h2 class="" style="padding-right: 40px;padding-left: 40px;color: whitesmoke">
                             Fasilitas</h2>
                         <div style="padding-right: 40px;padding-left: 40px;">
                             <table class="table table-row-dashed align-middle gs-0 gy-3 my-0">

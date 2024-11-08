@@ -27,7 +27,7 @@
                 <div class="col-12">
                     <center>
                         <div class="site-section-heading text-center w-border">
-                            <h2>Vision</h2>
+                            <h2>Visi</h2>
                         </div>
                     </center>
                     <p class="rapih" style="padding: 24px">
@@ -38,7 +38,7 @@
                 <div class="col-12">
                     <center>
                         <div class="site-section-heading text-center w-border">
-                            <h2>Mission</h2>
+                            <h2>Misi</h2>
                         </div>
                     </center>
                     <p class="rapih">
