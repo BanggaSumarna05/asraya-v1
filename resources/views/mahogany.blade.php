@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="col-7" style="left: 14px;">
-                    <img class="image-fluid w-100 h-100 lazy float-right" src="img/mahogany/mahogany-interior.jpg">
+                    <img class="image-fluid w-100 h-100 lazy float-right" src="img/mahogany/mahogany-interior-0.jpg">
                 </div>
             </div>
             <div class="row" {{-- secondary color --}} style="background-color: white;">
