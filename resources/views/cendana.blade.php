@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="col-7" style="left: 14px;">
-                    <img class="image-fluid w-100 h-100 lazy float-right" src="img/CENDANA/cendana-interior.jpg">
+                    <img class="image-fluid w-100 h-100 lazy float-right" src="img/cendana/cendana-interior.jpg">
                 </div>
             </div>
             <div class="row" {{-- secondary color --}} style="background-color: white;">
@@ -189,15 +189,15 @@
             </div>
             <div class="row" {{-- style="background-color: grey" --}}>
                 <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
-                    <img class="image-fluid w-100 lazy" src="img/cendana/LT1.png">
+                    <img class="image-fluid w-100 lazy" src="img/cendana/lt1.png">
                     <h3 style="color:rgba(0,38,28,1)">1st Level</h3>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
-                    <img class="image-fluid w-100 lazy" src="img/cendana/LT2.png">
+                    <img class="image-fluid w-100 lazy" src="img/cendana/lt2.png">
                     <h3 style="color:rgba(0,38,28,1)">2nd Level</h3>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
-                    <img class="image-fluid w-100 lazy" src="img/cendana/LT3.png">
+                    <img class="image-fluid w-100 lazy" src="img/cendana/lt3.png">
                     <h3 style="color:rgba(0,38,28,1)">Upper Level</h3>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px">
