@@ -46,7 +46,7 @@
                     </div>
                     <div class="col-md-6 col-lg-6" style="color: #00261C!important;">
                         <li class="active"><a href="{{ Route::is('index') ? '#home' : route('index') }}">Halaman Utama</a></li>
-                        <li class="active"><a href="#">Unit Unggulan</a></li>
+                        <li class="active" style="padding-bottom: 1.5vh;"><a href="#">Unit Unggulan</a></li>
                         <ul>
                             <li class="active"><a href="{{ route('mahogany') }}">Mahogany</a></li>
                             <li class="active"><a href="{{ route('cendana') }}">Cendana</a></li>

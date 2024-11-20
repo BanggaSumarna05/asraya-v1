@@ -9,7 +9,7 @@
     </script>
 </head>
 
-<body>
+<body style="font-family: 'Archivo'">
     @include('templates/navbar')
     <style>
         .accordion-button:not(.collapsed) {

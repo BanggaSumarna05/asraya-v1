@@ -42,20 +42,17 @@
                 </div>
                 <div class="col-md-5 text-center w-border mx-auto">
                     <p class="rapih">
-                        Dimana kehidupan yang luar biasa bertemu dengan desain kontemporer dalam dunia real estat dan
-                        properti unggulan. Kami bangga menciptakan sebuah dunia di mana keunggulan hadir di setiap
-                        detail rumit dari properti kami. Komitmen kami terhadap inovasi dan kualitas tercermin melalui
-                        desain avant-garde kami dan pemilihan material berkualitas tinggi yang dirancang dengan sangat
-                        teliti.
+                        Pesona Hutan Asraya adalah proyek properti premium yang dirancang untuk memenuhi kebutuhan pasar
+                        high-end, dimana desain modern bertemu dengan keanggunan dunia properti eksklusif. Kami dengan
+                        bangga mempersembahkan hunian yang menonjolkan kualitas pada setiap detailnya, mencerminkan
+                        komitmen kami terhadap inovasi dan keunggulan. Desain yang elegan berpadu harmonis dengan bahan
+                        berkualitas tinggi dan pengerjaan yang penuh ketelitian.
                         <br>
-                        Lebih dari sekadar mendefinisikan ulang real estat, kami juga merambah ke cakrawala baru. Dengan
-                        bangga kami memperkenalkan proyek baru kami yang memukau dan taman hutan
-                        yang luas. Bayangkan sebuah hunian yang memadukan kemewahan dan keanggunan, mencerminkan
-                        tingkat kecanggihan dan keindahan yang sama dengan keajaiban properti real estat kami.
-                        {{-- <br><br>
-                        Casa Asraya berdiri sebagai bukti dari pengalaman gaya hidup holistik, di mana keunggulan
-                        arsitektur berpadu dengan keramahan yang tiada banding. Bergabunglah dengan kami dalam
-                        perjalanan kemewahan, inovasi, dan peluang tanpa batas ini. --}}
+                        Pesona Hutan Asraya menghadirkan keseimbangan sempurna antara kenyamanan modern dan ketenangan
+                        alam yang menenangkan. Setiap elemen di sini dirancang dengan penuh perhatian untuk menciptakan
+                        kehidupan yang harmonis, memberikan pengalaman tinggal yang meningkatkan kualitas hidup
+                        penghuninya
+
                     </p>
                 </div>
             </div>
@@ -83,17 +80,18 @@
                         <div class="text-center bg-white">
                             <div class="text-black">
                                 <p class="rapih">
-                                    Tim manajemen profesional dan karyawan dengan bangga mempersembahkan Bapak O’ozaro
-                                    Larosa, lulusan Institut Teknologi Bandung, yang kini menjabat sebagai Managing
-                                    Director di salah satu anak perusahaan kami, PT Casa Asraya Properti.
-                                    </br>
-                                    Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
-                                    membuka pasar global di bidang teknik, pertambangan, dan perusahaan EPC di Asia
-                                    Tenggara & Timur Tengah sejak 2007, Bapak O’ozaro Larosa telah menjadi salah satu
-                                    pakar bisnis luar negeri andalan kami.
+                                    Dengan bangga, kami memperkenalkan Bapak O’ozaro B. Larosa, lulusan Institut
+                                    Teknologi Bandung yang kini menjabat sebagai Managing Director di PT Casa Asraya
+                                    Properti. Berbekal semangat yang tinggi, ketelitian, serta pengalaman luas dalam
+                                    memimpin tim, beliau mampu mengarahkan perusahaan menuju perbaikan dan pertumbuhan
+                                    yang signifikan. Dukungan tim manajemen dan staf profesional semakin memperkuat
+                                    dedikasi beliau dalam memperluas ekspansi pasar global.
+                                    <br>
+                                    Sejak 2007, Bapak O’ozaro Larosa telah berkiprah di industri teknik, pertambangan,
+                                    dan perusahaan EPC di Asia Tenggara dan Timur Tengah, menjadikannya salah satu ahli
+                                    terkemuka kami dalam bisnis internasional.
 
                                 </p>
-
                             </div>
                         </div>
                     </div>
@@ -105,22 +103,25 @@
                         <div class="text-center bg-white">
                             <div class="text-black">
                                 <p class="rapih">
-                                    Atelier Riri adalah firma desain dan arsitektur yang didirikan oleh Novriansyah
-                                    Yakub, yang juga dikenal sebagai Riri, di Jakarta. Firma ini merupakan representasi
-                                    dari perkembangan visi dan prinsip yang dipegang teguh oleh Riri sejak ia memulai
-                                    karirnya di bidang arsitektur pada tahun 2005. Seiring berjalannya waktu, Atelier
-                                    Riri terus berkembang dan memperluas keahliannya, menghasilkan karya-karya di bidang
-                                    arsitektur, desain interior, arsitektur lanskap, dan desain produk. Firma ini
-                                    mencerminkan komitmen terhadap kreativitas dan inovasi, yang menggambarkan dedikasi
-                                    Riri dalam memperkaya ruang dan mewujudkan konsep-konsep imajinatif.
+                                    Atelier Riri adalah firma arsitektur dan desain yang didirikan oleh Novriansyah
+                                    Yakub, atau yang lebih dikenal dengan nama Riri, di Jakarta. Firma ini berkembang
+                                    dari visi dan prinsip yang dipegang teguh oleh Riri sejak memulai karirnya di dunia
+                                    arsitektur pada tahun 2005.
+                                    <br>
+                                    Seiring berjalannya waktu, Atelier Riri semakin
+                                    berkembang dengan memperluas keahlian dan layanannya, meliputi arsitektur, desain
+                                    interior, arsitektur lanskap, dan desain produk.
+                                    Atelier Riri menjadi simbol komitmen terhadap kreativitas dan inovasi, mencerminkan
+                                    dedikasi Riri dalam memperkaya setiap ruang dengan menghadirkan konsep-konsep
+                                    imajinatif yang segar dan penuh inspirasi.
+
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="mb-4"
-                    style="padding-top: 40px"><img src="img/reduce/riri.png" alt="Image"
+                    <div class="mb-4" style="padding-top: 40px"><img src="img/reduce/riri.png" alt="Image"
                             class="w-60 mx-auto img-fluid lazy"></div>
                 </div>
             </div>
@@ -147,14 +148,14 @@
                 <div class="col-sm-6 mb-10 mb-sm-0">
                     <br><br><br>
                     <p class="rapih">
-                        Casa Asraya Properti mempersembahkan rencana blok real estate yang luar biasa di Pekanbaru,
-                        menawarkan pengalaman hidup mewah dan eksklusif. Properti yang dirancang dengan cermat ini
-                        memiliki fasilitas kelas atas, tata letak yang luas, dan pemandangan yang memukau, menjadikannya
-                        pilihan sempurna bagi mereka yang mencari kemewahan dalam gaya hidup mereka. Dengan lokasi
-                        strategis dan fitur premium, Casa Asraya Properti mendefinisikan ulang gaya hidup kelas atas di
+                        Casa Asraya Properti dengan bangga mempersembahkan blok real estat istimewa di Pekanbaru,
+                        menawarkan pengalaman hidup mewah yang eksklusif. Dirancang dengan fasilitas kelas atas dan tata
+                        letak yang luas, properti ini menjadi pilihan ideal bagi mereka yang menginginkan kemewahan
+                        dalam setiap aspek kehidupan. Dengan lokasi yang sangat strategis, Casa Asraya Properti
+                        menyediakan hunian yang menggabungkan keindahan, kenyamanan, dan kualitas hidup terbaik di
                         Pekanbaru.
                         <br><br>
-                        Berikut 5 lokasi terjangkau di Pesona Hutan Asraya :
+                        Berikut adalah lokasi-lokasi terdekat dari kawasan Pesona Hutan Asraya: 
                     </p>
                     <ul>
                         <li>15 Menit ke Bandara Internasional Syarif Kasim II</li>
@@ -169,12 +170,6 @@
             </div>
         </div>
     </div>
-    {{-- @include('templates/units') --}}
-    {{-- @include('templates/facilities') --}}
-    {{-- @include('templates/progress') --}}
-    {{-- @include('templates/galery')
-    @include('templates/bankList')
-    @include('templates/igFeeds') --}}
     @include('templates/footer')
 </body>
 

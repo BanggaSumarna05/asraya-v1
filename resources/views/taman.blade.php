@@ -14,7 +14,7 @@
     </style>
 </head>
 
-<body>
+<body style="font-family: 'Archivo'">
     @include('templates/navbar')
     <div class="site-blocks-cover overlay" style="background-image:url({{ $data['cover'] }})" data-aos="fade"
         data-stellar-background-ratio="0.5" data-aos="fade">
