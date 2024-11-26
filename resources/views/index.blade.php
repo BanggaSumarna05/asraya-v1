@@ -46,7 +46,7 @@
                         menciptakan hunian yang menggabungkan suasana hutan tropis di tengah hiruk-pikuk kota. Pesona
                         Hutan Asraya memberikan pengalaman tinggal yang sejuk dan nyaman, dengan keseimbangan antara
                         kenyamanan alam dan kemudahan akses ke pusat kehidupan perkotaan.
-                        <br><br>
+                        <br>
                         Kami selalu berkomitmen untuk
                         menghadirkan inovasi dalam setiap desain yang dirancang dengan seksama serta menggunakan
                         material berkualitas tinggi yang menjamin daya tahan dan keindahan hunian. Dengan demikian,
@@ -89,9 +89,9 @@
                                     di posisi penting di sektor pertambangan, konstruksi oil & gas, dan juga beberapa
                                     proyek pembangunan pabrik yang tersebar di Asia dan timur tengah.
                                     <br><br>
-                                    Karirnya berkembang di bidang pengembangan bisnis, pengalaman multidimensi yang ia
+                                    Karirnya berkembang di bidang pengembangan bisnis, dengan pengalaman multidimensi yang ia
                                     miliki memberikan wawasan yang sangat relevan dalam menghadirkan Pesona Hutan
-                                    Asraya, proyek perumahan premium dengan konsep hutan kota di tengah kota Pekanbaru.
+                                    Asraya, proyek perumahan premium dengan konsep hutan  di tengah kota Pekanbaru.
                                     Dengan dedikasi dan visi inovatif, Oozaro memimpin Asraya untuk memberikan solusi
                                     hunian yang tidak hanya memenuhi kebutuhan gaya hidup modern tetapi juga
                                     menghadirkan pengalaman hidup yang dekat dengan alam.
