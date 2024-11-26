@@ -112,7 +112,6 @@
                                     terbaik di Indonesia. Sejak 2005, mereka telah menghasilkan karya-karya inovatif di
                                     bidang arsitektur, interior, lanskap, dan desain produk, dengan penekanan pada
                                     fungsi, konteks, dan keberlanjutan.
-                                    ATELIER RIRI
                                     <br><br>
                                     Dalam proyek perumahan premium tiga lantai, Pesona Hutan Asraya, di Pekanbaru, Riau,
                                     PT Casa Asraya Properti berkolaborasi dengan Atelier Riri untuk menghadirkan desain
