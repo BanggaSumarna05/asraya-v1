@@ -42,17 +42,16 @@
                 </div>
                 <div class="col-md-5 text-center w-border mx-auto">
                     <p class="rapih">
-                        Pesona Hutan Asraya adalah proyek properti premium yang dirancang untuk memenuhi kebutuhan pasar
-                        high-end, dimana desain modern bertemu dengan keanggunan dunia properti eksklusif. Kami dengan
-                        bangga mempersembahkan hunian yang menonjolkan kualitas pada setiap detailnya, mencerminkan
-                        komitmen kami terhadap inovasi dan keunggulan. Desain yang elegan berpadu harmonis dengan bahan
-                        berkualitas tinggi dan pengerjaan yang penuh ketelitian.
-                        <br>
-                        Pesona Hutan Asraya menghadirkan keseimbangan sempurna antara kenyamanan modern dan ketenangan
-                        alam yang menenangkan. Setiap elemen di sini dirancang dengan penuh perhatian untuk menciptakan
-                        kehidupan yang harmonis, memberikan pengalaman tinggal yang meningkatkan kualitas hidup
-                        penghuninya
-
+                        Kami menghadirkan perumahan premium yang mengutamakan desain modern dengan sentuhan alam, kami
+                        menciptakan hunian yang menggabungkan suasana hutan tropis di tengah hiruk-pikuk kota. Pesona
+                        Hutan Asraya memberikan pengalaman tinggal yang sejuk dan nyaman, dengan keseimbangan antara
+                        kenyamanan alam dan kemudahan akses ke pusat kehidupan perkotaan.
+                        <br><br>
+                        Kami selalu berkomitmen untuk
+                        menghadirkan inovasi dalam setiap desain yang dirancang dengan seksama serta menggunakan
+                        material berkualitas tinggi yang menjamin daya tahan dan keindahan hunian. Dengan demikian,
+                        properti ini menjadi pilihan utama bagi mereka yang menginginkan pengalaman hidup yang penuh
+                        keindahan dan ketenangan, di tengah dinamika kota yang terus berkembang
                     </p>
                 </div>
             </div>
@@ -80,17 +79,22 @@
                         <div class="text-center bg-white">
                             <div class="text-black">
                                 <p class="rapih">
-                                    Dengan bangga, kami memperkenalkan Bapak O’ozaro B. Larosa, lulusan Institut
-                                    Teknologi Bandung yang kini menjabat sebagai Managing Director di PT Casa Asraya
-                                    Properti. Berbekal semangat yang tinggi, ketelitian, serta pengalaman luas dalam
-                                    memimpin tim, beliau mampu mengarahkan perusahaan menuju perbaikan dan pertumbuhan
-                                    yang signifikan. Dukungan tim manajemen dan staf profesional semakin memperkuat
-                                    dedikasi beliau dalam memperluas ekspansi pasar global.
-                                    <br>
-                                    Sejak 2007, Bapak O’ozaro Larosa telah berkiprah di industri teknik, pertambangan,
-                                    dan perusahaan EPC di Asia Tenggara dan Timur Tengah, menjadikannya salah satu ahli
-                                    terkemuka kami dalam bisnis internasional.
-
+                                    Oozaro B. Larosa, Managing Director PT Casa Asraya Properti, membawa pengalaman
+                                    profesional yang luas dan mendalam dalam industri konstruksi, teknik, dan
+                                    pengembangan proyek berskala internasional. Lulusan Teknik Sipil dari Institut
+                                    Teknologi Bandung ini memulai kariernya sebagai Civil Engineer pada tahun 2007
+                                    sebelum kemudian meniti karier di berbagai sektor strategis.
+                                    <br><br>
+                                    Sebagai seorang pemimpin dengan visi dan kompetensi tinggi, Oozaro pernah menjabat
+                                    di posisi penting di sektor pertambangan, konstruksi oil & gas, dan juga beberapa
+                                    proyek pembangunan pabrik yang tersebar di Asia dan timur tengah.
+                                    <br><br>
+                                    Karirnya berkembang di bidang pengembangan bisnis, pengalaman multidimensi yang ia
+                                    miliki memberikan wawasan yang sangat relevan dalam menghadirkan Pesona Hutan
+                                    Asraya, proyek perumahan premium dengan konsep hutan kota di tengah kota Pekanbaru.
+                                    Dengan dedikasi dan visi inovatif, Oozaro memimpin Asraya untuk memberikan solusi
+                                    hunian yang tidak hanya memenuhi kebutuhan gaya hidup modern tetapi juga
+                                    menghadirkan pengalaman hidup yang dekat dengan alam.
                                 </p>
                             </div>
                         </div>
@@ -103,18 +107,19 @@
                         <div class="text-center bg-white">
                             <div class="text-black">
                                 <p class="rapih">
-                                    Atelier Riri adalah firma arsitektur dan desain yang didirikan oleh Novriansyah
-                                    Yakub, atau yang lebih dikenal dengan nama Riri, di Jakarta. Firma ini berkembang
-                                    dari visi dan prinsip yang dipegang teguh oleh Riri sejak memulai karirnya di dunia
-                                    arsitektur pada tahun 2005.
-                                    <br>
-                                    Seiring berjalannya waktu, Atelier Riri semakin
-                                    berkembang dengan memperluas keahlian dan layanannya, meliputi arsitektur, desain
-                                    interior, arsitektur lanskap, dan desain produk.
-                                    Atelier Riri menjadi simbol komitmen terhadap kreativitas dan inovasi, mencerminkan
-                                    dedikasi Riri dalam memperkaya setiap ruang dengan menghadirkan konsep-konsep
-                                    imajinatif yang segar dan penuh inspirasi.
-
+                                    Atelier Riri, firma arsitektur terkemuka yang didirikan oleh Novriansyah Yakub
+                                    (Riri) di Jakarta, telah membangun reputasi sebagai salah satu dari tiga arsitek
+                                    terbaik di Indonesia. Sejak 2005, mereka telah menghasilkan karya-karya inovatif di
+                                    bidang arsitektur, interior, lanskap, dan desain produk, dengan penekanan pada
+                                    fungsi, konteks, dan keberlanjutan.
+                                    ATELIER RIRI
+                                    <br><br>
+                                    Dalam proyek perumahan premium tiga lantai, Pesona Hutan Asraya, di Pekanbaru, Riau,
+                                    PT Casa Asraya Properti berkolaborasi dengan Atelier Riri untuk menghadirkan desain
+                                    rumah tropis yang memadukan nuansa hutan dengan kehidupan perkotaan. Kolaborasi ini
+                                    mencerminkan komitmen bersama dalam menciptakan hunian yang harmonis dengan alam,
+                                    menggabungkan estetika kontemporer dengan prinsip keberlanjutan, sehingga memberikan
+                                    pengalaman tinggal yang unik dan berkualitas tinggi bagi para penghuni.
                                 </p>
                             </div>
                         </div>
@@ -148,22 +153,29 @@
                 <div class="col-sm-6 mb-10 mb-sm-0">
                     <br><br><br>
                     <p class="rapih">
-                        Casa Asraya Properti dengan bangga mempersembahkan blok real estat istimewa di Pekanbaru,
-                        menawarkan pengalaman hidup mewah yang eksklusif. Dirancang dengan fasilitas kelas atas dan tata
-                        letak yang luas, properti ini menjadi pilihan ideal bagi mereka yang menginginkan kemewahan
-                        dalam setiap aspek kehidupan. Dengan lokasi yang sangat strategis, Casa Asraya Properti
-                        menyediakan hunian yang menggabungkan keindahan, kenyamanan, dan kualitas hidup terbaik di
-                        Pekanbaru.
-                        <br><br>
-                        Berikut adalah lokasi-lokasi terdekat dari kawasan Pesona Hutan Asraya: 
+                        Casa Asraya Properti mempersembahkan townhouse terbaik di Pekanbaru, menawarkan lokasi yang
+                        eksklusif dan dekat dengan aktivitas kota. Properti yang dirancang oleh arsitek ternama,
+                        memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan lokasi di
+                        tengah kota dan fitur premium, Pesona Hutan Asraya dapat menjangkau fasilitas-fasilitas
+                        strategis untuk menyempurnakan gaya hidup yang berkualitas tinggi.
+                        <br>
+                        Berikut adalah lokasi-lokasi terdekat dari kawasan Pesona Hutan Asraya:
                     </p>
                     <ul>
-                        <li>15 Menit ke Bandara Internasional Syarif Kasim II</li>
-                        <li>10 Menit ke Rumah Sakit Awal Bros</li>
-                        <li>10 Menit ke Mall Pekanbaru</li>
+                        <li>
+                            15 Menit ke Bandara Internasional Syarif Kasim II
+                        </li>
+                        <li>
+                            10 Menit ke Rumah Sakit Awal Bros
+                        </li>
+                        <li>
+                            10 Menit ke Mall Pekanbaru
+                        </li>
                         <li>10 Menit ke HS Soeman Library</li>
                         <li>10 Menit ke Central Business District</li>
-                        <li>3 Menit ke Kantor Polisi Daerah</li>
+                        <li>
+                            3 Menit ke Kantor Polisi Daerah
+                        </li>
                     </ul>
                     <br><br><br>
                 </div>

@@ -28,12 +28,11 @@
                                 <b>Āśraya (Sanskrit: आश्रय)</b>
                             </div>
                             <p class="rapih">
-                                Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan,
-                                naungan,
+                                Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan, naungan,
                                 tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada sesuatu.
-                                Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya, sedangkan Brahman atau Sang
-                                Tertinggi, Tuhan, adalah viśaya, tujuan tertinggi, sasaran hidup. Ini dinyatakan dalam
-                                <b>Bhagavata Purana</b> (VII.x.6).
+                                Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya. PT Casa Asraya Properti
+                                menciptakan hunian yang menjadi perlindungan yang nyaman dan membawa berkah dalam
+                                kehidupan.
                             </p>
                         </div>
                     </div>
@@ -45,7 +44,8 @@
                         <h3 class="footer-heading mb-4">Sitemap</h3>
                     </div>
                     <div class="col-md-6 col-lg-6" style="color: #00261C!important;">
-                        <li class="active"><a href="{{ Route::is('index') ? '#home' : route('index') }}">Halaman Utama</a></li>
+                        <li class="active"><a href="{{ Route::is('index') ? '#home' : route('index') }}">Halaman
+                                Utama</a></li>
                         <li class="active" style="padding-bottom: 1.5vh;"><a href="#">Unit Unggulan</a></li>
                         <ul>
                             <li class="active"><a href="{{ route('mahogany') }}">Mahogany</a></li>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-12">
                 <center>
                     <p>Copyright &copy;
