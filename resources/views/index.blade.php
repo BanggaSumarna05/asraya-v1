@@ -141,7 +141,7 @@
             <div class="row gx-9 h-100">
                 <div class="col-sm-6 mb-10 mb-sm-0">
                     <div class="overlay p-2">
-                        <img class="w-100 card-rounded lazy" src="old/assets/img/maps-02.png" alt="">
+                        <img class="w-100 card-rounded lazy" src="/old/assets/img/maps-02.png" alt="">
                         <div class="d-flex flex-row-reverse py-4">
                             <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn btn-primary"
                                 target="_blank">See on

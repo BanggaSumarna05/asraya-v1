@@ -27,7 +27,10 @@
                 <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
                     <h1 class="text-center" style="font-family: 'Archivo'; font-size: 50px">CENDANA</h1>
                     <h4 class="text-white rapih text-center">
-                        Unit Cendana di Pesona Hutan Asraya adalah hunian asri yang nyaman dan ideal untuk keluarga. Dirancang selaras dengan alam, unit ini menghadirkan suasana tenang dan ramah lingkungan. Setiap ruangnya diatur efisien untuk mendukung kehidupan keluarga, menawarkan keindahan alam sekaligus kenyamanan modern.
+                        Unit Cendana di Pesona Hutan Asraya adalah hunian asri yang nyaman dan ideal untuk keluarga.
+                        Dirancang selaras dengan alam, unit ini menghadirkan suasana tenang dan ramah lingkungan. Setiap
+                        ruangnya diatur efisien untuk mendukung kehidupan keluarga, menawarkan keindahan alam sekaligus
+                        kenyamanan modern.
                     </h4>
                 </div>
             </div>
@@ -181,6 +184,20 @@
                         </div>
 
                     </div>
+                </div>
+            </div>
+            <div class="site-block-retro d-block d-md-flex">
+                <h1 style="color:rgba(0,38,28,1)">Contoh Unit</h1>
+            </div>
+            <div class="row">
+                <div class="col-4" style="left: 14px;">
+                    <img class="image-fluid w-100 h-100 lazy float-right" src="/img/cendana/cendana-units (1).jpeg">
+                </div>
+                <div class="col-4" style="left: 14px;">
+                    <img class="image-fluid w-100 h-100 lazy float-right" src="/img/cendana/cendana-units (2).jpeg">
+                </div>
+                <div class="col-4" style="left: 14px;">
+                    <img class="image-fluid w-100 h-100 lazy float-right" src="/img/cendana/cendana-units (3).jpeg">
                 </div>
             </div>
 
