@@ -4,6 +4,8 @@
 <head>
     @include('templates/meta')
     @include('templates/head')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body style="font-family: 'Archivo'">
@@ -89,9 +91,10 @@
                                     di posisi penting di sektor pertambangan, konstruksi oil & gas, dan juga beberapa
                                     proyek pembangunan pabrik yang tersebar di Asia dan timur tengah.
                                     <br><br>
-                                    Karirnya berkembang di bidang pengembangan bisnis, dengan pengalaman multidimensi yang ia
+                                    Karirnya berkembang di bidang pengembangan bisnis, dengan pengalaman multidimensi
+                                    yang ia
                                     miliki memberikan wawasan yang sangat relevan dalam menghadirkan Pesona Hutan
-                                    Asraya, proyek perumahan premium dengan konsep hutan  di tengah kota Pekanbaru.
+                                    Asraya, proyek perumahan premium dengan konsep hutan di tengah kota Pekanbaru.
                                     Dengan dedikasi dan visi inovatif, Oozaro memimpin Asraya untuk memberikan solusi
                                     hunian yang tidak hanya memenuhi kebutuhan gaya hidup modern tetapi juga
                                     menghadirkan pengalaman hidup yang dekat dengan alam.
@@ -131,7 +134,7 @@
             </div>
         </div>
     </div>
-    <div id="maps" class="site-section" style="margin: 0px;padding: 0px">
+    <div id="maps" class="site-section">
         <div class="container" data-aos="fade-up">
             <center>
                 <div class="site-section-heading text-center w-border">
@@ -181,7 +184,29 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="myModal" name="myModal" role="dialog" style="margin-top: 12em;">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: transparent!important;">
+                <div class="modal-header">
+                    <h4 class="modal-title text-white">Promo</h4>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="/img/promo-imlek.png" alt="Image" class="w-60 mx-auto img-fluid lazy">
+                </div>
+            </div>
+        </div>
+    </div>
     @include('templates/footer')
 </body>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        jQuery.noConflict();
+        $('#myModal').modal('show');
+    });
+</script>
 
 </html>

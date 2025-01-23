@@ -363,8 +363,6 @@ class FrontController extends Controller
         //     "foto4" => 'img/progress/8.jpg',
         // ],
     ];
-
-
     public $facilities = [
         [
             'title' => 'Club House',
