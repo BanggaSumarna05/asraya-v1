@@ -185,10 +185,10 @@
         </div>
     </div>
     <div class="modal fade bd-example-modal-lg" id="myModal" name="myModal" role="dialog"
-        style="margin-top: 8em; border:none;">
+        style="margin-top: 3.4em; border:none;">
         <div class="modal-dialog modal-lg">
             <!-- Modal content-->
-            <div class="modal-content" style="background-color: transparent!important;">
+            <div class="modal-content" style="background-color: transparent!important; border: none;">
                 <div class="modal-header">
                     <h3 class="modal-title text-white">Sorotan</h3>
                     <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
@@ -199,6 +199,7 @@
                         <div class="col-md-6">
                             <center>
                                 <h4 class="modal-title text-white">2nd Anniversary</h4>
+                                <br>
                                 <video autoplay loop muted controls class="img-fluid" src="/vids/aniv_2.mp4"></video>
                             </center>
                         </div>
