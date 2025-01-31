@@ -184,17 +184,32 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModal" name="myModal" role="dialog" style="margin-top: 12em;">
-        <div class="modal-dialog">
+    <div class="modal fade bd-example-modal-lg" id="myModal" name="myModal" role="dialog"
+        style="margin-top: 8em; border:none;">
+        <div class="modal-dialog modal-lg">
             <!-- Modal content-->
             <div class="modal-content" style="background-color: transparent!important;">
                 <div class="modal-header">
-                    <h4 class="modal-title text-white">Promo</h4>
+                    <h3 class="modal-title text-white">Sorotan</h3>
                     <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
                 </div>
 
                 <div class="modal-body">
-                    <img src="/img/promo-imlek.png" alt="Image" class="w-60 mx-auto img-fluid lazy">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <center>
+                                <h4 class="modal-title text-white">2nd Anniversary</h4>
+                                <video autoplay loop muted controls class="img-fluid" src="/vids/aniv_2.mp4"></video>
+                            </center>
+                        </div>
+                        <div class="col-md-6">
+                            <center>
+                                <h4 class="modal-title text-white">Promo</h4>
+                                <br>
+                                <img src="img/promo-imlek.png" class="img-fluid" alt="Responsive image">
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
