@@ -24,6 +24,12 @@
         </div>
     </div>
     <div class="site-section" id="home">
+        <div class="" data-aos="fade">
+            <div class="container">
+                <img src="/img/banner_imlek.jpg" style="width: 100%;" alt="">
+                <br><br>
+            </div>
+        </div>
         <div class="container" data-aos="fade-up">
             <div class="row mb-2">
                 <div class="col-md-12">
@@ -221,7 +227,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         jQuery.noConflict();
-        $('#myModal').modal('show');
+        // $('#myModal').modal('show');
     });
 </script>
 
