@@ -1,3 +1,8 @@
+<div class="fab">
+    <img src="img/Sequence-01-1.gif" alt="" style="max-width: 63%; max-height: 63%;">
+    <br>
+    <video src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay loop muted controls></video>
+</div>
 <div class="bg-primary" data-aos="fade">
     <div class="container">
         <div class="row">
@@ -28,8 +33,10 @@
                                 <b>Āśraya (Sanskrit: आश्रय)</b>
                             </div>
                             <p class="rapih">
-                                Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan, naungan,
-                                tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada sesuatu.
+                                Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan,
+                                naungan,
+                                tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada
+                                sesuatu.
                                 Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya. PT Casa Asraya Properti
                                 menciptakan hunian yang menjadi perlindungan yang nyaman dan membawa berkah dalam
                                 kehidupan.

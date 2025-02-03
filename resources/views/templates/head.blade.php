@@ -79,3 +79,31 @@
         background-position: -50px 0;
     }
 </style>
+
+{{-- FAB --}}
+<style>
+    .fab {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        top: 70%;
+        z-index: 1000;
+        width: auto;
+        height: auto;
+        /* border-radius: 50%; */
+        max-height: 500vh !important;
+        max-width: 500vh !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+        transition: all 0.3s ease-in-out;
+        
+    }
+
+    .fab:hover {
+        transform: scale(1.1);
+    }
+
+</style>
