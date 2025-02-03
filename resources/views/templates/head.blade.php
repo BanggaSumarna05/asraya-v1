@@ -99,11 +99,14 @@
         font-size: 24px;
         /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
         transition: all 0.3s ease-in-out;
-        
+
     }
 
     .fab:hover {
         transform: scale(1.1);
     }
 
+    .bounce {
+        animation: bounce 4s ease infinite;
+    }
 </style>

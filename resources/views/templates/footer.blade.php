@@ -1,5 +1,5 @@
 <div class="fab">
-    <img src="img/Sequence-01-1.gif" alt="" style="max-width: 63%; max-height: 63%;">
+    <img src="img/Sequence.png" alt="" style="max-width: 43%; max-height: 43%;" class="bounce"> &nbsp;&nbsp;&nbsp;
     <br>
     <video src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay loop muted controls></video>
 </div>
