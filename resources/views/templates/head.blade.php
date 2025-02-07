@@ -82,7 +82,32 @@
 
 {{-- FAB --}}
 <style>
-    .fab {
+    .fab-left {
+        position: fixed;
+        margin: 0px;
+        bottom: 15px;
+        left: 20px;
+        top: 78%;
+        z-index: 1000;
+        width: auto;
+        height: auto;
+        /* border-radius: 50%; */
+        max-height: 500vh !important;
+        max-width: 500vh !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 44px;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .fab-left:hover {
+        transform: scale(1.1);
+    }
+
+
+    .fab-right {
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -90,7 +115,6 @@
         z-index: 1000;
         width: auto;
         height: auto;
-        /* border-radius: 50%; */
         max-height: 500vh !important;
         max-width: 500vh !important;
         display: flex;
@@ -102,7 +126,7 @@
 
     }
 
-    .fab:hover {
+    .fab-right:hover {
         transform: scale(1.1);
     }
 
