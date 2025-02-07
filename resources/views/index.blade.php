@@ -27,7 +27,7 @@
         <div class="" data-aos="fade">
             <div class="container">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
-                    style="padding-top: 22vh;">
+                    style="padding-top: -12vh;">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <center>
@@ -90,9 +90,48 @@
             </div>
         </div>
 
-        <div id="about" class="site-section p-4 lazy-bg" {{-- style="background-image:url(img/reduce/bg-01.png);
-    background-position: center;
-  background-size: cover;" --}}>
+        <div id="about" class="site-section p-4 lazy-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+                        <h2 class="mb-5">Our Management</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        {{-- <div class="mb-4"></div> --}}
+                        <div style="padding: 60px">
+                            <h2 class="font-weight-light"><b>Robby Satria Manurung</b></h2>
+                            <p><u>Presiden Komisaris</u></p>
+                            <div class="text-center bg-white">
+                                <div class="text-black">
+                                    <p class="rapih">
+                                        Dalam dunia investasi properti yang terus berkembang, perencanaan dan
+                                        pelaksanaan yang tepat sangat penting untuk menciptakan nilai jangka panjang.
+                                        <br>Di Pesona Hutan Asraya, kami berfokus untuk menawarkan peluang investasi
+                                        eksklusif yang sejalan dengan visi strategis para klien kami yang terhormat.
+                                        Dari hunian mewah, pengembangan kawasan komersial premium, hingga proyek
+                                        infrastruktur berkelanjutan dan hospitality kelas tinggi, setiap langkah kami
+                                        berlandaskan pada prinsip keunggulan, inovasi, dan pertumbuhan berkelanjutan.
+                                        <br>
+                                        Dengan menggabungkan desain dari arsitek terbaik, keberlanjutan lingkungan, dan
+                                        efisiensi operasional, kami menghadirkan properti yang luar biasa, yang tidak
+                                        hanya memperkuat portofolio investasi, tetapi juga menetapkan standar baru dalam
+                                        gaya hidup modern dan kemewahan bertema hutan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/reduce/robby_1.jpg" alt="Image" style="min-height: 25em; max-height: 25em;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="site-section p-4 lazy-bg">
             <div class="container" data-aos="fade-up">
                 <div class="row">
                     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
@@ -111,10 +150,13 @@
                             <div class="text-center bg-white">
                                 <div class="text-black">
                                     <p class="rapih">
-                                        Oozaro B. Larosa, Managing Director PT Casa Asraya Properti, membawa pengalaman
+                                        Oozaro B. Larosa, Managing Director PT Casa Asraya Properti, membawa
+                                        pengalaman
                                         profesional yang luas dan mendalam dalam industri konstruksi, teknik, dan
-                                        pengembangan proyek berskala internasional. Lulusan Teknik Sipil dari Institut
-                                        Teknologi Bandung ini memulai kariernya sebagai Civil Engineer pada tahun 2007
+                                        pengembangan proyek berskala internasional. Lulusan Teknik Sipil dari
+                                        Institut
+                                        Teknologi Bandung ini memulai kariernya sebagai Civil Engineer pada tahun
+                                        2007
                                         sebelum kemudian meniti karier di berbagai sektor strategis.
                                         <br><br>
                                         Sebagai seorang pemimpin dengan visi dan kompetensi tinggi, Oozaro pernah
@@ -126,8 +168,10 @@
                                         Karirnya berkembang di bidang pengembangan bisnis, dengan pengalaman
                                         multidimensi
                                         yang ia
-                                        miliki memberikan wawasan yang sangat relevan dalam menghadirkan Pesona Hutan
-                                        Asraya, proyek perumahan premium dengan konsep hutan di tengah kota Pekanbaru.
+                                        miliki memberikan wawasan yang sangat relevan dalam menghadirkan Pesona
+                                        Hutan
+                                        Asraya, proyek perumahan premium dengan konsep hutan di tengah kota
+                                        Pekanbaru.
                                         Dengan dedikasi dan visi inovatif, Oozaro memimpin Asraya untuk memberikan
                                         solusi
                                         hunian yang tidak hanya memenuhi kebutuhan gaya hidup modern tetapi juga
@@ -144,18 +188,24 @@
                             <div class="text-center bg-white">
                                 <div class="text-black">
                                     <p class="rapih">
-                                        Atelier Riri, firma arsitektur terkemuka yang didirikan oleh Novriansyah Yakub
-                                        (Riri) di Jakarta, telah membangun reputasi sebagai salah satu dari tiga arsitek
-                                        terbaik di Indonesia. Sejak 2005, mereka telah menghasilkan karya-karya inovatif
+                                        Atelier Riri, firma arsitektur terkemuka yang didirikan oleh Novriansyah
+                                        Yakub
+                                        (Riri) di Jakarta, telah membangun reputasi sebagai salah satu dari tiga
+                                        arsitek
+                                        terbaik di Indonesia. Sejak 2005, mereka telah menghasilkan karya-karya
+                                        inovatif
                                         di
-                                        bidang arsitektur, interior, lanskap, dan desain produk, dengan penekanan pada
+                                        bidang arsitektur, interior, lanskap, dan desain produk, dengan penekanan
+                                        pada
                                         fungsi, konteks, dan keberlanjutan.
                                         <br><br>
-                                        Dalam proyek perumahan premium tiga lantai, Pesona Hutan Asraya, di Pekanbaru,
+                                        Dalam proyek perumahan premium tiga lantai, Pesona Hutan Asraya, di
+                                        Pekanbaru,
                                         Riau,
                                         PT Casa Asraya Properti berkolaborasi dengan Atelier Riri untuk menghadirkan
                                         desain
-                                        rumah tropis yang memadukan nuansa hutan dengan kehidupan perkotaan. Kolaborasi
+                                        rumah tropis yang memadukan nuansa hutan dengan kehidupan perkotaan.
+                                        Kolaborasi
                                         ini
                                         mencerminkan komitmen bersama dalam menciptakan hunian yang harmonis dengan
                                         alam,
@@ -195,7 +245,8 @@
                     <div class="col-sm-6 mb-10 mb-sm-0">
                         <br><br><br>
                         <p class="rapih">
-                            Casa Asraya Properti mempersembahkan townhouse terbaik di Pekanbaru, menawarkan lokasi yang
+                            Casa Asraya Properti mempersembahkan townhouse terbaik di Pekanbaru, menawarkan lokasi
+                            yang
                             eksklusif dan dekat dengan aktivitas kota. Properti yang dirancang oleh arsitek ternama,
                             memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan
                             lokasi di
