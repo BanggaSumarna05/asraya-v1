@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         {{-- <div class="mb-4"></div> --}}
                         <div style="padding: 60px">
                             <h2 class="font-weight-light"><b>Robby Satria Manurung</b></h2>
@@ -124,8 +124,10 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <img src="img/reduce/robby_1.jpg" alt="Image" style="min-height: 25em; max-height: 25em;">
+                    <div class="col-md-5">
+                        <!-- <img src="img/reduce/robby_1.jpg" alt="Image" class="img-fluid lazy"> -->
+                        <div class="mt-1"><img src="img/reduce/robby_1.jpg" alt="O'ozaro Larosa Managing Director"
+                                class="img-fluid lazy"></div>
                     </div>
                 </div>
             </div>
@@ -133,23 +135,23 @@
 
         <div id="about" class="site-section p-4 lazy-bg">
             <div class="container" data-aos="fade-up">
-                <div class="row">
+                <div class="row">2
                     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
                         <h2 class="mb-5">Our Collaboration</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="mb-4"><img src="img/reduce/oozaro.png" alt="Image"
-                                class="w-60 mx-auto img-fluid lazy"></div>
+                    <div class="col-md-5">
+                        <div class="mt-1"><img src="img/reduce/ooz1.png" alt="O'ozaro Larosa Managing Director"
+                                class="img-fluid lazy"></div>
                     </div>
-                    <div class="col-md-9">
-                        <div style="padding: 60px">
-                            <h2 class="font-weight-light"><b>O'ozaro B. Larosa</b></h2>
-                            <p><u>Managing Director</u></p>
+                    <div class="col-md-7">
+                        <div>
+                            <!-- <h2 class="font-weight-light"><b>O'ozaro B. Larosa</b></h2>
+                            <p><u>Managing Director</u></p> -->
                             <div class="text-center bg-white">
                                 <div class="text-black">
-                                    <p class="rapih">
+                                    <p class="rapih" style="left:-50em">
                                         Oozaro B. Larosa, Managing Director PT Casa Asraya Properti, membawa
                                         pengalaman
                                         profesional yang luas dan mendalam dalam industri konstruksi, teknik, dan
@@ -181,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-7">
                         <div style="padding: 60px">
                             <h2 class="font-weight-light"><b>Atelier Riri</b></h2>
                             <p><u>Architecture & Design Partner</u></p>
@@ -217,9 +219,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="mb-4" style="padding-top: 40px"><img src="img/reduce/riri.png" alt="Image"
-                                class="w-60 mx-auto img-fluid lazy"></div>
+                    <div class="col-md-5">
+                        <!-- <div class="mb-4" style="padding-top: 40px"><img src="img/reduce/riri1.png" alt="Atlier Riri Architect"
+                                class="w-60 mx-auto img-fluid lazy"></div> -->
+                        <div style="padding-top: 2em;"><img src="img/reduce/riri1.png" alt="Atlier Riri Architect"
+                                class="img-fluid lazy"></div>
                     </div>
                 </div>
             </div>
