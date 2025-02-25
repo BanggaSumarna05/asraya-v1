@@ -135,7 +135,7 @@
 
         <div id="about" class="site-section p-4 lazy-bg">
             <div class="container" data-aos="fade-up">
-                <div class="row">2
+                <div class="row">
                     <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
                         <h2 class="mb-5">Our Collaboration</h2>
                     </div>
