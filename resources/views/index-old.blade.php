@@ -101,15 +101,53 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-7">
+                                    <div>
+                                        <div class="text-center bg-white" style="padding-top: 6vh">
+                                            <div class="text-black">
+                                                <p class="rapih">
+                                                    Seorang profesional yang sangat antusias dalam bidang properti.
+                                                    Dengan pengalaman bertahun-tahun di industri ini, Andhika telah berhasil mengelola berbagai proyek properti
+                                                    yang sukses. Dedikasinya terhadap inovasi dan kualitas membuatnya menjadi pemimpin yang dihormati di komunitas
+                                                    properti. Andhika percaya bahwa properti bukan hanya tentang bangunan, tetapi juga tentang menciptakan lingkungan yang nyaman dan berkelanjutan bagi
+                                                    para penghuninya. Dengan visi yang jelas dan komitmen yang kuat, Andhika terus berusaha untuk membawa perubahan positif dalam industri properti.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
                                     <div class="mt-1"><img src="img/reduce/andhika-cap.png" alt="Andhika Permana"
                                             class="img-fluid lazy"></div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="mt-1"><img src="img/reduce/robby-cap.png" alt="Robby Satria Manurung" class="img-fluid lazy"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div>
+                                        <div class="text-center bg-white" style="padding-top: 6vh">
+                                            <div class="text-black">
+                                                <p class="rapih">
+                                                    Dalam dunia investasi properti yang terus berkembang, perencanaan dan
+                                                    pelaksanaan yang tepat sangat penting untuk menciptakan nilai jangka panjang.
+                                                    <br>Di Pesona Hutan Asraya, kami berfokus untuk menawarkan peluang investasi
+                                                    eksklusif yang sejalan dengan visi strategis para klien kami yang terhormat.
+                                                    Dari hunian mewah, pengembangan kawasan komersial premium, hingga proyek
+                                                    infrastruktur berkelanjutan dan hospitality kelas tinggi, setiap langkah kami
+                                                    berlandaskan pada prinsip keunggulan, inovasi, dan pertumbuhan berkelanjutan.
+                                                    <br>
+                                                    Dengan menggabungkan desain dari arsitek terbaik, keberlanjutan lingkungan, dan
+                                                    efisiensi operasional, kami menghadirkan properti yang luar biasa, yang tidak
+                                                    hanya memperkuat portofolio investasi, tetapi juga menetapkan standar baru dalam
+                                                    gaya hidup modern dan kemewahan bertema hutan.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="mt-1"><img src="img/reduce/ooz1.png" alt="O'ozaro Larosa"
+                                <div class="col-md-5">
+                                    <div class="mt-1"><img src="img/reduce/robby-cap.png" alt="Robby Satria Manurung"
                                             class="img-fluid lazy"></div>
                                 </div>
                             </div>
@@ -125,8 +163,101 @@
             </div>
         </div>
 
-        
-
+        <div id="about" class="site-section p-4 lazy-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+                        <h2 class="mb-5">Our Collaboration</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="mt-1"><img src="img/reduce/ooz1.png" alt="O'ozaro Larosa Managing Director"
+                                class="img-fluid lazy"></div>
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <!-- <h2 class="font-weight-light"><b>O'ozaro B. Larosa</b></h2>
+                            <p><u>Managing Director</u></p> -->
+                            <div class="text-center bg-white">
+                                <div class="text-black">
+                                    <p class="rapih" style="left:-50em">
+                                        Oozaro B. Larosa, Managing Director PT Casa Asraya Properti, membawa
+                                        pengalaman
+                                        profesional yang luas dan mendalam dalam industri konstruksi, teknik, dan
+                                        pengembangan proyek berskala internasional. Lulusan Teknik Sipil dari
+                                        Institut
+                                        Teknologi Bandung ini memulai kariernya sebagai Civil Engineer pada tahun
+                                        2007
+                                        sebelum kemudian meniti karier di berbagai sektor strategis.
+                                        <br><br>
+                                        Sebagai seorang pemimpin dengan visi dan kompetensi tinggi, Oozaro pernah
+                                        menjabat
+                                        di posisi penting di sektor pertambangan, konstruksi oil & gas, dan juga
+                                        beberapa
+                                        proyek pembangunan pabrik yang tersebar di Asia dan timur tengah.
+                                        <br><br>
+                                        Karirnya berkembang di bidang pengembangan bisnis, dengan pengalaman
+                                        multidimensi
+                                        yang ia
+                                        miliki memberikan wawasan yang sangat relevan dalam menghadirkan Pesona
+                                        Hutan
+                                        Asraya, proyek perumahan premium dengan konsep hutan di tengah kota
+                                        Pekanbaru.
+                                        Dengan dedikasi dan visi inovatif, Oozaro memimpin Asraya untuk memberikan
+                                        solusi
+                                        hunian yang tidak hanya memenuhi kebutuhan gaya hidup modern tetapi juga
+                                        menghadirkan pengalaman hidup yang dekat dengan alam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div style="padding: 60px">
+                            <h2 class="font-weight-light"><b>Atelier Riri</b></h2>
+                            <p><u>Architecture & Design Partner</u></p>
+                            <div class="text-center bg-white">
+                                <div class="text-black">
+                                    <p class="rapih">
+                                        Atelier Riri, firma arsitektur terkemuka yang didirikan oleh Novriansyah
+                                        Yakub
+                                        (Riri) di Jakarta, telah membangun reputasi sebagai salah satu dari tiga
+                                        arsitek
+                                        terbaik di Indonesia. Sejak 2005, mereka telah menghasilkan karya-karya
+                                        inovatif
+                                        di
+                                        bidang arsitektur, interior, lanskap, dan desain produk, dengan penekanan
+                                        pada
+                                        fungsi, konteks, dan keberlanjutan.
+                                        <br><br>
+                                        Dalam proyek perumahan premium tiga lantai, Pesona Hutan Asraya, di
+                                        Pekanbaru,
+                                        Riau,
+                                        PT Casa Asraya Properti berkolaborasi dengan Atelier Riri untuk menghadirkan
+                                        desain
+                                        rumah tropis yang memadukan nuansa hutan dengan kehidupan perkotaan.
+                                        Kolaborasi
+                                        ini
+                                        mencerminkan komitmen bersama dalam menciptakan hunian yang harmonis dengan
+                                        alam,
+                                        menggabungkan estetika kontemporer dengan prinsip keberlanjutan, sehingga
+                                        memberikan
+                                        pengalaman tinggal yang unik dan berkualitas tinggi bagi para penghuni.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- <div class="mb-4" style="padding-top: 40px"><img src="img/reduce/riri1.png" alt="Atlier Riri Architect"
+                                class="w-60 mx-auto img-fluid lazy"></div> -->
+                        <div style="padding-top: 2em;"><img src="img/reduce/riri1.png" alt="Atlier Riri Architect"
+                                class="img-fluid lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="maps" class="site-section">
             <div class="container" data-aos="fade-up">
                 <center>

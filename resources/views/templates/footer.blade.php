@@ -4,7 +4,7 @@
 <div class="fab-right">
 
     <br>
-    <video src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay loop muted
+    <video src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay loop
         controls></video>
 </div>
 <div class="bg-primary" data-aos="fade">
