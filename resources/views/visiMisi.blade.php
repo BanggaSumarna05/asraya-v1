@@ -15,7 +15,7 @@
                     <h1 class="text-center" style="font-family: 'Archivo'; font-size: 50px">{{ $header['header'] }}</h1>
                     <h4 class="text-white rapih text-center">
                         <i>{{ $header['location'] }}</i>
-                    <h4>
+                        <h4>
                 </div>
             </div>
         </div>
@@ -31,8 +31,7 @@
                         </div>
                     </center>
                     <p class="rapih" style="padding: 24px">
-                        Kami berdedikasi untuk menciptakan tempat tinggal yang tenang, di mana ketenangan dan kenyamanan
-                        terjalin untuk meningkatkan pengalaman kedamaian rumah.
+                        Kami berdedikasi untuk membangun urmah tinggal yang tenang dan nyaman dimana keluarga menikmati tinggal didalam rumah yang penuh kedamaian dan ketenangan.
                     </p>
                 </div>
                 <div class="col-12">

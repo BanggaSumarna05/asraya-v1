@@ -410,7 +410,7 @@ class FrontController extends Controller
         //     distinctio. Cumque?',
         // ],
         [
-            'title' => 'Taman Kota',
+            'title' => 'Taman',
             'link' => 'taman-kota',
             'cover' => 'new/assets/img/taman1.jpg',
             'text' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fuga repudiandae
@@ -685,7 +685,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $data = [];
         $data['cover'] = 'img/reduce/f2c.jpg';
-        $data['name'] = 'Taman Kota';
+        $data['name'] = 'Taman';
         $data['slide'] = [];
         // array_push($data['slide'], 'new/assets/img/spool.jpg');
         $pics = [

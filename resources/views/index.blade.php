@@ -31,7 +31,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <center>
-                                <img class="w-100 lazy" src="/img/banner_imlek.jpg" style="width: 100%;" alt="">
+                                <img class="w-100 lazy" src="/img/promo-ramadhan.png" style="width: 100%;" alt="">
                             </center>
                         </div>
                         <div class="carousel-item">
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        
+
 
         <div id="maps" class="site-section">
             <div class="container" data-aos="fade-up">

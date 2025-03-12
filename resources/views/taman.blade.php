@@ -32,7 +32,7 @@
                 {{ $data['name'] }}
             </h1>
             <p class="rapih">
-                Jelajahi luar gerbang kami dan temukan energi semarak kota di taman kota tetangga kami. Terletak di
+                Jelajahi luar gerbang kami dan temukan energi semarak kota di taman tetangga kami. Terletak di
                 belakang Mahoni, ruang publik yang dicintai ini disukai oleh penduduk dari segala usia karena
                 fleksibilitasnya dalam mengakomodasi berbagai kegiatan. Dari piknik hingga olahraga luar ruangan,
                 benamkan diri Anda dalam permadani budaya Pesona Hutan Asraya saat Anda menjelajahi berbagai kemungkinan

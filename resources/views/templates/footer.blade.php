@@ -1,11 +1,9 @@
-<div class="fab-left">
-    <img src="img/Sequence.png" alt="" style="max-width: 43%; max-height: 43%;" class="bounce"> &nbsp;&nbsp;&nbsp;
+<div class="fab-left" style="margin-top: 20px;">
+    <img src="img/Sequence.png" alt="" style="max-width: 53%; max-height: 53%;" class="bounce">
 </div>
 <div class="fab-right">
-
     <br>
-    <video src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay loop
-        controls></video>
+    <video src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay loop controls volume="0.5"></video>
 </div>
 <div class="bg-primary" data-aos="fade">
     <div class="container">
