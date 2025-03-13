@@ -106,7 +106,7 @@
                                             class="img-fluid lazy"></div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="mt-1"><img src="img/reduce/robby-cap.png" alt="Robby Satria Manurung" class="img-fluid lazy"></div>
+                                    <div class="mt-1"><img src="img/reduce/robby-cap-1.png" alt="Robby Satria Manurung" class="img-fluid lazy"></div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mt-1"><img src="img/reduce/ooz1.png" alt="O'ozaro Larosa"
@@ -115,12 +115,12 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#managementCarousel" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#managementCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                     </a>
                     <a class="carousel-control-next" href="#managementCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -148,15 +148,13 @@
                     <div class="col-sm-6 mb-10 mb-sm-0">
                         <br><br><br>
                         <p class="rapih">
-                            Casa Asraya Properti mempersembahkan townhouse terbaik di Pekanbaru, menawarkan lokasi
-                            yang
-                            eksklusif dan dekat dengan aktivitas kota. Properti yang dirancang oleh arsitek ternama,
+                            Kami mempersembahkan townhouse terbaik di Pekanbaru, menawarkan lokasi
+                            yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier Riri</i>,
                             memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan
-                            lokasi di
-                            tengah kota dan fitur premium, Pesona Hutan Asraya dapat menjangkau fasilitas-fasilitas
+                            lokasi di tengah kota dan fitur premium, Pesona Hutan Asraya dapat menjangkau fasilitas-fasilitas
                             strategis untuk menyempurnakan gaya hidup yang berkualitas tinggi.
                             <br>
-                            Berikut adalah lokasi-lokasi terdekat dari kawasan Pesona Hutan Asraya:
+                            Berikut adalah lokasi-lokasi terdekat dari Pesona Hutan Asraya:
                         </p>
                         <ul>
                             <li>
@@ -182,7 +180,6 @@
         <div class="modal fade bd-example-modal-lg" id="myModal" name="myModal" role="dialog"
             style="margin-top: 3.4em; border:none;">
             <div class="modal-dialog modal-lg">
-                <!-- Modal content-->
                 <div class="modal-content" style="background-color: transparent!important; border: none;">
                     <div class="modal-header">
                         <h3 class="modal-title text-white">Sorotan</h3>

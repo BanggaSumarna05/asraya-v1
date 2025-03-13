@@ -3,7 +3,25 @@
 </div>
 <div class="fab-right">
     <br>
-    <video src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay loop controls volume="0.5"></video>
+    <video name="" id="myVideo" src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay muted loop controls></video>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById('myVideo');
+            var currentTime = localStorage.getItem('videoCurrentTime');
+
+            if (currentTime) {
+                video.currentTime = currentTime;
+            }
+
+            video.addEventListener('timeupdate', function() {
+                localStorage.setItem('videoCurrentTime', video.currentTime);
+            });
+        });
+        document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
+            this.currentTime = localStorage.getItem('videoCurrentTime');
+        }, false);
+    </script>
 </div>
 <div class="bg-primary" data-aos="fade">
     <div class="container">
@@ -15,8 +33,6 @@
             <a href="https://wa.me/6281399998066?text=I'm%20interested%20in%20your%20property%20for%20sale"
                 target="_blank" class="col-4 text-center py-4 social-icon d-block"><span
                     class="icon-whatsapp text-white"></span></a>
-            {{-- <a href="#" class="col-4 text-center py-4 social-icon d-block"><span
-                    class="icon-file text-white"></span></a> --}}
         </div>
     </div>
 </div>
@@ -36,11 +52,9 @@
                             </div>
                             <p class="rapih">
                                 Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan,
-                                naungan,
-                                tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada
-                                sesuatu.
-                                Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya. PT Casa Asraya Properti
-                                menciptakan hunian yang menjadi perlindungan yang nyaman dan membawa berkah dalam
+                                naungan, tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada
+                                sesuatu. Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya. PT Casa Asraya 
+                                Properti menciptakan hunian yang menjadi perlindungan yang nyaman dan membawa berkah dalam
                                 kehidupan.
                             </p>
                         </div>
