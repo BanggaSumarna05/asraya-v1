@@ -4,24 +4,6 @@
 <div class="fab-right">
     <br>
     <video name="" id="myVideo" src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;" autoplay muted loop controls></video>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var video = document.getElementById('myVideo');
-            var currentTime = localStorage.getItem('videoCurrentTime');
-
-            if (currentTime) {
-                video.currentTime = currentTime;
-            }
-
-            video.addEventListener('timeupdate', function() {
-                localStorage.setItem('videoCurrentTime', video.currentTime);
-            });
-        });
-        document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
-            this.currentTime = localStorage.getItem('videoCurrentTime');
-        }, false);
-    </script>
 </div>
 <div class="bg-primary" data-aos="fade">
     <div class="container">
