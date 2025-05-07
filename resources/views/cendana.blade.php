@@ -186,23 +186,33 @@
                     </div>
                 </div>
             </div>
-            <div class="site-block-retro d-block d-md-flex">
-                <h1 style="color:rgba(0,38,28,1)">Contoh Unit</h1>
-            </div>
-            <div class="row">
-                <div class="col-4" style="left: 14px;">
-                    <img class="image-fluid w-100 h-100 lazy float-right" src="/img/cendana/cendana-units (1).jpeg">
+
+            <div class="card-body p-2">
+                <div class="site-block-retro d-block d-md-flex">
+                    <h1 class="mb-4 text-black">Galeri</h1>
                 </div>
-                <div class="col-4" style="left: 14px;">
-                    <img class="image-fluid w-100 h-100 lazy float-right" src="/img/cendana/cendana-units (2).jpeg">
-                </div>
-                <div class="col-4" style="left: 14px;">
-                    <img class="image-fluid w-100 h-100 lazy float-right" src="/img/cendana/cendana-units (3).jpeg">
+                <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach ($data['galeries'] as $i => $item)
+                            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                                <center><img class="w-100 lazy" src="{{ $item }}">
+                                </center>
+                            </div>
+                        @endforeach
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="color:red"></span>
+                    </a>
                 </div>
             </div>
 
             <div class="site-block-retro d-block d-md-flex">
-                <h1 class="mb-4">Lantai Dasar</h1>
+                <h1 class="mb-4 text-black">Lantai Dasar</h1>
             </div>
             <div class="row" {{-- style="background-color: grey" --}}>
                 <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">

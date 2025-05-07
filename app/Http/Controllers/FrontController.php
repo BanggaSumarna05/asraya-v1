@@ -499,10 +499,8 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         array_push($data['slide'], 'img/mahogany/new/mahogany-r.png');
         array_push($data['slide'], 'img/mahogany/new/mahogany-b.png');
         array_push($data['slide'], 'img/mahogany/new/mahogany-l.png');
-        // array_push($data['slide'], 'img/mahogany/mahogany-b.png');
         $data['floors'] = 'img/mahogany/Denah_Mahogany.jpg';
         $this->seo();
-
         return view('mahogany')->with([
             'data' => $data,
             // 
@@ -528,6 +526,19 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $data['floors'] = 'img/cendana/Denah Cendana.jpg';
         $this->seo();
 
+        $data['galeries'] = [];
+        $selected = [1, 3, 7, 14, 15, 17, 31, 21, 42, 43, 45, 46];
+        foreach ($selected as $key => $value) {
+            # code...
+            array_push($data['galeries'], '/img/cendana/new/cendana (' . $value . ').jpg');
+        }
+        // return $data['galeries'];
+        // for ($i = 1; $i <= 47; $i++) {
+        // $imagePath = '/img/cendana/new/cendana (' . $i . ').jpg';
+        // $imageSize = getimagesize(public_path($imagePath));
+        // $data['galeries'][$imageSize[0] . 'x' . $imageSize[1]][] = $imagePath;
+        // }
+        // return $data['galeries'];
         return view('cendana')->with([
             'data' => $data,
             // 
