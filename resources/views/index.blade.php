@@ -27,13 +27,13 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
                     style="padding-top: -12vh;">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        {{-- <div class="carousel-item active">
                             <center>
                                 <img class="w-100 lazy" src="/img/promo-ramadhan.png" style="width: 100%;"
                                     alt="">
                             </center>
-                        </div>
-                        <div class="carousel-item">
+                        </div> --}}
+                        <div class="carousel-item active">
                             <center>
                                 <img class="w-100 lazy" src="/img/banner_mahogany.png" style="width: 100%;"
                                     alt="">

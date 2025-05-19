@@ -25,7 +25,7 @@
     @include('sweetalert::alert')
     @inertia
 
-    @env ('local')
+    @env('local')
     <script src="http://localhost:8080/js/bundle.js"></script>
     <script src="{{ asset('metronic/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('metronic/js/scripts.bundle.js') }}"></script>
