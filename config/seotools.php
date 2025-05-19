@@ -219,7 +219,6 @@ return [
                 "Cicilan ringan",
                 "Fasilitas berlimpah",
                 "Kemudahan akses & transportasi",
-                "Kawasan asri",
                 "Perumahan elit dengan banyak fasilitas",
                 "Perumahan elit di pekanbaru",
                 "Perumahan fasilitas menarik",

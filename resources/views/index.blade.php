@@ -153,8 +153,8 @@
             </div>
         </div>
 
-        <div class="container">
-            {{-- <img src="asraya-logo.png" alt="Logo Asraya Property" class="logo"> --}}
+        {{-- <div class="container">
+            <img src="asraya-logo.png" alt="Logo Asraya Property" class="logo">
             <h1 class="text-center text-align-center mt-10">Checklist Legalitas Asraya Property</h1>
             <br>
             <div class="row">
@@ -191,7 +191,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div id="maps" class="site-section">
             <div class="container" data-aos="fade-up">
