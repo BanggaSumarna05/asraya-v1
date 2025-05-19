@@ -16,6 +16,9 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/custom.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+{{-- additional 19 mei 2025 --}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 {{-- gallery --}}
 <style>

@@ -363,6 +363,7 @@ class FrontController extends Controller
         //     "foto4" => 'img/progress/8.jpg',
         // ],
     ];
+
     public $facilities = [
         [
             'title' => 'Club House',
@@ -461,9 +462,15 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
 
         $this->seo();
         $collection = $this->getProgress();
-        // return $collection;
+        $selected = [1, 3, 7, 14, 15, 17, 31, 21, 42, 43, 45, 46];
+        $data['galeries'] = [];
+        foreach ($selected as $key => $value) {
+            # code...
+            array_push($data['galeries'], '/img/cendana/new/cendana (' . $value . ').jpg');
+        }
         return view('index')
             ->with([
+                'data' => $data,
                 'managements' => $managements,
                 'header' => $header,
                 'sliders' => $sliders,
@@ -1011,7 +1018,6 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
 
     public function unitUnggulan()
     {
-        // return $this->facilities;
         return view('templates/units')->with([
             'units' => $this->units,
         ]);

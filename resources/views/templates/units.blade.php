@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    @include('templates/meta')
     @include('templates/head')
     <style>
         .carousel-control-next,
@@ -16,10 +17,8 @@
 
 <body style="font-family: 'Archivo'">
     @include('templates/navbar')
-    <div class="site-blocks-cover overlay" 
-    style="background-image:url('new/assets/img/cover-clubhouse-1.jpg')"
-     data-aos="fade" data-stellar-background-ratio="0.5"
-        data-aos="fade">
+    <div class="site-blocks-cover overlay" style="background-image:url('new/assets/img/cover-clubhouse-1.jpg')"
+        data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">

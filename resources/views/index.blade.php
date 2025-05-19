@@ -4,8 +4,6 @@
 <head>
     @include('templates/meta')
     @include('templates/head')
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body style="font-family: 'Archivo'">
@@ -31,7 +29,8 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <center>
-                                <img class="w-100 lazy" src="/img/promo-ramadhan.png" style="width: 100%;" alt="">
+                                <img class="w-100 lazy" src="/img/promo-ramadhan.png" style="width: 100%;"
+                                    alt="">
                             </center>
                         </div>
                         <div class="carousel-item">
@@ -106,7 +105,8 @@
                                             class="img-fluid lazy"></div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="mt-1"><img src="img/reduce/robby-cap-1.png" alt="Robby Satria Manurung" class="img-fluid lazy"></div>
+                                    <div class="mt-1"><img src="img/reduce/robby-cap-1.png"
+                                            alt="Robby Satria Manurung" class="img-fluid lazy"></div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="mt-1"><img src="img/reduce/ooz1.png" alt="O'ozaro Larosa"
@@ -126,6 +126,72 @@
         </div>
 
 
+        <div class="container">
+            <div class="card-body p-2">
+                {{-- <div class="site-block-retro d-block d-md-flex">
+                    <h1 class="mb-4 text-black">Galeri</h1>
+                </div> --}}
+                <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach ($data['galeries'] as $i => $item)
+                            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                                <center><img class="w-100 lazy" src="{{ $item }}"
+                                        style="padding-left: 2vdh; padding-right: 2vdh;" alt="">
+                                </center>
+                            </div>
+                        @endforeach
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="color:red"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            {{-- <img src="asraya-logo.png" alt="Logo Asraya Property" class="logo"> --}}
+            <h1 class="text-center text-align-center mt-10">Checklist Legalitas Asraya Property</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section">
+                        <h2>1. Legalitas Asraya Property</h2>
+                        <ul>
+                            <li><input type="checkbox" checked disabled> Sertifikat Tanah (SHM / HGB)</li>
+                            <li><input type="checkbox" checked disabled> Akta Jual Beli (AJB)</li>
+                            <li><input type="checkbox" checked disabled> Surat Pelepasan Hak</li>
+                            <li><input type="checkbox" checked disabled> Izin Peruntukan Penggunaan Tanah (IPPT)</li>
+                            <li><input type="checkbox" checked disabled> Persetujuan Bangunan Gedung (PBG)</li>
+                            <li><input type="checkbox" checked disabled> Sertifikat Laik Fungsi (SLF)</li>
+                            <li><input type="checkbox" checked disabled> Rencana Tata Bangunan dan Lingkungan (RTBL)
+                            </li>
+                            <li><input type="checkbox" checked disabled> SIUP & NIB Developer</li>
+                            <li><input type="checkbox" checked disabled> NPWP Perusahaan</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="section">
+                        <h2>2. Dokumen legal untuk Calon Pembeli</h2>
+                        <ul>
+                            <li><input type="checkbox" checked disabled> Salinan Sertifikat (SHM / HGB)</li>
+                            <li><input type="checkbox" checked disabled> Perjanjian Pengikatan Jual Beli (PPJB)</li>
+                            <li><input type="checkbox" checked disabled> Dokumen PBG dan Siteplan</li>
+                            <li><input type="checkbox" checked disabled> Bukti PBB Terakhir</li>
+                            <li><input type="checkbox" checked disabled> Testimoni atau Dokumentasi Proyek</li>
+                            <li><input type="checkbox" checked disabled> Jadwal Pembayaran (Jika KPR)</li>
+                            <li><input type="checkbox" checked disabled> Simulasi Cicilan (JIka KPR)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="maps" class="site-section">
             <div class="container" data-aos="fade-up">
@@ -149,9 +215,11 @@
                         <br><br><br>
                         <p class="rapih">
                             Kami mempersembahkan townhouse terbaik di Pekanbaru, menawarkan lokasi
-                            yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier Riri</i>,
+                            yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier
+                                Riri</i>,
                             memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan
-                            lokasi di tengah kota dan fitur premium, Pesona Hutan Asraya dapat menjangkau fasilitas-fasilitas
+                            lokasi di tengah kota dan fitur premium, Pesona Hutan Asraya dapat menjangkau
+                            fasilitas-fasilitas
                             strategis untuk menyempurnakan gaya hidup yang berkualitas tinggi.
                             <br>
                             Berikut adalah lokasi-lokasi terdekat dari Pesona Hutan Asraya:
@@ -177,6 +245,7 @@
                 </div>
             </div>
         </div>
+
         <div class="modal fade bd-example-modal-lg" id="myModal" name="myModal" role="dialog"
             style="margin-top: 3.4em; border:none;">
             <div class="modal-dialog modal-lg">
@@ -208,7 +277,8 @@
                 </div>
             </div>
         </div>
-        @include('templates/footer')
+    </div>
+    @include('templates/footer')
 </body>
 
 <script type="text/javascript">

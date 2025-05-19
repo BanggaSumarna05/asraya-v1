@@ -3,8 +3,8 @@
 </div>
 <div class="fab-right">
     <br>
-    <video name="" id="myVideo" src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;"
-        autoplay muted loop controls></video>
+    {{-- <video name="" id="myVideo" src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;"
+        autoplay muted loop controls></video> --}}
 </div>
 <div class="bg-primary" data-aos="fade">
     <div class="container">
@@ -86,10 +86,11 @@
                                     rel="noopener noreferrer">
                                     <b class="text-white"><u>Jl. Dwikora I No.16, Suka Maju, Kec. Sail, Kota
                                             Pekanbaru, Riau 28115</u></b></a>
-                            </p><iframe
+                            </p>
+                            <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d997.4139020305769!2d101.46526836995564!3d0.5174550533018407!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5afabef7d382b%3A0x710ef0e26bb807f0!2sPESONA%20HUTAN%20BY%20ASRAYA!5e0!3m2!1sen!2sid!4v1694396218830!5m2!1sen!2sid"
                                 width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

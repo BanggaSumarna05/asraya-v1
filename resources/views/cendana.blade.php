@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    @include('templates/meta')
     @include('templates/head')
     <style>
         .carousel-control-next,

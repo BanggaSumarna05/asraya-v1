@@ -1,8 +1,7 @@
 <header id="header" class="header" {{-- style="background-color: red" --}}>
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between site-navbar"
         style="
-        background: linear-gradient(to bottom, rgba(0,38,28,1), rgba(0,38,28,0));top: 0px;margin-top: 0px!important;padding-top: 0px!important;"
-        >
+        background: linear-gradient(to bottom, rgba(0,38,28,1), rgba(0,38,28,0));top: 0px;margin-top: 0px!important;padding-top: 0px!important;">
         <div style="padding-left: 7%;padding-right:7%">
             <div class="row align-items-center">
                 <div class="col-8 col-md-8 col-lg-4">
@@ -12,7 +11,8 @@
                     </h1>
                 </div>
                 <div class="col-4 col-md-4 col-lg-8">
-                    <nav class="site-navigation text-right text-md-right" role="navigation">
+                    <nav onclick="if(window.innerWidth < 992){document.querySelector('.site-menu').classList.toggle('d-none');}"
+                        class="site-navigation text-right text-md-right" role="navigation">
                         <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
                                 class="site-menu-toggle js-menu-toggle text-white"><span
                                     class="icon-menu h3"></span></a></div>
