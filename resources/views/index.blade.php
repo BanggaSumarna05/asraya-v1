@@ -35,7 +35,7 @@
                         </div> --}}
                         <div class="carousel-item active">
                             <center>
-                                <img class="w-100 lazy" src="/img/banner_mahogany.png" style="width: 100%;"
+                                <img class="w-100 lazy" src="/img/banner1.png" style="width: 100%;"
                                     alt="">
                             </center>
                         </div>

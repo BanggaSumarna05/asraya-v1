@@ -1,5 +1,5 @@
 <div class="fab-left" style="margin-top: 20px;">
-    <img src="img/Sequence.png" alt="" style="max-width: 53%; max-height: 53%;" class="bounce">
+    {{-- <img src="img/Sequence.png" alt="" style="max-width: 53%; max-height: 53%;" class="bounce"> --}}
 </div>
 <div class="fab-right">
     <br>
@@ -28,13 +28,16 @@
                     <h3 class="footer-heading mb-4 text-white">About Asraya</h3>
                     <div class="row gx-5 gx-xl-10" style="width: 100%">
                         <div class="col-sm-12 mb-5 mb-xl-10">
-                            <img alt="Logo" src="old/assets/img/asraya.png" class="w-90 mx-auto img-fluid" />
+                            {{-- <img alt="Logo" src="old/assets/img/asraya.png" class="w-90 mx-auto img-fluid" />
                             <br>
-                            <br>
-                            <div style="color:#00261C;">
-                                <b>Āśraya (Sanskrit: आश्रय)</b>
-                            </div>
+                            <br> --}}
+                            {{-- <div style="color:#00261C;">
+                                
+                            </div> --}}
+
                             <p class="rapih text-white">
+                                <b>Āśraya (Sanskrit: आश्रय)</b>
+                                <br>
                                 Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan,
                                 naungan, tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada
                                 sesuatu. Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya. PT Casa Asraya
@@ -180,3 +183,21 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- Tawk.to Script with window.onload -->
+<script type="text/javascript">
+    window.onload = function() {
+        console.log('trying');
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6846413cefcd3b190fc04309/1it96tlbq';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+        console.log('done');
+    };
+</script>
