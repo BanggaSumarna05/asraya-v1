@@ -46,6 +46,7 @@
                                 <ul class="dropdown">
                                     <li><a href="assets/ebrochure/asraya.pdf" target="_blank">E-Brochure</a></li>
                                     <li><a href="assets/ebrochure/asraya-profile.pdf" target="_blank">E-Profile</a></li>
+                                    <li><a href="assets/ebrochure/site_plan_asraya_property.pdf" target="_blank">Site Plan Available</a></li>
                                 </ul>
                             </li>
                             <li>

@@ -35,8 +35,12 @@
                         </div> --}}
                         <div class="carousel-item active">
                             <center>
-                                <img class="w-100 lazy" src="/img/banner1.png" style="width: 100%;"
-                                    alt="">
+                                <img class="w-100 lazy" src="/img/banner1.png" style="width: 100%;" alt="">
+                            </center>
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img class="w-100 lazy" src="/img/banner_150.png" style="width: 100%;" alt="">
                             </center>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
