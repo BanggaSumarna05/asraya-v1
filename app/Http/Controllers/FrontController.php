@@ -462,15 +462,9 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
 
         $this->seo();
         $collection = $this->getProgress();
-        $selected = [1, 3, 7, 14, 15, 17, 31, 21, 42, 43, 45, 46];
-        $data['galeries'] = [];
-        foreach ($selected as $key => $value) {
-            # code...
-            array_push($data['galeries'], '/img/cendana/new/cendana (' . $value . ').jpg');
-        }
         return view('index')
             ->with([
-                'data' => $data,
+                // 'data' => $data,
                 'managements' => $managements,
                 'header' => $header,
                 'sliders' => $sliders,
@@ -1020,6 +1014,27 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         return view('templates/units')->with([
             'units' => $this->units,
+        ]);
+    }
+
+    public function galeri()
+    {
+        $selected = ['Artboard 1.png', 'Artboard 2.png', 'Artboard 3.png', 'Artboard 4.png', 'Artboard 5.png', 'Artboard 6.png', 'Artboard 7.png', 'Artboard 8.png', 'Artboard 9.png',];
+        $data['galeries'] = [];
+        foreach ($selected as $key => $value) {
+            # code...
+            array_push(
+                $data['galeries'],
+                [
+                    'gambar' => '/img/gallery1/'.$value,
+                    'judul' => 'Cendana (' . $value . ')',
+                ]
+            );
+        }
+        $this->seo();
+        // return $data;
+        return view('galeri')->with([
+            'data' => $data,
         ]);
     }
 }

@@ -39,11 +39,10 @@
                                 <b>Āśraya (Sanskrit: आश्रय)</b>
                                 <br>
                                 Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan,
-                                naungan, tempat berlindung, ketergantungan, memiliki sumber daya atau bergantung pada
-                                sesuatu. Dalam filosofi Hindu, entitas hidup atau Jiva adalah āśraya. PT Casa Asraya
-                                Properti menciptakan hunian yang menjadi perlindungan yang nyaman dan membawa berkah
-                                dalam
-                                kehidupan.
+                                naungan, tempat berlindung, ketergantungan dan memiliki sumber daya. Dalam filosofi
+                                Hindu, entitas yang memiliki kehidupan atau Jiva adalah āśraya. PT Casa Asraya Properti
+                                menciptakan hunian yang menjadi perlindungan  yang nyaman dan membawa
+                                berkah dalam kehidupan bagi manusia.
                             </p>
                         </div>
                     </div>

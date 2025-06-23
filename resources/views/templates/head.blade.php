@@ -136,4 +136,8 @@
     .bounce {
         animation: bounce 4s ease infinite;
     }
+    html, body {
+        overflow-x: hidden;
+    }
 </style>
+

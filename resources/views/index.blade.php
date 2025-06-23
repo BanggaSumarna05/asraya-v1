@@ -5,56 +5,45 @@
     @include('templates/meta')
     @include('templates/head')
 </head>
+<style>
+    .site-blocks-cover.video-bg {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    .site-blocks-cover.video-bg video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        object-fit: cover;
+        filter: brightness(2);
+    }
+
+    .site-blocks-cover.video-bg .container {
+        position: relative;
+        z-index: 2;
+    }
+</style>
 
 <body style="font-family: 'Archivo'">
     @include('templates/navbar')
-    <div class="site-blocks-cover overlay lazy-bg" style="background-image:url({{ $header['img'] }})" data-aos="fade"
-        data-stellar-background-ratio="0.5" data-aos="fade">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
-                    <h1 style="font-family: 'Archivo'; font-size: 50px">{{ $header['header'] }}</h1>
-                    <p class="mb-5">
-                        <i>{{ $header['location'] }}</i>
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div class="site-blocks-cover video-bg overlay lazy-bg" data-aos="fade">
+        <video autoplay loop muted playsinline style="filter:none;" id="heroVideo">
+            <source src="#" type="video/mp4" id="videoSource">
+            Your browser does not support the video tag.
+        </video>
     </div>
     <div class="site-section" id="home">
-        <div class="" data-aos="fade">
-            <div class="container">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
-                    style="padding-top: -12vh;">
-                    <div class="carousel-inner">
-                        {{-- <div class="carousel-item active">
-                            <center>
-                                <img class="w-100 lazy" src="/img/promo-ramadhan.png" style="width: 100%;"
-                                    alt="">
-                            </center>
-                        </div> --}}
-                        <div class="carousel-item active">
-                            <center>
-                                <img class="w-100 lazy" src="/img/banner1.png" style="width: 100%;" alt="">
-                            </center>
-                        </div>
-                        <div class="carousel-item">
-                            <center>
-                                <img class="w-100 lazy" src="/img/banner_150.png" style="width: 100%;" alt="">
-                            </center>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true" style="color:red"></span>
-                        </a>
-                    </div>
-                    <img src="/img/banner_mahogany.jpg" style="width: 100%;" alt="">
-                </div>
-            </div>
+        <div class="" data-aos="2de">
             <div class="container" data-aos="fade-up">
                 <div class="row mb-2">
                     <div class="col-md-12">
@@ -105,7 +94,7 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="mt-1"><img src="img/reduce/andhika-cap.png" alt="Andhika Permana"
+                                    <div class="mt-1"><img src="img/reduce/Pak andika rev.png" alt="Andhika Permana"
                                             class="img-fluid lazy"></div>
                                 </div>
                                 <div class="col-md-4">
@@ -113,89 +102,15 @@
                                             alt="Robby Satria Manurung" class="img-fluid lazy"></div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="mt-1"><img src="img/reduce/ooz1.png" alt="O'ozaro Larosa"
+                                    <div class="mt-1"><img src="img/reduce/Pak ooz rev.png" alt="O'ozaro Larosa"
                                             class="img-fluid lazy"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <a class="carousel-control-prev" href="#managementCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#managementCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a> -->
                 </div>
             </div>
         </div>
-
-
-        <div class="container">
-            <div class="card-body p-2">
-                {{-- <div class="site-block-retro d-block d-md-flex">
-                    <h1 class="mb-4 text-black">Galeri</h1>
-                </div> --}}
-                <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        @foreach ($data['galeries'] as $i => $item)
-                            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
-                                <center><img class="w-100 lazy" src="{{ $item }}"
-                                        style="padding-left: 2vdh; padding-right: 2vdh;" alt="">
-                                </center>
-                            </div>
-                        @endforeach
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button"
-                        data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button"
-                        data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true" style="color:red"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        {{-- <div class="container">
-            <img src="asraya-logo.png" alt="Logo Asraya Property" class="logo">
-            <h1 class="text-center text-align-center mt-10">Checklist Legalitas Asraya Property</h1>
-            <br>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section">
-                        <h2>1. Legalitas Asraya Property</h2>
-                        <ul>
-                            <li><input type="checkbox" checked disabled> Sertifikat Tanah (SHM / HGB)</li>
-                            <li><input type="checkbox" checked disabled> Akta Jual Beli (AJB)</li>
-                            <li><input type="checkbox" checked disabled> Surat Pelepasan Hak</li>
-                            <li><input type="checkbox" checked disabled> Izin Peruntukan Penggunaan Tanah (IPPT)</li>
-                            <li><input type="checkbox" checked disabled> Persetujuan Bangunan Gedung (PBG)</li>
-                            <li><input type="checkbox" checked disabled> Sertifikat Laik Fungsi (SLF)</li>
-                            <li><input type="checkbox" checked disabled> Rencana Tata Bangunan dan Lingkungan (RTBL)
-                            </li>
-                            <li><input type="checkbox" checked disabled> SIUP & NIB Developer</li>
-                            <li><input type="checkbox" checked disabled> NPWP Perusahaan</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                    <div class="section">
-                        <h2>2. Dokumen legal untuk Calon Pembeli</h2>
-                        <ul>
-                            <li><input type="checkbox" checked disabled> Salinan Sertifikat (SHM / HGB)</li>
-                            <li><input type="checkbox" checked disabled> Perjanjian Pengikatan Jual Beli (PPJB)</li>
-                            <li><input type="checkbox" checked disabled> Dokumen PBG dan Siteplan</li>
-                            <li><input type="checkbox" checked disabled> Bukti PBB Terakhir</li>
-                            <li><input type="checkbox" checked disabled> Testimoni atau Dokumentasi Proyek</li>
-                            <li><input type="checkbox" checked disabled> Jadwal Pembayaran (Jika KPR)</li>
-                            <li><input type="checkbox" checked disabled> Simulasi Cicilan (JIka KPR)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
 
         <div id="maps" class="site-section">
             <div class="container" data-aos="fade-up">
@@ -287,8 +202,21 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
+
+        var video = document.getElementById('heroVideo');
+        var source = document.getElementById('videoSource');
+        if (window.innerWidth <= 768) {
+            source.src = "/vids/motion-mobile.mp4";
+            video.style.objectFit = "cover";
+            video.style.width = "100vw";
+            video.style.height = "100vh";
+            // alert('mobile');
+        } else {
+            source.src = "/vids/motion-main.mp4";
+            // alert('full');
+        }
+        video.load();
         jQuery.noConflict();
-        // $('#myModal').modal('show');
     });
 </script>
 

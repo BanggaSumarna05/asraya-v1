@@ -32,7 +32,8 @@
                         </div>
                     </center>
                     <p class="rapih" style="padding: 24px">
-                        Kami berdedikasi untuk membangun urmah tinggal yang tenang dan nyaman dimana keluarga menikmati tinggal didalam rumah yang penuh kedamaian dan ketenangan.
+                        Kami berdedikasi untuk membangun urmah tinggal yang tenang dan nyaman dimana keluarga menikmati
+                        tinggal didalam rumah yang penuh kedamaian dan ketenangan.
                     </p>
                 </div>
                 <div class="col-12">
@@ -72,7 +73,7 @@
                         </div>
                     </center>
                     <p class="rapih">
-                        Dengan menjunjung tinggi nilai inti HARMONI, Casa Asraya dapat memantapkan dirinya sebagai
+                        Dengan menjunjung tinggi nilai inti HARMONY, Casa Asraya dapat memantapkan dirinya sebagai
                         perusahaan properti yang berkomitmen untuk menciptakan ruang yang tidak hanya memenuhi kebutuhan
                         praktis tetapi juga memperkaya kehidupan individu dan masyarakat dengan mengedepankan
                         keselarasan dalam semua aspek operasi dan pengembangannya, di mana orang merasa dihargai,

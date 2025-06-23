@@ -23,7 +23,6 @@
                             <li class="has-children">
                                 <a href="{{ route('unitUnggulan') }}">Unit Unggulan</a>
                                 <ul class="dropdown">
-                                    {{-- <li><a href="{{ route('mahogany') }}">Site Map & Schedule</a></li> --}}
                                     <li><a href="{{ route('mahogany') }}">Mahogany</a></li>
                                     <li><a href="{{ route('cendana') }}">Cendana</a></li>
 
@@ -46,9 +45,11 @@
                                 <ul class="dropdown">
                                     <li><a href="assets/ebrochure/asraya.pdf" target="_blank">E-Brochure</a></li>
                                     <li><a href="assets/ebrochure/asraya-profile.pdf" target="_blank">E-Profile</a></li>
-                                    <li><a href="assets/ebrochure/site_plan_asraya_property.pdf" target="_blank">Site Plan Available</a></li>
+                                    <li><a href="assets/ebrochure/site_plan_asraya_property.pdf" target="_blank">Site
+                                            Plan Available</a></li>
                                 </ul>
                             </li>
+                            <li><a href="{{ route('galeri') }}">Galeri</a></li>
                             <li>
                                 <a href="https://wa.me/6281399998066?text=Hi%20saya%20tertarik%20dengan%20PESONA%20HUTAN%20ASRAYA"
                                     target="_blank"><span class="icon-whatsapp" style="color:lime"></span></a>
