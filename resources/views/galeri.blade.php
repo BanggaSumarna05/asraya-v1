@@ -16,7 +16,8 @@
 <style>
     /* Navbar background fixed green, no gradient */
     .site-navbar {
-        background: rgba(0, 38, 28,1) !important; /* Tailwind green-500 */
+        background: rgba(0, 38, 28, 1) !important;
+        /* Tailwind green-500 */
         background-image: none !important;
         /* box-shadow: 0 2px 4px rgba(0,0,0,0.04); */
     }
@@ -24,7 +25,7 @@
 
 <body style="font-family: 'Archivo'">
     @include('templates/navbar')
-    <section class="overlay lazy-bg pt-20">
+    <section class="overlay lazy-bg pt-10">
         <div class="">
             @php
                 $galeries = $data['galeries'];
@@ -95,38 +96,33 @@
             </script>
             <div class="space-y-8">
                 @foreach ($chunks as $i => $chunk)
-                    <div class="flex flex-col md:flex-row  {{ $i % 2 == 0 ? '' : 'md:flex-row-reverse' }}"
+                    <div class="flex flex-col md:flex-row {{ $i % 2 == 0 ? '' : 'md:flex-row-reverse' }}"
                         style="margin-bottom: 0px;">
                         @if (count($chunk) == 3)
                             <div class="flex-1 flex flex-col ">
                                 <div class="group relative overflow-hidden shadow-lg flex-1">
-                                    <img src="{{ $chunk[0]['gambar'] }}" alt="{{ $chunk[0]['judul'] }}"
-                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 gallery-image cursor-pointer"
+                                    <img src="{{ $chunk[0]['gambar'] }}"
+                                        class="w-full h-full object-cover transition-transform duration-300 gallery-image"
                                         data-src="{{ $chunk[0]['gambar'] }}" data-index="{{ $i * 3 }}">
                                 </div>
                             </div>
                             <div class="flex-1 flex flex-col ">
                                 <div class="group relative overflow-hidden shadow-lg flex-1 ">
-                                    <img src="{{ $chunk[1]['gambar'] }}" alt="{{ $chunk[1]['judul'] }}"
-                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 gallery-image cursor-pointer"
+                                    <img src="{{ $chunk[1]['gambar'] }}"
+                                        class="w-full h-full object-contain transition-transform duration-300 gallery-image"
                                         data-src="{{ $chunk[1]['gambar'] }}" data-index="{{ $i * 3 + 1 }}">
                                 </div>
-                                <div class="group relative overflow-hidden  shadow-lg flex-1">
-                                    <img src="{{ $chunk[2]['gambar'] }}" alt="{{ $chunk[2]['judul'] }}"
-                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 gallery-image cursor-pointer"
+                                <div class="group relative overflow-hidden shadow-lg flex-1">
+                                    <img src="{{ $chunk[2]['gambar'] }}"
+                                        class="w-full h-full object-contain transition-transform duration-300 gallery-image"
                                         data-src="{{ $chunk[2]['gambar'] }}" data-index="{{ $i * 3 + 2 }}">
-                                    <div
-                                        class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-10 transition-opacity duration-300 flex items-center justify-center">
-                                        <span
-                                            class="text-white text-lg font-semibold text-center">{{ $chunk[2]['judul'] }}</span>
-                                    </div>
                                 </div>
                             </div>
                         @else
                             @foreach ($chunk as $j => $item)
-                                <div class="flex-1 group relative overflow-hidden  shadow-lg">
-                                    <img src="{{ $item['gambar'] }}" alt="{{ $item['judul'] }}"
-                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 gallery-image cursor-pointer"
+                                <div class="flex-1 group relative overflow-hidden shadow-lg">
+                                    <img src="{{ $item['gambar'] }}"
+                                        class="w-full h-full object-cover transition-transform duration-300 gallery-image"
                                         data-src="{{ $item['gambar'] }}" data-index="{{ $i * 3 + $j }}">
                                 </div>
                             @endforeach

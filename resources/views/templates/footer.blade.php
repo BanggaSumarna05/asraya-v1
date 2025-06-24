@@ -1,50 +1,33 @@
-<div class="fab-left" style="margin-top: 20px;">
-    {{-- <img src="img/Sequence.png" alt="" style="max-width: 53%; max-height: 53%;" class="bounce"> --}}
-</div>
-<div class="fab-right">
-    <br>
-    {{-- <video name="" id="myVideo" src="/vids/aniv_2.mp4" alt="" style="max-width: 90%; max-height: 90%;"
-        autoplay muted loop controls></video> --}}
-</div>
 <div class="bg-primary" data-aos="fade">
     <div class="container">
         <div class="row">
             <a href="https://www.instagram.com/casaasraya/" target="_blank"
-                class="col-4 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
+                class="col-4 text-center py-4 social-icon d-block"><span class="icon-instagram text-black"></span></a>
             <a href="https://www.youtube.com/@CasaAsrayaProperti" target="_blank"
-                class="col-4 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
+                class="col-4 text-center py-4 social-icon d-block"><span class="icon-youtube text-black"></span></a>
             <a href="https://wa.me/6281399998066?text=I'm%20interested%20in%20your%20property%20for%20sale"
                 target="_blank" class="col-4 text-center py-4 social-icon d-block"><span
-                    class="icon-whatsapp text-white"></span></a>
+                    class="icon-whatsapp text-black"></span></a>
         </div>
     </div>
 </div>
 <footer class="site-footer"
-    style="background-image: url('img/footer.jpg'); background-color: rgba(0, 0, 0, 0.7); background-blend-mode: overlay; background-size: cover; background-position-y: center;">
+    {{-- style="background-image: url('img/footer.jpg'); background-color: rgba(0, 0, 0, 0.7); background-blend-mode: overlay; background-size: cover; background-position-y: center;" --}}
+    >
     <div style="padding-left: 5%; padding-right: 5%;">
         <div class="row">
             <div class="col-lg-6">
                 <div class="mb-5">
-                    <h3 class="footer-heading mb-4 text-white">About Asraya</h3>
+                    <h3 class="footer-heading mb-4 text-black">About Asraya</h3>
                     <div class="row gx-5 gx-xl-10" style="width: 100%">
                         <div class="col-sm-12 mb-5 mb-xl-10">
-                            <p class="rapih text-white">
+                            <p class="rapih text-black">
                                 Āśraya (Sanskrit: आश्रय)
-                                <br>
-                                Beragam arti dari "āśraya" meliputi: dasar, sumber, bantuan,
-                                perlindungan, naungan, tempat berlindung, ketergantungan dan memiliki sumber daya.
-                                Mewakili hunian yang nyaman, kokoh dan berkualitas.
-                                <br><br>
-                                PT Casa Asraya Properti adalah perusahaan pengembang properti yang lahir dari visi untuk
-                                menciptakan ruang hidup yang menyatukan keindahan desain, kenyamanan, dan keharmonisan
-                                dengan alam. Kami hadir sebagai bagian dari grup usaha yang bergerak di bidang investasi
-                                dan pengembangan kawasan, dengan fokus pada hunian premium yang menghadirkan nilai
-                                estetika sekaligus fungsionalitas tinggi.
-                                <br><br>
-                                Melalui proyek unggulan kami, Pesona Hutan Asraya, kami mempersembahkan konsep perumahan
-                                tropis modern yang unik menghadirkan nuansa hutan asri di tengah kota. Komitmen kami
-                                adalah membangun dengan standar kualitas tinggi yang dirancang oleh profesional
-                                nasional, hingga sistem manajemen proyek yang terukur dan bertanggung jawab.
+                                arti mednalam dari "āśraya" adalah perlindungan, naungan, tempat berlindung, dan
+                                keterikatan dengan kenyamanan dan keamanansumber daya. Dalam filosofi Hindu, entitas
+                                yang memiliki kehidupan / Jiva disebut āśraya. PT Casa Asraya Properti menciptakan
+                                hunian yang menjadi perlindungan yang nyaman dan membawa ketengan bagi
+                                penghuni didalam hunian.
                             </p>
                         </div>
                     </div>
@@ -53,28 +36,28 @@
             <div class="col-lg-3 mb-5 mb-lg-0">
                 <div class="row mb-5">
                     <div class="col-md-12">
-                        <h3 class="footer-heading mb-4 text-white">Sitemap</h3>
+                        <h3 class="footer-heading mb-4 text-black">Sitemap</h3>
                     </div>
                     <div class="col-md-6 col-lg-6">
-                        <li class="active text-white"><a href="{{ Route::is('index') ? '#home' : route('index') }}"
-                                class="text-white">Halaman
+                        <li class="active text-black"><a href="{{ Route::is('index') ? '#home' : route('index') }}"
+                                class="text-black">Halaman
                                 Utama</a></li>
-                        <li class="active text-white" style="padding-bottom: 1.5vh;"><a href="#"
-                                class="text-white">Unit Unggulan</a></li>
+                        <li class="active text-black" style="padding-bottom: 1.5vh;"><a href="#"
+                                class="text-black">Unit Unggulan</a></li>
                         <ul>
-                            <li class="active text-white"><a href="{{ route('mahogany') }}"
-                                    class="text-white">Mahogany</a></li>
-                            <li class="active text-white"><a href="{{ route('cendana') }}"
-                                    class="text-white">Cendana</a></li>
+                            <li class="active text-black"><a href="{{ route('mahogany') }}"
+                                    class="text-black">Mahogany</a></li>
+                            <li class="active text-black"><a href="{{ route('cendana') }}"
+                                    class="text-black">Cendana</a></li>
                         </ul>
-                        <li class="active text-white"><a href="{{ route('fasilitas') }}"
-                                class="text-white">Fasilitas</a></li>
-                        <li class="active text-white"><a href="/" class="text-white">Pertanyaan Umum</a></li>
-                        <li class="text-white"><a href="assets/ebrochure/asraya.pdf" target="_blank"
-                                class="text-white">E-Brochure</a></li>
-                        <li class="text-white">
+                        <li class="active text-black"><a href="{{ route('fasilitas') }}"
+                                class="text-black">Fasilitas</a></li>
+                        <li class="active text-black"><a href="/" class="text-black">Pertanyaan Umum</a></li>
+                        <li class="text-black"><a href="assets/ebrochure/asraya.pdf" target="_blank"
+                                class="text-black">E-Brochure</a></li>
+                        <li class="text-black">
                             <a href="https://wa.me/6281399998066?text=I'm%20interested%20in%20your%20property%20for%20sale"
-                                target="_blank" class="text-white">Book Now</a>
+                                target="_blank" class="text-black">Book Now</a>
                         </li>
                         </ul>
                     </div>
@@ -82,13 +65,13 @@
             </div>
             <div class="col-lg-3 mb-5 mb-lg-0">
                 <div class="mb-5">
-                    <h3 class="footer-heading mb-4 text-white">OUR LOCATION</h3>
+                    <h3 class="footer-heading mb-4 text-black">OUR LOCATION</h3>
                     <div class="block-16">
                         <div style="width: 100%">
-                            <p class="rapih text-white">
+                            <p class="rapih text-black">
                                 <a href="https://maps.app.goo.gl/fW3q54PnRM8DQ3dB8" target="_blank"
                                     rel="noopener noreferrer">
-                                    <b class="text-white"><u>Jl. Dwikora I No.16, Suka Maju, Kec. Sail, Kota
+                                    <b class="text-black"><u>Jl. Dwikora I No.16, Suka Maju, Kec. Sail, Kota
                                             Pekanbaru, Riau 28115</u></b></a>
                             </p>
                             <iframe
@@ -102,7 +85,7 @@
 
             <div class="col-md-12">
                 <center>
-                    <p class="text-white">Copyright &copy;
+                    <p class="text-black">Copyright &copy;
                         <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                         <script>
                             document.write((new Date).getFullYear())
