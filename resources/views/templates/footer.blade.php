@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
             <a href="https://www.instagram.com/casaasraya/" target="_blank"
-                class="col-4 text-center py-4 social-icon d-block"><span class="icon-instagram text-black"></span></a>
+                class="col-4 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
             <a href="https://www.youtube.com/@CasaAsrayaProperti" target="_blank"
-                class="col-4 text-center py-4 social-icon d-block"><span class="icon-youtube text-black"></span></a>
+                class="col-4 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
             <a href="https://wa.me/6281399998066?text=I'm%20interested%20in%20your%20property%20for%20sale"
                 target="_blank" class="col-4 text-center py-4 social-icon d-block"><span
-                    class="icon-whatsapp text-black"></span></a>
+                    class="icon-whatsapp text-white"></span></a>
         </div>
     </div>
 </div>
