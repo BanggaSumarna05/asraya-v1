@@ -32,7 +32,7 @@
                         </div>
                     </center>
                     <p class="rapih" style="padding: 24px">
-                        Kami berdedikasi untuk membangun urmah tinggal yang tenang dan nyaman dimana keluarga menikmati
+                        Kami berdedikasi untuk membangun rumah tinggal yang tenang dan nyaman dimana keluarga menikmati
                         tinggal didalam rumah yang penuh kedamaian dan ketenangan.
                     </p>
                 </div>

@@ -24,10 +24,9 @@
                 <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
                     <h1 class="text-center" style="font-family: 'Archivo'; font-size: 50px">UNIT UNGGULAN</h1>
                     <h4 class="text-white rapih text-center">
-                        Casa Asraya berdiri sebagai bukti pengalaman gaya hidup holistik, di mana keunggulan arsitektur
-                        berpadu dengan keramahan yang tiada banding. Bergabunglah dengan kami dalam perjalanan
-                        kemewahan,
-                        inovasi, dan peluang tanpa batas ini.
+                        Casa Asraya adalah tempat di mana keindahan desain bertemu kedamaian hutan dalam satu kesatuan
+                        hunian istimewa. Dikelilingi hijaunya pepohonan, dilengkapi fasilitas premium dan dirancang
+                        dengan arsitektur memikat. Nikmati hidup asri dan elegan hanya selangkah dari pusat kota.
                     </h4>
                 </div>
             </div>

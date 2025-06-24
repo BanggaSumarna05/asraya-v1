@@ -21,34 +21,36 @@
 </div>
 <footer class="site-footer"
     style="background-image: url('img/footer.jpg'); background-color: rgba(0, 0, 0, 0.7); background-blend-mode: overlay; background-size: cover; background-position-y: center;">
-    <div class="container">
+    <div style="padding-left: 5%; padding-right: 5%;">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="mb-5">
                     <h3 class="footer-heading mb-4 text-white">About Asraya</h3>
                     <div class="row gx-5 gx-xl-10" style="width: 100%">
                         <div class="col-sm-12 mb-5 mb-xl-10">
-                            {{-- <img alt="Logo" src="old/assets/img/asraya.png" class="w-90 mx-auto img-fluid" />
-                            <br>
-                            <br> --}}
-                            {{-- <div style="color:#00261C;">
-                                
-                            </div> --}}
-
                             <p class="rapih text-white">
-                                <b>Āśraya (Sanskrit: आश्रय)</b>
+                                Āśraya (Sanskrit: आश्रय)
                                 <br>
-                                Beragam arti dari "<b>āśraya</b>" meliputi: dasar, sumber, bantuan, perlindungan,
-                                naungan, tempat berlindung, ketergantungan dan memiliki sumber daya. Dalam filosofi
-                                Hindu, entitas yang memiliki kehidupan atau Jiva adalah āśraya. PT Casa Asraya Properti
-                                menciptakan hunian yang menjadi perlindungan  yang nyaman dan membawa
-                                berkah dalam kehidupan bagi manusia.
+                                Beragam arti dari "āśraya" meliputi: dasar, sumber, bantuan,
+                                perlindungan, naungan, tempat berlindung, ketergantungan dan memiliki sumber daya.
+                                Mewakili hunian yang nyaman, kokoh dan berkualitas.
+                                <br><br>
+                                PT Casa Asraya Properti adalah perusahaan pengembang properti yang lahir dari visi untuk
+                                menciptakan ruang hidup yang menyatukan keindahan desain, kenyamanan, dan keharmonisan
+                                dengan alam. Kami hadir sebagai bagian dari grup usaha yang bergerak di bidang investasi
+                                dan pengembangan kawasan, dengan fokus pada hunian premium yang menghadirkan nilai
+                                estetika sekaligus fungsionalitas tinggi.
+                                <br><br>
+                                Melalui proyek unggulan kami, Pesona Hutan Asraya, kami mempersembahkan konsep perumahan
+                                tropis modern yang unik menghadirkan nuansa hutan asri di tengah kota. Komitmen kami
+                                adalah membangun dengan standar kualitas tinggi yang dirancang oleh profesional
+                                nasional, hingga sistem manajemen proyek yang terukur dan bertanggung jawab.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="col-lg-3 mb-5 mb-lg-0">
                 <div class="row mb-5">
                     <div class="col-md-12">
                         <h3 class="footer-heading mb-4 text-white">Sitemap</h3>
@@ -78,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="col-lg-3 mb-5 mb-lg-0">
                 <div class="mb-5">
                     <h3 class="footer-heading mb-4 text-white">OUR LOCATION</h3>
                     <div class="block-16">
