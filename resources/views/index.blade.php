@@ -91,19 +91,19 @@
                 </div>
                 <div id="managementCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active item-align-center">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-lg-2">
+                                </div>
+                                <div class="col-lg-4 col-sm-12">
                                     <div class="mt-1"><img src="img/reduce/Pak andika rev.png" alt="Andhika Permana"
                                             class="img-fluid lazy"></div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="mt-1"><img src="img/reduce/robby-cap-1.png"
-                                            alt="Robby Satria Manurung" class="img-fluid lazy"></div>
-                                </div>
-                                <div class="col-md-4">
+                                <div class="col-lg-4 col-sm-12">
                                     <div class="mt-1"><img src="img/reduce/Pak ooz rev.png" alt="O'ozaro Larosa"
                                             class="img-fluid lazy"></div>
+                                </div>
+                                <div class="col-lg-2">
                                 </div>
                             </div>
                         </div>
