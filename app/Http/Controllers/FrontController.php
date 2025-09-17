@@ -22,10 +22,33 @@ class FrontController extends Controller
     {
         $this->keywords = [
             "Rumah mewah di Pekanbaru",
+            "perumahan pekanbaru murah",
+            "kredit perumahan pekanbaru",
+            "perumahan pekanbaru panam",
+            "perumahan subsidi pekanbaru",
+            "perumahan pekanbaru type 45",
             "Hunian nyaman di Pekanbaru",
+            "Lagi cari rumah cluster terbaik di Pekanbaru tahun 2025?",
+            "perumahan di pekanbaru kota",
+            "perumahan di pekanbaru",
+            "perumahan di pekanbaru panam",
             "Properti modern Pekanbaru",
+            "perumahan di pekanbaru kota",
+            "perumahan pekanbaru 2022",
+            "perumahan di pekanbaru",
+            "perumahan pekanbaru type 36",
+            "properti pekanbaru",
+            "perumahan pekanbaru panam",
+            "global property pekanbaru",
+            "agen properti pekanbaru",
+            "perumahan subsidi pekanbaru",
+            "perumahan elit di pekanbaru",
             "Perumahan elit Pekanbaru",
+            "jual rumah pribadi di pekanbaru",
             "Rumah asri di Pekanbaru",
+            "rumah pekanbaru dijual",
+            "rumah di pekanbaru",
+            "rumah di pekanbaru kota",
             "Kompleks perumahan Pekanbaru",
             "Perumahan hijau Pekanbaru",
             "Hunian ramah lingkungan Pekanbaru",
@@ -233,13 +256,80 @@ class FrontController extends Controller
             "Investasi property Balikpapan",
             "Perumahan konsep unik",
             "Smart home Balikpapan",
+            'perumahan dengan club house',
+            'pesona hutan asraya',
+            'perumahan club house modern',
+            'perumahan club house',
+            'perumahan club house mewah',
+            'asraya',
+            'pt casa asraya properti',
+            'perumahan club house murah',
+            'mahogany residence',
+            'casa asraya',
+            'asraya residence',
+            'asraya co living',
+            'asraya coliving',
+            'casa asraya properti',
+            'atelier asraya',
+            'living in harmony',
+            'the living harmony',
+            'club house',
+            'clubhouse perumahan',
+            'club house view kota',
+            'perumahan club house eksklusif',
+            'pilihan perumahan club house',
+            'benefit memiliki club house',
+            'apa itu club house perumahan',
+            'club house adalah',
+            'clubhouse real estate',
+            'perumahan modern dengan clubhouse',
+            'club house mewah di pekanbaru',
+            'property gym',
+            'gym property',
+            'perumahan modern',
+            'perumahan pekanbaru',
+            'perumahan di pekanbaru kota',
+            'perumahan di pekanbaru',
+            'perumahan cendana pekanbaru',
+            'perumahan cendana asri',
+            'cendana asri',
+            'pesona property group pekanbaru',
+            'pesona riau',
+            'cluster pekanbaru',
+            'rumah eksklusif di pekanbaru',
+            'jual rumah pekanbaru',
+            'developer perumahan pekanbaru',
+            'rumah cluster modern',
+            'jual rumah dengan clubhouse',
+            'brandgang',
+            'brandgang adalah',
+            'brandgang artinya',
+            'brand gang',
+            'wajib ditanyakan ke pengembang sebelum beli rumah',
+            'jalan dwikora pekanbaru',
+            'smp al azhar pekanbaru',
+            'smpn 33 pekanbaru',
+            'smpn 36 pekanbaru',
+            'smpn 40 pekanbaru',
+            'smp global pekanbaru',
+            'sma al azhar 18',
+            'rs pmc pekanbaru',
+            'ranca asri lakeside',
+            'tempat yoga terdekat',
+            'yoga',
+            'alamat rumah saya sekarang',
+            'alamat rumah saya sekarang buka sekarang',
+            'jual batu koral putih terdekat',
+            'jual batu putih taman terdekat'
         ];
     }
 
-    public function seo()
+    public function seo($title = null)
     {
-        SEOTools::setTitle('Asraya Property - Pesona Hutan Asraya');
-        SEOTools::setDescription('PESONA HUTAN ASRAYA, properti idaman oleh developer berpengalaman. nilai investasi tinggi, lokasi strategis. Cicilan ringan dan bonus berlimpah.');
+        SEOTools::setTitle('Pesona Hutan Asraya - ' . $title);
+        SEOTools::setDescription(
+            'Pesona Hutan Asraya adalah perumahan di riau dibuat dengan developer terpercaya yang menawarkan hunian modern dan asri, dengan lokasi strategis, fasilitas lengkap, dan bernilai investasi tinggi.'
+        );
         SEOTools::opengraph()->setUrl('https://asrayaproperty.com/');
         SEOTools::setCanonical('https://asrayaproperty.com/');
         SEOTools::jsonLd()->addImage('https://www.asrayaproperty.com/new/assets/img/asraya.png');
@@ -460,7 +550,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 ],
             ];
 
-        $this->seo();
+        $this->seo('Halaman Utama');
         $collection = $this->getProgress();
         return view('index')
             ->with([
@@ -501,7 +591,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         array_push($data['slide'], 'img/mahogany/new/mahogany-b.png');
         array_push($data['slide'], 'img/mahogany/new/mahogany-l.png');
         $data['floors'] = 'img/mahogany/Denah_Mahogany.jpg';
-        $this->seo();
+        $this->seo('Unit Mahogany');
         return view('mahogany')->with([
             'data' => $data,
             // 
@@ -525,7 +615,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         array_push($data['slide'], 'img/cendana/cendana-b.png');
         array_push($data['slide'], 'img/cendana/cendana-l.png');
         $data['floors'] = 'img/cendana/Denah Cendana.jpg';
-        $this->seo();
+        $this->seo('Unit Cendana');
 
         $data['galeries'] = [];
         $selected = [1, 3, 7, 14, 15, 17, 31, 21, 42, 43, 45, 46];
@@ -561,7 +651,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         array_push($data['slide'], 'img/cendana/FLOOR SIDE.png');
         array_push($data['slide'], 'img/cendana/FLOOR.jpg');
 
-        $this->seo();
+        $this->seo('Clubhouse');
 
         return view('clubhouse')->with([
             'data' => $data,
@@ -583,7 +673,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         array_push($data['slide'], 'img/cendana/FLOOR SIDE.png');
         array_push($data['slide'], 'img/cendana/FLOOR.jpg');
 
-        $this->seo();
+        $this->seo('Brandgang');
 
         return view('brandgang')->with([
             'data' => $data,
@@ -604,7 +694,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             'low' => 'new/assets/img/aa.png'
         ];
 
-        $this->seo();
+        $this->seo('Visi & Misi');
 
         return view('visiMisi')
             ->with([
@@ -619,7 +709,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             'img' => 'new/assets/img/aa.png'
         ];
 
-        $this->seo();
+        $this->seo('Fassilitas');
 
         return view('facility')
             ->with([
@@ -635,7 +725,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $data['slide'] = [];
         array_push($data['slide'], 'new/assets/img/gym1.jpg');
 
-        $this->seo();
+        $this->seo('Gym');
 
         return view('gym')->with([
             'data' => $data,
@@ -655,7 +745,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $data['slide'] = [];
         array_push($data['slide'], 'new/assets/img/spool.jpg');
 
-        $this->seo();
+        $this->seo('Kolam Renang');
 
         return view('spool')->with([
             'data' => $data,
@@ -680,7 +770,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             'img//drSynd/treat.jpg',
         ];
 
-        $this->seo();
+        $this->seo('Klinik Dr Synd');
 
         return view('clinic')->with([
             'data' => $data,
@@ -707,7 +797,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             'img//drSynd/treat.jpg',
         ];
 
-        $this->seo();
+        $this->seo('Taman Kota');
 
         return view('taman')->with([
             'data' => $data,
@@ -904,7 +994,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             'low' => 'new/assets/img/aa.png'
         ];
 
-        $this->seo();
+        $this->seo('Pertanyaan Umum (FAQ)');
 
         return view('faq')->with([
             'generals' => $generals,
@@ -985,7 +1075,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 ],
             ];
 
-        $this->seo();
+        $this->seo('Unit Unggulan');
         $collection = $this->getProgress();
         return view('featured-house')
             ->with([
@@ -1026,12 +1116,12 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             array_push(
                 $data['galeries'],
                 [
-                    'gambar' => '/img/gallery1/'.$value,
+                    'gambar' => '/img/gallery1/' . $value,
                     'judul' => 'Cendana (' . $value . ')',
                 ]
             );
         }
-        $this->seo();
+        $this->seo('Galeri Kami');
         // return $data;
         return view('galeri')->with([
             'data' => $data,

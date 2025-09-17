@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 text-center w-border mx-auto">
-                        <p class="rapih">
+                        <p class="rapih" style="margin: 2vh;">
                             Kami menghadirkan perumahan premium yang mengutamakan desain modern dengan sentuhan alam,
                             kami
                             menciptakan hunian yang menggabungkan suasana hutan tropis di tengah hiruk-pikuk kota.
@@ -132,14 +132,14 @@
                     </div>
                     <div class="col-sm-6 mb-10 mb-sm-0">
                         <br><br><br>
-                        <p class="rapih">
+                        <p class="rapih" style="margin: 2vh;">
                             Kami mempersembahkan townhouse terbaik di Pekanbaru, menawarkan lokasi
                             yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier
                                 Riri</i>,
                             memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan
                             lokasi di tengah kota dan fitur premium, Pesona Hutan Asraya dapat menjangkau
                             fasilitas-fasilitas
-                            strategis untuk menyempurnakan gaya hidup yang berkualitas tinggi.
+                            strategis untuk gaya hidup yang berkualitas.
                             <br>
                             Berikut adalah lokasi-lokasi terdekat dari Pesona Hutan Asraya:
                         </p>

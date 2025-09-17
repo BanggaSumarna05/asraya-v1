@@ -1,9 +1,9 @@
 <div class="bg-primary" data-aos="fade">
     <div class="container">
         <div class="row">
-            <a href="https://www.instagram.com/casaasraya/" target="_blank"
+            <a href="https://www.instagram.com/stories/pesonahutanasraya/" target="_blank"
                 class="col-4 text-center py-4 social-icon d-block"><span class="icon-instagram text-white"></span></a>
-            <a href="https://www.youtube.com/@CasaAsrayaProperti" target="_blank"
+            <a href="https://www.youtube.com/@PesonaHutanAsraya" target="_blank"
                 class="col-4 text-center py-4 social-icon d-block"><span class="icon-youtube text-white"></span></a>
             <a href="https://wa.me/6281399998066?text=I'm%20interested%20in%20your%20property%20for%20sale"
                 target="_blank" class="col-4 text-center py-4 social-icon d-block"><span
