@@ -24,13 +24,9 @@ class FrontController extends Controller
             "Rumah mewah di Pekanbaru",
             "perumahan pekanbaru murah",
             "kredit perumahan pekanbaru",
-            "perumahan pekanbaru panam",
-            "perumahan subsidi pekanbaru",
             "perumahan pekanbaru type 45",
             "Hunian nyaman di Pekanbaru",
             "Lagi cari rumah cluster terbaik di Pekanbaru tahun 2025?",
-            "perumahan di pekanbaru kota",
-            "perumahan di pekanbaru",
             "perumahan di pekanbaru panam",
             "Properti modern Pekanbaru",
             "perumahan di pekanbaru kota",
@@ -1122,7 +1118,6 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             );
         }
         $this->seo('Galeri Kami');
-        // return $data;
         return view('galeri')->with([
             'data' => $data,
         ]);

@@ -43,10 +43,11 @@
                             <li class="has-children">
                                 <a href="#">Profil Kami</a>
                                 <ul class="dropdown">
-                                    <li><a href="assets/ebrochure/asraya.pdf" target="_blank">E-Brochure</a></li>
+                                    <li><a href="assets/ebrochure/asraya-22092025.pdf" target="_blank">E-Brochure</a></li>
                                     <li><a href="assets/ebrochure/asraya-profile.pdf" target="_blank">E-Profile</a></li>
                                     <li><a href="assets/ebrochure/site_plan_asraya_property.pdf" target="_blank">Site
                                             Plan Available</a></li>
+                                    <li><a href="https://linktr.ee/casasraya" target="_blank">Linktree</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ route('galeri') }}">Galeri</a></li>
