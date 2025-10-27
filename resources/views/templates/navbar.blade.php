@@ -6,7 +6,7 @@
             <div class="row align-items-center">
                 <div class="col-8 col-md-8 col-lg-4">
                     <h1 class="mb-0"><a href="{{ route('index') }}" class="text-white h2 mb-0">
-                            <img class="w-50 mx-auto img-fluid" style="margin: 2vh" src="img/asraya-2.png"
+                            <img class="w-50 mx-auto img-fluid" style="margin: 2vh" src="/img/asraya-2.png"
                                 alt="" srcset=""></a>
                     </h1>
                 </div>
@@ -43,7 +43,8 @@
                             <li class="has-children">
                                 <a href="#">Profil Kami</a>
                                 <ul class="dropdown">
-                                    <li><a href="assets/ebrochure/asraya-22092025.pdf" target="_blank">E-Brochure</a></li>
+                                    <li><a href="assets/ebrochure/asraya-22092025.pdf" target="_blank">E-Brochure</a>
+                                    </li>
                                     <li><a href="assets/ebrochure/asraya-profile.pdf" target="_blank">E-Profile</a></li>
                                     <li><a href="assets/ebrochure/site_plan_asraya_property.pdf" target="_blank">Site
                                             Plan Available</a></li>

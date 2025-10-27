@@ -12,6 +12,7 @@
         "artesaos/seotools": "^1.2",
         "awssat/laravel-visits": "^3.0",
         "barryvdh/laravel-dompdf": "^1.0",
+        "filament/filament": "^2.17",
         "fruitcake/laravel-cors": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^0.5.4",
@@ -36,7 +37,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Helpers/BlogHelper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
