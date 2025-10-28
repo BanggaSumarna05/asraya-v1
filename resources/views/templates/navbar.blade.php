@@ -39,7 +39,13 @@
                                 </ul>
                             </li>
                             <li><a href="{{ route('visimisi') }}">Visi & Misi</a></li>
-                            <li><a href="{{ route('faq') }}">Pertanyaan Umum</a></li>
+                            <li class="has-children">
+                                <a href="#">Informasi</a>
+                                <ul class="dropdown">
+                                    <li><a href="{{ route('faq') }}">Pertanyaan Umum</a></li>
+                                    <li><a href="{{ route('blog.index') }}">Berita & Artikel</a></li>
+                                </ul>
+                            </li>
                             <li class="has-children">
                                 <a href="#">Profil Kami</a>
                                 <ul class="dropdown">

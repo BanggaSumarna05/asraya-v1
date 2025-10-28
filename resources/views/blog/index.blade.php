@@ -10,12 +10,12 @@
     @include('templates.navbar')
     <div class="container" style="margin-top: 20vh;">
 
-        <h1 class="text-center mb-4 fw-bold">Blog & Artikel</h1>
+        <h1 class="text-center mb-4 fw-bold">Berita & Artikel</h1>
         <p class="text-center text-muted mb-5">
             Inspirasi seputar hunian, desain, dan gaya hidup.
         </p>
 
-        <div class="row g-4">
+        <div class="row gx-4 gy-4">
             @foreach ($posts as $post)
                 <div class="col-md-4">
                     <a href="{{ route('blog.show', $post->slug) }}" class="text-decoration-none text-dark">
@@ -47,4 +47,5 @@
     </div>
     @include('templates.footer')
 </body>
+
 </html>
