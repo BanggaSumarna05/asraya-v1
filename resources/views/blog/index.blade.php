@@ -39,7 +39,13 @@
                 </div>
             @endforeach
         </div>
-        <div class="mt-5 justify-content-center">
+        <div class="mt-5 d-flex justify-content-center">
+            <style>
+                /* kecilkan ukuran teks dan ikon pada pagination */
+                .pagination { font-size: 0.9rem; }
+                .pagination .page-link svg { width: 1em; height: 1em; }
+            </style>
+
             {{ $posts->links() }}
         </div>
     </div>
