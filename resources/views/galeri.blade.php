@@ -94,9 +94,14 @@
                 <div class="row g-4">
                     @foreach ($data['galeries'] as $item)
                     <div class="col-3 col-md-3 col-lg-3 col-sm-6">   
-                        <img src="{{ $item['gambar'] }}" alt="Gallery Image" data-src="{{ $item['gambar'] }}"
-                            class="gallery-image w-full h-48 object-cover shadow-lg cursor-pointer m-2 "
-                            loading="lazy">
+                        <div class="relative">
+                            <div class="skeleton animate-pulse bg-gray-300 dark:bg-gray-700 w-full h-48 rounded shadow-lg m-2"></div>
+                            <img src="{{ $item['gambar'] }}" alt="Gallery Image" data-src="{{ $item['gambar'] }}"
+                                 class="gallery-image w-full h-48 object-cover shadow-lg cursor-pointer m-2 opacity-0 transition-opacity duration-300"
+                                 loading="lazy"
+                                 onload="this.previousElementSibling.classList.add('hidden'); this.classList.remove('opacity-0');"
+                                 onerror="this.previousElementSibling.classList.remove('hidden'); this.classList.add('hidden');">
+                        </div>
                     </div>
                     @endforeach
                 </div>
