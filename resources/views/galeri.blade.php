@@ -93,16 +93,28 @@
             <div class="space-y-8 pt-50 pb-20 md:px-10 lg:px-10">
                 <div class="row g-4">
                     @foreach ($data['galeries'] as $item)
-                    <div class="col-3 col-md-3 col-lg-3 col-sm-6">   
-                        <div class="relative">
-                            <div class="skeleton animate-pulse bg-gray-300 dark:bg-gray-700 w-full h-48 rounded shadow-lg m-2"></div>
-                            <img src="{{ $item['gambar'] }}" alt="Gallery Image" data-src="{{ $item['gambar'] }}"
-                                 class="gallery-image w-full h-48 object-cover shadow-lg cursor-pointer m-2 opacity-0 transition-opacity duration-300"
-                                 loading="lazy"
-                                 onload="this.previousElementSibling.classList.add('hidden'); this.classList.remove('opacity-0');"
-                                 onerror="this.previousElementSibling.classList.remove('hidden'); this.classList.add('hidden');">
+                        <div class="col-3 col-md-3 col-lg-3 col-sm-6">
+                            <div class="relative">
+                                <div
+                                    class="skeleton animate-pulse bg-gray-300 dark:bg-gray-700 w-full h-48 rounded shadow-lg m-2">
+                                </div>
+                                @if (preg_match('/\.mp4($|\?)/i', $item['gambar']))
+                                    <video src="{{ $item['gambar'] }}" data-src="{{ $item['gambar'] }}"
+                                        class="w-full h-48 object-cover shadow-lg cursor-pointer m-2 opacity-0 transition-opacity duration-300"
+                                        controls preload="metadata" playsinline
+                                        onloadeddata="this.previousElementSibling.classList.add('hidden'); this.classList.remove('opacity-0');"
+                                        onerror="this.previousElementSibling.classList.remove('hidden'); this.classList.add('hidden');">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                @else
+                                    <img src="{{ $item['gambar'] }}" alt="Gallery Image" data-src="{{ $item['gambar'] }}"
+                                        class="gallery-image w-full h-48 object-cover shadow-lg cursor-pointer m-2 opacity-0 transition-opacity duration-300"
+                                        loading="lazy"
+                                        onload="this.previousElementSibling.classList.add('hidden'); this.classList.remove('opacity-0');"
+                                        onerror="this.previousElementSibling.classList.remove('hidden'); this.classList.add('hidden');">
+                                @endif
+                            </div>
                         </div>
-                    </div>
                     @endforeach
                 </div>
             </div>

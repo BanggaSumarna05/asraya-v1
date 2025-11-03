@@ -1134,7 +1134,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         // Filter hanya gambar dan bangun array untuk view
         foreach ($files as $file) {
             $ext = strtolower($file->getExtension());
-            if (!in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'])) {
+            if (!in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'mp4'])) {
                 continue;
             }
 
