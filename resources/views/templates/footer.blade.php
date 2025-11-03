@@ -11,9 +11,7 @@
         </div>
     </div>
 </div>
-<footer class="site-footer"
-    {{-- style="background-image: url('img/footer.jpg'); background-color: rgba(0, 0, 0, 0.7); background-blend-mode: overlay; background-size: cover; background-position-y: center;" --}}
-    >
+<footer class="site-footer" {{-- style="background-image: url('img/footer.jpg'); background-color: rgba(0, 0, 0, 0.7); background-blend-mode: overlay; background-size: cover; background-position-y: center;" --}}>
     <div style="padding-left: 5%; padding-right: 5%;">
         <div class="row">
             <div class="col-lg-6">
@@ -71,7 +69,9 @@
                             <p class="rapih text-black">
                                 <a href="https://maps.app.goo.gl/fW3q54PnRM8DQ3dB8" target="_blank"
                                     rel="noopener noreferrer">
-                                    <b class="text-black"><u>Jl. Dwikora I No.16, Suka Maju, Kec. Sail, Kota
+                                    <b class="text-black"><u>PESONA HUTAN BY ASRAYA
+                                            <br>
+                                            Jl. Dwikora I No.16, Suka Maju, Kec. Sail, Kota
                                             Pekanbaru, Riau 28115</u></b></a>
                             </p>
                             <iframe

@@ -1103,7 +1103,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         ]);
     }
 
-    public function galeri()
+    public function galeriAll()
     {
         $selected = ['Artboard 1.png', 'Artboard 2.png', 'Artboard 3.png', 'Artboard 4.png', 'Artboard 5.png', 'Artboard 6.png', 'Artboard 7.png', 'Artboard 8.png', 'Artboard 9.png',];
         $data['galeries'] = [];
@@ -1118,6 +1118,50 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             );
         }
         $this->seo('Galeri Kami');
+        return view('galeri')->with([
+            'data' => $data,
+        ]);
+    }
+
+    public function galeri()
+    {
+        $data = [];
+        $data['galeries'] = [];
+
+        // Ambil semua file di folder public (rekursif)
+        $files = \Illuminate\Support\Facades\File::allFiles(public_path('/img/gallery1/'));
+
+        // Filter hanya gambar dan bangun array untuk view
+        foreach ($files as $file) {
+            $ext = strtolower($file->getExtension());
+            if (!in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'])) {
+                continue;
+            }
+
+            // path relatif ke public agar bisa dipakai di <img src="...">
+            $absolute = str_replace('\\', '/', $file->getPathname());
+            $publicPath = str_replace('\\', '/', public_path('/'));
+            $relative = str_replace($publicPath, '', $absolute);
+            if (substr($relative, 0, 1) !== '/') {
+                $relative = '/' . $relative;
+            }
+
+            $data['galeries'][] = [
+                'gambar' => $relative,
+                'judul'  => $file->getFilename(),
+                'size'   => $file->getSize(),
+                'mtime'  => $file->getMTime(),
+            ];
+        }
+
+        // Optional: urutkan berdasarkan waktu modifikasi terbaru
+        usort($data['galeries'], function ($a, $b) {
+            return $b['mtime'] <=> $a['mtime'];
+        });
+
+        $this->seo('Galeri Kami');
+        // return $data;
+
         return view('galeri')->with([
             'data' => $data,
         ]);

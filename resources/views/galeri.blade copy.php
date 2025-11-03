@@ -27,6 +27,10 @@
     @include('templates/navbar')
     <section class="overlay lazy-bg pt-10">
         <div class="">
+            @php
+                $galeries = $data['galeries'];
+                $chunks = array_chunk($galeries, 3);
+            @endphp
 
             <!-- Lightbox Modal -->
             <div id="lightbox-modal"
@@ -90,16 +94,41 @@
                     });
                 });
             </script>
-            <div class="space-y-8 pt-50 pb-20 md:px-10 lg:px-10">
-                <div class="row g-4">
-                    @foreach ($data['galeries'] as $item)
-                    <div class="col-3 col-md-3 col-lg-3 col-sm-6">   
-                        <img src="{{ $item['gambar'] }}" alt="Gallery Image" data-src="{{ $item['gambar'] }}"
-                            class="gallery-image w-full h-48 object-cover shadow-lg cursor-pointer m-2 "
-                            loading="lazy">
+            <div class="space-y-8">
+                @foreach ($chunks as $i => $chunk)
+                    <div class="flex flex-col md:flex-row {{ $i % 2 == 0 ? '' : 'md:flex-row-reverse' }}"
+                        style="margin-bottom: 0px;">
+                        @if (count($chunk) == 3)
+                            <div class="flex-1 flex flex-col ">
+                                <div class="group relative overflow-hidden shadow-lg flex-1">
+                                    <img src="{{ $chunk[0]['gambar'] }}"
+                                        class="w-full h-full object-cover transition-transform duration-300 gallery-image"
+                                        data-src="{{ $chunk[0]['gambar'] }}" data-index="{{ $i * 3 }}">
+                                </div>
+                            </div>
+                            <div class="flex-1 flex flex-col ">
+                                <div class="group relative overflow-hidden shadow-lg flex-1 ">
+                                    <img src="{{ $chunk[1]['gambar'] }}"
+                                        class="w-full h-full object-contain transition-transform duration-300 gallery-image"
+                                        data-src="{{ $chunk[1]['gambar'] }}" data-index="{{ $i * 3 + 1 }}">
+                                </div>
+                                <div class="group relative overflow-hidden shadow-lg flex-1">
+                                    <img src="{{ $chunk[2]['gambar'] }}"
+                                        class="w-full h-full object-contain transition-transform duration-300 gallery-image"
+                                        data-src="{{ $chunk[2]['gambar'] }}" data-index="{{ $i * 3 + 2 }}">
+                                </div>
+                            </div>
+                        @else
+                            @foreach ($chunk as $j => $item)
+                                <div class="flex-1 group relative overflow-hidden shadow-lg">
+                                    <img src="{{ $item['gambar'] }}"
+                                        class="w-full h-full object-cover transition-transform duration-300 gallery-image"
+                                        data-src="{{ $item['gambar'] }}" data-index="{{ $i * 3 + $j }}">
+                                </div>
+                            @endforeach
+                        @endif
                     </div>
-                    @endforeach
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
