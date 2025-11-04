@@ -40,7 +40,7 @@
                             </li>
                             <li><a href="{{ route('visimisi') }}">Visi & Misi</a></li>
                             <li class="has-children">
-                                <a href="#">Informasi</a>
+                                <a>Informasi</a>
                                 <ul class="dropdown">
                                     <li><a href="{{ route('faq') }}">Pertanyaan Umum</a></li>
                                     <li><a href="{{ route('blog.index') }}">Berita & Artikel</a></li>

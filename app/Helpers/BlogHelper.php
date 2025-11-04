@@ -30,8 +30,8 @@ class BlogHelper
             function ($matches) {
                 $url = $matches[1];
                 return '
-                <div class="my-4">
-                    <video controls style="width:100%; height:100%; border-radius:12px;">
+                <div class="ratio ratio-16x9 my-4">
+                    <video controls>
                         <source src="' . $url . '" type="video/mp4">
                         Browser kamu tidak mendukung video.
                     </video>
