@@ -92,6 +92,7 @@
             </script>
             {{-- fuck this shit, RUBIKON --}}
             <div class="space-y-8 pt-50 pb-20 md:px-10 lg:px-10">
+                <h2>Gallery</h2>
                 <div class="row g-4">
                     @foreach ($data['galeries'] as $item)
                         <div class="col-3 col-md-3 col-lg-3 col-sm-6">
