@@ -92,7 +92,7 @@
             </script>
             {{-- fuck this shit, RUBIKON --}}
             <div class="space-y-8 pt-50 pb-20 md:px-10 lg:px-10">
-                <h2>Gallery</h2>
+                <h1>Gallery</h1s>
                 <div class="row g-4">
                     @foreach ($data['galeries'] as $item)
                         <div class="col-3 col-md-3 col-lg-3 col-sm-6">
@@ -110,7 +110,7 @@
                                     </video>
                                 @else
                                     <img src="{{ $item['gambar'] }}" alt="Gallery Image" data-src="{{ $item['gambar'] }}"
-                                        class="gallery-image w-full h-48 object-cover shadow-lg cursor-pointer m-2 opacity-0 transition-opacity duration-300"
+                                        class="gallery-image w-full h-80 object-cover shadow-lg cursor-pointer m-2 opacity-0 transition-opacity duration-300"
                                         loading="lazy"
                                         onload="this.previousElementSibling.classList.add('hidden'); this.classList.remove('opacity-0');"
                                         onerror="this.previousElementSibling.classList.remove('hidden'); this.classList.add('hidden');">
