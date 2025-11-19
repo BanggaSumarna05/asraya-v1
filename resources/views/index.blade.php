@@ -73,11 +73,10 @@
                             SUMATERA</i></h2>
                 </center>
             </div>
-            <div class="col-12 col-sm-12 col-md-12">
-
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <iframe src="https://www.youtube.com/embed/ntQcdtnWgds?si=y0dyMfkvTF9QyfHD&autoplay=1"
                     title="ASRAYA PROPERTY - LIVING HARMONY IN NATURE" frameborder="0"
-                    allow="autoplay; encrypted-media;" muted class="video-wrap"></iframe>
+                    allow="autoplay; encrypted-media;" muted class="video-wrap" allowfullscreen></iframe>
                 <p class="rapih">
                     Kami menghadirkan perumahan premium yang mengutamakan desain modern dengan sentuhan alam,
                     kami menciptakan hunian yang menggabungkan suasana hutan tropis di tengah hiruk-pikuk kota.
