@@ -180,7 +180,7 @@ a:hover {
 
 @media (min-width: 768px) {
     .header {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
     .site-section {
         padding: 7em 0;
