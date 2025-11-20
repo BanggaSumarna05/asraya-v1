@@ -176,6 +176,9 @@ a:hover {
         padding: 7em 0;
         font-size: 1.4rem;
     }
+    /* .site-footer {
+        font-size: 1rem;
+    } */
 }
 
 @media (min-width: 768px) {
@@ -185,6 +188,9 @@ a:hover {
     .site-section {
         padding: 7em 0;
         font-size: 1.77rem;
+    }
+    .site-footer {
+        font-size: 1.6rem;
     }
 }
 

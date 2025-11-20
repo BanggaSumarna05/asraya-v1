@@ -14,7 +14,7 @@
 <footer class="site-footer" {{-- style="background-image: url('img/footer.jpg'); background-color: rgba(0, 0, 0, 0.7); background-blend-mode: overlay; background-size: cover; background-position-y: center;" --}}>
     <div style="padding-left: 5%; padding-right: 5%;">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-sm-8">
                 <div class="mb-5">
                     <h3 class="footer-heading mb-4 text-black">About Asraya</h3>
                     <div class="row gx-5 gx-xl-10" style="width: 100%">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 mb-5 mb-lg-0">
+            <div class="col-lg-3 col-sm-4">
                 <div class="row mb-5">
                     <div class="col-md-12">
                         <h3 class="footer-heading mb-4 text-black">Sitemap</h3>
