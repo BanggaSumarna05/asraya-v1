@@ -59,7 +59,7 @@
 <body>
     @include('templates/navbar')
     <div class="site-blocks-cover video-bg overlay lazy-bg" data-aos="fade">
-        <video autoplay loop muted playsinline style="filter:none;" id="heroVideo">
+        <video autoplay loop muted playsinline style="filter:none;" id="heroVideo" class="h-100">
             <source src="#" type="video/mp4" id="videoSource">
             Your browser does not support the video tag.
         </video>
@@ -181,13 +181,13 @@
         var video = document.getElementById('heroVideo');
         var source = document.getElementById('videoSource');
         if (window.innerWidth <= 1080) {
-            source.src = "/vids/motion-mobile.mp4";
+            source.src = "/vids/motion-mobilev2.mp4";
             video.style.objectFit = "cover";
             video.style.width = "100vw";
             video.style.height = "100vh";
             // alert('mobile');
         } else {
-            source.src = "/vids/motion-main.mp4";
+            source.src = "/vids/Motion-Mainv2.mp4";
             // alert('full');
         }
         video.load();

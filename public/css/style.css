@@ -179,9 +179,9 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    .header {
+    /* .header {
         font-size: 1rem;
-    }
+    } */
     .site-section {
         padding: 7em 0;
         font-size: 1.77rem;
