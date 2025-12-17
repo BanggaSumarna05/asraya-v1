@@ -1,13 +1,12 @@
 /* Base */
 body {
-    /* line-height: 1.7; */
-    /* font-weight: 400; */
-    /* font-size: 2rem; */
     color: #333;
-    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
 }
+
 ::-moz-selection {
     background: #000;
     color: #fff;
@@ -190,7 +189,7 @@ a:hover {
         font-size: 1.77rem;
     }
     .site-footer {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -843,6 +842,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-image: url('../new/assets/img/F11.jpg')"
 }
 
 .site-blocks-cover.overlay {

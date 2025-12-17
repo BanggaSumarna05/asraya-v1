@@ -62,7 +62,7 @@
     <div class="site-section" id="home">
         <div class="container" data-aos="fade-up">
             <center>
-                <nav class="nav nav-pills nav-fill" style="margin:4vh;">
+                <nav class="nav nav-pills nav-fill" style="margin:2vh;">
                     <a class="active" data-toggle="tab" href="#menu1" style="padding: 3vh; ">
                         <h3>Pertanyaan Umum</h3>
                     </a>

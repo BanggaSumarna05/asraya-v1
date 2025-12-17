@@ -28,7 +28,7 @@
                 <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
                     <h1 class="text-center" style="font-family: 'Archivo'; font-size: 50px">CENDANA</h1>
                     <h4 class="text-white rapih text-center">
-                        Unit Cendana di Pesona Hutan Asraya adalah hunian asri yang nyaman dan ideal untuk keluarga.
+                        Unit Cendana di Casa Asraya adalah hunian asri yang nyaman dan ideal untuk keluarga.
                         Dirancang selaras dengan alam, unit ini menghadirkan suasana tenang dan ramah lingkungan. Setiap
                         ruangnya diatur efisien untuk mendukung kehidupan keluarga, menawarkan keindahan alam sekaligus
                         kenyamanan modern.
@@ -39,7 +39,7 @@
     </div>
     <div class="site-section" id="home">
         <div class="container text-white">
-            <div class="row" {{-- secondary color --}} style="background-color: #ad8e79;padding 3vh">
+            <div class="row" {{-- secondary color --}} style="background-color: #ad8e79;padding: 3vh">
                 <div class="col-5">
                     <div class="align-items-center justify-content-center"
                         style="padding-top: 8vh;padding-bottom: 8vh;">
@@ -47,9 +47,9 @@
                             TIPE CENDANA</h2>
                         <p style="color: whitesmoke;padding-right: 40px;padding-left: 40px; position: -20px"
                             class="mb-4">
-                            LT: 90m² | LB: 138m²
+                            <strong>LT: 90m² | LB: 138m²</strong>
                         </p>
-                        <p class="rapih" style="padding-right: 40px;padding-left: 40px">
+                        <p class="rapih" style="padding-right: 40px;padding-left: 40px; font-size: 18px;">
                             Type Cendana memiliki Luas Bangunan 138m2 dengan spesifikasi 3 lantai. Type Cendana
                             berjumlah 25
                             unit yang terbagi ada 3 blok. Type Cendana memiliki Brandgang (Taman Hijau Terbuka) yang
@@ -58,21 +58,21 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-7" style="left: 14px;">
-                    <img class="image-fluid w-100 h-100 lazy float-right" src="img/cendana/cendana-interior-0.jpg">
+                <div class="col-7" style="background-image: url('/img/cendana/cendana-interior-0.jpg'); background-size: cover;">
+                    >
                 </div>
             </div>
-            <div class="row" {{-- secondary color --}} style="background-color: white;">
+            <div class="row" {{-- secondary color --}} style="background-color: white; font-size: 18px !important;">
                 <div class="col-7">
 
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
                         style="padding-top: 22vh;">
                         <div class="carousel-inner">
                             @foreach ($data['slide'] as $i => $item)
-                                <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
-                                    <center><img class="w-100 lazy" src="{{ $item }}">
-                                    </center>
-                                </div>
+                            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                                <center><img class="w-100 lazy" src="{{ $item }}">
+                                </center>
+                            </div>
                             @endforeach
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -195,10 +195,10 @@
                 <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach ($data['galeries'] as $i => $item)
-                            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
-                                <center><img class="w-100 lazy" src="{{ $item }}">
-                                </center>
-                            </div>
+                        <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                            <center><img class="w-100 lazy" src="{{ $item }}">
+                            </center>
+                        </div>
                         @endforeach
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls1" role="button"
@@ -227,6 +227,10 @@
                 <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
                     <img class="image-fluid w-100 lazy" src="img/cendana/lt3.png">
                     <h3 style="color:rgba(0,38,28,1)">Upper Level</h3>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px;">
+                    <img class="image-fluid w-100 lazy" src="/img/sitemap.jpg" style="width: 100%; height: auto;">
+                    <h3 style="color:rgba(0,38,28,1)">Site Map</h3>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px">
                     <br>

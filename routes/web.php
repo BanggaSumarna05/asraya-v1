@@ -19,6 +19,7 @@ use Barryvdh\DomPDF\PDF;
 
 Route::get('/', [FrontController::class, 'index'])->name('index');
 Route::get('/featured-house', [FrontController::class, 'featuredHouse'])->name('featured-house');
+Route::get('/history', [FrontController::class, 'history'])->name('history');
 Route::get('/fasilitas', [FrontController::class, 'fasilitas'])->name('fasilitas');
 Route::get('/unit-unggulan', [FrontController::class, 'unitUnggulan'])->name('unitUnggulan');
 Route::get('/mahogany', [FrontController::class, 'mahogany'])->name('mahogany');

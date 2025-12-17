@@ -28,7 +28,7 @@
                 <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
                     <h1 class="text-center" style="font-family: 'Archivo'; font-size: 50px">MAHOGANY</h1>
                     <h4 class="text-white rapih text-center">
-                        Unit Mahogany di Pesona Hutan Asraya adalah hunian luas yang terinspirasi alam, menawarkan
+                        Mahogany di Casa Asraya adalah hunian luas yang terinspirasi alam, menawarkan
                         keanggunan dan ketenangan. Dengan pemandangan hijau dan interior bercahaya, rumah ini
                         menggabungkan kenyamanan modern dengan kedamaian hutan.
                     </h4>
@@ -38,40 +38,39 @@
     </div>
     <div class="site-section" id="home">
         <div class="container text-white">
-            <div class="row" {{-- secondary color --}} style="background-color: #ad8e79;padding 3vh">
+            <div class="row" {{-- secondary color --}} style="background-color: #ad8e79;padding: 3vh">
                 <div class="col-5">
                     <div class="align-items-center justify-content-center"
-                        style="padding-top: 8vh;padding-bottom: 8vh;">
+                        style="padding-top: 8vh; padding-bottom: 8vh; ">
                         <h2 class="" style="padding-right: 40px;padding-left: 40px;color:whitesmoke;">
                             TIPE MAHOGANY</h2>
-                        <p style="color: color:whitesmoke;padding-right: 40px;padding-left: 40px; position: -20px"
+                        <p style="color: whitesmoke;padding-right: 40px;padding-left: 40px; position: -20px"
                             class="mb-4">
                             LT: 157m² | LB: 220m²
                         </p>
-                        <p class="rapih" style="padding-right: 40px;padding-left: 40px">
+                        <p class="rapih" style="padding-right: 40px;padding-left: 40px; font-size: 18px;">
                             Type Mahogany memiliki Luas Bangunan 220m² dengan spesifikasi 3 lantai. Type Mahogany
                             berjumlah
                             4 unit. Dan Keistimewaan Type Mahogany memiliki Connected Garden yang terhubung langsung
                             dengan
-                            Clubhouse Pesona Hutan Asraya
+                            Clubhouse CASA ASRAYA
                         </p>
                     </div>
                 </div>
-                <div class="col-7" style="left: 14px;">
-                    <img class="image-fluid w-100 h-100 lazy float-right" src="img/mahogany/mahogany-interior-0.jpg">
+                <div class="col-7"
+                    style="background-image: url('img/mahogany/mahogany-interior-0.jpg'); background-size: cover;">
                 </div>
             </div>
-            <div class="row" {{-- secondary color --}} style="background-color: white;">
-                <div class="col-7">
-
+            <div class="row" {{-- secondary color --}} style="background-color: white; font-size: 18px;!important">
+                <div class="col-lg-7 col-sm-12 col-md-7">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
                         style="padding-top: 22vh;">
                         <div class="carousel-inner">
                             @foreach ($data['slide'] as $i => $item)
-                                <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
-                                    <center><img class="w-100 lazy" src="{{ $item }}">
-                                    </center>
-                                </div>
+                            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                                <center><img class="w-100 lazy" src="{{ $item }}">
+                                </center>
+                            </div>
                             @endforeach
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -84,7 +83,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-5" style="background-color: #ad8e79; padding:0px">
+                <div class="col-lg-5 col-md-5 col-sm-12" style="background-color: #ad8e79; padding:0px">
                     <div class="align-items-center justify-content-center"
                         style="padding-top: 8vh;padding-bottom: 8vh;">
                         <h2 class="" style="padding-right: 40px;padding-left: 40px;color: whitesmoke;">
@@ -202,6 +201,10 @@
                 <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
                     <img class="image-fluid w-100 lazy" src="img/mahogany/LT3 MAHOGANY.png">
                     <h3 style="color:rgba(0,38,28,1)">Upper Level</h3>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px;">
+                    <img class="image-fluid w-100 lazy" src="/img/sitemap.jpg" style="width: 100%; height: auto;">
+                    <h3 style="color:rgba(0,38,28,1)">Site Map</h3>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px">
                     <br>

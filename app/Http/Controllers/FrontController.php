@@ -832,10 +832,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 "question" => "Apakah ada opsi untuk custom atau perubahan desain bangunan dari unit yang di beli?",
                 "answer" => "Untuk menjaga kualitas bangunan dan kerapihan area hunian dibolehkan untuk menambah atau merubah design minor bangunan kecuali tampak depan dan tidak merubah bentuk asli Pesona Hutan Asraya."
             ],
-            [
-                "question" => "Bagaimana jika kita ingin menempati unit yang sudah dibeli di tengah berjalannya proses Pembangunan Pesona Hutan Asraya?",
-                "answer" => "Konsumen bisa menempati unit yang sudah dibeli meskipun proses Pembangunan sedang berjalan."
-            ],
+            // [
+            //     "question" => "Bagaimana jika kita ingin menempati unit yang sudah dibeli di tengah berjalannya proses Pembangunan Pesona Hutan Asraya?",
+            //     "answer" => "Konsumen bisa menempati unit yang sudah dibeli meskipun proses Pembangunan sedang berjalan."
+            // ],
             [
                 "question" => "Apakah saya bisa melakukan inspeksi terhadap unit yang akan saya beli?",
                 "answer" => "Calon customer diperbolehkan untuk bisa melakukan inspeksi progress Pembangunan unit."
@@ -1165,5 +1165,11 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         return view('galeri')->with([
             'data' => $data,
         ]);
+    }
+
+    public function history()
+    {
+        $this->seo('Sejarah Perusahaan');
+        return view('history');
     }
 }

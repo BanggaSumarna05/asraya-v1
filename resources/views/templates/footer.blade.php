@@ -170,7 +170,9 @@
 <!-- Tawk.to Script with window.onload -->
 <script type="text/javascript">
     window.onload = function() {
-        console.log('trying');
+        // console.log('trying');
+        var promoCarouselModal = new bootstrap.Modal(document.getElementById('promoCarouselPopup'));
+        promoCarouselModal.show();
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {

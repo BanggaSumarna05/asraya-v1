@@ -24,7 +24,7 @@
                 <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
                     <h1 style="font-family: 'Archivo'; font-size: 50px">Fasilitas</h1>
                     <h4 class="align-center text-white">
-                        Selamat datang di PESONA HUTAN ASRAYA dimana
+                        Selamat datang di CASA ASRAYA dimana
                         kehidupan mewah berpadu dengan kemudahan dan kenyamanan. Terletak di hati
                         di Riau, properti indah kami menawarkan pengalaman gaya hidup yang tak tertandingi.
                     </h4>
@@ -36,18 +36,19 @@
         <div class="site-section" id="home">
             <div class="row" style="padding-top: -30px">
                 @foreach ($facilities as $item)
-                    <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="padding-top: 30px">
-                        <a href="{{ $item['link'] }}" class="unit-9">
-                            {{-- <div class="image" style="background-image:url('{{ $item['cover'] }})'"></div> --}}
-                            <div class="image lazy" style="background-image:url({{ $item['cover'] }})"></div>
-                            <div class="unit-9-content">
-                                <h2>{{ $item['title'] }}</h2>
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100" style="padding-top: 30px">
+                    <a href="{{ $item['link'] }}" class="unit-9">
+                        {{-- <div class="image" style="background-image:url('{{ $item['cover'] }})'">
+                </div> --}}
+                <div class="image lazy" style="background-image:url({{ $item['cover'] }})"></div>
+                <div class="unit-9-content">
+                    <h2>{{ $item['title'] }}</h2>
+                </div>
+                </a>
             </div>
+            @endforeach
         </div>
+    </div>
     </div>
     @include('templates/footer')
 </body>
