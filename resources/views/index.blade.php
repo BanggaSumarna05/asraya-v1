@@ -127,7 +127,7 @@
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
                             <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">CASA ASRAYA</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">PREMIUM LIVING</p>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">AUTHENTICALLY LIVING</p>
                         </div>
                         <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
                         <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
@@ -170,8 +170,8 @@
                     <img class="d-block w-100 h-100" src="img/gallery1/gal8.webp" alt="Fifth slide" style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">PREMIUM LOCATION</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">HEART OF PEKANBARU</p>
+                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">BRANDGANG</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">at CASA ASRAYA</p>
                         </div>
                         <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
                         <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
@@ -193,7 +193,7 @@
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
                             <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">CASA ASRAYA</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">YOUR DREAM HOME</p>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">AUTHENTICALLY LIVING</p>
                         </div>
                         <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
                         <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
@@ -269,55 +269,83 @@
             </div>
         </div>
 
-        <div id="maps" class="site-section">
-            <div class="container" data-aos="fade-up">
-                <center>
-                    <div class="site-section-heading text-center w-border">
-                        <h2>Our Location</h2>
-                    </div>
-                </center>
-                <div class="row gx-9 h-100">
-                    <div class="col-6 col-sm-12 col-md-6">
-                        <div class="overlay p-2">
-                            <div class="d-flex flex-row-reverse py-4 video-wrap">
-                                <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn-clear"
-                                    target="_blank"><img class="w-100 card-rounded lazy"
-                                        src="/old/assets/img/maps-02.png" alt=""></a>
+        <div id="map" class="site-section p-4 lazy-bg">
+            <div id="homeCarousel2" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <ol class="carousel-indicators">
+                    <li data-target="#homeCarousel2" data-slide-to="0" class="active"></li>
+                    <li data-target="#homeCarousel2" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 100vh;">
+                        <div class="container" data-aos="fade-up">
+                            <center>
+                                <div class="site-section-heading text-center w-border">
+                                    <h2>Our Location</h2>
+                                </div>
+                            </center>
+                            <div class="row gx-9 h-100">
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <div class="overlay p-2">
+                                        <div class="d-flex flex-row-reverse py-4 video-wrap">
+                                            <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn-clear"
+                                                target="_blank"><img class="w-100 card-rounded lazy"
+                                                    src="/old/assets/img/maps-02.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 col-md-6">
+                                    <p class="rapih" style="font-size: 17.2px;">
+                                        Kami mempersembahkan perumahan terbaik di Riau, menawarkan lokasi
+                                        yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier
+                                            Riri</i>,
+                                        memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan
+                                        lokasi di tengah kota dan fitur premium, CASA ASRAYA dapat menjangkau
+                                        fasilitas-fasilitas
+                                        strategis untuk gaya hidup yang berkualitas.
+                                        <br>
+                                        Berikut adalah lokasi-lokasi terdekat dari CASA ASRAYA:
+                                    <ul class="pt-10" style="font-size: 17.2px;">
+                                        <li>
+                                            15 Menit ke Bandara Internasional Syarif Kasim II
+                                        </li>
+                                        <li>
+                                            10 Menit ke Rumah Sakit Awal Bros
+                                        </li>
+                                        <li>
+                                            10 Menit ke Mall Pekanbaru
+                                        </li>
+                                        <li>10 Menit ke HS Soeman Library</li>
+                                        <li>10 Menit ke Central Business District</li>
+                                        <li>
+                                            3 Menit ke Kantor Polisi Daerah
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-12 col-md-6">
-                        <p class="rapih" style="font-size: 17.2px;">
-                            Kami mempersembahkan perumahan terbaik di Riau, menawarkan lokasi
-                            yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier
-                                Riri</i>,
-                            memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan
-                            lokasi di tengah kota dan fitur premium, CASA ASRAYA dapat menjangkau
-                            fasilitas-fasilitas
-                            strategis untuk gaya hidup yang berkualitas.
-                            <br>
-                            Berikut adalah lokasi-lokasi terdekat dari CASA ASRAYA:
-                        <ul class="pt-10" style="font-size: 17.2px;">
-                            <li>
-                                15 Menit ke Bandara Internasional Syarif Kasim II
-                            </li>
-                            <li>
-                                10 Menit ke Rumah Sakit Awal Bros
-                            </li>
-                            <li>
-                                10 Menit ke Mall Pekanbaru
-                            </li>
-                            <li>10 Menit ke HS Soeman Library</li>
-                            <li>10 Menit ke Central Business District</li>
-                            <li>
-                                3 Menit ke Kantor Polisi Daerah
-                            </li>
-                        </ul>
-                        </p>
+                    <div class="carousel-item" style="height: 100vh;">
+                        <center>
+                            <div class="site-section-heading text-center w-border">
+                                <h2>Site Map</h2>
+                            </div>
+                        </center>
+                        <img class="image-fluid w-100" src="/img/sitemap.jpg" style="width: 100%; height: auto;">
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#homeCarousel2" role="button" data-slide="prev">
+                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                    <span style="color: #00261c;">&leftarrow;</span>
+                </a>
+                <a class="carousel-control-next" href="#homeCarousel2" role="button" data-slide="next">
+                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+
+                    <span style="color: #00261c;">&RightArrow;</span>
+                </a>
             </div>
         </div>
+
     </div>
 
     <div class="modal fade" id="promoCarouselPopup" tabindex="-1" role="dialog" aria-labelledby="promoCarouselPopupLabel" aria-hidden="true">
@@ -373,8 +401,6 @@
             </div>
         </div>
     </div>
-
-
 
     @include('templates/footer')
 </body>
