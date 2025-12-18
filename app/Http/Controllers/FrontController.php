@@ -1172,4 +1172,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $this->seo('Sejarah Perusahaan');
         return view('history');
     }
+
+    public function calculator()
+    {
+        $this->seo('Simulasi KPR');
+        return view('perhitungan_kpr');
+    }
 }

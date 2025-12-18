@@ -269,87 +269,123 @@
             </div>
         </div>
 
-        <div id="map" class="site-section p-4 lazy-bg">
-            <div id="homeCarousel2" class="carousel slide" data-ride="carousel" data-interval="9000">
-                <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel2" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel2" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="height: 100vh;">
-                        <div class="container" data-aos="fade-up">
-                            <center>
-                                <div class="site-section-heading text-center w-border">
-                                    <h2>Our Location</h2>
-                                </div>
-                            </center>
-                            <div class="row gx-9 h-100">
-                                <div class="col-6 col-sm-12 col-md-6">
-                                    <div class="overlay p-2">
-                                        <div class="d-flex flex-row-reverse py-4 video-wrap">
-                                            <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn-clear"
-                                                target="_blank"><img class="w-100 card-rounded lazy"
-                                                    src="/old/assets/img/maps-02.png" alt=""></a>
-                                        </div>
+        <div id="map" class="site-section p-4 lazy-bg" data-aos="fade-up">
+            <center>
+                <div class="site-section-heading text-center w-border">
+                    <h2>Our Location</h2>
+                </div>
+            </center>
+            <div class="row gx-9 h-100">
+                <div class="col-6 col-sm-12 col-md-6">
+                    <div class="overlay p-2">
+                        <div class="d-flex flex-row-reverse py-4 video-wrap">
+                            <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn-clear"
+                                target="_blank"><img class="w-100 card-rounded lazy"
+                                    src="img/maps-02.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-12 col-md-6">
+                    <p class="rapih" style="font-size: 17.2px;">
+                        Kami mempersembahkan perumahan terbaik di Riau, menawarkan lokasi
+                        yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier
+                            Riri</i>,
+                        memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau.
+                        <br>
+                        Lokasi terdekat dari CASA ASRAYA:
+                    <ul class="pt-10" style="font-size: 17.2px;">
+                        <li>
+                            15 Menit ke Bandara Internasional Syarif Kasim II
+                        </li>
+                        <li>
+                            10 Menit ke Rumah Sakit Awal Bros
+                        </li>
+                        <li>
+                            10 Menit ke Mall Pekanbaru
+                        </li>
+                        <li>10 Menit ke HS Soeman Library</li>
+                        <li>10 Menit ke Central Business District</li>
+                        <li>
+                            3 Menit ke Kantor Polisi Daerah
+                        </li>
+                    </ul>
+                    </p>
+                    <br>
+                    <center>
+                        <strong style="font-size: 17.2px;"> Pindai barcode untuk<br> melihat petunjuk arah di Google Maps.</strong>
+                        <br>
+                        <img src="img/qr_map.png" alt="Location" class="card-rounded lazy" style="width: 200px; height: 200px;">
+                        <br>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-section">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-md-7 text-center">
+                        <div class="site-section-heading text-center w-border">
+                            <h2>Ahli Pemasaran Kami</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="testimonial text-center p-4">
+                                        <img src="https://media.licdn.com/dms/image/v2/C4D03AQFsVE_BNwbEtQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654252880090?e=1767830400&v=beta&t=2Z8AwYhIdT0nP0TTM3Kuie_s3kfC_DsA7yUf9U3gBXI" alt="Mustafa Dzul Akmal" class="img-fluid rounded-circle mx-auto mb-4"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <blockquote class="blockquote">
+                                            <footer class="text-primary">
+                                                Dzul Akmal
+                                                <br> <span class="text-muted">(+62) 81399998066</span>
+                                            </footer>
+                                        </blockquote>
                                     </div>
                                 </div>
-                                <div class="col-6 col-sm-12 col-md-6">
-                                    <p class="rapih" style="font-size: 17.2px;">
-                                        Kami mempersembahkan perumahan terbaik di Riau, menawarkan lokasi
-                                        yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier
-                                            Riri</i>,
-                                        memiliki fasilitas terbaik, tata letak yang luas, dan pemandangan yang memukau. Dengan
-                                        lokasi di tengah kota dan fitur premium, CASA ASRAYA dapat menjangkau
-                                        fasilitas-fasilitas
-                                        strategis untuk gaya hidup yang berkualitas.
-                                        <br>
-                                        Berikut adalah lokasi-lokasi terdekat dari CASA ASRAYA:
-                                    <ul class="pt-10" style="font-size: 17.2px;">
-                                        <li>
-                                            15 Menit ke Bandara Internasional Syarif Kasim II
-                                        </li>
-                                        <li>
-                                            10 Menit ke Rumah Sakit Awal Bros
-                                        </li>
-                                        <li>
-                                            10 Menit ke Mall Pekanbaru
-                                        </li>
-                                        <li>10 Menit ke HS Soeman Library</li>
-                                        <li>10 Menit ke Central Business District</li>
-                                        <li>
-                                            3 Menit ke Kantor Polisi Daerah
-                                        </li>
-                                    </ul>
-                                    </p>
+                                <div class="col-md-4">
+                                    <div class="testimonial text-center p-4">
+                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQFdOpUSVvKr_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722926692950?e=1767830400&v=beta&t=sLtTq4kdBpeuCIXf_hw_LAit3HxgoJTcr4KDpAt3KFk" alt="Linda" class="img-fluid rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;">
+                                        <blockquote class="blockquote">
+                                            <footer class="text-primary">
+                                                Linda
+                                                <br> <span class="text-muted">(+62) 81276365418</span>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="testimonial text-center p-4">
+                                        <img src="data:image/png;base64,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" alt="Christian Siregar" class="img-fluid rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;">
+                                        <blockquote class="blockquote">
+                                            <footer class="text-primary">
+                                                Christian
+                                                <br> <span class="text-muted">(+62) 85263009991</span>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item" style="height: 100vh;">
-                        <center>
-                            <div class="site-section-heading text-center w-border">
-                                <h2>Site Map</h2>
-                            </div>
-                        </center>
-                        <img class="image-fluid w-100" src="/img/sitemap.jpg" style="width: 100%; height: auto;">
-                    </div>
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                        <span style="color: #00261c; font-size: 2rem;">&leftarrow;</span>
+                    </a>
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                        <span style="color: #00261c; font-size: 2rem;">&RightArrow;</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#homeCarousel2" role="button" data-slide="prev">
-                    <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                    <span style="color: #00261c;">&leftarrow;</span>
-                </a>
-                <a class="carousel-control-next" href="#homeCarousel2" role="button" data-slide="next">
-                    <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-
-                    <span style="color: #00261c;">&RightArrow;</span>
-                </a>
             </div>
         </div>
+
 
     </div>
 
     <div class="modal fade" id="promoCarouselPopup" tabindex="-1" role="dialog" aria-labelledby="promoCarouselPopupLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="promoCarouselPopupLabel">Promo KPR</h5>

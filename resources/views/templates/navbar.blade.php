@@ -53,6 +53,7 @@
                                     <li><a href="{{ route('faq') }}">Pertanyaan Umum</a></li>
                                     <li><a href="{{ route('blog.index') }}">Berita & Artikel</a></li>
                                     <li><a href="{{ route('history') }}">History</a></li>
+                                    <li><a href="{{ route('simulasi-kpr') }}">Simulasi Kpr</a></li>
                                 </ul>
                             </li>
                             <li class="has-children">

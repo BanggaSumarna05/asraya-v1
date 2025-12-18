@@ -38,33 +38,29 @@
     </div>
     <div class="site-section" id="home">
         <div class="container text-white">
-            <div class="row" {{-- secondary color --}} style="background-color: #ad8e79;padding: 3vh">
-                <div class="col-5">
-                    <div class="align-items-center justify-content-center"
-                        style="padding-top: 8vh; padding-bottom: 8vh; ">
-                        <h2 class="" style="padding-right: 40px;padding-left: 40px;color:whitesmoke;">
-                            TIPE MAHOGANY</h2>
-                        <p style="color: whitesmoke;padding-right: 40px;padding-left: 40px; position: -20px"
-                            class="mb-4">
+            <div class="row" style="background-color: #ad8e79;padding: 3vh">
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                    <div class="d-flex flex-column justify-content-center h-100 py-5 px-4 px-md-5">
+                        <h2 class="text-white mb-3" style="font-family: 'Archivo'; font-weight: 700;">
+                            TIPE MAHOGANY
+                        </h2>
+                        <p class="text-white mb-4" style="font-size:18px; font-weight: 500;">
                             LT: 157m² | LB: 220m²
                         </p>
-                        <p class="rapih" style="padding-right: 40px;padding-left: 40px; font-size: 18px;">
+                        <p class="rapih text-white" style="font-size: 1.1rem; line-height: 1.7;">
                             Type Mahogany memiliki Luas Bangunan 220m² dengan spesifikasi 3 lantai. Type Mahogany
-                            berjumlah
-                            4 unit. Dan Keistimewaan Type Mahogany memiliki Connected Garden yang terhubung langsung
-                            dengan
-                            Clubhouse CASA ASRAYA
+                            berjumlah 4 unit. Dan Keistimewaan Type Mahogany memiliki Connected Garden yang terhubung
+                            langsung dengan Clubhouse CASA ASRAYA.
                         </p>
                     </div>
                 </div>
-                <div class="col-7"
-                    style="background-image: url('img/mahogany/mahogany-interior-0.jpg'); background-size: cover;">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <img src="img/mahogany/mahogany-interior-0.jpg" class="w-100 lazy" alt="tipe mahogany">
                 </div>
             </div>
-            <div class="row" {{-- secondary color --}} style="background-color: white; font-size: 18px;!important">
-                <div class="col-lg-7 col-sm-12 col-md-7">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
-                        style="padding-top: 22vh;">
+            <div class="row" style="background-color: white; font-size: 18px!important;">
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <div id="carouselExampleControls" class="carousel slide justify-content-center" data-ride="carousel">
                         <div class="carousel-inner">
                             @foreach ($data['slide'] as $i => $item)
                             <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
@@ -83,7 +79,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-12" style="background-color: #ad8e79; padding:0px">
+                <div class="col-sm-12 col-md-12 col-lg-5" style="background-color: #ad8e79; padding:0px">
                     <div class="align-items-center justify-content-center"
                         style="padding-top: 8vh;padding-bottom: 8vh;">
                         <h2 class="" style="padding-right: 40px;padding-left: 40px;color: whitesmoke;">

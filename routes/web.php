@@ -33,24 +33,25 @@ Route::get('/clinic', [FrontController::class, 'clinic'])->name('clinic');
 Route::get('/taman-kota', [FrontController::class, 'tamanKota'])->name('tamanKota');
 Route::get('/frequently-asked-questions', [FrontController::class, 'faq'])->name('faq');
 Route::get('/getProgress-bosnya-pilih-pilih-karyawan-jangan-beli-disini', [FrontController::class, 'getProgress'])->name('getProgress');
+Route::get('/simulasi-kpr', [FrontController::class, 'calculator'])->name('simulasi-kpr');
 Route::get('/galeri', [FrontController::class, 'galeri'])->name('galeri');
 
 Route::get('/ebrochure', [FrontController::class, 'ebrochure'])->name('ebrochure');
 Route::get('/eprofile', [FrontController::class, 'eprofile'])->name('eprofile');
 
 
-use App\Models\Post;
+// use App\Models\Post;
 
-Route::get('/blog', function () {
-    $posts = Post::where('published', true)
-        ->latest()
-        ->paginate(9);
+// Route::get('/blog', function () {
+//     $posts = Post::where('published', true)
+//         ->latest()
+//         ->paginate(9);
 
-    return view('blog.index', compact('posts'));
-})->name('blog.index');
+//     return view('blog.index', compact('posts'));
+// })->name('blog.index');
 
-Route::get('/blog/{slug}', function ($slug) {
-    $post = Post::where('slug', $slug)->firstOrFail();
+// Route::get('/blog/{slug}', function ($slug) {
+//     $post = Post::where('slug', $slug)->firstOrFail();
 
-    return view('blog.show', compact('post'));
-})->name('blog.show');
+//     return view('blog.show', compact('post'));
+// })->name('blog.show');

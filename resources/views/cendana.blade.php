@@ -39,8 +39,8 @@
     </div>
     <div class="site-section" id="home">
         <div class="container text-white">
-            <div class="row" {{-- secondary color --}} style="background-color: #ad8e79;padding: 3vh">
-                <div class="col-5">
+            <div class="row" style="background-color: #ad8e79;padding: 3vh">
+                <div class="col-sm-12 col-md-12 col-lg-5">
                     <div class="align-items-center justify-content-center"
                         style="padding-top: 8vh;padding-bottom: 8vh;">
                         <h2 class="" style="padding-right: 40px;padding-left: 40px;color: whitesmoke">
@@ -58,13 +58,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-7" style="background-image: url('/img/cendana/cendana-interior-0.jpg'); background-size: cover;">
-                    >
+                <div class="col-sm-12 col-md-12 col-lg-7">
+                    <img src="/img/cendana/cendana-interior-0.jpg" class="w-100 lazy" alt="tipe mahogany">
                 </div>
             </div>
             <div class="row" {{-- secondary color --}} style="background-color: white; font-size: 18px !important;">
-                <div class="col-7">
-
+                <div class="col-sm-12 col-md-12 col-lg-7">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
                         style="padding-top: 22vh;">
                         <div class="carousel-inner">
@@ -85,7 +84,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-5" style="background-color: #ad8e79; padding:0px">
+                <div class="col-sm-12 col-md-12 col-lg-5" style="background-color: #ad8e79; padding:0px">
                     <div class="align-items-center justify-content-center"
                         style="padding-top: 8vh;padding-bottom: 8vh;">
                         <h2 class="" style="padding-right: 40px;padding-left: 40px;color: whitesmoke">
