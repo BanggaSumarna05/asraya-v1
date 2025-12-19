@@ -334,7 +334,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="testimonial text-center p-4">
                                         <img src="https://media.licdn.com/dms/image/v2/C4D03AQFsVE_BNwbEtQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654252880090?e=1767830400&v=beta&t=2Z8AwYhIdT0nP0TTM3Kuie_s3kfC_DsA7yUf9U3gBXI" alt="Mustafa Dzul Akmal" class="img-fluid rounded-circle mx-auto mb-4"
                                             style="width: 120px; height: 120px; object-fit: cover;">
@@ -346,7 +346,7 @@
                                         </blockquote>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="testimonial text-center p-4">
                                         <img src="https://media.licdn.com/dms/image/v2/D5603AQFdOpUSVvKr_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722926692950?e=1767830400&v=beta&t=sLtTq4kdBpeuCIXf_hw_LAit3HxgoJTcr4KDpAt3KFk" alt="Linda" class="img-fluid rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;">
                                         <blockquote class="blockquote">
@@ -357,7 +357,7 @@
                                         </blockquote>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <!-- <div class="col-md-4">
                                     <div class="testimonial text-center p-4">
                                         <img src="data:image/png;base64,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" alt="Christian Siregar" class="img-fluid rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;">
                                         <blockquote class="blockquote">
@@ -367,7 +367,7 @@
                                             </footer>
                                         </blockquote>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

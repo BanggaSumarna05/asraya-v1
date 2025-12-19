@@ -131,11 +131,11 @@
                     <li class="mobile-menu-item has-submenu">
                         <span class="submenu-toggle">Profil Kami</span>
                         <ul class="mobile-submenu">
-                            <li><a href="assets/ebrochure/asraya-22092025.pdf" target="_blank">E-Brochure</a></li>
+                            <li><a href="assets/ebrochure/asraya-brosur.pdf" target="_blank">E-Brochure</a></li>
                             <li><a href="assets/ebrochure/asraya-profile.pdf" target="_blank">E-Profile</a></li>
-                            <li><a href="assets/ebrochure/site_plan_asraya_property.pdf" target="_blank">Site Plan
+                            <li><a href="assets/ebrochure/site_plan_asraya_property.png" target="_blank">Site Plan
                                     Available</a></li>
-                            <li><a href="https://linktr.ee/casasraya" target="_blank">Linktree</a></li>
+                            <li><a href="https://linktr.ee/casaasraya" target="_blank">Linktree</a></li>
                         </ul>
                     </li>
 

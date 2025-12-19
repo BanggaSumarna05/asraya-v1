@@ -232,7 +232,7 @@ class FrontController extends Controller
             "Hunian eksklusif dan nyaman Riau",
             "Perumahan premium dan hijau Riau",
             "asraya riau",
-            "Pesona hutan asraya",
+            "Casa Asraya",
             "Atelier Riri asraya townhouse",
             "Pekanbaru asraya",
             "LIVING HARMONY IN NATURE",
@@ -253,7 +253,7 @@ class FrontController extends Controller
             "Perumahan konsep unik",
             "Smart home",
             'perumahan dengan club house',
-            'pesona hutan asraya',
+            'Casa Asraya',
             'perumahan club house modern',
             'perumahan club house',
             'perumahan club house mewah',
@@ -322,9 +322,9 @@ class FrontController extends Controller
 
     public function seo($title = null)
     {
-        SEOTools::setTitle('Pesona Hutan Asraya - ' . $title);
+        SEOTools::setTitle('Casa Asraya - ' . $title);
         SEOTools::setDescription(
-            'Pesona Hutan Asraya adalah perumahan di riau dibuat dengan developer terpercaya yang menawarkan hunian modern dan asri, dengan lokasi strategis, fasilitas lengkap, dan bernilai investasi tinggi.'
+            'Casa Asraya adalah perumahan di riau dibuat dengan developer terpercaya yang menawarkan hunian modern dan asri, dengan lokasi strategis, fasilitas lengkap, dan bernilai investasi tinggi.'
         );
         SEOTools::opengraph()->setUrl('https://asrayaproperty.com/');
         SEOTools::setCanonical('https://asrayaproperty.com/');
@@ -510,7 +510,7 @@ class FrontController extends Controller
     public function index(Request $request)
     {
         $header = [
-            'header' => 'Pesona Hutan Asraya',
+            'header' => 'Casa Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
             'img' => 'new/assets/img/F11.jpg',
             'low' => 'new/assets/img/aa.png'
@@ -684,7 +684,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     public function visi()
     {
         $header = [
-            'header' => 'Pesona Hutan Asraya',
+            'header' => 'Casa Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
             'img' => 'img/f6.png',
             'low' => 'new/assets/img/aa.png'
@@ -809,16 +809,16 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $generals = collect([
             [
-                "question" => "Apakah konsep yang ditawarkan oleh Pesona Hutan Asraya?",
-                "answer" => "Pesona Hutan Asraya adalah hunian pertama di kota Pekanbaru yang menggunakan konsep hutan kota, dengan sentuhan design dari arsitek Atelier Riri yang mempunyai fasilitas lengkap diantaranya Clubhouse, Swimming Pool, Yoga Club, Gym & Resto and Lounge."
+                "question" => "Apakah konsep yang ditawarkan oleh Casa Asraya?",
+                "answer" => "Casa Asraya adalah hunian pertama di kota Pekanbaru yang menggunakan konsep hutan kota, dengan sentuhan design dari arsitek Atelier Riri yang mempunyai fasilitas lengkap diantaranya Clubhouse, Swimming Pool, Yoga Club, Gym & Resto and Lounge."
             ],
             [
-                "question" => "Kapan proyek Pesona Hutan Asraya dimulai?",
+                "question" => "Kapan proyek Casa Asraya dimulai?",
                 "answer" => "Proyek ini dilaksanakan dari bulan Mei 2023"
             ],
             [
                 "question" => "Apakah developer sudah mempunyai izin-izin yang dibutuhkan untuk membangun hunian ini?",
-                "answer" => "Semua syarat perizinan pembangunan yang diperlukan sudah dimiliki oleh developer untuk dapat menyelesaikan Pembangunan unit Pesona Hutan Asraya."
+                "answer" => "Semua syarat perizinan pembangunan yang diperlukan sudah dimiliki oleh developer untuk dapat menyelesaikan Pembangunan unit Casa Asraya."
             ],
             [
                 "question" => "Sudah berapa lama perusahaan Anda berkecimpung dalam bisnis real estate?",
@@ -830,10 +830,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             ],
             [
                 "question" => "Apakah ada opsi untuk custom atau perubahan desain bangunan dari unit yang di beli?",
-                "answer" => "Untuk menjaga kualitas bangunan dan kerapihan area hunian dibolehkan untuk menambah atau merubah design minor bangunan kecuali tampak depan dan tidak merubah bentuk asli Pesona Hutan Asraya."
+                "answer" => "Untuk menjaga kualitas bangunan dan kerapihan area hunian dibolehkan untuk menambah atau merubah design minor bangunan kecuali tampak depan dan tidak merubah bentuk asli Casa Asraya."
             ],
             // [
-            //     "question" => "Bagaimana jika kita ingin menempati unit yang sudah dibeli di tengah berjalannya proses Pembangunan Pesona Hutan Asraya?",
+            //     "question" => "Bagaimana jika kita ingin menempati unit yang sudah dibeli di tengah berjalannya proses Pembangunan Casa Asraya?",
             //     "answer" => "Konsumen bisa menempati unit yang sudah dibeli meskipun proses Pembangunan sedang berjalan."
             // ],
             [
@@ -852,23 +852,23 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
 
         $specs = collect([
             [
-                "question" => "Berapakah luas bangunan dari unit Pesona Hutan Asraya?",
+                "question" => "Berapakah luas bangunan dari unit Casa Asraya?",
                 "answer" => "Untuk Type Mahogany ukuran luas bangunan adalah 220 M²; Untuk Type Cendana luas bangunan adalah 138 M²."
             ],
             [
-                "question" => "Bagaimana spesifikasi bangunan untuk sisi interior maupun eksterior unit Pesona Hutan Asraya?",
+                "question" => "Bagaimana spesifikasi bangunan untuk sisi interior maupun eksterior unit Casa Asraya?",
                 "answer" => "Untuk dinding menggunakan bata ringan, finishing lantai menggunakan granit 60x60, finishing cat interior dan eksterior menggunakan Mowilex."
             ],
             [
-                "question" => "Untuk sumber air yang digunakan setiap unit Pesona Hutan Asraya menggunakan Pam atau Sumur Bor?",
+                "question" => "Untuk sumber air yang digunakan setiap unit Casa Asraya menggunakan Pam atau Sumur Bor?",
                 "answer" => "Untuk setiap unit Pesona Hutan menggunakan sumur bor."
             ],
             [
-                "question" => "Berapa kapasitas parkir mobil di setiap unit Pesona Hutan Asraya?",
+                "question" => "Berapa kapasitas parkir mobil di setiap unit Casa Asraya?",
                 "answer" => "Untuk type Mahogany tersedia 1 garasi dan 1 Carport dengan kapasitas 4 mobil, Dan untuk type Cendana tersedia 1 carport dengan kapasitas 2 mobil."
             ],
             [
-                "question" => "Jenis atap apa yang digunakan untuk unit Pesona Hutan Asraya?",
+                "question" => "Jenis atap apa yang digunakan untuk unit Casa Asraya?",
                 "answer" => "Untuk semua unit menggunakan atap Bitumen (Merk Onduline) dan struktur baja ringan."
             ],
             [
@@ -877,10 +877,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             ],
             [
                 "question" => "Berapa daya listrik yang digunakan?",
-                "answer" => "Untuk semua unit Pesona Hutan Asraya menggunakan daya listrik 3500 Watt dengan sistem token di semua unit."
+                "answer" => "Untuk semua unit Casa Asraya menggunakan daya listrik 3500 Watt dengan sistem token di semua unit."
             ],
             [
-                "question" => "Type lantai apa yang digunakan untuk unit Pesona Hutan Asraya di lantai 1, 2 & 3?",
+                "question" => "Type lantai apa yang digunakan untuk unit Casa Asraya di lantai 1, 2 & 3?",
                 "answer" => "Untuk lantai menggunakan jenis Granite tile, dengan detail: Untuk area Utama: Niro Granite Homogenous Tile 60x60 Untuk area Toilet: Wisma Sehati - Homogenius Tile 60x60 Gravity Dark Grey Untuk area Kamar: Pakai SPC Yellow Creek Oak."
             ],
             [
@@ -891,52 +891,52 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
 
         $facs = collect([
             [
-                "question" => "Bagaimanakah sistem keamanan di lingkungan Pesona Hutan Asraya?",
-                "answer" => "Cluster Pesona Hutan Asraya mempunyai fasilitas One Gate System, fasilitas CCTV di lingkungan area komplek dan terdapat Security yang berjaga 24 Jam."
+                "question" => "Bagaimanakah sistem keamanan di lingkungan Casa Asraya?",
+                "answer" => "Cluster Casa Asraya mempunyai fasilitas One Gate System, fasilitas CCTV di lingkungan area komplek dan terdapat Security yang berjaga 24 Jam."
             ],
             [
                 "question" => "Apa sajakah fasilitas Clubhouse yang ditawarkan untuk unit rumah Pesona Hutan?",
                 "answer" => "Pesona Hutan mempunyai Clubhouse yang memiliki fasilitas Gym, Swimming Pool, Resto and Café."
             ],
             [
-                "question" => "Bagaimana dengan infrastruktur di sekitar Kawasan Pesona Hutan Asraya, seperti akses sekolah dan pusat perbelanjaan?",
-                "answer" => "Pesona Hutan Asraya mempunyai lokasi strategis yang memiliki akses dekat menuju SMPN 1, SMPN 4, SMPN 13, SMP Santa Maria, SMAN 1 Pekanbaru, SMA 8 Pekanbaru, SMA 9 Pekanbaru, SMA Al-Azhar, SMA Santa Maria, Mall Pekanbaru, Mall SKA, Living World, Mall Ciputra, RSUD, RS Awal Bros, PMC, RS Zainab, RS Bhayangkara, RS Petala Bumi dan pusat distrik bisnis Sudirman."
+                "question" => "Bagaimana dengan infrastruktur di sekitar Kawasan Casa Asraya, seperti akses sekolah dan pusat perbelanjaan?",
+                "answer" => "Casa Asraya mempunyai lokasi strategis yang memiliki akses dekat menuju SMPN 1, SMPN 4, SMPN 13, SMP Santa Maria, SMAN 1 Pekanbaru, SMA 8 Pekanbaru, SMA 9 Pekanbaru, SMA Al-Azhar, SMA Santa Maria, Mall Pekanbaru, Mall SKA, Living World, Mall Ciputra, RSUD, RS Awal Bros, PMC, RS Zainab, RS Bhayangkara, RS Petala Bumi dan pusat distrik bisnis Sudirman."
             ],
             [
                 "question" => "Bagaimana kondisi wilayah sekitar area hunian Pesona Hutan?",
-                "answer" => "Wilayah sekitar Pesona Hutan sudah berkembang, Pesona Hutan Asraya dekat dengan kawasan Pendidikan terdapat 9 sekolah, dekat dengan lokasi 6 rumah sakit dan 4 Mall besar di Pekanbaru yang masing-masing lokasi hanya berjarak sekitar 15 menit dari hunian Pesona Hutan Asraya."
+                "answer" => "Wilayah sekitar Pesona Hutan sudah berkembang, Casa Asraya dekat dengan kawasan Pendidikan terdapat 9 sekolah, dekat dengan lokasi 6 rumah sakit dan 4 Mall besar di Pekanbaru yang masing-masing lokasi hanya berjarak sekitar 15 menit dari hunian Casa Asraya."
             ],
             [
-                "question" => "Apakah ada fasilitas umum yang berada di area Pesona Hutan Asraya?",
-                "answer" => "Untuk fasilitas umum di Pesona Hutan Asraya terdapat Clubhouse (Swimming Pool, Gym, Yoga Club, Resto & Lounge), Brandgang dan Taman Kota."
+                "question" => "Apakah ada fasilitas umum yang berada di area Casa Asraya?",
+                "answer" => "Untuk fasilitas umum di Casa Asraya terdapat Clubhouse (Swimming Pool, Gym, Yoga Club, Resto & Lounge), Brandgang dan Taman Kota."
             ],
             [
-                "question" => "Brand / Jenis toilet apa yang digunakan dalam unit Pesona Hutan Asraya?",
-                "answer" => "Semua unit Pesona Hutan Asraya menggunakan produk toilet dari Toto."
+                "question" => "Brand / Jenis toilet apa yang digunakan dalam unit Casa Asraya?",
+                "answer" => "Semua unit Casa Asraya menggunakan produk toilet dari Toto."
             ],
             [
-                "question" => "Apakah akan ada bonus yang didapatkan dari pembelian unit Pesona Hutan Asraya?",
-                "answer" => "Untuk setiap pembelian unit Pesona Hutan Asraya sudah mendapatkan free Canopy untuk carport, Layanan CCTV 24 jam diarea lingkungan Pesona Hutan Asraya dan water heater Solahart dengan kapasitas 100 L di setiap unit Pesona Hutan Asraya."
+                "question" => "Apakah akan ada bonus yang didapatkan dari pembelian unit Casa Asraya?",
+                "answer" => "Untuk setiap pembelian unit Casa Asraya sudah mendapatkan free Canopy untuk carport, Layanan CCTV 24 jam diarea lingkungan Casa Asraya dan water heater Solahart dengan kapasitas 100 L di setiap unit Casa Asraya."
             ],
             [
-                "question" => "Apakah fasilitas umum seperti Gojek, Grab, Shopee Food bisa masuk ke area Pesona Hutan Asraya?",
-                "answer" => "Semua fasilitas umum seperti Gojek, Grab, Shopee Food, J&T dan lainnya bisa masuk area Pesona Hutan Asraya dengan prosedur keamanan security Pesona Hutan Asraya."
+                "question" => "Apakah fasilitas umum seperti Gojek, Grab, Shopee Food bisa masuk ke area Casa Asraya?",
+                "answer" => "Semua fasilitas umum seperti Gojek, Grab, Shopee Food, J&T dan lainnya bisa masuk area Casa Asraya dengan prosedur keamanan security Casa Asraya."
             ],
             [
-                "question" => "Bagaimana kualitas air di area lingkungan Pesona Hutan Asraya?",
-                "answer" => "Kualitas air di seluruh area unit Pesona Hutan Asraya memiliki kualitas yang baik (jernih dan tidak berbau)."
+                "question" => "Bagaimana kualitas air di area lingkungan Casa Asraya?",
+                "answer" => "Kualitas air di seluruh area unit Casa Asraya memiliki kualitas yang baik (jernih dan tidak berbau)."
             ],
             [
-                "question" => "Bagaimana spesifikasi jalan yang digunakan di area Pesona Hutan Asraya?",
-                "answer" => "Untuk spesifikasi jalan yang digunakan di area Pesona Hutan Asraya menggunakan Paving Block."
+                "question" => "Bagaimana spesifikasi jalan yang digunakan di area Casa Asraya?",
+                "answer" => "Untuk spesifikasi jalan yang digunakan di area Casa Asraya menggunakan Paving Block."
             ],
             [
-                "question" => "Jenis pohon apa saja yang ditanam di area Pesona Hutan Asraya?",
-                "answer" => "Pohon yang ditanam di seluruh area Pesona Hutan Asraya menggunakan Pohon Pulai dan Pohon Trembesi yang ditanam di Pesona Hutan Asraya."
+                "question" => "Jenis pohon apa saja yang ditanam di area Casa Asraya?",
+                "answer" => "Pohon yang ditanam di seluruh area Casa Asraya menggunakan Pohon Pulai dan Pohon Trembesi yang ditanam di Casa Asraya."
             ],
             [
                 "question" => "Berapakah kapasitas water heater yang digunakan dalam setiap unit?",
-                "answer" => "Untuk setiap unit Pesona Hutan Asraya menggunakan water heater Solahart dengan kapasitas 100L."
+                "answer" => "Untuk setiap unit Casa Asraya menggunakan water heater Solahart dengan kapasitas 100L."
             ]
         ]);
 
@@ -959,10 +959,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
             ],
             [
                 "question" => "Bagaimana saya bisa mendapatkan informasi lebih lanjut mengenai unit yang akan dibeli?",
-                "answer" => "Bapak/Ibu dapat mengunjungi ke Marketing Gallery kami yang berada di area site Pesona Hutan Asraya untuk dapat melihat progress Pembangunan kami, dan juga dapat menghubungi nomor Marketing yang tertera dalam brosur yang kami berikan."
+                "answer" => "Bapak/Ibu dapat mengunjungi ke Marketing Gallery kami yang berada di area site Casa Asraya untuk dapat melihat progress Pembangunan kami, dan juga dapat menghubungi nomor Marketing yang tertera dalam brosur yang kami berikan."
             ],
             [
-                "question" => "Apa saya bisa menjadwalkan kunjungan atau tur ke unit rumah Pesona Hutan Asraya?",
+                "question" => "Apa saya bisa menjadwalkan kunjungan atau tur ke unit rumah Casa Asraya?",
                 "answer" => "Untuk jadwal kunjungan bisa menghubungi kontak marketing, dan akan kami jadwalkan secara langsung melalui kontak telepon atau WhatsApp."
             ],
             [
@@ -970,7 +970,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 "answer" => "Untuk DP dibayarkan dimulai dari 20% dari harga jual unit, dan untuk cicilan per bulan dengan rata-rata Rp 11jutaan/bulan."
             ],
             [
-                "question" => "Biaya apa sajakah yang dikeluarkan ketika pembelian unit rumah Pesona Hutan Asraya?",
+                "question" => "Biaya apa sajakah yang dikeluarkan ketika pembelian unit rumah Casa Asraya?",
                 "answer" => "Biaya-biaya yang akan ditanggung oleh pembeli, antara lain: \n• Biaya BPHTB\n• Biaya notaris,\n• Biaya provisi\n• Biaya PPN"
             ],
             [
@@ -978,13 +978,13 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
                 "answer" => "Booking fee tidak dapat dikembalikan."
             ],
             [
-                "question" => "Dokumen apa saja yang harus dipersiapkan dalam proses pembelian unit Pesona Hutan Asraya?",
+                "question" => "Dokumen apa saja yang harus dipersiapkan dalam proses pembelian unit Casa Asraya?",
                 "answer" => "Document yang dibutuhkan: \n1. Bagi Karyawan:\n• KTP\n• KK\n• Surat Nikah (Jika pembeli sudah menikah wajib melampirkan surat nikah)\n• NPWP\n• Slip Gaji 3 Bulan\n• Surat Keterangan Kerja di Perusahaan\n• Fotokopi Rekening Tabungan (Selama 3 bulan terakhir)\n• Pas Foto 3x4\n2. Bagi Wiraswasta\n• KTP\n• KK\n• Surat Nikah (Jika pembeli sudah menikah wajib melampirkan surat nikah)\n• SIUP (Surat Izin Usaha Perorangan)\n• TDP (Tanda Daftar Perusahaan)\n• NPWP\n• Laporan Perusahaan (2 Tahun terakhir)\n• Akta Pendirian Perusahaan (Jika PT)\n• Akta Pengesahan dari Menteri Kehakiman dan Hak Asasi Manusia Surat Izin Praktek (jika Profesi)\n• Pas Foto 3x4"
             ]
         ]);
 
         $header = [
-            'header' => 'Pesona Hutan Asraya',
+            'header' => 'Casa Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
             'img' => 'new/assets/img/F11.jpg',
             'low' => 'new/assets/img/aa.png'
@@ -1035,7 +1035,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     public function featuredHouse()
     {
         $header = [
-            'header' => 'Pesona Hutan Asraya',
+            'header' => 'Casa Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
             'img' => 'new/assets/img/F11.jpg',
             'low' => 'new/assets/img/aa.png'

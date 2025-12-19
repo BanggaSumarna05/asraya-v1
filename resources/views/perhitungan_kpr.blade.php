@@ -493,96 +493,101 @@
         </div>
     </div>
 
-    <div class="site-section container" id="home">
-        <div id="about" class="site-section p-4 lazy-bg">
-            <div class="row justify-content-center mt-5">
-                <div class="col-md-5">
-                    <img src="img/gallery1/cendana-units (3).jpeg" class="img-fluid" alt="">
+    <div class="container-fluid p-0" id="home">
+        <div id="about" class="lazy-bg">
+            <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 100vh;">
+                    <img
+                        src="img/gallery1/F7.jpg"
+                        class="img-fluid w-100 h-100"
+                        alt="Simulasi KPR"
+                        style="object-fit: cover;" />
                 </div>
-                <div class="col-md-7">
-                    <div class="card shadow-sm border-0">
-                        <div class="card-body p-5">
-                            <h2
-                                class="text-center mb-4"
-                                style="font-family: 'Playfair Display', serif; color: #00261c">
-                                Simulasi Cicilan KPR
-                            </h2>
-                            <form id="kprForm" class="small">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Harga Properti (Rp)</label>
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="propertyPrice"
-                                            placeholder="Contoh: 1.500.000.000"
-                                            oninput="this.value = this.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.')"
-                                            required />
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Uang Muka / DP (Rp)</label>
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="downPayment"
-                                            placeholder="Contoh: 1.000.000.000"
-                                            oninput="this.value = this.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.')"
-                                            required />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Suku Bunga per Tahun</label>
-                                        <input
-                                            type="text"
-                                            step="0.01"
-                                            class="form-control"
-                                            id="interestRate"
-                                            placeholder="Contoh: 5.5 (dalam %)"
-                                            oninput="this.value = this.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.')"
-                                            required />
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label class="form-label">Jangka Waktu (Tahun)</label>
-                                        <br>
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="loanTerm"
-                                            placeholder="Contoh: 20"
-                                            required />
-                                    </div>
-                                </div>
-                                <button
-                                    type="button"
-                                    class="btn btn-dark w-100 mt-3"
-                                    onclick="calculateKPR()"
-                                    style="
-                      background-color: #00261c;
-                      border: none;
-                      padding: 12px;
-                    ">
-                                    Hitung Estimasi Cicilan
-                                </button>
-                            </form>
-
-                            <div
-                                id="kprResult"
-                                class="mt-5 p-4 text-center d-none"
-                                style="background-color: #f8f9fa; border-radius: 10px">
-                                <p class="text-muted mb-1">Estimasi Cicilan Per Bulan</p>
+                <div class="col-md-6 d-flex align-items-center bg-light">
+                    <div class="w-100 p-5">
+                        <div class="card shadow-none border-0 bg-transparent">
+                            <div class="card-body p-0">
                                 <h2
-                                    id="monthlyInstallment"
-                                    style="
-                      color: #00261c;
-                      font-weight: bold;
-                      font-family: 'Playfair Display', serif;
-                    "></h2>
-                                <hr />
-                                <p class="small text-muted mb-0">
-                                    *Perhitungan ini merupakan estimasi. Suku bunga dapat
-                                    berubah sewaktu-waktu sesuai kebijakan bank.
-                                </p>
+                                    class="text-left mb-4"
+                                    style="font-family: 'Playfair Display', serif; color: #00261c">
+                                    Simulasi Cicilan KPR
+                                </h2>
+                                <form id="kprForm" class="small">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Harga Properti (Rp)</label>
+                                            <input
+                                                type="text"
+                                                class="form-control form-control-lg bg-white border-0 shadow-sm"
+                                                id="propertyPrice"
+                                                placeholder="Contoh: 1.500.000.000"
+                                                oninput="this.value = this.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.')"
+                                                required />
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Uang Muka / DP (Rp)</label>
+                                            <input
+                                                type="text"
+                                                class="form-control form-control-lg bg-white border-0 shadow-sm"
+                                                id="downPayment"
+                                                placeholder="Contoh: 1.000.000.000"
+                                                oninput="this.value = this.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.')"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Suku Bunga per Tahun</label>
+                                            <input
+                                                type="text"
+                                                step="0.01"
+                                                class="form-control form-control-lg bg-white border-0 shadow-sm"
+                                                id="interestRate"
+                                                placeholder="Contoh: 5.5 (dalam %)"
+                                                oninput="this.value = this.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.')"
+                                                required />
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Jangka Waktu (Tahun)</label>
+                                            <input
+                                                type="number"
+                                                class="form-control form-control-lg bg-white border-0 shadow-sm"
+                                                id="loanTerm"
+                                                placeholder="Contoh: 20"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-dark w-100 mt-4 py-3 shadow-sm"
+                                        onclick="calculateKPR()"
+                                        style="
+                          background-color: #00261c;
+                          border: none;
+                          font-weight: 500;
+                          letter-spacing: 1px;
+                        ">
+                                        Hitung Estimasi Cicilan
+                                    </button>
+                                </form>
+
+                                <div
+                                    id="kprResult"
+                                    class="mt-5 p-4 text-center d-none"
+                                    style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                                    <p class="text-muted mb-1">Estimasi Cicilan Per Bulan</p>
+                                    <h2
+                                        id="monthlyInstallment"
+                                        style="
+                          color: #00261c;
+                          font-weight: bold;
+                          font-family: 'Playfair Display', serif;
+                        "></h2>
+                                    <p class="small text-muted mb-0 mt-2">
+                                        *Perhitungan ini merupakan estimasi. Suku bunga dapat
+                                        berubah sewaktu-waktu sesuai kebijakan bank.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

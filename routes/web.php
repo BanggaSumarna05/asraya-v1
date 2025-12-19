@@ -40,18 +40,18 @@ Route::get('/ebrochure', [FrontController::class, 'ebrochure'])->name('ebrochure
 Route::get('/eprofile', [FrontController::class, 'eprofile'])->name('eprofile');
 
 
-// use App\Models\Post;
+use App\Models\Post;
 
-// Route::get('/blog', function () {
-//     $posts = Post::where('published', true)
-//         ->latest()
-//         ->paginate(9);
+Route::get('/blog', function () {
+    $posts = Post::where('published', true)
+        ->latest()
+        ->paginate(9);
 
-//     return view('blog.index', compact('posts'));
-// })->name('blog.index');
+    return view('blog.index', compact('posts'));
+})->name('blog.index');
 
-// Route::get('/blog/{slug}', function ($slug) {
-//     $post = Post::where('slug', $slug)->firstOrFail();
+Route::get('/blog/{slug}', function ($slug) {
+    $post = Post::where('slug', $slug)->firstOrFail();
 
-//     return view('blog.show', compact('post'));
-// })->name('blog.show');
+    return view('blog.show', compact('post'));
+})->name('blog.show');

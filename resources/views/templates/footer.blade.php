@@ -187,3 +187,16 @@
         // console.log('done');
     };
 </script>
+
+{{-- Lenis Smooth Scroll --}}
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis()
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+</script>
