@@ -222,7 +222,7 @@
 
 
 
-    <section class="py-5 bg-white">
+    <!-- <section class="py-5 bg-white">
         <div class="container">
             <div class="text-center mb-5">
                 <h4 class="text-uppercase" style="letter-spacing:3px;">A Joint Venture By</h4>
@@ -233,18 +233,7 @@
                 <div class="col-sm-12 col-lg-5 mb-4">
                     <div class="text-center mb-3">
                         <img src="/img/ag.png" alt="Azure Group" style="height:90px;">
-                    </div>
-                    {{-- <p style="font-size:18px; color:black;">
-                        <strong>AZURE GROUP</strong> is the main venture partner of <strong>CASA ARAYA</strong>,
-                        focusing on
-                        strategic property development & project management.
-                    </p>
-                    <ul style="font-size:18px; color:black; padding-left:18px;letter-spacing:0.6px">
-                        <li>Core venture and project initiator</li>
-                        <li>Specialized in residential & mixed-use development</li>
-                        <li>Strong focus on sustainable growth</li>
-                        <li>Integrated planning</li>
-                    </ul> --}}
+                    </div>2
                 </div>
 
                 {{-- ASRAYA DEVELOPMENT --}}
@@ -252,27 +241,10 @@
                     <div class="text-center mb-3">
                         <img src="/img/asraya-2.png" alt="Asraya" style="height:90px;">
                     </div>
-                    {{-- <p style="font-size:18px; color:black;letter-spacing:0.6px">
-                        <strong>CASA ASRAYA</strong> is a prestigious address in one of the biggest economic
-                        centres in Sumatera.
-                        We present premium residential spaces that prioritize modern design with natural elements,
-                        creating homes that blend
-                        tropical forest atmosphere amidst the bustling city. We are committed to delivering innovation
-                        in every carefully designed space
-                        using high-quality materials that guarantee durability and beauty, offering a perfect balance
-                        between natural comfort and accessibility
-                        to urban life centers.
-                    </p>
-                    <ul style="font-size:18px; color: black; padding-left:18px;">
-                        <li>Property development & branding</li>
-                        <li>Community-oriented planning</li>
-                        <li>Quality construction standards</li>
-                        <li>Long-term livability focus</li>
-                    </ul> --}}
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     @include('templates/footer')
 </body>
