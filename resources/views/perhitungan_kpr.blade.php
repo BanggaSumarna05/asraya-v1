@@ -480,33 +480,46 @@
                                         <div class="col-12 col-md-12 col-sm-12 mb-3">
                                             <label class="form-label">Jangka Waktu (Tahun)</label>
                                             <input
-                                                type="number"
-                                                class="form-control form-control-lg bg-white border-0 shadow-sm"
+                                                type="range"
+                                                class="form-range w-100"
                                                 id="loanTerm"
-                                                placeholder="Contoh: 20"
+                                                min="1"
+                                                max="20"
+                                                value="10"
+                                                oninput="document.getElementById('loanTermValue').innerText = this.value"
                                                 required />
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <small class="text-muted">1 Thn</small>
+                                                <span class="badge bg-light"><span class="fw-semibold" id="loanTermValue">10</span> Tahun</span>
+                                                <small class="text-muted">20 Thn</small>
+                                            </div>
                                         </div>
                                     </div>
                                     <button
                                         type="button"
                                         class="btn btn-dark w-100 mt-4 py-3 shadow-sm"
-                                        onclick="calculateKPR()">
+                                        onclick="calculateKPRBerjenjang()">
                                         Hitung Estimasi Cicilan
                                     </button>
                                 </form>
 
                                 <div
                                     id="kprResult"
-                                    class="mt-5 p-4 text-center d-none"
-                                    style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-                                    <p class="text-muted mb-1">Estimasi Cicilan Per Bulan</p>
-                                    <h2
-                                        id="monthlyInstallment"
-                                        style="color: #00261c; font-weight: bold; font-family: 'Playfair Display', serif;">
-                                    </h2>
-                                    <p class="small text-muted mb-0 mt-2">
-                                        *Perhitungan ini merupakan estimasi. Suku bunga dapat
-                                        berubah sewaktu-waktu sesuai kebijakan bank.
+                                    class="mt-5 p-4 d-none"
+                                    style="background-color:#fff;border-radius:10px;box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+
+                                    <table class="table table-bordered small mb-0">
+                                        <thead>
+                                            <tr style="background:#f1f3f5">
+                                                <th>Pilih Paket</th>
+                                                <th class="text-end">Berjenjang</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="kprTableBody"></tbody>
+                                    </table>
+
+                                    <p class="small text-muted mt-3 mb-0">
+                                        <strong>Simulasi estimasi cicilan KPR berjenjang. Angka dapat berbeda mengikuti kebijakan bank.</strong>
                                     </p>
                                 </div>
                                 <div class="mt-5 text-center">
@@ -584,45 +597,71 @@
     @include('templates/footer')
 
     <script>
-        function calculateKPR() {
+        function calculateKPRBerjenjang() {
             const price = parseInt(document.getElementById("propertyPrice").value.replace(/\./g, '')) || 0;
             const dp = parseInt(document.getElementById("downPayment").value.replace(/\./g, '')) || 0;
             const annualRate = parseFloat(document.getElementById("interestRate").value) || 0;
             const years = parseInt(document.getElementById("loanTerm").value) || 0;
 
             if (!price || !dp || !annualRate || !years || price <= dp) {
-                alert(
-                    "Mohon masukkan data yang valid. Harga properti harus lebih besar dari DP, yaitu: " + dp
-                );
+                alert("Mohon isi data dengan benar");
                 return;
             }
 
             const principal = price - dp;
             const monthlyRate = annualRate / 100 / 12;
-            const numberOfPayments = years * 12;
+            const totalMonths = years * 12;
 
-            const x = Math.pow(1 + monthlyRate, numberOfPayments);
-            const monthly = (principal * x * monthlyRate) / (x - 1);
+            // CICILAN NORMAL (TAHUN AKHIR)
+            const x = Math.pow(1 + monthlyRate, totalMonths);
+            const normalMonthly = (principal * x * monthlyRate) / (x - 1);
 
-            if (isFinite(monthly)) {
-                const formatter = new Intl.NumberFormat("id-ID", {
-                    style: "currency",
-                    currency: "IDR",
-                    minimumFractionDigits: 0,
-                });
+            // SKEMA BERJENJANG (DISAMAKAN DENGAN CONTOH BANK)
+            const tiers = [{
+                    label: "Tahun ke-1",
+                    factor: 0.71
+                },
+                {
+                    label: "Tahun ke-2 – 3",
+                    factor: 0.80
+                },
+                {
+                    label: "Tahun ke-4 – 6",
+                    factor: 0.89
+                },
+                {
+                    label: `Tahun ke-7 – ${years}`,
+                    factor: 1.00
+                }
+            ];
 
-                document.getElementById("monthlyInstallment").innerText =
-                    formatter.format(monthly);
-                document.getElementById("kprResult").classList.remove("d-none");
-                document
-                    .getElementById("kprResult")
-                    .scrollIntoView({
-                        behavior: "smooth",
-                        block: "nearest"
-                    });
-            }
+            const formatter = new Intl.NumberFormat("id-ID", {
+                style: "currency",
+                currency: "IDR",
+                minimumFractionDigits: 0
+            });
+
+            let rows = "";
+            tiers.forEach(t => {
+                rows += `
+            <tr>
+                <td>${t.label}</td>
+                <td class="text-end fw-semibold">
+                    ${formatter.format(normalMonthly * t.factor)}
+                </td>
+            </tr>
+        `;
+            });
+
+            document.getElementById("kprTableBody").innerHTML = rows;
+            document.getElementById("kprResult").classList.remove("d-none");
+            document.getElementById("kprResult").scrollIntoView({
+                behavior: "smooth"
+            });
         }
     </script>
+
+
 </body>
 
 </html>

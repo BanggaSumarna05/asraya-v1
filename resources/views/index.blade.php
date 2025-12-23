@@ -276,16 +276,16 @@
                 </div>
             </center>
             <div class="row gx-9 h-100">
-                <div class="col-6 col-sm-12 col-md-6">
+                <div class="col-7 col-sm-12 col-md-7">
                     <div class="overlay p-2">
-                        <div class="d-flex flex-row-reverse py-4 video-wrap">
+                        <div class="d-flex">
                             <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn-clear"
-                                target="_blank"><img class="w-100 card-rounded lazy"
+                                target="_blank"><img class="w-100  card-rounded lazy"
                                     src="img/maps-02.png" alt=""></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-12 col-md-6">
+                <div class="col-5 col-sm-12 col-md-5">
                     <p class="rapih" style="font-size: 17.2px;">
                         Kami mempersembahkan perumahan terbaik di Riau, menawarkan lokasi
                         yang eksklusif dan dekat dengan kota. Properti yang dirancang oleh arsitek <i>Atelier
@@ -436,6 +436,7 @@
         </div>
 
 
+    </div>
     </div>
 
     <div class="modal fade" id="promoCarouselPopup" tabindex="-1" role="dialog" aria-labelledby="promoCarouselPopupLabel" aria-hidden="true">
