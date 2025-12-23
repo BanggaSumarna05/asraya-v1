@@ -123,80 +123,136 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="new/assets/img/F11.jpg" alt="First slide" style="object-fit: cover;">
+                    <img class="d-block w-100 h-100" src="new/assets/img/F11.jpg" alt="First slide"
+                        style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">CASA ASRAYA</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">AUTHENTICALLY LIVING</p>
+                            <h2
+                                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">
+                                CASA ASRAYA</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">AUTHENTICALLY
+                                LIVING</p>
                         </div>
-                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
-                        <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
+                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
+                        <h4><a href="tel:6281399998066" class="text-white"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="new/assets/img/cover-clubhouse.jpg" alt="Second slide" style="object-fit: cover;">
+                    <img class="d-block w-100 h-100" src="new/assets/img/cover-clubhouse.jpg" alt="Second slide"
+                        style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">CLUB HOUSE</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">EXCLUSIVE FACILITIES</p>
+                            <h2
+                                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">
+                                CLUB HOUSE</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">EXCLUSIVE
+                                FACILITIES</p>
                         </div>
-                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
-                        <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
+                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
+                        <h4><a href="tel:6281399998066" class="text-white"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/cendana/F10.jpg" alt="Third slide" style="object-fit: cover;">
+                    <img class="d-block w-100 h-100" src="img/cendana/F10.jpg" alt="Third slide"
+                        style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">CENDANA</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">at CASA ASRAYA</p>
+                            <h2
+                                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">
+                                CENDANA</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">at CASA ASRAYA
+                            </p>
                         </div>
-                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
-                        <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
+                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
+                        <h4><a href="tel:6281399998066" class="text-white"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/mahogany/mahogany-interior-0.jpg" alt="Fourth slide" style="object-fit: cover;">
+                    <img class="d-block w-100 h-100" src="img/mahogany/mahogany-interior-0.jpg" alt="Fourth slide"
+                        style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">MAHOGANY</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">at CASA ASRAYA</p>
+                            <h2
+                                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">
+                                MAHOGANY</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">at CASA ASRAYA
+                            </p>
                         </div>
-                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
-                        <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
+                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
+                        <h4><a href="tel:6281399998066" class="text-white"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/gallery1/gal8.webp" alt="Fifth slide" style="object-fit: cover;">
+                    <img class="d-block w-100 h-100" src="img/gallery1/gal8.webp" alt="Fifth slide"
+                        style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">BRANDGANG</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">at CASA ASRAYA</p>
+                            <h2
+                                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">
+                                BRANDGANG</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">at CASA
+                                ASRAYA</p>
                         </div>
-                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
-                        <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
+                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
+                        <h4><a href="tel:6281399998066" class="text-white"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/gallery1/gal4.webp" alt="Sixth slide" style="object-fit: cover;">
+                    <img class="d-block w-100 h-100" src="img/gallery1/gal4.webp" alt="Sixth slide"
+                        style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">GREEN ENVIRONMENT</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">NATURE & COMFORT</p>
+                            <h2
+                                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">
+                                GREEN ENVIRONMENT</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">NATURE &
+                                COMFORT</p>
                         </div>
-                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
-                        <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
+                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
+                        <h4><a href="tel:6281399998066" class="text-white"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/gallery1/F6.jpg" alt="Seventh slide" style="object-fit: cover;">
+                    <img class="d-block w-100 h-100" src="img/gallery1/F6.jpg" alt="Seventh slide"
+                        style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
-                            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">CASA ASRAYA</h2>
-                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">AUTHENTICALLY LIVING</p>
+                            <h2
+                                style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 0; letter-spacing: 2px;">
+                                CASA ASRAYA</h2>
+                            <p style="margin: 0; font-size: 1.2rem; letter-spacing: 1px; color: #00261c;">AUTHENTICALLY
+                                LIVING</p>
                         </div>
-                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
-                        <h4><a href="tel:6281399998066" class="text-white" style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
+                        <h3><a href="https://wa.me/6281399998066" class="text-white" target="_blank"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fab fa-whatsapp"></i> Chat via Whatsapp</a></h3>
+                        <h4><a href="tel:6281399998066" class="text-white"
+                                style="text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);"><i
+                                    class="fas fa-phone"></i> +628 1399 9980 66</a></h4>
                     </div>
                 </div>
             </div>
@@ -255,8 +311,8 @@
                         <div class="carousel-item active item-align-center">
                             <div class="row">
                                 <div class="col-6 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="mt-1"><img src="img/reduce/Pak andika rev.png" alt="Andhika Permana"
-                                            class="img-fluid lazy"></div>
+                                    <div class="mt-1"><img src="img/reduce/Pak andika rev.png"
+                                            alt="Andhika Permana" class="img-fluid lazy"></div>
                                 </div>
                                 <div class="col-6 col-sm-12 col-md-6 col-lg-6">
                                     <div class="mt-1"><img src="img/reduce/Pak ooz rev.png" alt="O'ozaro Larosa"
@@ -280,8 +336,8 @@
                     <div class="overlay p-2">
                         <div class="d-flex">
                             <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn-clear"
-                                target="_blank"><img class="w-100  card-rounded lazy"
-                                    src="img/maps-02.png" alt=""></a>
+                                target="_blank"><img class="w-100  card-rounded lazy" src="img/maps-02.png"
+                                    alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -312,9 +368,11 @@
                     </p>
                     <br>
                     <center>
-                        <strong style="font-size: 17.2px;"> Pindai barcode untuk<br> melihat petunjuk arah di Google Maps.</strong>
+                        <strong style="font-size: 17.2px;"> Pindai barcode untuk<br> melihat petunjuk arah di Google
+                            Maps.</strong>
                         <br>
-                        <img src="img/qr_map.png" alt="Location" class="card-rounded lazy" style="width: 200px; height: 200px;">
+                        <img src="img/qr_map.png" alt="Location" class="card-rounded lazy"
+                            style="width: 200px; height: 200px;">
                         <br>
                     </center>
                 </div>
@@ -322,7 +380,7 @@
         </div>
         <div class="mt-5 text-center">
             <div class="site-section-heading text-center w-border">
-                <h2 class="mb-5">Supported Bank</h2>
+                <h2 class="mb-5">KPR Bank's</h2>
             </div>
             <div class="overflow-hidden position-relative">
                 <style>
@@ -365,81 +423,114 @@
                 </style>
                 <div class="logo-track">
                     @php
-                    $baseLogos = [
-                    ['src' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD55a8Qe28T83fYzjQYN1OynHljfAcP0Fy1Q&s', 'alt' => 'Bank Central Asia'],
-                    ['src' => 'https://www.bankmandiri.co.id/documents/20143/44881086/ag-branding-logo-1.png/842d8cf8-b7fb-3014-9620-21f0f88d8377?t=1623309819034', 'alt' => 'Bank Mandiri'],
-                    ['src' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bank_BRI_2000.svg/1207px-Bank_BRI_2000.svg.png', 'alt' => 'Bank Rakyat Indonesia'],
-                    ['src' => 'https://upload.wikimedia.org/wikipedia/commons/3/38/CIMB_Niaga_logo.svg', 'alt' => 'CIMB Niaga'],
-                    ['src' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bank_Negara_Indonesia_logo_%282004%29.svg/1280px-Bank_Negara_Indonesia_logo_%282004%29.svg.png', 'alt' => 'Bank Negara Indonesia'],
-                    ];
-                    $loopLogos = [];
-                    // Create a large enough set (12 repetitions for safety creates a very long strip)
-                    for ($i = 0; $i < 12; $i++) {
-                        $loopLogos=array_merge($loopLogos, $baseLogos);
+                        $baseLogos = [
+                            [
+                                'src' =>
+                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD55a8Qe28T83fYzjQYN1OynHljfAcP0Fy1Q&s',
+                                'alt' => 'Bank Central Asia',
+                            ],
+                            [
+                                'src' =>
+                                    'https://www.bankmandiri.co.id/documents/20143/44881086/ag-branding-logo-1.png/842d8cf8-b7fb-3014-9620-21f0f88d8377?t=1623309819034',
+                                'alt' => 'Bank Mandiri',
+                            ],
+                            [
+                                'src' =>
+                                    'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bank_BRI_2000.svg/1207px-Bank_BRI_2000.svg.png',
+                                'alt' => 'Bank Rakyat Indonesia',
+                            ],
+                            [
+                                'src' => 'https://upload.wikimedia.org/wikipedia/commons/3/38/CIMB_Niaga_logo.svg',
+                                'alt' => 'CIMB Niaga',
+                            ],
+                            [
+                                'src' =>
+                                    'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bank_Negara_Indonesia_logo_%282004%29.svg/1280px-Bank_Negara_Indonesia_logo_%282004%29.svg.png',
+                                'alt' => 'Bank Negara Indonesia',
+                            ],
+                        ];
+                        $loopLogos = [];
+                        // Create a large enough set (12 repetitions for safety creates a very long strip)
+                        for ($i = 0; $i < 12; $i++) {
+                            $loopLogos = array_merge($loopLogos, $baseLogos);
                         }
-                        @endphp
-                        @foreach($loopLogos as $logo)
+                    @endphp
+                    @foreach ($loopLogos as $logo)
                         <div class="logo-item">
-                        <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] }}">
+                            <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] }}">
+                        </div>
+                    @endforeach
                 </div>
-                @endforeach
             </div>
-        </div>
 
-        <div class="site-section">
-            <div class="container">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-7 text-center">
-                        <div class="site-section-heading text-center w-border">
-                            <h2>Ahli Pemasaran Kami</h2>
+            <div class="site-section">
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-md-7 text-center">
+                            <div class="site-section-heading text-center w-border">
+                                <h2>Ahli Pemasaran Kami</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="testimonial text-center p-4">
-                                        <img src="https://media.licdn.com/dms/image/v2/C4D03AQFsVE_BNwbEtQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654252880090?e=1767830400&v=beta&t=2Z8AwYhIdT0nP0TTM3Kuie_s3kfC_DsA7yUf9U3gBXI" alt="Mustafa Dzul Akmal" class="img-fluid rounded-circle mx-auto mb-4"
-                                            style="width: 120px; height: 120px; object-fit: cover;">
-                                        <blockquote class="blockquote">
-                                            <footer class="text-primary">
-                                                Dzul Akmal
-                                                <br> <span class="text-muted">(+62) 81399998066</span>
-                                            </footer>
-                                        </blockquote>
+                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="testimonial text-center p-4">
+                                            <img src="https://media.licdn.com/dms/image/v2/C4D03AQFsVE_BNwbEtQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654252880090?e=1767830400&v=beta&t=2Z8AwYhIdT0nP0TTM3Kuie_s3kfC_DsA7yUf9U3gBXI"
+                                                alt="Mustafa Dzul Akmal" class="img-fluid rounded-circle mx-auto mb-4"
+                                                style="width: 120px; height: 120px; object-fit: cover;">
+                                            <blockquote class="blockquote">
+                                                <footer class="text-primary">
+                                                    Mustafa Dzul Akmal
+                                                    <br>
+                                                    <strong>
+                                                        Sales & Marketing Manager
+                                                    </strong>
+                                                    <br> <span class="text-muted">(+62) 81399998066</span>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="testimonial text-center p-4">
-                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQFdOpUSVvKr_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722926692950?e=1767830400&v=beta&t=sLtTq4kdBpeuCIXf_hw_LAit3HxgoJTcr4KDpAt3KFk" alt="Linda" class="img-fluid rounded-circle mx-auto mb-4" style="width: 120px; height: 120px; object-fit: cover;">
-                                        <blockquote class="blockquote">
-                                            <footer class="text-primary">
-                                                Linda
-                                                <br> <span class="text-muted">(+62) 81276365418</span>
-                                            </footer>
-                                        </blockquote>
+                                    <div class="col-md-6">
+                                        <div class="testimonial text-center p-4">
+                                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFdOpUSVvKr_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1722926692950?e=1767830400&v=beta&t=sLtTq4kdBpeuCIXf_hw_LAit3HxgoJTcr4KDpAt3KFk"
+                                                alt="Linda" class="img-fluid rounded-circle mx-auto mb-4"
+                                                style="width: 120px; height: 120px; object-fit: cover;">
+                                            <blockquote class="blockquote">
+                                                <footer class="text-primary">
+                                                    Linda Manurung
+                                                    <br>
+                                                    <strong>
+                                                        Sales & Marketing Assistance Manager
+                                                    </strong>
+                                                    <br> <span class="text-muted">(+62) 81276365418</span>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <a class="carousel-control-prev" href="#testimonialCarousel" role="button"
+                            data-slide="prev">
+                            <span style="color: #00261c; font-size: 2rem;">&leftarrow;</span>
+                        </a>
+                        <a class="carousel-control-next" href="#testimonialCarousel" role="button"
+                            data-slide="next">
+                            <span style="color: #00261c; font-size: 2rem;">&RightArrow;</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-                        <span style="color: #00261c; font-size: 2rem;">&leftarrow;</span>
-                    </a>
-                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-                        <span style="color: #00261c; font-size: 2rem;">&RightArrow;</span>
-                    </a>
                 </div>
             </div>
+
+
         </div>
-
-
-    </div>
     </div>
 
-    <div class="modal fade" id="promoCarouselPopup" tabindex="-1" role="dialog" aria-labelledby="promoCarouselPopupLabel" aria-hidden="true">
+    <div class="modal fade" id="promoCarouselPopup" tabindex="-1" role="dialog"
+        aria-labelledby="promoCarouselPopupLabel" aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -479,11 +570,13 @@
                                 <img src="img/promo_btn.jpg" class="d-block w-100" alt="Promo Slide 3">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#promoImageCarousel" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#promoImageCarousel" role="button"
+                            data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#promoImageCarousel" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#promoImageCarousel" role="button"
+                            data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>

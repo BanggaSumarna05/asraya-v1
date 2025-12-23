@@ -523,7 +523,7 @@
                                     </p>
                                 </div>
                                 <div class="mt-5 text-center">
-                                    <h4 class="mb-5">Supported Bank</h4>
+                                    <h4 class="mb-5">KRP Bank's</h4>
                                     <div class="overflow-hidden position-relative">
                                         <style>
                                             @keyframes scroll {
