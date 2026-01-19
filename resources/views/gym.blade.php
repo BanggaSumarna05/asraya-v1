@@ -35,11 +35,11 @@
         </p>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <video src="/vids/gym1.mp4" alt=""
+                <video src="/vids/gym1.mp4" alt="Gym di Casa Asraya"
                     style="max-width: 100%; max-height: 70%;" autoplay loop muted controls volume="0.5"></video>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <video src="/vids/gym2.mp4" alt=""
+                <video src="/vids/gym2.mp4" alt="Gym di Casa Asraya"
                     style="max-width: 100%; max-height: 70%;" autoplay loop muted controls volume="0.5"></video>
             </div>
         </div>

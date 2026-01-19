@@ -43,6 +43,10 @@ $keywords = [
     "Atelier Riri Pekanbaru",
     "Apa itu club house perumahan",
     "Apa itu townhouse",
+
+    // additional
+
+    'asraya swimming pool',
 ];
 
 
@@ -59,7 +63,7 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => "Casa Asraya - Living Harmony in Nature", // Optimized Title with Tagline
+            'title'        => "Casa Asraya - Perumahan Di Pekanbaru Riau ", // Optimized Title with Tagline
             'titleBefore'  => false,
             'description'  => $metaDescription,
             'separator'    => ' | ',
@@ -86,7 +90,7 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => "Casa Asraya - Premium Townhouse Pekanbaru", // Specific OG Title for engagement
+            'title'       => "Casa Asraya - Perumahan Di Pekanbaru Riau", // Specific OG Title for engagement
             'description' => $ogDescription,
             'url'         => null,
             'type'        => "website",
@@ -108,7 +112,7 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => "Casa Asraya - Living Harmony in Nature",
+            'title'       => "Casa Asraya - Perumahan Di Pekanbaru Riau",
             'description' => $metaDescription,
             'url'         => 'full',
             'type'        => 'RealEstateAgent', // More specific Schema.org type than 'WebSite'

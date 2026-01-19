@@ -95,7 +95,7 @@
                                     <tr>
                                         <td width="10%">
                                             <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/sleeping.png" class="icx" alt="">
+                                                <img src="img/reduce/icons/sleeping.png" class="icx" alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td class="text-end pe-0">
@@ -107,7 +107,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/dinner-table.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -118,7 +118,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/kitchen-table.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -129,7 +129,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/car-in-garage.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -139,7 +139,7 @@
                                     <tr>
                                         <td>
                                             <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/bathroom.png" class="icx" alt="">
+                                                <img src="img/reduce/icons/bathroom.png" class="icx" alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -150,7 +150,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/livingroom.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -160,7 +160,7 @@
                                     <tr>
                                         <td>
                                             <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/balcony.png" class="icx" alt="">
+                                                <img src="img/reduce/icons/balcony.png" class="icx" alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -171,7 +171,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/private-garage.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan CEndana di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>

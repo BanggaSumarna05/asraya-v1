@@ -60,13 +60,14 @@
             </div>
             <div class="row" style="background-color: white; font-size: 18px!important;">
                 <div class="col-sm-12 col-md-12 col-lg-7">
-                    <div id="carouselExampleControls" class="carousel slide justify-content-center" data-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide justify-content-center"
+                        data-ride="carousel">
                         <div class="carousel-inner">
                             @foreach ($data['slide'] as $i => $item)
-                            <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
-                                <center><img class="w-100 lazy" src="{{ $item }}">
-                                </center>
-                            </div>
+                                <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                                    <center><img class="w-100 lazy" src="{{ $item }}">
+                                    </center>
+                                </div>
                             @endforeach
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -90,7 +91,8 @@
                                     <tr>
                                         <td width="10%">
                                             <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/sleeping.png" class="icx" alt="">
+                                                <img src="img/reduce/icons/sleeping.png" class="icx"
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td class="text-end pe-0">
@@ -102,7 +104,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/dinner-table.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -113,7 +115,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/kitchen-table.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -124,7 +126,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/car-in-garage.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -134,7 +136,8 @@
                                     <tr>
                                         <td>
                                             <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/bathroom.png" class="icx" alt="">
+                                                <img src="img/reduce/icons/bathroom.png" class="icx"
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -145,7 +148,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/livingroom.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -155,7 +158,8 @@
                                     <tr>
                                         <td>
                                             <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/balcony.png" class="icx" alt="">
+                                                <img src="img/reduce/icons/balcony.png" class="icx"
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
@@ -166,7 +170,7 @@
                                         <td>
                                             <div class="symbol symbol-4px me-3">
                                                 <img src="img/reduce/icons/private-garage.png" class="icx"
-                                                    alt="">
+                                                    alt="Perumahan Mahogany di Casa Asraya">
                                             </div>
                                         </td>
                                         <td>
