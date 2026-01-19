@@ -6,32 +6,45 @@
 
 // Master Keyword Strategy: Combination of Brand, High-Intent, and Niche terminologies.
 $keywords = [
-    // Brand Identity
+    // Brand
     "Casa Asraya",
     "Casa Asraya Pekanbaru",
     "Asraya Property",
     "Asraya Townhouse",
+    "Townhouse Asraya Pekanbaru",
+    "Cluster Asraya Pekanbaru",
 
-    // High Intent (Transactional)
-    "Rumah mewah Pekanbaru",
-    "Jual rumah Pekanbaru",
-    "Perumahan elit Pekanbaru",
-    "Townhouse Pekanbaru",
-    "Cluster eksklusif Pekanbaru",
-
-    // Architectural & Lifestyle (Niche)
+    // Feature / Lifestyle
+    "Perumahan dengan club house",
+    "Perumahan dengan club house Pekanbaru",
+    "Townhouse dengan club house",
     "Rumah desain arsitek Pekanbaru",
-    "Atelier Riri Pekanbaru",
     "Modern tropical house Pekanbaru",
-    "Smart home Pekanbaru",
     "Eco-green living Pekanbaru",
+    "Smart home Pekanbaru",
+
+    // Transactional
+    "Rumah mewah Pekanbaru",
+    "Perumahan elit Pekanbaru",
+    "Jual rumah Pekanbaru",
+    "Cluster eksklusif Pekanbaru",
+    "Townhouse Pekanbaru",
+    "Perumahan Pekanbaru Kota",
+    "Investasi properti Riau",
 
     // Location & Value
     "Rumah dekat Bandara SKA",
     "Properti dekat Mall SKA",
-    "Investasi properti Riau",
     "Hunian bebas banjir Pekanbaru",
+
+    // Educational (Traffic magnets)
+    "Brandgang adalah",
+    "Fungsi brandgang perumahan",
+    "Atelier Riri Pekanbaru",
+    "Apa itu club house perumahan",
+    "Apa itu townhouse",
 ];
+
 
 // Content Optimization:
 // Meta Description (< 160 chars): Focused on CTR (Click Through Rate) for Google Search.

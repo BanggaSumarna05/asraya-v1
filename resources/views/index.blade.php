@@ -123,7 +123,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="new/assets/img/F11.jpg" alt="First slide"
+                    <img class="d-block w-100 h-100" src="new/assets/img/F11.jpg" alt="Asraya Property"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
@@ -142,7 +142,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="new/assets/img/cover-clubhouse.jpg" alt="Second slide"
+                    <img class="d-block w-100 h-100" src="new/assets/img/cover-clubhouse.jpg" alt="Asraya Property"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/cendana/F10.jpg" alt="Third slide"
+                    <img class="d-block w-100 h-100" src="img/cendana/F10.jpg" alt="Asraya Property"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
@@ -180,7 +180,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/mahogany/mahogany-interior-0.jpg" alt="Fourth slide"
+                    <img class="d-block w-100 h-100" src="img/mahogany/mahogany-interior-0.jpg" alt="Asraya Property"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
@@ -199,7 +199,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/gallery1/gal8.webp" alt="Fifth slide"
+                    <img class="d-block w-100 h-100" src="img/gallery1/gal8.webp" alt="Asraya Property"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
@@ -218,7 +218,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/gallery1/gal4.webp" alt="Sixth slide"
+                    <img class="d-block w-100 h-100" src="img/gallery1/gal4.webp" alt="Asraya Property"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="height: 100vh;">
-                    <img class="d-block w-100 h-100" src="img/gallery1/F6.jpg" alt="Seventh slide"
+                    <img class="d-block w-100 h-100" src="img/gallery1/F6.jpg" alt="Asraya Property"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-flex flex-column justify-content-end align-items-end h-100 p-3">
                         <div class="side-text-overlay">
@@ -337,7 +337,7 @@
                         <div class="d-flex">
                             <a href="https://maps.app.goo.gl/SAUiNRp6t8WuwxfX9" class="btn-clear"
                                 target="_blank"><img class="w-100  card-rounded lazy" src="img/maps-02.png"
-                                    alt=""></a>
+                                    alt="Asraya Property"></a>
                         </div>
                     </div>
                 </div>

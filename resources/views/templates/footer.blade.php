@@ -182,6 +182,11 @@
             s1.src = 'https://embed.tawk.to/6846413cefcd3b190fc04309/1it96tlbq';
             s1.charset = 'UTF-8';
             s1.setAttribute('crossorigin', '*');
+            s1.onload = function() {
+                if (window.Tawk_API && window.Tawk_API.onLoaded) {
+                    window.Tawk_API.onLoaded();
+                }
+            };
             s0.parentNode.insertBefore(s1, s0);
         })();
         // console.log('done');
