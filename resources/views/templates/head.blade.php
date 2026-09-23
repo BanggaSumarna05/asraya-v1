@@ -1,4 +1,113 @@
-<link rel="icon" href="https://www.asrayaproperty.com/old/assets/img/asraya.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="{{ asset('img/asraya-1.png') }}">
+{{-- GSAP + ScrollTrigger (semua halaman) --}}
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+
+{{-- Global: card spacing fix semua halaman --}}
+<style>
+@media (max-width: 575px) {
+    /* col-10 / col-9 terlalu sempit di mobile — full width */
+    .col-10, .col-9 { width: 100% !important; }
+
+    /* Card inner padding minimum via clamp */
+    [style*="border-radius: 2.5rem"],
+    [style*="border-radius:2.5rem"] {
+        padding-left:  clamp(20px, 5vw, 32px) !important;
+        padding-right: clamp(20px, 5vw, 32px) !important;
+    }
+
+    /* Reduce large border-radius on mobile so cards don't look weird */
+    [style*="border-radius: 3rem"],
+    [style*="border-radius:3rem"] {
+        border-radius: 1.5rem !important;
+    }
+    [style*="border-radius: 2.5rem"],
+    [style*="border-radius:2.5rem"] {
+        border-radius: 1.25rem !important;
+    }
+    [style*="border-radius: 2rem"],
+    [style*="border-radius:2rem"] {
+        border-radius: 1rem !important;
+    }
+
+    /* Reduce section top/bottom padding on mobile */
+    section[style*="padding: 80px"],
+    section[style*="padding:80px"] {
+        padding-top:    48px !important;
+        padding-bottom: 48px !important;
+    }
+}
+
+/* Mobile: make gap between bank logos smaller */
+@media (max-width: 576px) {
+    div[style*="gap: 40px"] {
+        gap: 20px !important;
+    }
+}
+
+
+/* ============================================================
+   Bootstrap 5 gap utilities polyfill for Bootstrap 4.1.3
+   g-1=4px  g-2=8px  g-3=16px  g-4=24px  g-5=32px
+   ============================================================ */
+.row.g-1  { margin: -2px; }
+.row.g-1  > [class*="col"] { padding: 2px; }
+
+.row.g-2  { margin: -4px; }
+.row.g-2  > [class*="col"] { padding: 4px; }
+
+.row.g-3  { margin: -8px; }
+.row.g-3  > [class*="col"] { padding: 8px; }
+
+.row.g-4  { margin: -12px; }
+.row.g-4  > [class*="col"] { padding: 12px; }
+
+.row.g-5  { margin: -16px; }
+.row.g-5  > [class*="col"] { padding: 16px; }
+
+/* gy-* (vertical only) */
+.row.gy-3 > [class*="col"] { padding-top: 8px; padding-bottom: 8px; }
+.row.gy-4 > [class*="col"] { padding-top: 12px; padding-bottom: 12px; }
+.row.gy-5 > [class*="col"] { padding-top: 16px; padding-bottom: 16px; }
+
+/* gx-* (horizontal only) */
+.row.gx-3 { margin-left: -8px; margin-right: -8px; }
+.row.gx-3 > [class*="col"] { padding-left: 8px; padding-right: 8px; }
+.row.gx-4 { margin-left: -12px; margin-right: -12px; }
+.row.gx-4 > [class*="col"] { padding-left: 12px; padding-right: 12px; }
+.row.gx-5 { margin-left: -16px; margin-right: -16px; }
+.row.gx-5 > [class*="col"] { padding-left: 16px; padding-right: 16px; }
+
+/* combined g-*  g-md-*  g-lg-* */
+@media (min-width: 768px) {
+    .row.g-md-4  { margin: -12px; }
+    .row.g-md-4  > [class*="col"] { padding: 12px; }
+    .row.g-md-5  { margin: -16px; }
+    .row.g-md-5  > [class*="col"] { padding: 16px; }
+}
+@media (min-width: 992px) {
+    .row.g-lg-4  { margin: -12px; }
+    .row.g-lg-4  > [class*="col"] { padding: 12px; }
+    .row.g-lg-5  { margin: -16px; }
+    .row.g-lg-5  > [class*="col"] { padding: 16px; }
+}
+
+/* px-* / py-* utilities (BS5 spacing on non-row elements) */
+.px-3 { padding-left: 16px !important; padding-right: 16px !important; }
+.px-4 { padding-left: 24px !important; padding-right: 24px !important; }
+.px-5 { padding-left: 48px !important; padding-right: 48px !important; }
+.py-4 { padding-top: 24px !important; padding-bottom: 24px !important; }
+.py-5 { padding-top: 48px !important; padding-bottom: 48px !important; }
+
+@media (min-width: 768px) {
+    .px-md-3 { padding-left: 16px !important; padding-right: 16px !important; }
+    .px-md-4 { padding-left: 24px !important; padding-right: 24px !important; }
+    .px-md-5 { padding-left: 48px !important; padding-right: 48px !important; }
+    .py-md-4 { padding-top: 24px !important; padding-bottom: 24px !important; }
+    .py-md-5 { padding-top: 48px !important; padding-bottom: 48px !important; }
+}
+</style>
 {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> --}}
 {{-- <link href="https://fonts.cdnfonts.com/css/archivo" rel="stylesheet"> --}}
 

@@ -12,11 +12,25 @@ use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\LengthAwarePaginator as PaginationLengthAwarePaginator;
 use Illuminate\Support\Collection;
+use App\Models\BankPartner;
+use App\Models\HeroSlider;
+use App\Models\IgFeed;
+use App\Models\Facility;
+use App\Models\Management;
+use App\Models\ConstructionProgress;
+use App\Models\Faq;
+use App\Models\GalleryImage;
 
 class FrontController extends Controller
 {
-
     private $keywords;
+
+    // Fallback statis jika DB kosong
+    public $promos = [
+        'img/promos/promo1.jpg',
+        'img/promos/promo2.jpg',
+        'img/promos/promo3.jpg'
+    ];
 
     public function __construct()
     {
@@ -318,6 +332,24 @@ class FrontController extends Controller
             'jual batu koral putih terdekat',
             'jual batu putih taman terdekat'
         ];
+
+        // Promo Banners
+        $dbPromos = \App\Models\PromoBanner::where('is_active', true)->orderBy('order', 'asc')->get();
+        if ($dbPromos->count() > 0) {
+            $this->promos = $dbPromos->map(function ($banner) {
+                return (object)[
+                    'image' => '/storage/' . $banner->image,
+                    'link'  => $banner->link ?? '#'
+                ];
+            })->toArray();
+        } else {
+            $this->promos = array_map(function($p) {
+                return (object)[
+                    'image' => asset($p),
+                    'link'  => '#'
+                ];
+            }, $this->promos);
+        }
     }
 
     public function seo($title = null)
@@ -332,268 +364,248 @@ class FrontController extends Controller
         SEOMeta::addKeyword($this->keywords);
     }
 
-    public $units = [
-        [
-            'name' => 'MAHOGANY',
-            'cover' => 'new/assets/img/F7.jpg',
-            'link' => 'mahogany',
-
-        ],
-        [
-            'name' => 'CENDANA',
-            'cover' => 'img/cendana/F10.jpg',
-            'link' => 'cendana',
-        ],
-        // [
-        //     'name' => 'INTERIOR',
-        //     'cover' => 'img/reduce/F8.jpg',
-        //     'link' => '',
-        // ]
-    ];
-
-    public $banks = [
-        'img/reduce/bank/fit.png',
-    ];
-
-    public $igs = [
-        '/img/ig/office 1.jpg',
-        '/img/ig/milestone1.jpg',
-        '/img/ig/milestone2.jpg',
-        '/img/ig/last1.jpg',
-    ];
-
-    public $galleries = [
-        '/img/gallery/gal1.jpg',
-    ];
-
-    public $promos = [
-        'img/promos/promo1.jpg',
-        'img/promos/promo2.jpg',
-        'img/promos/promo3.jpg'
-    ];
-
-    public $progress1 = [
-        // kedepannya akan dibuat banyak row, dari timestamp progress
-        'mei2024',
-        'img/progress/11.jpg',
-        'img/progress/12.jpg',
-        'img/progress/13.jpg',
-        'img/progress/14.jpg',
-        'apr2024',
-        'img/progress/april/april1.jpg',
-        'img/progress/april/april2.jpg',
-        'img/progress/april/april3.jpg',
-        'img/progress/april/april4.jpg',
-        'mar2024',
-        'img/progress/maret/maret1.jpg',
-        'img/progress/maret/maret2.jpg',
-        'img/progress/maret/maret3.jpg',
-        'img/progress/maret/maret4.jpg',
-        'feb2024',
-        'img/progress/1.jpg',
-        'img/progress/2.jpg',
-        'img/progress/3.jpg',
-        'img/progress/8.jpg',
-    ];
-
-    public $progress = [
-        "September 2024" => [
-            "foto1" => 'img/progress/sept24/sept1.jpg',
-            "foto2" => 'img/progress/sept24/sept2.jpg',
-            "foto3" => 'img/progress/sept24/sept3.jpg',
-            "foto4" => 'img/progress/sept24/sept4.jpg',
-        ],
-        "August 2024" => [
-            "foto1" => 'img/progress/agus2024/agus (1).jpg',
-            "foto2" => 'img/progress/agus2024/agus (2).jpg',
-            "foto3" => 'img/progress/agus2024/agus (3).jpg',
-            "foto4" => 'img/progress/agus2024/agus (4).jpg',
-        ],
-        "Juli 2024" => [
-            "foto1" => 'img/progress/juli2024/juli1.jpg',
-            "foto2" => 'img/progress/juli2024/juli2.jpg',
-            "foto3" => 'img/progress/juli2024/juli3.jpg',
-        ],
-        "Juni 2024" => [
-            // "foto1" => 'img/progress/juni2024/jun1.jpg',
-            "foto2" => 'img/progress/juni2024/jun2.jpg',
-            // "foto3" => 'img/progress/juni2024/jun3.jpg',
-            // "foto4" => 'img/progress/juni2024/jun4.jpg',
-            "foto5" => 'img/progress/juni2024/jun5.jpg',
-            // "foto6" => 'img/progress/juni2024/jun6.jpg',
-            "foto" => 'img/progress/juni2024/jun7.jpg',
-            "foto8" => 'img/progress/juni2024/jun8.jpg',
-        ],
-        "Mei 2024" => [
-            "foto1" => 'img/progress/11.jpg',
-            "foto2" => 'img/progress/12.jpg',
-            "foto3" => 'img/progress/13.jpg',
-            "foto4" => 'img/progress/14.jpg',
-        ],
-        "April 2024" => [
-            "foto1" => 'img/progress/april/april1.jpg',
-            "foto2" => 'img/progress/april/april2.jpg',
-            "foto3" => 'img/progress/april/april3.jpg',
-            "foto4" => 'img/progress/april/april4.jpg',
-        ],
-        "Maret 2024" => [
-            "foto1" => 'img/progress/maret/maret1.jpg',
-            "foto2" => 'img/progress/maret/maret2.jpg',
-            "foto3" => 'img/progress/maret/maret3.jpg',
-            "foto4" => 'img/progress/maret/maret4.jpg',
-        ],
-        // "Februari 2024" => [
-        //     "foto1" => 'img/progress/1.jpg',
-        //     "foto2" => 'img/progress/2.jpg',
-        //     "foto3" => 'img/progress/3.jpg',
-        //     "foto4" => 'img/progress/8.jpg',
-        // ],
-    ];
-
-    public $facilities = [
-        [
-            'title' => 'Club House',
-            'link' => 'clubhouse',
-            'cover' => 'new/assets/img/clubhouse1.jpg',
-            'text' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fuga repudiandae
-            modi ex? Atque fugit laboriosam exercitationem. Excepturi, fugit quos.
-            Blanditiis maiores eveniet voluptas quam consectetur magnam doloremque
-            distinctio. Cumque?',
-        ],
-        [
-            'title' => 'Gymnastic',
-            'link' => 'gym',
-            'cover' => 'new/assets/img/gym1.jpg',
-            'text' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fuga repudiandae
-            modi ex? Atque fugit laboriosam exercitationem. Excepturi, fugit quos.
-            Blanditiis maiores eveniet voluptas quam consectetur magnam doloremque
-            distinctio. Cumque?',
-        ],
-        [
-            'title' => 'Swimming Pool',
-            'link' => 'swimming-pool',
-            'cover' => 'new/assets/img/spool.jpg',
-            'text' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fuga repudiandae
-            modi ex? Atque fugit laboriosam exercitationem. Excepturi, fugit quos.
-            Blanditiis maiores eveniet voluptas quam consectetur magnam doloremque
-            distinctio. Cumque?',
-        ],
-        [
-            'title' => 'Brandgang',
-            'link' => 'brandgang',
-            'cover' => 'new/assets/img/brandgag-crop.jpg',
-            'text' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fuga repudiandae
-            modi ex? Atque fugit laboriosam exercitationem. Excepturi, fugit quos.
-            Blanditiis maiores eveniet voluptas quam consectetur magnam doloremque
-            distinctio. Cumque?',
-        ],
-        // [
-        //     'title' => 'Clinic Dr Synd',
-        //     'link' => 'clinic',
-        //     'cover' => 'img/facilities/klinik.jpg',
-        //     'text' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fuga repudiandae
-        //     modi ex? Atque fugit laboriosam exercitationem. Excepturi, fugit quos.
-        //     Blanditiis maiores eveniet voluptas quam consectetur magnam doloremque
-        //     distinctio. Cumque?',
-        // ],
-        [
-            'title' => 'Taman',
-            'link' => 'taman-kota',
-            'cover' => 'new/assets/img/taman1.jpg',
-            'text' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla fuga repudiandae
-            modi ex? Atque fugit laboriosam exercitationem. Excepturi, fugit quos.
-            Blanditiis maiores eveniet voluptas quam consectetur magnam doloremque
-            distinctio. Cumque?',
-        ],
-    ];
-
-    public function index(Request $request)
+    /** Ambil bank dari DB, fallback ke array statis */
+    private function getBanks(): array
     {
-        $header = [
-            'header' => 'Casa Asraya',
-            'location' => 'LIVING HARMONY IN NATURE',
-            'img' => 'new/assets/img/F11.jpg',
-            'low' => 'new/assets/img/aa.png'
+        $db = BankPartner::where('is_active', true)->orderBy('order')->get();
+        if ($db->count() > 0) {
+            return $db->map(function($b) {
+                $logo = $b->logo;
+                $logoUrl = (str_starts_with($logo, 'img/') || str_starts_with($logo, '/img/') || str_starts_with($logo, 'http') || str_starts_with($logo, 'storage/') || str_starts_with($logo, '/storage/')) ? $logo : 'storage/' . $logo;
+                return ['name' => $b->name, 'logo' => $logoUrl];
+            })->toArray();
+        }
+        return [
+            ['name' => 'BCA',       'logo' => 'img/bank/bca-bank-logo-png_seeklogo-232742.png'],
+            ['name' => 'BRI',       'logo' => 'img/bank/bank-bri-logo-png_seeklogo-355613.png'],
+            ['name' => 'BNI',       'logo' => 'img/bank/bank-bni-logo-png_seeklogo-355606.png'],
+            ['name' => 'Mandiri',   'logo' => 'img/bank/bank-mandiri-logo-png_seeklogo-16290.png'],
+            ['name' => 'BTN',       'logo' => 'img/bank/2560px-Bank_BTN_logo.svg.png'],
+            ['name' => 'BSI',       'logo' => 'img/bank/Bank_Syariah_Indonesia.svg.png'],
+            ['name' => 'CIMB Niaga','logo' => 'img/bank/logo-cimb-niaga.png'],
+            ['name' => 'Maybank',   'logo' => 'img/bank/maybank1.png'],
+            ['name' => 'OCBC',      'logo' => 'img/bank/Logo-ocbc.webp'],
         ];
+    }
 
-        $sliders = [
+    /** Ambil hero sliders dari DB, fallback ke array statis */
+    private function getSliders(): array
+    {
+        $db = HeroSlider::where('is_active', true)->orderBy('order')->get();
+        if ($db->count() > 0) {
+            return $db->map(function($s) {
+                $img = $s->image;
+                return (str_starts_with($img, 'img/') || str_starts_with($img, '/img/') || str_starts_with($img, 'http') || str_starts_with($img, 'storage/') || str_starts_with($img, '/storage/')) ? $img : 'storage/' . $img;
+            })->toArray();
+        }
+        return [
             'img/reduce/slider/F2.jpg',
             'img/reduce/slider/F3.jpg',
             'img/reduce/slider/F5.jpg',
             'img/reduce/slider/F6.jpg',
-            // 'new/assets/img/F7.jpg',
             'img/reduce/slider/F10.jpg',
         ];
-        $managements =
+    }
+
+    /** Ambil IG feeds dari DB, fallback ke array statis */
+    private function getIgs(): array
+    {
+        $db = IgFeed::where('is_active', true)->orderBy('order')->get();
+        if ($db->count() > 0) {
+            return $db->map(function($ig) {
+                $img = $ig->image;
+                return (str_starts_with($img, 'img/') || str_starts_with($img, '/img/') || str_starts_with($img, 'http') || str_starts_with($img, 'storage/') || str_starts_with($img, '/storage/')) ? $img : 'storage/' . $img;
+            })->toArray();
+        }
+        return [
+            '/img/ig/office 1.jpg',
+            '/img/ig/milestone1.jpg',
+            '/img/ig/milestone2.jpg',
+            '/img/ig/last1.jpg',
+        ];
+    }
+
+    /** Ambil fasilitas dari DB, fallback ke array statis */
+    private function getFacilities(): array
+    {
+        $db = Facility::where('is_active', true)->orderBy('order')->get();
+        if ($db->count() > 0) {
+            return $db->map(function($f) {
+                $cover = $f->cover;
+                $coverUrl = (str_starts_with($cover, 'new/') || str_starts_with($cover, 'img/') || str_starts_with($cover, '/img/') || str_starts_with($cover, 'http') || str_starts_with($cover, 'storage/') || str_starts_with($cover, '/storage/')) ? $cover : 'storage/' . $cover;
+                return [
+                    'title' => $f->title,
+                    'link'  => $f->slug,
+                    'cover' => $coverUrl,
+                    'text'  => $f->description ?? '',
+                ];
+            })->toArray();
+        }
+        return [
+            ['title' => 'Club House',    'link' => 'clubhouse',     'cover' => 'new/assets/img/clubhouse1.jpg',    'text' => ''],
+            ['title' => 'Gymnastic',     'link' => 'gym',           'cover' => 'new/assets/img/gym1.jpg',          'text' => ''],
+            ['title' => 'Swimming Pool', 'link' => 'swimming-pool', 'cover' => 'new/assets/img/spool.jpg',         'text' => ''],
+            ['title' => 'Brandgang',     'link' => 'brandgang',     'cover' => 'new/assets/img/brandgag-crop.jpg', 'text' => ''],
+            ['title' => 'Taman',         'link' => 'tamanKota',     'cover' => 'new/assets/img/taman1.jpg',        'text' => ''],
+        ];
+    }
+
+    /** Ambil manajemen dari DB, fallback ke array statis */
+    private function getManagements(): array
+    {
+        $db = Management::where('is_active', true)->orderBy('order')->get();
+        if ($db->count() > 0) {
+            return $db->map(function($m) {
+                $photo = $m->photo;
+                $photoUrl = (str_starts_with($photo, 'img/') || str_starts_with($photo, '/img/') || str_starts_with($photo, 'http') || str_starts_with($photo, 'storage/') || str_starts_with($photo, '/storage/')) ? $photo : 'storage/' . $photo;
+                return [
+                    'img'     => $photoUrl,
+                    'name'    => $m->name,
+                    'pos'     => $m->position,
+                    'text'    => $m->bio ?? '',
+                    'ref'     => $m->url_ref,
+                    'refText' => $m->url_ref_text,
+                ];
+            })->toArray();
+        }
+        return [
             [
-                [
-                    'img' => 'img/reduce/management-01.webp',
-                    'name' => 'O\'zaro B. Larosa',
-                    'pos' => 'Managing Director',
-                    'text' => '
-                    Tim manajemen profesional dan karyawan dengan bangga mempersembahkan Bapak O’ozaro Larosa, lulusan Institut Teknologi Bandung, yang kini menjabat sebagai Managing Director di salah satu anak perusahaan kami, PT Casa Asraya Properti.
-                    </br>
-Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam membuka pasar global di bidang teknik, pertambangan, dan perusahaan EPC di Asia Tenggara & Timur Tengah sejak 2007, Bapak O’ozaro Larosa telah menjadi salah satu pakar bisnis luar negeri andalan kami.
-                    ',
-                ],
-                [
-                    'img' => 'img/reduce/management-02.png',
-                    'name' => 'Atelier Riri',
-                    'pos' => 'Architecture & Design Partner',
-                    'text' => 'Atelier Riri adalah firma desain dan arsitektur yang didirikan oleh Novriansyah Yakub (Riri) di Jakarta. Firma ini merupakan perluasan gagasan dari apa yang Riri yakini dan lakukan sejak memulai debut arsitekturnya pada tahun 2005. Hingga kini, firma tersebut terus berkembang dengan karya di bidang arsitektur, interior, lanskap, dan desain produk.',
-                    'ref' => 'https://atelierriri.com/asraya-townhouse/',
-                    'refText' => 'More Information'
-                ],
-            ];
+                'img'  => 'img/reduce/management-01.webp',
+                'name' => "O'zaro B. Larosa",
+                'pos'  => 'Managing Director',
+                'text' => "Tim manajemen profesional dan karyawan dengan bangga mempersembahkan Bapak O'ozaro Larosa, lulusan Institut Teknologi Bandung.",
+            ],
+            [
+                'img'     => 'img/reduce/management-02.png',
+                'name'    => 'Atelier Riri',
+                'pos'     => 'Architecture & Design Partner',
+                'text'    => 'Atelier Riri adalah firma desain dan arsitektur yang didirikan oleh Novriansyah Yakub (Riri) di Jakarta.',
+                'ref'     => 'https://atelierriri.com/asraya-townhouse/',
+                'refText' => 'More Information',
+            ],
+        ];
+    }
+
+    /** Ambil unit rumah */
+    private function getUnits(): array
+    {
+        return [
+            [
+                'name'        => 'GAHARU',
+                'cover'       => 'img/gaharu/hero.PNG',
+                'link'        => 'gaharu',
+                'description' => 'Hunian modern 2 lantai seluas 115m² di atas lahan 92m², dilengkapi 3 Kamar Tidur, 2 Kamar Mandi, Balkon, Backyard, dan Carport 2 Mobil. Harga mulai Rp1,2 Miliar dengan Promo Diskon Rp50 Juta.',
+            ],
+            [
+                'name'        => 'MAHOGANY',
+                'cover'       => 'new/assets/img/F7.jpg',
+                'link'        => 'mahogany',
+                'description' => 'Hunian premium seluas 220m² di atas lahan 157m², dilengkapi 3 Master Bedroom, 1 Kamar ART, 4 Kamar Mandi, Smart Home, Garasi dan Carport.',
+            ],
+            [
+                'name'        => 'CENDANA',
+                'cover'       => 'img/cendana/F10.jpg',
+                'link'        => 'cendana',
+                'description' => 'Hunian eksklusif seluas 138m² di atas lahan 90m², dilengkapi 3 Master Bedroom, 1 Kamar ART, 5 Kamar Mandi, Smart Home, dan Carport.',
+            ],
+        ];
+    }
+
+    public function index(Request $request)
+    {
+        $header = [
+            'header'   => 'Casa Asraya',
+            'location' => 'LIVING HARMONY IN NATURE',
+            'img'      => 'new/assets/img/F11.jpg',
+            'low'      => 'new/assets/img/aa.png'
+        ];
 
         $this->seo('Halaman Utama');
-        $collection = $this->getProgress();
+        $collection = $this->buildProgressPaginator();
+
+        $dbGallery = GalleryImage::where('is_active', true)->orderBy('order')->take(6)->get();
+        if ($dbGallery->count() > 0) {
+            $homeGalleries = $dbGallery->map(function($g) {
+                $img = $g->image;
+                $url = (str_starts_with($img, 'img/') || str_starts_with($img, '/img/') || str_starts_with($img, 'http') || str_starts_with($img, 'storage/') || str_starts_with($img, '/storage/')) ? $img : 'storage/' . $img;
+                return [
+                    'img'   => $url,
+                    'tag'   => ucfirst($g->category ?? 'Gallery'),
+                    'title' => $g->caption ?? basename($g->image),
+                ];
+            })->toArray();
+        } else {
+            $homeGalleries = [
+                ['img' => 'img/reduce/F1.jpg',  'tag' => 'Susana sekitar',   'title' => 'Fasad Hunian Modern'],
+                ['img' => 'img/reduce/F5.jpg',  'tag' => 'Fasilitas',  'title' => 'Clubhouse'],
+                ['img' => 'img/reduce/F8.jpg',  'tag' => 'Interior',    'title' => 'Ruang Tamu Elegan'],
+                ['img' => 'new/assets/img/taman1.jpg',  'tag' => 'Taman',       'title' => 'Taman Hijau Asri'],
+                ['img' => 'img/reduce/F7.jpg',  'tag' => 'Eksterior',   'title' => 'Eksterior Rumah'],
+                ['img' => 'img/cendana/new/cendana (46).jpg',  'tag' => 'Keluarga',  'title' => 'Ruang Keluarga'],
+            ];
+        }
+
         return view('index')
             ->with([
-                // 'data' => $data,
-                'managements' => $managements,
-                'header' => $header,
-                'sliders' => $sliders,
-                // 
-                'units' => $this->units,
-                'banks' => $this->banks,
-                'igs' => $this->igs,
-                'promos' => $this->promos,
-                'progress' => $collection, //$this->progress,
-                'facilities' => $this->facilities,
+                'managements' => $this->getManagements(),
+                'header'      => $header,
+                'sliders'     => $this->getSliders(),
+                'units'       => $this->getUnits(),
+                'banks'       => $this->getBanks(),
+                'igs'         => $this->getIgs(),
+                'promos'      => $this->promos,
+                'progress'    => $collection,
+                'facilities'  => $this->getFacilities(),
+                'galleryItems'=> $homeGalleries,
             ]);
     }
 
     public function ebrochure()
     {
-        $pdf = PDF::loadHtml(public_path('ebrochure/asraya.pdf'));
-        return $pdf;
+        $path = public_path('assets/ebrochure/asraya-brosur.pdf');
+        if (file_exists($path)) {
+            return response()->file($path);
+        }
+        abort(404);
     }
 
     public function eprofile()
     {
-        $pdf = PDF::loadHtml(public_path('ebrochure/profile.pdf'));
-        return $pdf;
+        $path = public_path('assets/ebrochure/asraya-profile.pdf');
+        if (file_exists($path)) {
+            return response()->file($path);
+        }
+        abort(404);
     }
 
     public function mahogany()
     {
         $data = [];
-        $data['cover'] = 'new/assets/img/F7.jpg';
-        $data['name'] = 'MAHOGANY';
-        $data['slide'] = [];
-        array_push($data['slide'], 'img/mahogany/new/mahogany-f.png');
-        array_push($data['slide'], 'img/mahogany/new/mahogany-r.png');
-        array_push($data['slide'], 'img/mahogany/new/mahogany-b.png');
-        array_push($data['slide'], 'img/mahogany/new/mahogany-l.png');
+        $data['cover'] = 'img/mahogany/mahogany-siang.jpg';
+        $data['name']  = 'MAHOGANY';
+
+        $data['slide'] = [
+            'img/mahogany/mahogany-siang.jpg',
+            'img/mahogany/mahogany-malam.jpg',
+            'img/mahogany/F7.jpg',
+            'img/mahogany/floor side.jpg',
+            'img/mahogany/floor.jpg',
+        ];
+
+        $data['slideRender'] = [
+            'img/mahogany/new/mahogany-f.png',
+            'img/mahogany/new/mahogany-r.png',
+            'img/mahogany/new/mahogany-b.png',
+            'img/mahogany/new/mahogany-l.png',
+        ];
+
         $data['floors'] = 'img/mahogany/Denah_Mahogany.jpg';
         $this->seo('Unit Mahogany');
         return view('mahogany')->with([
-            'data' => $data,
-            // 
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
+            'data'   => $data,
+            'units'  => $this->getUnits(),
+            'banks'  => $this->getBanks(),
+            'igs'    => $this->getIgs(),
             'promos' => $this->promos,
         ]);
     }
@@ -601,37 +613,61 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     public function cendana()
     {
         $data = [];
-        $data['cover'] = 'img/cendana/f10-1.jpg';
-        $data['name'] = 'CENDANA';
-        $data['slide'] = [];
-        // array_push($data['slide'], 'new/assets/img/F7.jpg');
-        // array_push($data['slide'], 'img/cendana/Denah Cendana.jpg');
-        array_push($data['slide'], 'img/cendana/cendana-f.png');
-        array_push($data['slide'], 'img/cendana/cendana-r.png');
-        array_push($data['slide'], 'img/cendana/cendana-b.png');
-        array_push($data['slide'], 'img/cendana/cendana-l.png');
+        $data['cover'] = 'img/cendana/cendana-siang.jpg';
+        $data['name']  = 'CENDANA';
+
+        $data['slide'] = [
+            'img/cendana/cendana-siang.jpg',
+            'img/cendana/cendana-malam.jpg',
+            'img/cendana/cendana-interior.jpg',
+            'img/cendana/f10-1.jpg',
+            'img/cendana/cendana-units (1).jpeg',
+            'img/cendana/cendana-units (2).jpeg',
+            'img/cendana/cendana-units (3).jpeg',
+        ];
+
+        $data['slideRender'] = [
+            'img/cendana/cendana-f.png',
+            'img/cendana/cendana-r.png',
+            'img/cendana/cendana-b.png',
+            'img/cendana/cendana-l.png',
+        ];
+
         $data['floors'] = 'img/cendana/Denah Cendana.jpg';
         $this->seo('Unit Cendana');
 
         $data['galeries'] = [];
-        $selected = [1, 3, 7, 14, 15, 17, 31, 21, 42, 43, 45, 46];
-        foreach ($selected as $key => $value) {
-            # code...
+        $selected = [1, 3, 7, 14, 15, 17, 21, 31, 42, 43, 45, 46];
+        foreach ($selected as $value) {
             array_push($data['galeries'], '/img/cendana/new/cendana (' . $value . ').jpg');
         }
-        // return $data['galeries'];
-        // for ($i = 1; $i <= 47; $i++) {
-        // $imagePath = '/img/cendana/new/cendana (' . $i . ').jpg';
-        // $imageSize = getimagesize(public_path($imagePath));
-        // $data['galeries'][$imageSize[0] . 'x' . $imageSize[1]][] = $imagePath;
-        // }
-        // return $data['galeries'];
+
         return view('cendana')->with([
-            'data' => $data,
-            // 
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
+            'data'   => $data,
+            'units'  => $this->getUnits(),
+            'banks'  => $this->getBanks(),
+            'igs'    => $this->getIgs(),
+            'promos' => $this->promos,
+        ]);
+    }
+
+    public function gaharu()
+    {
+        $data = [];
+        $data['cover'] = 'img/gaharu/hero.PNG';
+        $data['name']  = 'GAHARU PRIME';
+
+        $data['slide'] = [
+            'img/gaharu/hero.PNG',
+        ];
+
+        $this->seo('Unit Gaharu Prime');
+
+        return view('gaharu')->with([
+            'data'   => $data,
+            'units'  => $this->getUnits(),
+            'banks'  => $this->getBanks(),
+            'igs'    => $this->getIgs(),
             'promos' => $this->promos,
         ]);
     }
@@ -640,9 +676,8 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $data = [];
         $data['cover'] = 'new/assets/img/cover-clubhouse.jpg';
-        $data['name'] = 'CLUBHOUSE';
+        $data['name']  = 'CLUBHOUSE';
         $data['slide'] = [];
-        // array_push($data['slide'], 'new/assets/img/F7.jpg');
         array_push($data['slide'], 'img/cendana/Denah Cendana.jpg');
         array_push($data['slide'], 'img/cendana/FLOOR SIDE.png');
         array_push($data['slide'], 'img/cendana/FLOOR.jpg');
@@ -650,11 +685,10 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $this->seo('Clubhouse');
 
         return view('clubhouse')->with([
-            'data' => $data,
-            // 
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
+            'data'   => $data,
+            'units'  => $this->getUnits(),
+            'banks'  => $this->getBanks(),
+            'igs'    => $this->getIgs(),
             'promos' => $this->promos,
         ]);
     }
@@ -663,7 +697,7 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $data = [];
         $data['cover'] = 'new/assets/img/brandgag-crop.jpg';
-        $data['name'] = 'BRANDGANG';
+        $data['name']  = 'BRANDGANG';
         $data['slide'] = [];
         array_push($data['slide'], 'img/cendana/Denah Cendana.jpg');
         array_push($data['slide'], 'img/cendana/FLOOR SIDE.png');
@@ -672,64 +706,46 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $this->seo('Brandgang');
 
         return view('brandgang')->with([
-            'data' => $data,
-            // 
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
-            'facilities' => $this->facilities,
+            'data'       => $data,
+            'units'      => $this->getUnits(),
+            'banks'      => $this->getBanks(),
+            'igs'        => $this->getIgs(),
+            'facilities' => $this->getFacilities(),
         ]);
     }
 
     public function visi()
     {
         $header = [
-            'header' => 'Casa Asraya',
+            'header'   => 'Casa Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
-            'img' => 'img/f6.png',
-            'low' => 'new/assets/img/aa.png'
+            'img'      => 'img/f6.png',
+            'low'      => 'new/assets/img/aa.png'
         ];
 
         $this->seo('Visi & Misi');
 
-        return view('visiMisi')
-            ->with([
-                'header' => $header,
-            ]);
-    }
-
-    public function facility()
-    {
-        $header = [
-            'header' => 'Facilities',
-            'img' => 'new/assets/img/aa.png'
-        ];
-
-        $this->seo('Fassilitas');
-
-        return view('facility')
-            ->with([
-                'header' => $header,
-            ]);
+        return view('visiMisi')->with([
+            'header' => $header,
+        ]);
     }
 
     public function gym()
     {
         $data = [];
         $data['cover'] = 'new/assets/img/gym1.jpg';
-        $data['name'] = 'Gym';
+        $data['name']  = 'Gym';
         $data['slide'] = [];
         array_push($data['slide'], 'new/assets/img/gym1.jpg');
 
         $this->seo('Gym');
 
         return view('gym')->with([
-            'data' => $data,
-            // 
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
-            'facilities' => $this->facilities,
+            'data'       => $data,
+            'units'      => $this->getUnits(),
+            'banks'      => $this->getBanks(),
+            'igs'        => $this->getIgs(),
+            'facilities' => $this->getFacilities(),
         ]);
     }
 
@@ -737,30 +753,29 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $data = [];
         $data['cover'] = 'new/assets/img/spool.jpg';
-        $data['name'] = 'Swimming Pool';
+        $data['name']  = 'Swimming Pool';
         $data['slide'] = [];
         array_push($data['slide'], 'new/assets/img/spool.jpg');
 
         $this->seo('Kolam Renang');
 
         return view('spool')->with([
-            'data' => $data,
-            // 
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
-            'facilities' => $this->facilities,
+            'data'       => $data,
+            'units'      => $this->getUnits(),
+            'banks'      => $this->getBanks(),
+            'igs'        => $this->getIgs(),
+            'facilities' => $this->getFacilities(),
         ]);
     }
+
     public function clinic()
     {
         $data = [];
         $data['cover'] = 'img/drSynd/logo.jpg';
-        $data['name'] = 'DR SYND SLIM & BEAUTY';
+        $data['name']  = 'DR SYND SLIM & BEAUTY';
         $data['slide'] = [];
         array_push($data['slide'], 'new/assets/img/spool.jpg');
         $pics = [
-            // 'img//drSynd/drSynd.jpg',
             'img//drSynd/rtunggu1.jpg',
             'img//drSynd/infus1.jpg',
             'img//drSynd/treat.jpg',
@@ -769,13 +784,12 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $this->seo('Klinik Dr Synd');
 
         return view('clinic')->with([
-            'data' => $data,
-            //
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
-            'facilities' => $this->facilities,
-            'pics' => $pics,
+            'data'       => $data,
+            'units'      => $this->getUnits(),
+            'banks'      => $this->getBanks(),
+            'igs'        => $this->getIgs(),
+            'facilities' => $this->getFacilities(),
+            'pics'       => $pics,
         ]);
     }
 
@@ -783,11 +797,9 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
     {
         $data = [];
         $data['cover'] = 'img/reduce/f2c.jpg';
-        $data['name'] = 'Taman';
+        $data['name']  = 'Taman';
         $data['slide'] = [];
-        // array_push($data['slide'], 'new/assets/img/spool.jpg');
         $pics = [
-            // 'img//drSynd/drSynd.jpg',
             'img//drSynd/rtunggu1.jpg',
             'img//drSynd/infus1.jpg',
             'img//drSynd/treat.jpg',
@@ -796,324 +808,153 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $this->seo('Taman Kota');
 
         return view('taman')->with([
-            'data' => $data,
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
-            'facilities' => $this->facilities,
-            'pics' => $pics,
+            'data'       => $data,
+            'units'      => $this->getUnits(),
+            'banks'      => $this->getBanks(),
+            'igs'        => $this->getIgs(),
+            'facilities' => $this->getFacilities(),
+            'pics'       => $pics,
         ]);
     }
 
     public function faq()
     {
-        $generals = collect([
-            [
-                "question" => "Apakah konsep yang ditawarkan oleh Casa Asraya?",
-                "answer" => "Casa Asraya adalah hunian pertama di kota Pekanbaru yang menggunakan konsep hutan kota, dengan sentuhan design dari arsitek Atelier Riri yang mempunyai fasilitas lengkap diantaranya Clubhouse, Swimming Pool, Yoga Club, Gym & Resto and Lounge."
-            ],
-            [
-                "question" => "Kapan proyek Casa Asraya dimulai?",
-                "answer" => "Proyek ini dilaksanakan dari bulan Mei 2023"
-            ],
-            [
-                "question" => "Apakah developer sudah mempunyai izin-izin yang dibutuhkan untuk membangun hunian ini?",
-                "answer" => "Semua syarat perizinan pembangunan yang diperlukan sudah dimiliki oleh developer untuk dapat menyelesaikan Pembangunan unit Casa Asraya."
-            ],
-            [
-                "question" => "Sudah berapa lama perusahaan Anda berkecimpung dalam bisnis real estate?",
-                "answer" => "PT Casa Asraya Property berdiri pada tahun 2023, dan Pekanbaru menjadi project developer pertama kami."
-            ],
-            [
-                "question" => "Apakah anda memiliki model tampilan unit untuk dilihat sebelum Pembangunan dimulai?",
-                "answer" => "Kami menyediakan display Maket, 3D Design & Clubhouse di kantor Marketing Gallery."
-            ],
-            [
-                "question" => "Apakah ada opsi untuk custom atau perubahan desain bangunan dari unit yang di beli?",
-                "answer" => "Untuk menjaga kualitas bangunan dan kerapihan area hunian dibolehkan untuk menambah atau merubah design minor bangunan kecuali tampak depan dan tidak merubah bentuk asli Casa Asraya."
-            ],
-            // [
-            //     "question" => "Bagaimana jika kita ingin menempati unit yang sudah dibeli di tengah berjalannya proses Pembangunan Casa Asraya?",
-            //     "answer" => "Konsumen bisa menempati unit yang sudah dibeli meskipun proses Pembangunan sedang berjalan."
-            // ],
-            [
-                "question" => "Apakah saya bisa melakukan inspeksi terhadap unit yang akan saya beli?",
-                "answer" => "Calon customer diperbolehkan untuk bisa melakukan inspeksi progress Pembangunan unit."
-            ],
-            [
-                "question" => "Bagaimana saya bisa memantau perkembangan proyek?",
-                "answer" => "Perkembangan progress proyek kami akan selalu kami update berkala melalui social media dan website kami, dan akan kami lakukan komunikasi langsung kepada anda mengenai kemajuan proyek yang terkini dan calon customer dipersilahkan untuk dapat mengunjungi area project untuk dapat melihat progress project secara langsung."
-            ],
-            [
-                "question" => "Bagaimana untuk cara pembayaran listrik di unit yang akan kami tempati?",
-                "answer" => "Untuk setiap unit menggunakan sistem token, yang juga dapat dibayarkan melalui fitur Mobile Banking/ Internet Banking."
-            ]
-        ]);
-
-        $specs = collect([
-            [
-                "question" => "Berapakah luas bangunan dari unit Casa Asraya?",
-                "answer" => "Untuk Type Mahogany ukuran luas bangunan adalah 220 M²; Untuk Type Cendana luas bangunan adalah 138 M²."
-            ],
-            [
-                "question" => "Bagaimana spesifikasi bangunan untuk sisi interior maupun eksterior unit Casa Asraya?",
-                "answer" => "Untuk dinding menggunakan bata ringan, finishing lantai menggunakan granit 60x60, finishing cat interior dan eksterior menggunakan Mowilex."
-            ],
-            [
-                "question" => "Untuk sumber air yang digunakan setiap unit Casa Asraya menggunakan Pam atau Sumur Bor?",
-                "answer" => "Untuk setiap unit Pesona Hutan menggunakan sumur bor."
-            ],
-            [
-                "question" => "Berapa kapasitas parkir mobil di setiap unit Casa Asraya?",
-                "answer" => "Untuk type Mahogany tersedia 1 garasi dan 1 Carport dengan kapasitas 4 mobil, Dan untuk type Cendana tersedia 1 carport dengan kapasitas 2 mobil."
-            ],
-            [
-                "question" => "Jenis atap apa yang digunakan untuk unit Casa Asraya?",
-                "answer" => "Untuk semua unit menggunakan atap Bitumen (Merk Onduline) dan struktur baja ringan."
-            ],
-            [
-                "question" => "Jenis bahan pondasi apakah yang digunakan?",
-                "answer" => "Untuk pondasi yang digunakan pada semua unit adalah Mini Pile."
-            ],
-            [
-                "question" => "Berapa daya listrik yang digunakan?",
-                "answer" => "Untuk semua unit Casa Asraya menggunakan daya listrik 3500 Watt dengan sistem token di semua unit."
-            ],
-            [
-                "question" => "Type lantai apa yang digunakan untuk unit Casa Asraya di lantai 1, 2 & 3?",
-                "answer" => "Untuk lantai menggunakan jenis Granite tile, dengan detail: Untuk area Utama: Niro Granite Homogenous Tile 60x60 Untuk area Toilet: Wisma Sehati - Homogenius Tile 60x60 Gravity Dark Grey Untuk area Kamar: Pakai SPC Yellow Creek Oak."
-            ],
-            [
-                "question" => "Ada berapa unit type Mahogany & Type Cendana?",
-                "answer" => "Untuk type Mahogany tersedia sebanyak 8 Unit dan Untuk type Cendana tersedia sebanyak 25 Unit."
-            ]
-        ]);
-
-        $facs = collect([
-            [
-                "question" => "Bagaimanakah sistem keamanan di lingkungan Casa Asraya?",
-                "answer" => "Cluster Casa Asraya mempunyai fasilitas One Gate System, fasilitas CCTV di lingkungan area komplek dan terdapat Security yang berjaga 24 Jam."
-            ],
-            [
-                "question" => "Apa sajakah fasilitas Clubhouse yang ditawarkan untuk unit rumah Pesona Hutan?",
-                "answer" => "Pesona Hutan mempunyai Clubhouse yang memiliki fasilitas Gym, Swimming Pool, Resto and Café."
-            ],
-            [
-                "question" => "Bagaimana dengan infrastruktur di sekitar Kawasan Casa Asraya, seperti akses sekolah dan pusat perbelanjaan?",
-                "answer" => "Casa Asraya mempunyai lokasi strategis yang memiliki akses dekat menuju SMPN 1, SMPN 4, SMPN 13, SMP Santa Maria, SMAN 1 Pekanbaru, SMA 8 Pekanbaru, SMA 9 Pekanbaru, SMA Al-Azhar, SMA Santa Maria, Mall Pekanbaru, Mall SKA, Living World, Mall Ciputra, RSUD, RS Awal Bros, PMC, RS Zainab, RS Bhayangkara, RS Petala Bumi dan pusat distrik bisnis Sudirman."
-            ],
-            [
-                "question" => "Bagaimana kondisi wilayah sekitar area hunian Pesona Hutan?",
-                "answer" => "Wilayah sekitar Pesona Hutan sudah berkembang, Casa Asraya dekat dengan kawasan Pendidikan terdapat 9 sekolah, dekat dengan lokasi 6 rumah sakit dan 4 Mall besar di Pekanbaru yang masing-masing lokasi hanya berjarak sekitar 15 menit dari hunian Casa Asraya."
-            ],
-            [
-                "question" => "Apakah ada fasilitas umum yang berada di area Casa Asraya?",
-                "answer" => "Untuk fasilitas umum di Casa Asraya terdapat Clubhouse (Swimming Pool, Gym, Yoga Club, Resto & Lounge), Brandgang dan Taman Kota."
-            ],
-            [
-                "question" => "Brand / Jenis toilet apa yang digunakan dalam unit Casa Asraya?",
-                "answer" => "Semua unit Casa Asraya menggunakan produk toilet dari Toto."
-            ],
-            [
-                "question" => "Apakah akan ada bonus yang didapatkan dari pembelian unit Casa Asraya?",
-                "answer" => "Untuk setiap pembelian unit Casa Asraya sudah mendapatkan free Canopy untuk carport, Layanan CCTV 24 jam diarea lingkungan Casa Asraya dan water heater Solahart dengan kapasitas 100 L di setiap unit Casa Asraya."
-            ],
-            [
-                "question" => "Apakah fasilitas umum seperti Gojek, Grab, Shopee Food bisa masuk ke area Casa Asraya?",
-                "answer" => "Semua fasilitas umum seperti Gojek, Grab, Shopee Food, J&T dan lainnya bisa masuk area Casa Asraya dengan prosedur keamanan security Casa Asraya."
-            ],
-            [
-                "question" => "Bagaimana kualitas air di area lingkungan Casa Asraya?",
-                "answer" => "Kualitas air di seluruh area unit Casa Asraya memiliki kualitas yang baik (jernih dan tidak berbau)."
-            ],
-            [
-                "question" => "Bagaimana spesifikasi jalan yang digunakan di area Casa Asraya?",
-                "answer" => "Untuk spesifikasi jalan yang digunakan di area Casa Asraya menggunakan Paving Block."
-            ],
-            [
-                "question" => "Jenis pohon apa saja yang ditanam di area Casa Asraya?",
-                "answer" => "Pohon yang ditanam di seluruh area Casa Asraya menggunakan Pohon Pulai dan Pohon Trembesi yang ditanam di Casa Asraya."
-            ],
-            [
-                "question" => "Berapakah kapasitas water heater yang digunakan dalam setiap unit?",
-                "answer" => "Untuk setiap unit Casa Asraya menggunakan water heater Solahart dengan kapasitas 100L."
-            ]
-        ]);
-
-        $buys = collect([
-            [
-                "question" => "Berapa lama proses dari akad untuk bisa dilakukan proses handover?",
-                "answer" => "Untuk proses handover membutuhkan waktu kurang lebih 8-9 bulan."
-            ],
-            [
-                "question" => "Apa garansi yang kami dapatkan dari transaksi pembelian unit?",
-                "answer" => "Setelah akad berjalan, konsumen akan mendapatkan garansi 90 hari sejak ditandatangani form BAST 1 sampai dengan BAST 2 (Berita Acara Surat Terima Unit Rumah)."
-            ],
-            [
-                "question" => "Bagaimanakah untuk skema pembayarannya?",
-                "answer" => "Untuk skema pembayaran terdapat Cash keras, Cash bertahap dan program diantaranya terdapat KPR Bank Mandiri, Bank BTN, Permata Bank, Maybank, CIMB Niaga & BSI"
-            ],
-            [
-                "question" => "Bagaimana cara untuk membeli properti?",
-                "answer" => "Untuk detil skema pembelian, dapat ditanyakan melalui nomor perwakilan marketing yang tertera di brosur kami, dan dapat langsung datang ke Marketing Gallery kami di Jl. Dwikora No. 16, Kec. Sail-Pekanbaru."
-            ],
-            [
-                "question" => "Bagaimana saya bisa mendapatkan informasi lebih lanjut mengenai unit yang akan dibeli?",
-                "answer" => "Bapak/Ibu dapat mengunjungi ke Marketing Gallery kami yang berada di area site Casa Asraya untuk dapat melihat progress Pembangunan kami, dan juga dapat menghubungi nomor Marketing yang tertera dalam brosur yang kami berikan."
-            ],
-            [
-                "question" => "Apa saya bisa menjadwalkan kunjungan atau tur ke unit rumah Casa Asraya?",
-                "answer" => "Untuk jadwal kunjungan bisa menghubungi kontak marketing, dan akan kami jadwalkan secara langsung melalui kontak telepon atau WhatsApp."
-            ],
-            [
-                "question" => "Berapa rata-rata DP yang dibayarkan, dan berapakah cicilan per-bulan yang dibayarkan?",
-                "answer" => "Untuk DP dibayarkan dimulai dari 20% dari harga jual unit, dan untuk cicilan per bulan dengan rata-rata Rp 11jutaan/bulan."
-            ],
-            [
-                "question" => "Biaya apa sajakah yang dikeluarkan ketika pembelian unit rumah Casa Asraya?",
-                "answer" => "Biaya-biaya yang akan ditanggung oleh pembeli, antara lain: \n• Biaya BPHTB\n• Biaya notaris,\n• Biaya provisi\n• Biaya PPN"
-            ],
-            [
-                "question" => "Apakah booking fee bisa dikembalikan jika ada pembatalan pembelian unit?",
-                "answer" => "Booking fee tidak dapat dikembalikan."
-            ],
-            [
-                "question" => "Dokumen apa saja yang harus dipersiapkan dalam proses pembelian unit Casa Asraya?",
-                "answer" => "Document yang dibutuhkan: \n1. Bagi Karyawan:\n• KTP\n• KK\n• Surat Nikah (Jika pembeli sudah menikah wajib melampirkan surat nikah)\n• NPWP\n• Slip Gaji 3 Bulan\n• Surat Keterangan Kerja di Perusahaan\n• Fotokopi Rekening Tabungan (Selama 3 bulan terakhir)\n• Pas Foto 3x4\n2. Bagi Wiraswasta\n• KTP\n• KK\n• Surat Nikah (Jika pembeli sudah menikah wajib melampirkan surat nikah)\n• SIUP (Surat Izin Usaha Perorangan)\n• TDP (Tanda Daftar Perusahaan)\n• NPWP\n• Laporan Perusahaan (2 Tahun terakhir)\n• Akta Pendirian Perusahaan (Jika PT)\n• Akta Pengesahan dari Menteri Kehakiman dan Hak Asasi Manusia Surat Izin Praktek (jika Profesi)\n• Pas Foto 3x4"
-            ]
-        ]);
-
         $header = [
-            'header' => 'Casa Asraya',
+            'header'   => 'Casa Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
-            'img' => 'new/assets/img/F11.jpg',
-            'low' => 'new/assets/img/aa.png'
+            'img'      => 'new/assets/img/F11.jpg',
+            'low'      => 'new/assets/img/aa.png'
         ];
 
         $this->seo('Pertanyaan Umum (FAQ)');
 
+        $generals = Faq::where('category', 'general')->where('is_active', true)->orderBy('order')->get();
+        $specs    = Faq::where('category', 'specs')->where('is_active', true)->orderBy('order')->get();
+        $facs     = Faq::where('category', 'facility')->where('is_active', true)->orderBy('order')->get();
+        $buys     = Faq::where('category', 'purchase')->where('is_active', true)->orderBy('order')->get();
+
         return view('faq')->with([
-            'generals' => $generals,
-            'specs' => $specs,
-            'facs' => $facs,
-            'buys' => $buys,
-
-            'header' => $header,
-
-            'units' => $this->units,
-            'banks' => $this->banks,
-            'igs' => $this->igs,
-            'facilities' => $this->facilities,
+            'generals'   => $generals,
+            'specs'      => $specs,
+            'facs'       => $facs,
+            'buys'       => $buys,
+            'header'     => $header,
+            'units'      => $this->getUnits(),
+            'banks'      => $this->getBanks(),
+            'igs'        => $this->getIgs(),
+            'facilities' => $this->getFacilities(),
         ]);
     }
 
-    public function getProgress()
+    /** Bangun paginator progress — dipakai internal maupun halaman publik */
+    private function buildProgressPaginator(int $perPage = 3): PaginationLengthAwarePaginator
     {
+        $dbProgress = ConstructionProgress::where('is_active', true)
+            ->orderBy('order')
+            ->with(['images' => fn($q) => $q->orderBy('order')])
+            ->get();
 
-        $collection = collect($this->progress);
+        if ($dbProgress->count() > 0) {
+            $progressArray = $dbProgress->map(fn($p) => [
+                'period' => $p->period,
+                'images' => $p->images->pluck('image')->toArray(),
+            ])->values()->toArray();
+        } else {
+            $progressArray = [
+                ['period' => 'September 2024', 'images' => ['img/progress/sept24/sept1.jpg','img/progress/sept24/sept2.jpg','img/progress/sept24/sept3.jpg','img/progress/sept24/sept4.jpg']],
+                ['period' => 'August 2024',    'images' => ['img/progress/agus2024/agus (1).jpg','img/progress/agus2024/agus (2).jpg','img/progress/agus2024/agus (3).jpg','img/progress/agus2024/agus (4).jpg']],
+                ['period' => 'Juli 2024',      'images' => ['img/progress/juli2024/juli1.jpg','img/progress/juli2024/juli2.jpg','img/progress/juli2024/juli3.jpg']],
+                ['period' => 'Juni 2024',      'images' => ['img/progress/juni2024/jun2.jpg','img/progress/juni2024/jun5.jpg','img/progress/juni2024/jun7.jpg','img/progress/juni2024/jun8.jpg']],
+                ['period' => 'Mei 2024',       'images' => ['img/progress/11.jpg','img/progress/12.jpg','img/progress/13.jpg','img/progress/14.jpg']],
+                ['period' => 'April 2024',     'images' => ['img/progress/april/april1.jpg','img/progress/april/april2.jpg','img/progress/april/april3.jpg','img/progress/april/april4.jpg']],
+                ['period' => 'Maret 2024',     'images' => ['img/progress/maret/maret1.jpg','img/progress/maret/maret2.jpg','img/progress/maret/maret3.jpg','img/progress/maret/maret4.jpg']],
+            ];
+        }
 
-        // Tentukan berapa banyak item per halaman
-        $perPage = 3;
-
-        // Dapatkan halaman saat ini dari query string (?page=)
-        $currentPage = \Illuminate\Pagination\LengthAwarePaginator::resolveCurrentPage();
-
-        // Bagian dari collection yang akan ditampilkan untuk halaman saat ini
+        $collection      = collect($progressArray);
+        $currentPage     = \Illuminate\Pagination\LengthAwarePaginator::resolveCurrentPage();
         $currentPageItems = $collection->forPage($currentPage, $perPage);
 
-        // Buat instance paginator
-        $paginatedItems = new PaginationLengthAwarePaginator(
-            $currentPageItems, // Item untuk halaman saat ini
-            $collection->count(), // Total items
-            $perPage, // Items per halaman
-            $currentPage, // Halaman saat ini
-            ['path' => route('getProgress')] // URL untuk pagination links
+        return new PaginationLengthAwarePaginator(
+            $currentPageItems,
+            $collection->count(),
+            $perPage,
+            $currentPage,
+            ['path' => route('getProgress')]
         );
-        return $paginatedItems;
+    }
+
+    /** Route /progress-pembangunan → tampilkan halaman view */
+    public function getProgress()
+    {
+        $this->seo('Progress Pembangunan');
+        $progress = $this->buildProgressPaginator(4); // 4 periode per halaman
+
+        // Buat photoMap untuk lightbox JS: ['Periode_Key' => ['url1','url2',...]]
+        $photoMap = [];
+        foreach ($progress->items() as $period) {
+            $key = str_replace([' ', '/'], '_', $period['period']);
+            $photoMap[$key] = array_map(function($imgPath) {
+                $url = (str_starts_with($imgPath, 'img/') || str_starts_with($imgPath, '/img/')
+                     || str_starts_with($imgPath, 'http') || str_starts_with($imgPath, 'storage/')
+                     || str_starts_with($imgPath, '/storage/'))
+                    ? $imgPath : 'storage/' . $imgPath;
+                return asset($url);
+            }, $period['images']);
+        }
+
+        return view('progress', compact('progress', 'photoMap'));
     }
 
     public function featuredHouse()
     {
         $header = [
-            'header' => 'Casa Asraya',
+            'header'   => 'Casa Asraya',
             'location' => 'LIVING HARMONY IN NATURE',
-            'img' => 'new/assets/img/F11.jpg',
-            'low' => 'new/assets/img/aa.png'
+            'img'      => 'new/assets/img/F11.jpg',
+            'low'      => 'new/assets/img/aa.png'
         ];
-
-        $sliders = [
-            'img/reduce/slider/F2.jpg',
-            'img/reduce/slider/F3.jpg',
-            'img/reduce/slider/F5.jpg',
-            'img/reduce/slider/F6.jpg',
-            // 'new/assets/img/F7.jpg',
-            'img/reduce/slider/F10.jpg',
-        ];
-        $managements =
-            [
-                [
-                    'img' => 'img/reduce/management-01.webp',
-                    'name' => 'O\'zaro B. Larosa',
-                    'pos' => 'Managing Director',
-                    'text' => '
-                    Tim manajemen profesional dan karyawan dengan bangga mempersembahkan Bapak O’ozaro Larosa, lulusan Institut Teknologi Bandung, yang kini menjabat sebagai Managing Director di salah satu anak perusahaan kami, PT Casa Asraya Properti.
-                    </br>
-Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam membuka pasar global di bidang teknik, pertambangan, dan perusahaan EPC di Asia Tenggara & Timur Tengah sejak 2007, Bapak O’ozaro Larosa telah menjadi salah satu pakar bisnis luar negeri andalan kami.
-                    ',
-                ],
-                [
-                    'img' => 'img/reduce/management-02.png',
-                    'name' => 'Atelier Riri',
-                    'pos' => 'Architecture & Design Partner',
-                    'text' => 'Atelier Riri adalah firma desain dan arsitektur yang didirikan oleh Novriansyah Yakub (Riri) di Jakarta. Firma ini merupakan perluasan gagasan dari apa yang Riri yakini dan lakukan sejak memulai debut arsitekturnya pada tahun 2005. Hingga kini, firma tersebut terus berkembang dengan karya di bidang arsitektur, interior, lanskap, dan desain produk.',
-                    'ref' => 'https://atelierriri.com/asraya-townhouse/',
-                    'refText' => 'More Information'
-                ],
-            ];
 
         $this->seo('Unit Unggulan');
-        $collection = $this->getProgress();
+        $collection = $this->buildProgressPaginator();
         return view('featured-house')
             ->with([
-                'managements' => $managements,
-                'header' => $header,
-                'sliders' => $sliders,
-                // 
-                'units' => $this->units,
-                'banks' => $this->banks,
-                'igs' => $this->igs,
-                'promos' => $this->promos,
-                'progress' => $collection, //$this->progress,
-                'facilities' => $this->facilities,
+                'managements' => $this->getManagements(),
+                'header'      => $header,
+                'sliders'     => $this->getSliders(),
+                'units'       => $this->getUnits(),
+                'banks'       => $this->getBanks(),
+                'igs'         => $this->getIgs(),
+                'promos'      => $this->promos,
+                'progress'    => $collection,
+                'facilities'  => $this->getFacilities(),
             ]);
     }
 
     public function fasilitas()
     {
-        // return $this->facilities;
         return view('templates/facilities')->with([
-            'facilities' => $this->facilities,
+            'facilities' => $this->getFacilities(),
         ]);
     }
 
     public function unitUnggulan()
     {
         return view('templates/units')->with([
-            'units' => $this->units,
+            'units' => $this->getUnits(),
         ]);
     }
 
     public function galeriAll()
     {
-        $selected = ['Artboard 1.png', 'Artboard 2.png', 'Artboard 3.png', 'Artboard 4.png', 'Artboard 5.png', 'Artboard 6.png', 'Artboard 7.png', 'Artboard 8.png', 'Artboard 9.png',];
+        $selected = ['Artboard 1.png', 'Artboard 2.png', 'Artboard 3.png', 'Artboard 4.png', 'Artboard 5.png', 'Artboard 6.png', 'Artboard 7.png', 'Artboard 8.png', 'Artboard 9.png'];
         $data['galeries'] = [];
-        foreach ($selected as $key => $value) {
-            # code...
+        foreach ($selected as $value) {
             array_push(
                 $data['galeries'],
                 [
                     'gambar' => '/img/gallery1/' . $value,
-                    'judul' => 'Cendana (' . $value . ')',
+                    'judul'  => 'Cendana (' . $value . ')',
                 ]
             );
         }
@@ -1128,39 +969,35 @@ Seorang profesional dengan semangat tinggi untuk keunggulan dan pengalaman dalam
         $data = [];
         $data['galeries'] = [];
 
-        // Ambil semua file di folder public (rekursif)
-        $files = \Illuminate\Support\Facades\File::allFiles(public_path('/img/gallery1/'));
+        $dbGallery = GalleryImage::where('is_active', true)->orderBy('order')->get();
 
-        // Filter hanya gambar dan bangun array untuk view
-        foreach ($files as $file) {
-            $ext = strtolower($file->getExtension());
-            if (!in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'mp4'])) {
-                continue;
-            }
-
-            // path relatif ke public agar bisa dipakai di <img src="...">
-            $absolute = str_replace('\\', '/', $file->getPathname());
-            $publicPath = str_replace('\\', '/', public_path('/'));
-            $relative = str_replace($publicPath, '', $absolute);
-            if (substr($relative, 0, 1) !== '/') {
-                $relative = '/' . $relative;
-            }
-
-            $data['galeries'][] = [
-                'gambar' => $relative,
-                'judul'  => $file->getFilename(),
-                'size'   => $file->getSize(),
-                'mtime'  => $file->getMTime(),
+        if ($dbGallery->count() > 0) {
+            $data['galeries'] = $dbGallery->map(fn($g) => [
+                'gambar' => $g->image,
+                'judul'  => $g->caption ?? basename($g->image),
+            ])->toArray();
+        } else {
+            $curatedPaths = [
+                '/img/terbaru/IND01755.webp', '/img/terbaru/IND01769.webp',
+                '/img/terbaru/IND01809.webp', '/img/terbaru/IND01830.webp',
+                '/img/terbaru/IND01870.webp', '/img/terbaru/IND01912.webp',
+                '/img/terbaru/IND02304.webp', '/img/terbaru/IND02338.webp',
+                '/img/terbaru/IND02492.webp', '/img/terbaru/IND04813.webp',
+                '/img/terbaru/IND02101.webp', '/img/terbaru/IND02395.webp',
+                '/img/terbaru/IND02420.webp', '/img/terbaru/IND05044.webp',
+                '/img/terbaru/IND05480.webp', '/img/terbaru/IND05643.webp',
+                '/img/gallery1/gal2.webp', '/img/gallery1/gal5.webp',
+                '/img/gallery1/gal8.webp', '/img/gallery1/gal10.webp',
+                '/img/gallery1/F1.jpg', '/img/gallery1/F2.jpg', '/img/gallery1/F10.jpg',
             ];
+            foreach ($curatedPaths as $path) {
+                if (\Illuminate\Support\Facades\File::exists(public_path($path))) {
+                    $data['galeries'][] = ['gambar' => $path, 'judul' => basename($path)];
+                }
+            }
         }
 
-        // Optional: urutkan berdasarkan waktu modifikasi terbaru
-        usort($data['galeries'], function ($a, $b) {
-            return $b['mtime'] <=> $a['mtime'];
-        });
-
         $this->seo('Galeri Kami');
-        // return $data;
 
         return view('galeri')->with([
             'data' => $data,

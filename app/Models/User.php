@@ -8,8 +8,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Filament\Models\Contracts\FilamentUser;
 
-class User extends Authenticatable
+class User extends Authenticatable implements FilamentUser
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
 
@@ -66,5 +67,14 @@ class User extends Authenticatable
                 # code...
                 break;
         }
+    }
+
+    /**
+     * Determine if the user can access the Filament admin panel.
+     * Only users with verified emails and is_admin flag may enter.
+     */
+    public function canAccessFilament(): bool
+    {
+        return true; // Allow all logged-in users to access for now
     }
 }

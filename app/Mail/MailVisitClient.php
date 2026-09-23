@@ -25,7 +25,7 @@ class MailVisitClient extends Mailable
     {
 
         return $this->view('formatEmailClient')
-            ->from(env('MAIL_USERNAME'))
+            ->from(config('mail.from.address'), config('mail.from.name'))
             ->subject('PT. Casa Asraya Property - Schedule Visit Confirmation')
             ->with(['data' => $this->data]);
     }

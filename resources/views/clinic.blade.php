@@ -1,132 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     @include('templates/meta')
     @include('templates/head')
-    <style>
-        .carousel-control-next,
-        .carousel-control-prev
-
-        /*, .carousel-indicators */
-            {
-            filter: invert(100%);
-        }
-    </style>
+    <title>Dr Synd Slim & Beauty Clinic — Casa Asraya</title>
 </head>
 
-<body>
+<body style="background:#f5f1ea; font-family:'Outfit',system-ui,sans-serif;">
     @include('templates/navbar')
-    <div class="site-blocks-cover overlay" style="background-image:url({{ $data['cover'] }})" data-aos="fade"
-        data-stellar-background-ratio="0.5" data-aos="fade">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
-                </div>
-            </div>
+
+    {{-- HERO --}}
+    <section style="background:#1a3a2e; position:relative; overflow:hidden; min-height:65vh; display:flex; align-items:flex-end; padding:clamp(80px,18vw,140px) clamp(16px,4vw,48px) clamp(40px,6vw,64px);">
+        <div style="position:absolute;inset:0;background:url('{{ $data['cover'] }}') center/cover; opacity:0.4;"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(26,58,46,0.9) 0%, rgba(26,58,46,0.2) 70%, transparent 100%);"></div>
+        <div style="position:relative;z-index:2; max-width:700px;">
+            <p style="font-family:'Outfit',monospace; font-size:10px; font-weight:600; letter-spacing:0.28em; text-transform:uppercase; color:#D4622A; margin:0 0 16px;">Wellness Center</p>
+            <h1 style="font-family:'Outfit',sans-serif; font-size:clamp(2rem,5vw,3.5rem); font-weight:300; color:#fff; line-height:1.1; letter-spacing:-0.02em; margin:0 0 16px;">{{ $data['name'] }}</h1>
+            <p style="font-size:14px; color:rgba(255,255,255,0.7); margin:0; line-height:1.7;">Destinasi utama perawatan kecantikan dan kesehatan tubuh secara menyeluruh.</p>
         </div>
-    </div>
-    <div class="site-section" id="home">
-        <div class="container py-4 " data-aos="fade-up">
-            <center>
-                <h1 class="mb-4 w-border">
-                    {{ $data['name'] }}
-                </h1>
-            </center>
-            <p class="rapih">
-                Welcome to Dr Synd Slim & Beauty Clinic, where transformation meets rejuvenation. Our clinic is your
-                premier destination for comprehensive beauty and wellness solutions, tailored to meet your individual
-                needs.
-                <br><br>
-                At Dr Synd Slim & Beauty Clinic, we understand that looking and feeling your best go hand in hand. Our
-                team of skilled professionals is dedicated to helping you achieve your aesthetic goals with precision
-                and care.
-                <br><br>
-                Whether you're seeking to sculpt your body, refresh your skin, or enhance your features, our range of
-                advanced treatments and therapies are designed to deliver exceptional results. From non-invasive
-                procedures to state-of-the-art technologies, we offer a wide array of options to address your concerns
-                and enhance your natural beauty.<br>
-            </p>
-            <br>
-            {{-- dr synd --}}
-            <div>
-                <div class="site-section-heading w-border col-md-12 mx-auto">
-                    <h2 class="mb-5">Dr. Syndy Taurisia</h2>
-                    <div class="row">
-                        <div class="col-4 col-md-4 col-lg-4">
-                            <div class="image" style="background-image:url('img/drSynd/drSynd.jpg')"></div>
-                            <img class="w-100 card-rounded" src="img/drSynd/drSynd.jpg" alt="">
-                        </div>
-                        <div class="col-8 col-md-8 col-lg-8">
-                            <p class="rapih">
-                                Dr. Syndy Taurisia is a dedicated medical professional with a passion for holistic
-                                healthcare
-                                and aesthetic medicine. Born in Pekanbaru, her journey in the medical field began with a
-                                strong
-                                commitment to serving others and promoting wellness. <br><br>
-                                Driven by her passion for aesthetics and the desire to help individuals look and feel
-                                their
-                                best, Dr. Taurisia pursued further certification in medical aesthetics in 2015. Her
-                                dedication
-                                to mastering the latest techniques and advancements in aesthetic medicine led her to
-                                excel in
-                                this field, earning her recognition among peers and patients alike.<br><br>
+    </section>
 
-                                Dr. Taurisia's commitment to providing comprehensive care and achieving optimal results
-                                has led
-                                her to various professional experiences. Most recently, she has been specializing in
-                                acupuncture
-                                and acupressure at KEPPTI Bekasi, where she has applied her expertise to help patients
-                                achieve
-                                balance and alleviate various health concerns.<br><br>
-
-                                Additionally, Dr. Taurisia has contributed her skills and knowledge to the field of
-                                medical
-                                aesthetics as part of the team at Lembaga Estetika Medik Jakarta. Here, she has had the
-                                opportunity to refine her craft and offer personalized aesthetic solutions to her
-                                clients,
-                                helping them enhance their natural beauty and boost their confidence.<br><br>
-
-                                With a strong foundation in general medicine, specialized training in acupuncture and
-                                medical
-                                aesthetics, and a genuine dedication to patient care, Dr. Syndy Taurisia continues to
-                                make a
-                                positive impact on the lives of her patients, empowering them to lead healthier, happier
-                                lives.
-                            </p>
-                        </div>
+    {{-- CLINIC DESCRIPTION --}}
+    <section style="background:#f5f1ea; padding:80px clamp(16px,4vw,48px);">
+        <div class="container" style="padding-left:0;padding-right:0;">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div style="border-radius:2.5rem; overflow:hidden; aspect-ratio:4/3; background:#e8e4de;">
+                        <img src="{{ $data['cover'] }}" alt="Dr Synd Clinic" style="width:100%;height:100%;object-fit:cover;">
                     </div>
                 </div>
-
-            </div>
-            {{-- pic --}}
-            <div>
-                <br><br>
-                <div class="site-section-heading text-center w-border col-md-8 mx-auto">
-                    <h2 class="mb-5">OUR WORK</h2>
-                    <p class="rapih">
-                        Our experienced clinicians will work closely with you to develop a personalized treatment plan
-                        that
-                        aligns with your goals and aspirations. Whether you're interested in body contouring, facial
-                        rejuvenation, or holistic wellness, we're here to guide you every step of the way.
+                <div class="col-lg-6">
+                    <p style="font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 12px;">Tentang Klinik</p>
+                    <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:300; color:#1a3a2e; line-height:1.2; margin:0 0 24px;">Dr Synd Slim &amp; Beauty Clinic</h2>
+                    <p style="font-size:15px; color:#555; line-height:1.9; margin:0 0 16px;">
+                        Selamat datang di Dr Synd Slim & Beauty Clinic, tempat transformasi bertemu dengan kesegaran baru. Klinik kami merupakan destinasi utama bagi Anda yang menginginkan solusi perawatan kecantikan dan kesehatan tubuh yang komprehensif.
                     </p>
-                </div>
-                <div class="row">
-                    @foreach ($pics as $item)
-                        <div class="col-4 col-md-4 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                            <a href="" class="unit-9">
-                                <div class="image" style="background-image:url({{ $item }})"></div>
-                            </a>
-                        </div>
-                    @endforeach
+                    <p style="font-size:15px; color:#555; line-height:1.9; margin:0;">
+                        Kami memahami bahwa penampilan terbaik beriringan dengan kesehatan yang optimal. Dipimpin oleh tenaga profesional berdedikasi, kami siap membantu mewujudkan impian estetika Anda secara personal dan tepercaya.
+                    </p>
                 </div>
             </div>
         </div>
-        {{-- @include('templates/units')
-        @include('templates/facilities')
-        @include('templates/igFeeds') --}}
-    </div>
+    </section>
+
+    {{-- DOCTOR PROFILE --}}
+    <section style="background:#fff; padding:80px clamp(16px,4vw,48px); border-top:1px solid #e8e4de; border-bottom:1px solid #e8e4de;">
+        <div class="container" style="padding-left:0;padding-right:0;">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4">
+                    <div style="border-radius:2rem; overflow:hidden; border:1px solid #e8e4de; box-shadow:0 8px 30px rgba(0,0,0,0.03); background:#f5f1ea; padding:12px;">
+                        <img src="{{ asset('img/drSynd/drSynd.jpg') }}" alt="Dr. Syndy Taurisia" style="width:100%; border-radius:1.5rem; display:block;">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <p style="font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 12px;">Dokter Pendiri</p>
+                    <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:300; color:#1a3a2e; line-height:1.2; margin:0 0 24px;">Dr. Syndy Taurisia</h2>
+                    <div style="font-size:15px; color:#555; line-height:1.85; display:flex; flex-direction:column; gap:16px;">
+                        <p>
+                            Dr. Syndy Taurisia adalah praktisi medis berdedikasi tinggi dengan ketertarikan mendalam pada pengobatan holistik serta estetika medis. Memulai perjalanannya di Pekanbaru, dedikasi beliau didorong oleh komitmen tulus membantu pasien mencapai keseimbangan hidup sehat.
+                        </p>
+                        <p>
+                            Sejak tahun 2015, beliau terus memperdalam keahliannya melalui berbagai sertifikasi estetika medis nasional. Beliau juga aktif memadukan metode akupunktur dan akupresur bersertifikat dari KEPPTI Bekasi serta berpengalaman aktif dalam kolaborasi bersama Lembaga Estetika Medik Jakarta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- OUR WORK GALLERY --}}
+    @if(isset($pics) && count($pics) > 0)
+    <section style="background:#f5f1ea; padding:80px clamp(16px,4vw,48px);">
+        <div class="container" style="padding-left:0;padding-right:0;">
+            <div style="text-align:center; margin-bottom:56px;">
+                <p style="font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 12px;">Koleksi</p>
+                <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:300; color:#1a3a2e; margin:0 0 16px;">Our Work</h2>
+                <p style="font-size:14.5px; color:#666; max-width:620px; margin:0 auto; line-height:1.8;">
+                    Dokumentasi hasil perawatan terbaik yang kami lakukan dengan standar profesionalisme tinggi demi memberikan hasil optimal bagi para klien.
+                </p>
+            </div>
+            <div class="row g-4">
+                @foreach ($pics as $item)
+                    <div class="col-6 col-md-4">
+                        <div style="border-radius:1.5rem; overflow:hidden; aspect-ratio:1; background:#fff; border:1px solid #e8e4de; box-shadow:0 4px 15px rgba(0,0,0,0.03);">
+                            <img src="{{ $item }}" alt="Work item" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s;"
+                                 onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+    @endif
+
     @include('templates/footer')
 </body>
-
 </html>

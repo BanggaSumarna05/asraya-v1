@@ -53,7 +53,17 @@ class PostResource extends Resource
     public static function table(Table $table): Table
     {
         return $table->columns([
-            ImageColumn::make('image')->square(),
+            ImageColumn::make('image')
+                ->square()
+                ->getStateUsing(function ($record) {
+                    $img = $record->image;
+                    if (!$img) return null;
+                    if (str_starts_with($img, '/') || str_starts_with($img, 'img/')) {
+                        return url(ltrim($img, '/'));
+                    }
+                    return \Illuminate\Support\Facades\Storage::disk('public')->url($img);
+                })
+                ->disk('public'),
             TextColumn::make('title')->searchable()->limit(40),
             TextColumn::make('category.name')->label('Category'),
             BooleanColumn::make('published'),

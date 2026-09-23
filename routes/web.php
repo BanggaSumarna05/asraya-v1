@@ -15,15 +15,17 @@ use Barryvdh\DomPDF\PDF;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// require __DIR__ . '/auth.php';
+require __DIR__ . '/auth.php';
 
 Route::get('/', [FrontController::class, 'index'])->name('index');
+Route::get('/new', function () { return view('hero-landing'); })->name('hero-landing');
 Route::get('/featured-house', [FrontController::class, 'featuredHouse'])->name('featured-house');
 Route::get('/history', [FrontController::class, 'history'])->name('history');
 Route::get('/fasilitas', [FrontController::class, 'fasilitas'])->name('fasilitas');
 Route::get('/unit-unggulan', [FrontController::class, 'unitUnggulan'])->name('unitUnggulan');
 Route::get('/mahogany', [FrontController::class, 'mahogany'])->name('mahogany');
 Route::get('/cendana', [FrontController::class, 'cendana'])->name('cendana');
+Route::get('/gaharu', [FrontController::class, 'gaharu'])->name('gaharu');
 Route::get('/clubhouse', [FrontController::class, 'clubhouse'])->name('clubhouse');
 Route::get('/brandgang', [FrontController::class, 'brandgang'])->name('brandgang');
 Route::get('/vision-n-mission', [FrontController::class, 'visi'])->name('visimisi');
@@ -32,7 +34,8 @@ Route::get('/swimming-pool', [FrontController::class, 'spool'])->name('swimming-
 Route::get('/clinic', [FrontController::class, 'clinic'])->name('clinic');
 Route::get('/taman-kota', [FrontController::class, 'tamanKota'])->name('tamanKota');
 Route::get('/frequently-asked-questions', [FrontController::class, 'faq'])->name('faq');
-Route::get('/getProgress-bosnya-pilih-pilih-karyawan-jangan-beli-disini', [FrontController::class, 'getProgress'])->name('getProgress');
+Route::get('/faq', [FrontController::class, 'faq']);
+Route::get('/progress-pembangunan', [FrontController::class, 'getProgress'])->name('getProgress');
 Route::get('/simulasi-kpr', [FrontController::class, 'calculator'])->name('simulasi-kpr');
 Route::get('/galeri', [FrontController::class, 'galeri'])->name('galeri');
 

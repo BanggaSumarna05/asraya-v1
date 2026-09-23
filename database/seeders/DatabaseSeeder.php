@@ -14,6 +14,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::firstOrCreate(
+            ['email' => 'admin@asrayaproperty.com'],
+            [
+                'name' => 'Admin Casa Asraya',
+                'password' => bcrypt('password'),
+                'email_verified_at' => now(),
+            ]
+        );
+
+        $this->call([
+            StaticContentSeeder::class,
+        ]);
     }
 }

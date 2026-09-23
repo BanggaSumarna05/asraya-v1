@@ -1,228 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     @include('templates/meta')
     @include('templates/head')
+    <title>Mahogany — Casa Asraya</title>
     <style>
-        .carousel-control-next,
-        .carousel-control-prev,
-        .carousel-indicators {
-            filter: invert(100%);
+        .spec-row {
+            display: flex; align-items: center; gap: 16px;
+            padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.12);
         }
-
-        .icx {
-            width: 36px;
-            height: 36px;
-            filter: brightness(0) invert(1);
+        .spec-row:last-child { border-bottom: none; }
+        .spec-icon {
+            width: 44px; height: 44px; background: rgba(255,255,255,0.1);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
         }
+        .floor-card {
+            background: #f5f1ea;
+            border-radius: 1.5rem;
+            border: 1px solid #e8e4de;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+        }
+        .floor-card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            background: #f5f1ea;
+            display: block;
+        }
+        .floor-card-label {
+            padding: 14px 20px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #1a3a2e;
+            border-top: 1px solid #e8e4de;
+            text-align: center;
+        }
+        .slide-thumb {
+            width: 72px; height: 52px; object-fit: cover; border-radius: 8px;
+            cursor: pointer; opacity: 0.55; border: 2px solid transparent;
+            transition: opacity 0.2s, border-color 0.2s;
+        }
+        .slide-thumb.active { opacity: 1; border-color: #D4622A; }
     </style>
 </head>
 
-<body style="font-family: 'Archivo'!important">
+<body style="background:#f5f1ea; font-family:'Outfit',system-ui,sans-serif;">
     @include('templates/navbar')
-    <div class="site-blocks-cover overlay lazy-bg" style="background-image:url({{ $data['cover'] }})" data-aos="fade"
-        data-stellar-background-ratio="0.5" data-aos="fade">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
-                    <h1 class="text-center" style="font-family: 'Archivo'; font-size: 50px">MAHOGANY</h1>
-                    <h4 class="text-white rapih text-center">
-                        Mahogany di Casa Asraya adalah hunian luas yang terinspirasi alam, menawarkan
-                        keanggunan dan ketenangan. Dengan pemandangan hijau dan interior bercahaya, rumah ini
-                        menggabungkan kenyamanan modern dengan kedamaian hutan.
-                    </h4>
+
+    {{-- HERO --}}
+    <section style="background:#0c1a12; position:relative; overflow:hidden; height:100vh; min-height:600px; display:flex; align-items:flex-end;">
+        {{-- Siang --}}
+        <img id="heroBgDay"
+             src="/img/mahogany/mahogany-siang.jpg"
+             alt="Mahogany Siang"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:opacity 0.8s ease;">
+        {{-- Malam --}}
+        <img id="heroBgNight"
+             src="/img/mahogany/mahogany-malam.jpg"
+             alt="Mahogany Malam"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:0;transition:opacity 0.8s ease;">
+        {{-- Gradient overlay --}}
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 40%, rgba(10,22,15,0.88) 100%);z-index:1;"></div>
+        <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.3) 100%);z-index:1;"></div>
+
+        {{-- Day/Night Toggle --}}
+        <div style="position:absolute;top:clamp(90px,12vw,120px);right:clamp(24px,4vw,64px);z-index:4;">
+            <button id="btnDayNight" onclick="toggleHeroMode()" title="Ganti Siang/Malam"
+                    style="width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.4);background:rgba(255,255,255,0.12);color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.25s;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);">
+                <span id="dayNightIcon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </span>
+            </button>
+        </div>
+
+        {{-- Content --}}
+        <div style="position:relative;z-index:2;width:100%;padding:clamp(40px,6vw,80px) clamp(24px,5vw,80px);">
+            <div style="max-width:720px;">
+                <p style="font-family:'Outfit',monospace; font-size:10px; font-weight:600; letter-spacing:0.28em; text-transform:uppercase; color:#D4622A; margin:0 0 16px;">Tipe Premium</p>
+                <h1 style="font-family:'Outfit',sans-serif; font-size:clamp(3rem,7vw,5.5rem); font-weight:200; color:#fff; line-height:1.0; letter-spacing:-0.03em; margin:0 0 20px;">MAHOGANY</h1>
+                <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:0 0 32px;">
+                    <span style="font-size:13px;color:rgba(255,255,255,0.6);letter-spacing:0.08em;">LT: 157m²</span>
+                    <span style="width:3px;height:3px;background:rgba(255,255,255,0.3);border-radius:50%;"></span>
+                    <span style="font-size:13px;color:rgba(255,255,255,0.6);letter-spacing:0.08em;">LB: 220m²</span>
+                    <span style="width:3px;height:3px;background:rgba(255,255,255,0.3);border-radius:50%;"></span>
+                    <span style="font-size:13px;color:rgba(255,255,255,0.6);letter-spacing:0.08em;">3 Lantai</span>
                 </div>
+                <a href="https://wa.me/6281319999806?text=Halo%20saya%20tertarik%20dengan%20Tipe%20Mahogany"
+                   target="_blank"
+                   style="display:inline-flex; align-items:center; gap:10px; font-family:'Outfit',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; color:#1a3a2e; background:#fff; border-radius:9999px; padding:15px 32px; transition:background 0.25s, color 0.25s; box-shadow:0 4px 24px rgba(0,0,0,0.25);"
+                   onmouseover="this.style.background='#D4622A';this.style.color='#fff';"
+                   onmouseout="this.style.background='#fff';this.style.color='#1a3a2e';">
+                    Tanya via WhatsApp
+                    <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(26,58,46,0.1);font-size:12px;">↗</span>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="site-section" id="home">
-        <div class="container text-white">
-            <div class="row" style="background-color: #ad8e79;padding: 3vh">
-                <div class="col-sm-12 col-md-12 col-lg-5">
-                    <div class="d-flex flex-column justify-content-center h-100 py-5 px-4 px-md-5">
-                        <h2 class="text-white mb-3" style="font-family: 'Archivo'; font-weight: 700;">
-                            TIPE MAHOGANY
-                        </h2>
-                        <p class="text-white mb-4" style="font-size:18px; font-weight: 500;">
-                            LT: 157m² | LB: 220m²
-                        </p>
-                        <p class="rapih text-white" style="font-size: 1.1rem; line-height: 1.7;">
-                            Type Mahogany memiliki Luas Bangunan 220m² dengan spesifikasi 3 lantai. Type Mahogany
-                            berjumlah 4 unit. Dan Keistimewaan Type Mahogany memiliki Connected Garden yang terhubung
-                            langsung dengan Clubhouse CASA ASRAYA.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-7">
-                    <img src="img/mahogany/mahogany-interior-0.jpg" class="w-100 lazy" alt="tipe mahogany">
-                </div>
-            </div>
-            <div class="row" style="background-color: white; font-size: 18px!important;">
-                <div class="col-sm-12 col-md-12 col-lg-7">
-                    <div id="carouselExampleControls" class="carousel slide justify-content-center"
-                        data-ride="carousel">
-                        <div class="carousel-inner">
-                            @foreach ($data['slide'] as $i => $item)
-                                <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
-                                    <center><img class="w-100 lazy" src="{{ $item }}">
-                                    </center>
-                                </div>
+
+        {{-- Scroll hint --}}
+        <div style="position:absolute;bottom:32px;right:clamp(24px,4vw,64px);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0.5;">
+            <span style="font-family:'Outfit',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#fff;writing-mode:vertical-rl;">Scroll</span>
+            <div style="width:1px;height:40px;background:rgba(255,255,255,0.4);"></div>
+        </div>
+    </section>
+
+    <script>
+        var _heroMode = 'day';
+
+        function toggleHeroMode() {
+            setHeroMode(_heroMode === 'day' ? 'night' : 'day');
+        }
+
+        function setHeroMode(mode) {
+            _heroMode = mode;
+            const bgDay  = document.getElementById('heroBgDay');
+            const bgNight = document.getElementById('heroBgNight');
+            const icon   = document.getElementById('dayNightIcon');
+            if (mode === 'night') {
+                bgDay.style.opacity   = '0';
+                bgNight.style.opacity = '1';
+                icon.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+            } else {
+                bgDay.style.opacity   = '1';
+                bgNight.style.opacity = '0';
+                icon.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>';
+            }
+        }
+        (function () {
+            const h = new Date().getHours();
+            setHeroMode(h < 6 || h >= 18 ? 'night' : 'day');
+        })();
+    </script>
+
+    {{-- OVERVIEW + FASILITAS --}}
+    <section style="background:#f5f1ea; padding:80px clamp(16px,4vw,48px);">
+        <div class="container" style="padding-left:0;padding-right:0;">
+            <div class="row g-4">
+                {{-- Foto Carousel --}}
+                <div class="col-lg-7">
+                    <div style="border-radius:2.5rem; overflow:hidden; background:#1a3a2e;">
+                        <img id="mainPhoto" src="{{ asset($data['slide'][0] ?? '') }}" alt="Mahogany Casa Asraya"
+                             style="width:100%; height:420px; object-fit:cover; object-position:center; display:block; transition:opacity 0.3s;">
+                        <div style="display:flex; gap:10px; padding:16px 20px; overflow-x:auto; scrollbar-width:none;">
+                            {{-- Foto landscape --}}
+                            @foreach($data['slide'] as $idx => $img)
+                            <img src="{{ asset($img) }}"
+                                 class="slide-thumb {{ $idx === 0 ? 'active' : '' }}"
+                                 onclick="changePhoto(this, '{{ asset($img) }}', 'cover')"
+                                 alt="foto {{ $idx+1 }}"
+                                 style="object-fit:cover;">
+                            @endforeach
+                            {{-- Render views eksterior (contain) --}}
+                            @foreach($data['slideRender'] as $idx => $img)
+                            <img src="{{ asset($img) }}"
+                                 class="slide-thumb"
+                                 onclick="changePhoto(this, '{{ asset($img) }}', 'contain')"
+                                 alt="render {{ $idx+1 }}"
+                                 style="object-fit:contain; background:#0d2218;">
                             @endforeach
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true" style="color:red"></span>
-                        </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-5" style="background-color: #ad8e79; padding:0px">
-                    <div class="align-items-center justify-content-center"
-                        style="padding-top: 8vh;padding-bottom: 8vh;">
-                        <h2 class="" style="padding-right: 40px;padding-left: 40px;color: whitesmoke;">
-                            Fasilitas</h2>
-                        <div style="padding-right: 40px;padding-left: 40px;">
-                            <table class="table table-row-dashed align-middle gs-0 gy-3 my-0">
-                                <tbody>
-                                    <tr>
-                                        <td width="10%">
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/sleeping.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            3 Master Rooms <br>
-                                            1 Housekeeper’s room
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/dinner-table.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            1 Dining Room
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/kitchen-table.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            1 Kitchen
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/car-in-garage.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            1 Carport
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/bathroom.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            4 Bathroom
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/livingroom.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            3 Living Room
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/balcony.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            1 Balcony
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="symbol symbol-4px me-3">
-                                                <img src="img/reduce/icons/private-garage.png" class="icx"
-                                                    alt="Perumahan Mahogany di Casa Asraya">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            1 Garage
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <!--end::Table body-->
-                            </table>
+
+                {{-- Deskripsi + Spec --}}
+                <div class="col-lg-5">
+                    <div style="background:#1a3a2e; border-radius:2.5rem; padding:clamp(24px,4vw,40px); height:100%;">
+                        <p style="font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 12px;">Tentang Unit</p>
+                        <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.3rem,2.5vw,1.8rem); font-weight:400; color:#fff; margin:0 0 16px;">Tipe Mahogany</h2>
+                        <p style="font-size:14px; color:rgba(255,255,255,0.65); line-height:1.85; margin:0 0 28px;">
+                            Tipe Mahogany adalah hunian premium <strong style="color:#fff;">Luxury Family Residence</strong> dengan Luas Bangunan 220m² dan Luas Tanah 157m², 3 lantai. Berjumlah 4 unit dengan Connected Garden yang terhubung langsung dengan Clubhouse CASA ASRAYA.
+                        </p>
+
+                        {{-- Specs --}}
+                        <div>
+                            @php
+                            $specs = [
+                                ['icon' => 'img/reduce/icons/sleeping.png',       'label' => '3 Master Bedroom + 1 Kamar Asisten Rumah Tangga'],
+                                ['icon' => 'img/reduce/icons/dinner-table.png',   'label' => '1 Ruang Makan'],
+                                ['icon' => 'img/reduce/icons/kitchen-table.png',  'label' => '1 Dapur'],
+                                ['icon' => 'img/reduce/icons/car-in-garage.png',  'label' => '1 Carport + 1 Garasi'],
+                                ['icon' => 'img/reduce/icons/bathroom.png',       'label' => '4 Kamar Mandi'],
+                                ['icon' => 'img/reduce/icons/livingroom.png',     'label' => '3 Ruang Keluarga'],
+                                ['icon' => 'img/reduce/icons/balcony.png',        'label' => '1 Balkon'],
+                                ['icon' => 'img/reduce/icons/livingroom.png',     'label' => 'Smart Home: Living Room, Dining Room & Master Bedroom'],
+                            ];
+                            @endphp
+                            @foreach($specs as $s)
+                            <div class="spec-row">
+                                <div class="spec-icon">
+                                    <img src="{{ asset($s['icon']) }}" alt="" style="width:22px;height:22px;filter:brightness(0) invert(1);object-fit:contain;">
+                                </div>
+                                <span style="font-size:14px; color:rgba(255,255,255,0.8);">{{ $s['label'] }}</span>
+                            </div>
+                            @endforeach
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    {{-- DENAH --}}
+    <section style="background:#f5f1ea; padding:80px clamp(16px,4vw,48px);">
+        <div class="container" style="padding-left:0;padding-right:0;">
+            <div style="text-align:center; margin-bottom:48px;">
+                <p style="font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 12px;">Denah</p>
+                <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.5rem,3vw,2.2rem); font-weight:300; color:#1a3a2e; margin:0;">Denah Lantai Mahogany</h2>
+            </div>
+
+            {{-- 3 Lantai portrait --}}
+            <div class="row g-4 justify-content-center mb-4">
+                <div class="col-6 col-md-4">
+                    <div class="floor-card">
+                        <img src="{{ asset('img/mahogany/LT1 MAHOGANY.png') }}" alt="Lantai 1 Mahogany">
+                        <div class="floor-card-label">Ground Floor</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="floor-card">
+                        <img src="{{ asset('img/mahogany/LT2 MAHOGANY.png') }}" alt="Lantai 2 Mahogany">
+                        <div class="floor-card-label">2nd Floor</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="floor-card">
+                        <img src="{{ asset('img/mahogany/LT3 MAHOGANY.png') }}" alt="Lantai 3 Mahogany">
+                        <div class="floor-card-label">Upper Floor</div>
                     </div>
                 </div>
             </div>
 
-            <div class="site-block-retro d-block d-md-flex">
-                <h1 class="mb-4">Lantai Dasar</h1>
-            </div>
-            <div class="row" {{-- style="background-color: grey" --}}>
-                <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
-                    <img class="image-fluid w-100 lazy" src="img/mahogany/LT1 MAHOGANY.png">
-                    <h3 style="color:rgba(0,38,28,1)">1st Level</h3>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
-                    <img class="image-fluid w-100 lazy" src="img/mahogany/LT2 MAHOGANY.png">
-                    <h3 style="color:rgba(0,38,28,1)">2nd Level</h3>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0px">
-                    <img class="image-fluid w-100 lazy" src="img/mahogany/LT3 MAHOGANY.png">
-                    <h3 style="color:rgba(0,38,28,1)">Upper Level</h3>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px;">
-                    <img class="image-fluid w-100 lazy" src="/img/sitemap.jpg" style="width: 100%; height: auto;">
-                    <h3 style="color:rgba(0,38,28,1)">Site Map</h3>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12" style="padding: 0px">
-                    <br>
-                    <a href="https://wa.me/6281399998066?text=Hi%20saya%20tertarik%20dengan%20PESONA%20HUTAN%20ASRAYA"
-                        class="btn btn-primary btn-block" target="_blank">
-                        <span class="icon-whatsapp" style="color:white"></span>&nbsp;
-                        Book Now</a>
-                    <br>
-                </div>
+            {{-- Site Map landscape full width --}}
+            <div class="floor-card">
+                <img src="{{ asset('img/sitemap.jpg') }}" alt="Site Map"
+                     style="width:100%;height:auto;object-fit:contain;max-height:480px;">
+                <div class="floor-card-label">Site Map</div>
             </div>
 
+            {{-- CTA --}}
+            <div style="text-align:center; margin-top:56px;">
+                <a href="https://wa.me/6281319999806?text=Hi%20saya%20tertarik%20dengan%20Tipe%20Mahogany"
+                   target="_blank"
+                   style="display:inline-flex; align-items:center; gap:10px; font-family:'Outfit',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; color:#fff; background:#1a3a2e; border-radius:9999px; padding:16px 36px; box-shadow:0 4px 20px rgba(26,58,46,0.25); transition:background 0.25s;"
+                   onmouseover="this.style.background='#D4622A'"
+                   onmouseout="this.style.background='#1a3a2e'">
+                    Book Sekarang
+                    <span style="display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,0.15);font-size:13px;">↗</span>
+                </a>
+            </div>
         </div>
-    </div>
-    {{-- @include('templates/units') --}}
-    {{-- @include('templates/igFeeds') --}}
-    </div>
+    </section>
 
     @include('templates/footer')
-</body>
 
+    <script>
+        function changePhoto(thumb, src, fit) {
+            const main = document.getElementById('mainPhoto');
+            main.style.opacity = '0';
+            setTimeout(() => {
+                main.src = src;
+                main.style.objectFit = fit || 'cover';
+                main.style.background = fit === 'contain' ? '#0d2218' : 'transparent';
+                main.style.opacity = '1';
+            }, 200);
+            document.querySelectorAll('.slide-thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+    </script>
+</body>
 </html>

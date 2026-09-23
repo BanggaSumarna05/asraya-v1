@@ -25,10 +25,7 @@ class MailVisit extends Mailable
     {
 
         return $this->view('formatEmail')
-            ->from(env('MAIL_USERNAME'))
-            // ->cc($address, $name)
-            // ->bcc($address, $name)
-            // ->replyTo($address, $name)
+            ->from(config('mail.from.address'), config('mail.from.name'))
             ->subject($this->data['fullname'] . ' - Schedule Visit')
             ->with(['data' => $this->data]);
     }
