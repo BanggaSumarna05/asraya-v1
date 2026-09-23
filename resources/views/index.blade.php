@@ -1242,7 +1242,7 @@
                                 </svg>
                             </div>
                             <h4 style="font-family:'Outfit',sans-serif; font-size:16px; font-weight:600; color:#1a3a2e; margin:0 0 6px;">Robby Manurung</h4>
-                            <p style="font-family:'Outfit',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#888; margin:0 0 8px;">Sales &amp; Marketing Manager</p>
+                            <!-- <p style="font-family:'Outfit',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#888; margin:0 0 8px;">Sales &amp; </p> -->
                             <p style="font-family:'Outfit',monospace; font-size:13px; color:#555; margin:0 0 20px;">(+62) 813-1999-9806</p>
                             <a href="https://wa.me/+6281284625809" target="_blank"
                                style="margin-top:auto; display:inline-flex; align-items:center; gap:8px; background:#1a3a2e; color:#fff; font-family:'Outfit',sans-serif; font-size:11px; font-weight:600; padding:12px 28px; border-radius:9999px; text-decoration:none; transition:all 0.2s; width:100%; justify-content:center;"
@@ -1261,7 +1261,7 @@
                                 </svg>
                             </div>
                             <h4 style="font-family:'Outfit',sans-serif; font-size:16px; font-weight:600; color:#1a3a2e; margin:0 0 6px;">Linda Manurung</h4>
-                            <p style="font-family:'Outfit',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#888; margin:0 0 8px;">Sales Assistance Manager</p>
+                            <!-- <p style="font-family:'Outfit',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#888; margin:0 0 8px;">Sales Assistance Manager</p> -->
                             <p style="font-family:'Outfit',monospace; font-size:13px; color:#555; margin:0 0 20px;">(+62) 812-7636-5418</p>
                             <a href="https://wa.me/6281276365418" target="_blank"
                                style="margin-top:auto; display:inline-flex; align-items:center; gap:8px; background:#1a3a2e; color:#fff; font-family:'Outfit',sans-serif; font-size:11px; font-weight:600; padding:12px 28px; border-radius:9999px; text-decoration:none; transition:all 0.2s; width:100%; justify-content:center;"
