@@ -11,7 +11,7 @@
         "php": "^8.0.2",
         "artesaos/seotools": "^1.2",
         "awssat/laravel-visits": "^3.0",
-        "barryvdh/laravel-dompdf": "^1.0",
+        "barryvdh/laravel-dompdf": "^2.0",
         "filament/filament": "^2.17",
         "fruitcake/laravel-cors": "3.0",
         "guzzlehttp/guzzle": "^7.2",
