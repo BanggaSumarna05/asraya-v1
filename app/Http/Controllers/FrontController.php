@@ -328,19 +328,18 @@ class FrontController extends Controller
             'jual batu putih taman terdekat'
         ];
 
-        // Promo Banners — disabled
-        // $dbPromos = \App\Models\PromoBanner::where('is_active', true)->orderBy('order', 'asc')->get();
-        // if ($dbPromos->count() > 0) {
-        //     $this->promos = $dbPromos->map(function ($banner) {
-        //         return (object)[
-        //             'image' => '/storage/' . $banner->image,
-        //             'link'  => $banner->link ?? '#'
-        //         ];
-        //     })->toArray();
-        // } else {
-        //     $this->promos = [];
-        // }
-        $this->promos = [];
+        // Promo Banners
+        $dbPromos = \App\Models\PromoBanner::where('is_active', true)->orderBy('order', 'asc')->get();
+        if ($dbPromos->count() > 0) {
+            $this->promos = $dbPromos->map(function ($banner) {
+                return (object)[
+                    'image' => '/storage/' . $banner->image,
+                    'link'  => $banner->link ?? '#'
+                ];
+            })->toArray();
+        } else {
+            $this->promos = [];
+        }
     }
 
     public function seo($title = null)

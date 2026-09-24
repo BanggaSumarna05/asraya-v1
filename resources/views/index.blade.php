@@ -1103,7 +1103,7 @@
         </section>
 
         {{-- SECTION: PROMO BANNERS --}}
-        {{-- @include('templates.promos') --}}
+        @include('templates.promos')
 
         {{-- SECTION: OUR LOCATION --}}
         <section id="map" style="background: #f5f1ea; padding: 80px clamp(16px, 4vw, 48px);">
