@@ -2,6 +2,8 @@
     $originalPromos = is_array($promos) ? $promos : iterator_to_array($promos);
 @endphp
 
+@if(count($originalPromos) > 0)
+
 <!-- Swiper 11 CSS & JS CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -411,3 +413,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() { clearInterval(initSwiper); }, 6000);
 });
 </script>
+
+@endif
