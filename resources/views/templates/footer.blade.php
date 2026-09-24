@@ -74,9 +74,11 @@
                     <img src="{{ asset('img/maps-02.png') }}" alt="Lokasi Pesona Hutan Asraya"
                          style="width:100%; height:160px; object-fit:cover; display:block; background: #fff;">
                     <a href="https://maps.app.goo.gl/fW3q54PnRM8DQ3dB8" target="_blank"
+                       aria-label="Buka lokasi Pesona Hutan Asraya di Google Maps"
                        style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(12,26,18,0.0);transition:background 0.2s;"
                        onmouseover="this.style.background='rgba(12,26,18,0.35)'"
                        onmouseout="this.style.background='rgba(12,26,18,0)'">
+                        <span class="visually-hidden">Buka di Google Maps</span>
                     </a>
                 </div>
             </div>

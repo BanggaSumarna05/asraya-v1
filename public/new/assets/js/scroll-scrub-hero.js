@@ -81,16 +81,26 @@
   // ── Frame Drawing ──────────────────────────────────────────────────────
   function drawFrame(index) {
     const frame = frames[index];
-    if (!frame || !frame.complete) return;
+    // If target frame not ready, find the nearest loaded frame to avoid blank canvas
+    let usedFrame = frame;
+    if (!frame || !frame.complete || !frame.naturalWidth) {
+      // Walk backward to find a loaded frame
+      for (let i = index - 1; i >= 0; i--) {
+        if (frames[i] && frames[i].complete && frames[i].naturalWidth) {
+          usedFrame = frames[i];
+          break;
+        }
+      }
+    }
+    if (!usedFrame || !usedFrame.complete || !usedFrame.naturalWidth) return;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    // Draw with crop: source crop from original, destination is full canvas
     ctx.drawImage(
-      frame,
-      CONFIG.cropX, CONFIG.cropY,           // source x, y
-      CONFIG.cropWidth, CONFIG.cropHeight,   // source width, height
-      0, 0,                                  // dest x, y
-      canvas.width, canvas.height            // dest width, height
+      usedFrame,
+      CONFIG.cropX, CONFIG.cropY,
+      CONFIG.cropWidth, CONFIG.cropHeight,
+      0, 0,
+      canvas.width, canvas.height
     );
   }
 
@@ -189,44 +199,75 @@
   }
 
   // ── Frame Preloading ───────────────────────────────────────────────────
+  // Progressive loading: load first PRIORITY_COUNT frames first so the
+  // animation becomes interactive quickly, then load the rest in background.
+  const PRIORITY_COUNT = 15;
+
+  function loadSingleFrame(i, onDone) {
+    const img = new Image();
+    // Store immediately so drawFrame can access it as soon as img.complete
+    frames[i - 1] = img;
+
+    img.onload = async function () {
+      if ('decode' in img) {
+        try { await img.decode(); } catch(e) {}
+      }
+      loadedCount++;
+      const pct = Math.round((loadedCount / CONFIG.frameCount) * 100);
+      if (loaderText) loaderText.textContent = pct + '%';
+      if (loaderBarFill) loaderBarFill.style.width = pct + '%';
+      if (onDone) onDone();
+    };
+
+    img.onerror = function () {
+      loadedCount++;
+      console.warn('[ScrollScrubHero] Failed to load: ' + img.src);
+      if (onDone) onDone();
+    };
+
+    img.src = getFrameSrc(i);
+  }
+
   function preloadFrames() {
-    for (let i = 1; i <= CONFIG.frameCount; i++) {
-      const img = new Image();
-      img.src = getFrameSrc(i);
+    let priorityLoaded = 0;
 
-      img.onload = async function () {
-        // Force off-thread decoding to prevent lag during scroll
-        if ('decode' in img) {
-          try {
-            await img.decode();
-          } catch(e) {}
-        }
-        
-        loadedCount++;
-        const pct = Math.round((loadedCount / CONFIG.frameCount) * 100);
-
-        // Update loader UI
-        if (loaderText) loaderText.textContent = pct + '%';
-        if (loaderBarFill) loaderBarFill.style.width = pct + '%';
-
-        if (loadedCount === CONFIG.frameCount) {
-          allLoaded = true;
-          onAllFramesLoaded();
-        }
-      };
-
-      img.onerror = function () {
-        loadedCount++;
-        console.warn('[ScrollScrubHero] Failed to load: ' + img.src);
-        if (loadedCount === CONFIG.frameCount) {
-          allLoaded = true;
-          onAllFramesLoaded();
-        }
-      };
-
-      // Store 1-indexed: frames[0] = frame-0001, frames[119] = frame-0120
-      frames[i - 1] = img;
+    function onPriorityDone() {
+      priorityLoaded++;
+      // Once priority frames are ready, allow scrubbing and load the rest lazily
+      if (priorityLoaded === PRIORITY_COUNT) {
+        // Show 100% on loader before hiding — feels snappy
+        if (loaderText) loaderText.textContent = '100%';
+        if (loaderBarFill) loaderBarFill.style.width = '100%';
+        allLoaded = true;
+        onAllFramesLoaded();
+        // Load remaining frames in background without blocking interaction
+        loadRemainingFrames();
+      }
     }
+
+    // Load first PRIORITY_COUNT frames with high priority
+    for (let i = 1; i <= PRIORITY_COUNT; i++) {
+      loadSingleFrame(i, onPriorityDone);
+    }
+  }
+
+  function loadRemainingFrames() {
+    // Use requestIdleCallback when available for truly background loading
+    const schedule = window.requestIdleCallback
+      ? function(fn) { window.requestIdleCallback(fn, { timeout: 2000 }); }
+      : function(fn) { setTimeout(fn, 200); };
+
+    let i = PRIORITY_COUNT + 1;
+
+    function loadNext() {
+      if (i > CONFIG.frameCount) return;
+      loadSingleFrame(i, null);
+      i++;
+      // Stagger: load one frame per idle period to avoid blocking main thread
+      schedule(loadNext);
+    }
+
+    schedule(loadNext);
   }
 
   function onAllFramesLoaded() {

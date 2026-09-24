@@ -126,6 +126,7 @@
                  id="heroFirstPaint"
                  src="{{ asset('new/assets/asraya-hero-frames/frame-0001.webp') }}"
                  alt="Pesona Hutan Asraya"
+                 width="960" height="540"
                  fetchpriority="high"
                  decoding="async">
 
@@ -142,7 +143,7 @@
             {{-- Loading overlay --}}
             <div class="hero-loader" id="heroLoader">
                 <div class="loader-logo-wrap">
-                    <img src="/img/asraya-2.png" alt="Asraya" class="loader-logo">
+                    <img src="/img/asraya-2.png" alt="Asraya" class="loader-logo" width="160" height="48">
                 </div>
                 <div class="loader-bottom">
                     <div class="loader-bar-track">
@@ -181,7 +182,7 @@
                 <!-- Chapter 4 (Frame 96-120) -->
                 <div class="hero-chapter" id="chapter-4">
                     <span class="chapter-overline">Living Harmony in Nature</span>
-                    <img src="{{ asset('img/asraya-2.png') }}" alt="Pesona Hutan Asraya" style="height: clamp(60px, 12vw, 130px); width: auto; margin: 0 auto; display: block; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));">
+                    <img src="{{ asset('img/asraya-2.png') }}" alt="Pesona Hutan Asraya" width="260" height="130" style="height: clamp(60px, 12vw, 130px); width: auto; margin: 0 auto; display: block; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));">
                     <div class="chapter-cta">
                         <a href="#tipe-unit" class="btn-explore">Explore Residence</a>
                         <a href="https://wa.me/6281399998066" class="btn-book">Book Private Visit</a>
@@ -288,7 +289,7 @@
 
                 {{-- Tengah: gambar besar --}}
                 <div class="ab-img-center position-relative overflow-hidden" style="border-radius: 2.5rem; grid-column:2; grid-row:1; border: 1px solid #e8e4de;">
-                    <img src="{{ asset('img/reduce/F1.jpg') }}" alt="Casa Asraya" class="ab-img-fill ab-img-center-h">
+                    <img src="{{ asset('img/reduce/F1.jpg') }}" alt="Casa Asraya" width="800" height="600" class="ab-img-fill ab-img-center-h">
                     <div class="ab-chip-bg position-absolute d-flex align-items-center" style="gap: 8px; border-radius: 9999px; padding: 6px 14px; top: 16px; left: 16px; background: rgba(255,255,255,0.9); border: 1px solid #e8e4de; backdrop-filter: blur(8px);">
                         <span style="width:6px;height:6px;background:#6ab04c; border-radius: 50%; flex-shrink:0;"></span>
                         <span style="font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#1a3a2e;">Hunian Eksklusif</span>
@@ -299,7 +300,7 @@
                 {{-- Kanan: 2 gambar kecil --}}
                 <div class="ab-col-right d-flex flex-column" style="gap: 10px; grid-column:3; grid-row:1;">
                     <div class="position-relative overflow-hidden flex-fill" style="border-radius: 2.5rem; border: 1px solid #e8e4de;">
-                        <img src="{{ asset('img/reduce/F3.jpg') }}" alt="Arsitektur" class="ab-img-fill ab-img-sm-h">
+                        <img src="{{ asset('img/reduce/F3.jpg') }}" alt="Arsitektur" width="400" height="300" class="ab-img-fill ab-img-sm-h">
                         <div class="ab-chip-bg position-absolute d-flex align-items-center" style="gap: 8px; border-radius: 9999px; padding: 6px 14px; top: 12px; left: 12px; background: rgba(255,255,255,0.9); border: 1px solid #e8e4de; backdrop-filter: blur(8px);">
                             <span style="width:6px;height:6px;background:#D4622A; border-radius: 50%; flex-shrink:0;"></span>
                             <span style="font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#1a3a2e;">Arsitektur</span>
@@ -310,7 +311,7 @@
                         </div>
                     </div>
                     <div class="position-relative overflow-hidden flex-fill" style="border-radius: 2.5rem; border: 1px solid #e8e4de;">
-                        <img src="{{ asset('img/reduce/F5.jpg') }}" alt="Fasilitas" class="ab-img-fill ab-img-sm-h">
+                        <img src="{{ asset('img/reduce/F5.jpg') }}" alt="Fasilitas" width="400" height="300" class="ab-img-fill ab-img-sm-h">
                         <div class="ab-chip-bg position-absolute d-flex align-items-center" style="gap: 8px; border-radius: 9999px; padding: 6px 14px; top: 12px; left: 12px; background: rgba(255,255,255,0.9); border: 1px solid #e8e4de; backdrop-filter: blur(8px);">
                             <span style="width:6px;height:6px;background:#6ab04c; border-radius: 50%; flex-shrink:0;"></span>
                             <span style="font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#1a3a2e;">Fasilitas</span>
@@ -358,51 +359,6 @@
             </div>{{-- /ab-bento-grid --}}
         </div>
     </section>
-
-        {{-- SECTION: OUR MANAGEMENT --}}
-        <section id="about" style="background: #f5f1ea; padding: 72px 0 120px;">
-            <div class="container px-3 px-md-4">
-
-                {{-- Logo + judul --}}
-                <div class="text-center mb-5">
-                    <img src="{{ asset('img/asraya-icon.png') }}" alt="Casa Asraya"
-                         style="height: 44px; width: auto; margin-bottom: 20px; opacity: 0.85;"
-                         onerror="this.style.display='none'">
-                    <h2 style="font-size: 13px; font-weight: 500; letter-spacing: 0.35em;
-                        text-transform: uppercase; color: #1a3a2e; margin: 0;">Our Management</h2>
-                    <div style="width: 32px; height: 2px; background: #D4622A; margin: 14px auto 0;"></div>
-                </div>
-
-                {{-- Cards --}}
-                <div class="row justify-content-center g-4 gy-5" style="max-width: 860px; margin: 0 auto;">
-                    @foreach($managements as $m)
-                    @php
-                        $photoUrl = is_array($m) ? ($m['img'] ?? '') : ($m->photo ?? '');
-                        $src = (str_starts_with($photoUrl, 'http') || str_starts_with($photoUrl, '/')) ? asset($photoUrl) : asset('/' . $photoUrl);
-                        $name = is_array($m) ? ($m['name'] ?? '') : ($m->name ?? '');
-                        $pos  = is_array($m) ? ($m['pos'] ?? '') : ($m->position ?? '');
-                    @endphp
-                    <div class="col-md-5 col-10">
-                        <div style="background: #fff; border-radius: 2.5rem; border: 1px solid #e8e4de; padding: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.03); display: flex; flex-direction: column; height: 100%;">
-                            <div style="border-radius: 2rem; overflow: hidden; background: #fcfbfa; height: 340px;">
-                                <img src="{{ $src }}"
-                                     alt="{{ $name }}"
-                                     style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
-                            </div>
-                            <div style="padding: 20px 12px 8px; text-align: center;">
-                                <h4 style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 600; color: #1a3a2e; margin: 0 0 4px;">
-                                    {{ $name }}
-                                </h4>
-                                <p style="font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 600; color: #D4622A; letter-spacing: 0.08em; text-transform: uppercase; margin: 0;">
-                                    {{ $pos }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </section>
 
         {{-- SECTION: FEATURED UNITS --}}
         <style>
@@ -717,10 +673,10 @@
                             {{-- Thumbnails --}}
                             <div class="unit-thumbnails">
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('img/gaharu/hero.PNG') }}" alt="Gaharu Prime">
+                                    <img src="{{ asset('img/gaharu/hero.PNG') }}" alt="Gaharu Prime" width="400" height="300">
                                 </div>
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('img/gaharu/Denah Gaharu.webp') }}" alt="Denah Gaharu Prime">
+                                    <img src="{{ asset('img/gaharu/Denah Gaharu.webp') }}" alt="Denah Gaharu Prime" width="400" height="300">
                                 </div>
                             </div>
 
@@ -784,13 +740,13 @@
                             {{-- Thumbnails --}}
                             <div class="unit-thumbnails">
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('img/mahogany/mahogany-interior-0.jpg') }}" alt="Interior Mahogany">
+                                    <img src="{{ asset('img/mahogany/mahogany-interior-0.jpg') }}" alt="Interior Mahogany" width="400" height="300">
                                 </div>
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('img/mahogany/floor.jpg') }}" alt="Denah Mahogany">
+                                    <img src="{{ asset('img/mahogany/floor.jpg') }}" alt="Denah Mahogany" width="400" height="300">
                                 </div>
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('new/assets/img/F11.jpg') }}" alt="Eksterior Mahogany">
+                                    <img src="{{ asset('new/assets/img/F11.jpg') }}" alt="Eksterior Mahogany" width="400" height="300">
                                 </div>
                             </div>
 
@@ -858,13 +814,13 @@
                             {{-- Thumbnails --}}
                             <div class="unit-thumbnails">
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('img/cendana/cendana-interior-0.jpg') }}" alt="Interior Cendana">
+                                    <img src="{{ asset('img/cendana/cendana-interior-0.jpg') }}" alt="Interior Cendana" width="400" height="300">
                                 </div>
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('img/cendana/FLOOR.jpg') }}" alt="Denah Cendana">
+                                    <img src="{{ asset('img/cendana/FLOOR.jpg') }}" alt="Denah Cendana" width="400" height="300">
                                 </div>
                                 <div class="unit-thumb">
-                                    <img src="{{ asset('img/cendana/cendana-units (2).jpeg') }}" alt="Eksterior Cendana">
+                                    <img src="{{ asset('img/cendana/cendana-units (2).jpeg') }}" alt="Eksterior Cendana" width="400" height="300">
                                 </div>
                             </div>
 
@@ -1113,7 +1069,7 @@
 
                     @foreach($galleryItems as $item)
                     <div class="gallery-item">
-                        <img src="{{ asset($item['img']) }}" alt="{{ $item['title'] }}" loading="lazy">
+                        <img src="{{ asset($item['img']) }}" alt="{{ $item['title'] }}" width="600" height="400" loading="lazy">
                         <span class="gallery-item-label">{{ $item['tag'] }}</span>
                         <div class="gallery-item-overlay">
                             <span class="gallery-item-tag">
@@ -1186,6 +1142,7 @@
                         <div class="col-lg-7 col-md-12" style="padding: 0 20px;">
                             <div style="border-radius: 2.5rem; overflow: hidden; border: 1px solid #e8e4de; height: 380px; position: relative;">
                                 <img src="{{ asset('img/maps-02.png') }}" alt="Lokasi Pesona Hutan Asraya"
+                                     width="800" height="380"
                                      style="width:100%; height:100%; object-fit:cover; display:block;">
                                 
                                 {{-- Floating Action Button on Map --}}
@@ -1215,6 +1172,7 @@
                             $src  = (str_starts_with($logo, 'http') || str_starts_with($logo, '/')) ? asset($logo) : asset('/' . $logo);
                         @endphp
                         <img src="{{ $src }}" alt="{{ $name }}"
+                             width="120" height="36"
                              style="height: 36px; width: auto; max-width: 120px; object-fit: contain; filter: grayscale(60%); opacity: 0.65; transition: all 0.3s ease;"
                              onmouseover="this.style.filter='grayscale(0%)'; this.style.opacity='1'"
                              onmouseout="this.style.filter='grayscale(60%)'; this.style.opacity='0.65'">
