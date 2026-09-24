@@ -25,12 +25,7 @@ class FrontController extends Controller
 {
     private $keywords;
 
-    // Fallback statis jika DB kosong
-    public $promos = [
-        'img/promos/promo1.jpg',
-        'img/promos/promo2.jpg',
-        'img/promos/promo3.jpg'
-    ];
+    public $promos = [];
 
     public function __construct()
     {
@@ -343,12 +338,7 @@ class FrontController extends Controller
                 ];
             })->toArray();
         } else {
-            $this->promos = array_map(function($p) {
-                return (object)[
-                    'image' => asset($p),
-                    'link'  => '#'
-                ];
-            }, $this->promos);
+            $this->promos = [];
         }
     }
 
