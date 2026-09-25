@@ -893,6 +893,41 @@
             </div>
         </section>
 
+        {{-- SECTION: SITE PLAN --}}
+        <section id="site-plan" style="background: #f5f1ea; padding: 80px clamp(16px, 4vw, 48px);">
+            <div class="container" style="padding-left: 0; padding-right: 0;">
+                <div style="background: #fff; border-radius: 3rem; border: 1px solid #e8e4de; padding: clamp(24px, 5vw, 48px); box-shadow: 0 15px 40px rgba(0,0,0,0.03);">
+                    {{-- Header --}}
+                    <div class="text-center mb-4">
+                        <p style="font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #D4622A; margin-bottom: 8px;">Pesona Hutan</p>
+                        <h2 style="font-family: 'Outfit', sans-serif; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #1a3a2e; margin: 0 0 12px;">Site Plan</h2>
+                        <p style="font-family: 'Outfit', sans-serif; font-size: 14px; color: #666; max-width: 480px; margin: 0 auto; line-height: 1.6;">
+                            Peta kawasan Pesona Hutan by Asraya — pilih kavling impian Anda.
+                        </p>
+                    </div>
+
+                    {{-- Site Plan Image --}}
+                    <div style="border-radius: 2rem; overflow: hidden; border: 1px solid #e8e4de;">
+                        <img src="{{ asset('img/site-plan-available.jpeg') }}"
+                             alt="Site Plan Pesona Hutan Asraya — Ketersediaan Kavling"
+                             width="1600" height="900"
+                             loading="lazy"
+                             style="width: 100%; height: auto; display: block;">
+                    </div>
+
+                    {{-- CTA --}}
+                    <div class="text-center mt-4">
+                        <a href="https://wa.me/6281399998066?text=Halo%2C%20saya%20tertarik%20melihat%20site%20plan%20dan%20ketersediaan%20kavling%20Pesona%20Hutan%20Asraya"
+                           target="_blank"
+                           style="display: inline-flex; align-items: center; gap: 8px; background: #1a3a2e; color: #fff; font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 600; padding: 14px 32px; border-radius: 9999px; text-decoration: none; transition: background 0.2s;"
+                           onmouseover="this.style.background='#D4622A'" onmouseout="this.style.background='#1a3a2e'">
+                            Tanyakan Ketersediaan Kavling →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         {{-- SECTION: GALLERY --}}
         <style>
         .gallery-strip {
