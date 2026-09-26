@@ -130,7 +130,6 @@
                         <a href="{{ route('gym') }}" style="display:block;font-family:'Outfit',sans-serif;font-size:13px;color:rgba(255,255,255,0.75);padding:8px 20px;text-decoration:none;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.color='rgba(255,255,255,0.75)';this.style.background='transparent'">Gym</a>
                         <a href="{{ route('brandgang') }}" style="display:block;font-family:'Outfit',sans-serif;font-size:13px;color:rgba(255,255,255,0.75);padding:8px 20px;text-decoration:none;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.color='rgba(255,255,255,0.75)';this.style.background='transparent'">Brandgang</a>
                         <a href="{{ route('swimming-pool') }}" style="display:block;font-family:'Outfit',sans-serif;font-size:13px;color:rgba(255,255,255,0.75);padding:8px 20px;text-decoration:none;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.color='rgba(255,255,255,0.75)';this.style.background='transparent'">Swimming Pool</a>
-                        <a href="{{ route('tamanKota') }}" style="display:block;font-family:'Outfit',sans-serif;font-size:13px;color:rgba(255,255,255,0.75);padding:8px 20px;text-decoration:none;" onmouseover="this.style.color='#fff';this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.color='rgba(255,255,255,0.75)';this.style.background='transparent'">Taman Kota</a>
                     </div>
                 </div>
             </div>
@@ -258,7 +257,6 @@
                 ['Gym', route('gym')],
                 ['Brandgang', route('brandgang')],
                 ['Swimming Pool', route('swimming-pool')],
-                ['Taman Kota', route('tamanKota')],
             ],
             'Tentang' => [
                 ['Visi & Misi', route('visimisi')],

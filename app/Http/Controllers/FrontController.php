@@ -436,7 +436,6 @@ class FrontController extends Controller
             ['title' => 'GYM',           'link' => 'gym',           'cover' => 'new/assets/img/gym1.jpg',          'text' => ''],
             ['title' => 'Swimming Pool', 'link' => 'swimming-pool', 'cover' => 'new/assets/img/spool.jpg',         'text' => ''],
             ['title' => 'Brandgang',     'link' => 'brandgang',     'cover' => 'new/assets/img/brandgag-crop.jpg', 'text' => ''],
-            ['title' => 'Taman',         'link' => 'tamanKota',     'cover' => 'new/assets/img/taman1.jpg',        'text' => ''],
         ];
     }
 

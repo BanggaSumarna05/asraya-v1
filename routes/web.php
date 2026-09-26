@@ -32,7 +32,6 @@ Route::get('/vision-n-mission', [FrontController::class, 'visi'])->name('visimis
 Route::get('/gym', [FrontController::class, 'gym'])->name('gym');
 Route::get('/swimming-pool', [FrontController::class, 'spool'])->name('swimming-pool');
 Route::get('/clinic', [FrontController::class, 'clinic'])->name('clinic');
-Route::get('/taman-kota', [FrontController::class, 'tamanKota'])->name('tamanKota');
 Route::get('/frequently-asked-questions', [FrontController::class, 'faq'])->name('faq');
 Route::get('/faq', [FrontController::class, 'faq']);
 Route::get('/progress-pembangunan', [FrontController::class, 'getProgress'])->name('getProgress');
