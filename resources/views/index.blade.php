@@ -656,72 +656,7 @@
                 {{-- Unit Strip --}}
                 <div class="unit-strip">
 
-                    {{-- GAHARU PRIME --}}
-                    <div class="unit-card">
-                        <img class="unit-card-bg"
-                             src="{{ asset('img/gaharu/hero.PNG') }}"
-                             alt="Unit Gaharu Prime">
-                        <div class="unit-card-grad"></div>
-
-                        {{-- Collapsed label --}}
-                        <div class="unit-card-collapsed-label">
-                            <span class="unit-collapsed-name">Gaharu Prime</span>
-                        </div>
-
-                        {{-- Expanded content --}}
-                        <div class="unit-card-content">
-                            {{-- Thumbnails --}}
-                            <div class="unit-thumbnails">
-                                <div class="unit-thumb">
-                                    <img src="{{ asset('img/gaharu/hero.PNG') }}" alt="Gaharu Prime" width="400" height="300">
-                                </div>
-                                <div class="unit-thumb">
-                                    <img src="{{ asset('img/gaharu/Denah Gaharu.webp') }}" alt="Denah Gaharu Prime" width="400" height="300">
-                                </div>
-                            </div>
-
-                            {{-- Badge --}}
-                            <div class="unit-type-badge">
-                                <span style="width:5px;height:5px;background:#D4622A;border-radius:50%;flex-shrink:0;"></span>
-                                Tipe Terbaru
-                            </div>
-
-                            {{-- Name & sub --}}
-                            <h3 class="unit-card-title">Gaharu Prime</h3>
-                            <p class="unit-card-sub">Casa Asraya — Pekanbaru</p>
-
-                            {{-- Specs --}}
-                            <div class="unit-specs">
-                                <span class="unit-spec-pill">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-                                    2 Lantai (LB 115m² / LT 92m²)
-                                </span>
-                                <span class="unit-spec-pill">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                                    3 Kamar Tidur
-                                </span>
-                                <span class="unit-spec-pill">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-                                    2 Kamar Mandi
-                                </span>
-                                <span class="unit-spec-pill">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                    Carport 2 Mobil
-                                </span>
-                            </div>
-
-                            {{-- CTAs --}}
-                            <div class="d-flex flex-wrap gap-2">
-                                <a href="{{ route('gaharu') }}" class="unit-card-cta">
-                                    Lihat Detail
-                                    <span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:rgba(255,255,255,0.2);border-radius:50%;font-size:10px;">↗</span>
-                                </a>
-                                <a href="https://wa.me/6281399998066?text=Halo,%20saya%20tertarik%20dengan%20unit%20Gaharu%20Prime%20Casa%20Asraya" target="_blank" class="unit-card-cta-ghost">
-                                    Tanya via WA
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     {{-- MAHOGANY --}}
                     <div class="unit-card">
@@ -865,6 +800,73 @@
                                     <span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:rgba(255,255,255,0.2);border-radius:50%;font-size:10px;">↗</span>
                                 </a>
                                 <a href="https://wa.me/6281399998066?text=Halo,%20saya%20tertarik%20dengan%20unit%20Cendana%20Casa%20Asraya" target="_blank" class="unit-card-cta-ghost">
+                                    Tanya via WA
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- GAHARU PRIME --}}
+                    <div class="unit-card">
+                        <img class="unit-card-bg"
+                             src="{{ asset('img/gaharu/hero.PNG') }}"
+                             alt="Unit Gaharu Prime">
+                        <div class="unit-card-grad"></div>
+
+                        {{-- Collapsed label --}}
+                        <div class="unit-card-collapsed-label">
+                            <span class="unit-collapsed-name">Gaharu Prime</span>
+                        </div>
+
+                        {{-- Expanded content --}}
+                        <div class="unit-card-content">
+                            {{-- Thumbnails --}}
+                            <div class="unit-thumbnails">
+                                <div class="unit-thumb">
+                                    <img src="{{ asset('img/gaharu/hero.PNG') }}" alt="Gaharu Prime" width="400" height="300">
+                                </div>
+                                <div class="unit-thumb">
+                                    <img src="{{ asset('img/gaharu/Denah Gaharu.webp') }}" alt="Denah Gaharu Prime" width="400" height="300">
+                                </div>
+                            </div>
+
+                            {{-- Badge --}}
+                            <div class="unit-type-badge">
+                                <span style="width:5px;height:5px;background:#D4622A;border-radius:50%;flex-shrink:0;"></span>
+                                Tipe Terbaru
+                            </div>
+
+                            {{-- Name & sub --}}
+                            <h3 class="unit-card-title">Gaharu Prime</h3>
+                            <p class="unit-card-sub">Casa Asraya — Pekanbaru</p>
+
+                            {{-- Specs --}}
+                            <div class="unit-specs">
+                                <span class="unit-spec-pill">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                                    2 Lantai (LB 115m² / LT 92m²)
+                                </span>
+                                <span class="unit-spec-pill">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                                    3 Kamar Tidur
+                                </span>
+                                <span class="unit-spec-pill">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                                    2 Kamar Mandi
+                                </span>
+                                <span class="unit-spec-pill">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    Carport 2 Mobil
+                                </span>
+                            </div>
+
+                            {{-- CTAs --}}
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="{{ route('gaharu') }}" class="unit-card-cta">
+                                    Lihat Detail
+                                    <span style="display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:rgba(255,255,255,0.2);border-radius:50%;font-size:10px;">↗</span>
+                                </a>
+                                <a href="https://wa.me/6281399998066?text=Halo,%20saya%20tertarik%20dengan%20unit%20Gaharu%20Prime%20Casa%20Asraya" target="_blank" class="unit-card-cta-ghost">
                                     Tanya via WA
                                 </a>
                             </div>
@@ -1157,13 +1159,14 @@
                         <div class="col-lg-5 col-md-12 mb-4 mb-lg-0" style="padding: 0 20px;">
                             <div style="display: flex; flex-direction: column; gap: 10px;">
                                 @foreach([
+                                    ['Pusat Kota', '5 Mnt'],
                                     ['Bandara Syarif Kasim II', '15 Mnt'],
                                     ['RS Awal Bros', '10 Mnt'],
                                     ['Mall Pekanbaru', '10 Mnt'],
-                                    ['SKA Tomorrowland', '10 Mnt'],
-                                    ['Central Business District', '10 Mnt'],
-                                    ['Perpustakaan Soeman HS', '10 Mnt'],
-                                    ['Kantor Polda Riau', '3 Mnt'],
+                                    ['Livin World/SKA Mall ', '10 Mnt'],
+                                    ['RSU Arifin Ahmad Pekanbaru', '10 Mnt'],
+                                    ['Universitas Riau', '10 Mnt'],
+                                    ['Kantor Polda Riau', '5 Mnt'],
                                 ] as [$place, $time])
                                 <div style="display: flex; justify-content: space-between; align-items: center; background: #fcfbfa; border: 1px solid #e8e4de; border-radius: 9999px; padding: 12px 24px; transition: all 0.2s;">
                                     <span style="font-family: 'Outfit', sans-serif; font-size: 13px; color: #1a3a2e; font-weight: 450;">{{ $place }}</span>
@@ -1234,10 +1237,10 @@
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
                                 </svg>
                             </div>
-                            <h4 style="font-family:'Outfit',sans-serif; font-size:16px; font-weight:600; color:#1a3a2e; margin:0 0 6px;">Robby Manurung</h4>
+                            <h4 style="font-family:'Outfit',sans-serif; font-size:16px; font-weight:600; color:#1a3a2e; margin:0 0 6px;">Marketing</h4>
                             <!-- <p style="font-family:'Outfit',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#888; margin:0 0 8px;">Sales &amp; </p> -->
-                            <p style="font-family:'Outfit',monospace; font-size:13px; color:#555; margin:0 0 20px;">(+62) 813-1999-9806</p>
-                            <a href="https://wa.me/+6281284625809" target="_blank"
+                            <p style="font-family:'Outfit',monospace; font-size:13px; color:#555; margin:0 0 20px;">(+62)813-9999-8066</p>
+                            <a href="https://wa.me/+6281399998066" target="_blank"
                                style="margin-top:auto; display:inline-flex; align-items:center; gap:8px; background:#1a3a2e; color:#fff; font-family:'Outfit',sans-serif; font-size:11px; font-weight:600; padding:12px 28px; border-radius:9999px; text-decoration:none; transition:all 0.2s; width:100%; justify-content:center;"
                                onmouseover="this.style.background='#D4622A'" onmouseout="this.style.background='#1a3a2e'">
                                 Chat WhatsApp ↗
@@ -1245,31 +1248,10 @@
                         </div>
                     </div>
 
-                    {{-- Sales 2 --}}
-                    <div class="col-12 col-sm-8 col-md-5">
-                        <div style="background:#fff; border-radius:2.5rem; border:1px solid #e8e4de; padding:clamp(24px,4vw,36px); display:flex; flex-direction:column; align-items:center; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.02); height:100%; gap:4px;">
-                            <div style="width:64px; height:64px; border-radius:9999px; background:#fcfbfa; border:1px solid #e8e4de; display:flex; align-items:center; justify-content:center; margin-bottom:12px; flex-shrink:0;">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1a3a2e" stroke-width="1.5">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                                </svg>
-                            </div>
-                            <h4 style="font-family:'Outfit',sans-serif; font-size:16px; font-weight:600; color:#1a3a2e; margin:0 0 6px;">Linda Manurung</h4>
-                            <!-- <p style="font-family:'Outfit',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:0.05em; color:#888; margin:0 0 8px;">Sales Assistance Manager</p> -->
-                            <p style="font-family:'Outfit',monospace; font-size:13px; color:#555; margin:0 0 20px;">(+62) 812-7636-5418</p>
-                            <a href="https://wa.me/6281276365418" target="_blank"
-                               style="margin-top:auto; display:inline-flex; align-items:center; gap:8px; background:#1a3a2e; color:#fff; font-family:'Outfit',sans-serif; font-size:11px; font-weight:600; padding:12px 28px; border-radius:9999px; text-decoration:none; transition:all 0.2s; width:100%; justify-content:center;"
-                               onmouseover="this.style.background='#D4622A'" onmouseout="this.style.background='#1a3a2e'">
-                                Chat WhatsApp ↗
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
-
-
-
-
 
     @include('templates/footer')
     

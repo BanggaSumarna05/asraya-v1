@@ -481,12 +481,6 @@ class FrontController extends Controller
     {
         return [
             [
-                'name'        => 'GAHARU',
-                'cover'       => 'img/gaharu/hero.PNG',
-                'link'        => 'gaharu',
-                'description' => 'Hunian modern 2 lantai seluas 115m² di atas lahan 92m², dilengkapi 3 Kamar Tidur, 2 Kamar Mandi, Balkon, Backyard, dan Carport 2 Mobil. Harga mulai Rp1,2 Miliar dengan Promo Diskon Rp50 Juta.',
-            ],
-            [
                 'name'        => 'MAHOGANY',
                 'cover'       => 'new/assets/img/F7.jpg',
                 'link'        => 'mahogany',
@@ -497,6 +491,12 @@ class FrontController extends Controller
                 'cover'       => 'img/cendana/F10.jpg',
                 'link'        => 'cendana',
                 'description' => 'Hunian eksklusif seluas 138m² di atas lahan 90m², dilengkapi 3 Master Bedroom, 1 Kamar ART, 5 Kamar Mandi, Smart Home, dan Carport.',
+            ],
+            [
+                'name'        => 'GAHARU',
+                'cover'       => 'img/gaharu/hero.PNG',
+                'link'        => 'gaharu',
+                'description' => 'Hunian modern 2 lantai seluas 115m² di atas lahan 92m², dilengkapi 3 Kamar Tidur, 2 Kamar Mandi, Balkon, Backyard, dan Carport 2 Mobil. Harga mulai Rp1,2 Miliar dengan Promo Diskon Rp50 Juta.',
             ],
         ];
     }
@@ -649,8 +649,6 @@ class FrontController extends Controller
 
         $data['slide'] = [
             'img/gaharu/hero.PNG',
-            'img/gaharu/Booklet Gaharu Living_page-0001.jpg',
-            'img/gaharu/Booklet Gaharu Living_page-0002.jpg',
             'img/gaharu/Booklet Gaharu Living_page-0003.jpg',
             'img/gaharu/Booklet Gaharu Living_page-0004.jpg',
             'img/gaharu/Booklet Gaharu Living_page-0005.jpg',
