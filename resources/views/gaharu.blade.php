@@ -176,7 +176,22 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-
+                    <div class="floor-card" style="height:100%; padding:28px;">
+                        <p style="font-size:10px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#D4622A; margin:0 0 16px;">Keterangan</p>
+                        <ol style="font-size:14px; color:#555; line-height:2; margin:0; padding-left:20px;">
+                            <li>Carport</li>
+                            <li>Kamar Tidur</li>
+                            <li>Kamar Mandi</li>
+                            <li>Ruang Keluarga</li>
+                            <li>Dapur</li>
+                            <li>Taman Belakang</li>
+                            <li>Kamar Tidur Utama</li>
+                            <li>Balkon</li>
+                            <li>Kamar Tidur Anak</li>
+                            <li>Kamar Mandi</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
 
             {{-- Site Map landscape full width --}}
