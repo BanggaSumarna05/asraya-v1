@@ -429,7 +429,10 @@ class FrontController extends Controller
                     'cover' => $coverUrl,
                     'text'  => $f->description ?? '',
                 ];
-            })->toArray();
+            })->filter(function($f) {
+                // Exclude facilities without a defined route
+                return !in_array($f['link'], ['tamanKota', 'taman-kota']);
+            })->values()->toArray();
         }
         return [
             ['title' => 'Club House',    'link' => 'clubhouse',     'cover' => 'new/assets/img/clubhouse1.jpg',    'text' => ''],
