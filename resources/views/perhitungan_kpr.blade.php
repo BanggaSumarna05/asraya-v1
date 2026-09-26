@@ -296,13 +296,11 @@
             <div class="logo-track">
                 @php
                 $banks = [
-                    ['src' => asset('img/bank/bca-bank-logo-png_seeklogo-232742.png'),    'alt' => 'BCA'],
-                    ['src' => asset('img/bank/bank-mandiri-logo-png_seeklogo-16290.png'), 'alt' => 'Bank Mandiri'],
                     ['src' => asset('img/bank/bank-bri-logo-png_seeklogo-355613.png'),    'alt' => 'BRI'],
-                    ['src' => asset('img/bank/bank-bni-logo-png_seeklogo-355606.png'),    'alt' => 'BNI'],
-                    ['src' => asset('img/bank/cimb-bank-logo-png_seeklogo-30387.png'),    'alt' => 'CIMB Niaga'],
                     ['src' => asset('img/bank/BTN.jpg'),                                  'alt' => 'BTN'],
                     ['src' => asset('img/bank/Logo-ocbc.webp'),                           'alt' => 'OCBC'],
+                    ['src' => asset('img/bank/logo-cimb-niaga.png'),                      'alt' => 'CIMB Niaga Syariah'],
+                    ['src' => asset('img/bank/bank-bni-logo-png_seeklogo-355606.png'),    'alt' => 'BNI'],
                 ];
                 $loopBanks = array_merge($banks, $banks, $banks, $banks);
                 @endphp
@@ -367,12 +365,11 @@
 
     <script>
         const bankPartners = [
-            { name: 'Bank BCA', rate: 4.5, promo: 'Fixed 3 Tahun', logo: "{{ asset('img/bank/bca-bank-logo-png_seeklogo-232742.png') }}" },
-            { name: 'Bank Mandiri', rate: 4.75, promo: 'Fixed 3 Tahun', logo: "{{ asset('img/bank/bank-mandiri-logo-png_seeklogo-16290.png') }}" },
             { name: 'Bank BRI', rate: 4.65, promo: 'Fixed 2 Tahun', logo: "{{ asset('img/bank/bank-bri-logo-png_seeklogo-355613.png') }}" },
-            { name: 'Bank BNI', rate: 4.85, promo: 'Fixed 3 Tahun', logo: "{{ asset('img/bank/bank-bni-logo-png_seeklogo-355606.png') }}" },
-            { name: 'CIMB Niaga', rate: 5.0, promo: 'Fixed 5 Tahun', logo: "{{ asset('img/bank/cimb-bank-logo-png_seeklogo-30387.png') }}" },
             { name: 'Bank BTN', rate: 4.5, promo: 'Fixed 1 Tahun', logo: "{{ asset('img/bank/BTN.jpg') }}" },
+            { name: 'OCBC', rate: 4.88, promo: 'Fixed 3 Tahun', logo: "{{ asset('img/bank/Logo-ocbc.webp') }}" },
+            { name: 'CIMB Niaga Syariah', rate: 5.0, promo: 'Fixed 5 Tahun', logo: "{{ asset('img/bank/logo-cimb-niaga.png') }}" },
+            { name: 'Bank BNI', rate: 4.85, promo: 'Fixed 3 Tahun', logo: "{{ asset('img/bank/bank-bni-logo-png_seeklogo-355606.png') }}" },
         ];
 
         const rupiahFormatter = new Intl.NumberFormat("id-ID", {
