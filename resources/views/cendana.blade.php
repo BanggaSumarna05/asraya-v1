@@ -259,7 +259,7 @@
 
             {{-- Site Map landscape full width --}}
             <div class="floor-card">
-                <img src="{{ asset('img/sitemap.jpg') }}" alt="Site Map"
+                <img src="{{ asset('img/site-plan-available.jpeg') }}" alt="Site Map"
                      style="width:100%;height:auto;object-fit:contain;max-height:480px;">
                 <div class="floor-card-label">Site Map</div>
             </div>
