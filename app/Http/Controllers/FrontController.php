@@ -433,7 +433,7 @@ class FrontController extends Controller
         }
         return [
             ['title' => 'Club House',    'link' => 'clubhouse',     'cover' => 'new/assets/img/clubhouse1.jpg',    'text' => ''],
-            ['title' => 'Gymnastic',     'link' => 'gym',           'cover' => 'new/assets/img/gym1.jpg',          'text' => ''],
+            ['title' => 'GYM',           'link' => 'gym',           'cover' => 'new/assets/img/gym1.jpg',          'text' => ''],
             ['title' => 'Swimming Pool', 'link' => 'swimming-pool', 'cover' => 'new/assets/img/spool.jpg',         'text' => ''],
             ['title' => 'Brandgang',     'link' => 'brandgang',     'cover' => 'new/assets/img/brandgag-crop.jpg', 'text' => ''],
             ['title' => 'Taman',         'link' => 'tamanKota',     'cover' => 'new/assets/img/taman1.jpg',        'text' => ''],
@@ -649,6 +649,12 @@ class FrontController extends Controller
 
         $data['slide'] = [
             'img/gaharu/hero.PNG',
+            'img/gaharu/Booklet Gaharu Living_page-0001.jpg',
+            'img/gaharu/Booklet Gaharu Living_page-0002.jpg',
+            'img/gaharu/Booklet Gaharu Living_page-0003.jpg',
+            'img/gaharu/Booklet Gaharu Living_page-0004.jpg',
+            'img/gaharu/Booklet Gaharu Living_page-0005.jpg',
+            'img/gaharu/Booklet Gaharu Living_page-0006.jpg',
         ];
 
         $this->seo('Unit Gaharu Prime');

@@ -76,7 +76,7 @@ class StaticContentSeeder extends Seeder
         // =============================================
         $facilities = [
             ['title' => 'Club House',    'slug' => 'clubhouse',      'cover' => 'new/assets/img/clubhouse1.jpg',    'order' => 1],
-            ['title' => 'Gymnastic',     'slug' => 'gym',            'cover' => 'new/assets/img/gym1.jpg',          'order' => 2],
+            ['title' => 'GYM',           'slug' => 'gym',            'cover' => 'new/assets/img/gym1.jpg',          'order' => 2],
             ['title' => 'Swimming Pool', 'slug' => 'swimming-pool',  'cover' => 'new/assets/img/spool.jpg',         'order' => 3],
             ['title' => 'Brandgang',     'slug' => 'brandgang',      'cover' => 'new/assets/img/brandgag-crop.jpg', 'order' => 4],
             ['title' => 'Taman',         'slug' => 'tamanKota',      'cover' => 'new/assets/img/taman1.jpg',        'order' => 5],
