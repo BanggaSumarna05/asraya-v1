@@ -176,44 +176,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div style="background:#f5f1ea; border-radius:1.5rem; border:1px solid #e8e4de; padding:28px; height:100%; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <h3 style="font-family:'Outfit',sans-serif; font-size:18px; font-weight:600; color:#1a3a2e; margin-bottom:16px;">Detail Denah</h3>
 
-                            <div style="margin-bottom:20px;">
-                                <h4 style="font-size:14px; font-weight:600; color:#D4622A; margin-bottom:8px;">Lantai 1</h4>
-                                <ul style="padding-left:18px; font-size:13px; color:#555; line-height:1.7; margin:0;">
-                                    <li><strong>Carport:</strong> Muat 2 mobil</li>
-                                    <li><strong>Kamar Tidur:</strong> 1 kamar tidur lantai bawah</li>
-                                    <li><strong>Kamar Mandi:</strong> 1 kamar mandi</li>
-                                    <li><strong>Ruang Keluarga:</strong> Area santai keluarga</li>
-                                    <li><strong>Dapur:</strong> Terhubung dengan ruang makan</li>
-                                    <li><strong>Taman Belakang:</strong> Backyard area hijau</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h4 style="font-size:14px; font-weight:600; color:#D4622A; margin-bottom:8px;">Lantai 2</h4>
-                                <ul style="padding-left:18px; font-size:13px; color:#555; line-height:1.7; margin:0;">
-                                    <li><strong>Kamar Tidur Utama:</strong> Master Bedroom (ukuran terbesar)</li>
-                                    <li><strong>Balkon:</strong> Terhubung dari area kamar</li>
-                                    <li><strong>Kamar Tidur Anak:</strong> 1 kamar tidur tambahan</li>
-                                    <li><strong>Kamar Mandi:</strong> Melayani kamar lantai atas</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div style="margin-top:24px; padding-top:16px; border-top:1px solid #e8e4de;">
-                            <span style="font-size:12px; font-weight:600; color:#1a3a2e; display:block; margin-bottom:4px;">Material Bangunan:</span>
-                            <p style="font-size:12px; color:#666; margin:0;">Bata Ringan (AAC), Rangka Atap Baja Ringan, Lantai SPC, Kusen Aluminium, Sanitary Modern.</p>
-                        </div>
-
-                        <div style="margin-top:12px; padding-top:12px; border-top:1px solid #e8e4de;">
-                            <span style="font-size:12px; font-weight:600; color:#1a3a2e; display:block; margin-bottom:4px;">Fasilitas Kawasan Premium:</span>
-                            <p style="font-size:12px; color:#666; margin:0;">Clubhouse, Swimming Pool, Yoga Club, Gym, Resto & Lounge, Security 24 Jam.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             {{-- Site Map landscape full width --}}
