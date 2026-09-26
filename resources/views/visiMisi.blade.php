@@ -35,12 +35,11 @@
                     </div>
                     <div>
                         <p style="font-family:'Outfit',monospace; font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 4px;">Visi</p>
-                        <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.3rem,2.5vw,1.8rem); font-weight:500; color:#1a3a2e; margin:0; line-height:1.2;">Hunian yang Tenang dan Nyaman</h2>
+                        <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.3rem,2.5vw,1.8rem); font-weight:500; color:#1a3a2e; margin:0; line-height:1.2;">Hunian yang Tenang, Nyaman, dan Bermakna</h2>
                     </div>
                 </div>
                 <p style="font-size:15px; color:#555; line-height:1.9; margin:0; padding-left:64px;">
-                    Kami berdedikasi untuk membangun rumah tinggal yang tenang dan nyaman dimana keluarga menikmati
-                    tinggal didalam rumah yang penuh kedamaian dan ketenangan.
+                    Menjadi pengembang properti terpercaya yang menghadirkan hunian berkualitas tinggi — tempat di mana setiap keluarga merasakan kedamaian sejati, keseimbangan hidup, dan keharmonisan bersama alam dalam satu kawasan yang asri dan berkelanjutan.
                 </p>
             </div>
 
@@ -52,12 +51,12 @@
                     </div>
                     <div>
                         <p style="font-family:'Outfit',monospace; font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 4px;">Misi</p>
-                        <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.3rem,2.5vw,1.8rem); font-weight:500; color:#1a3a2e; margin:0; line-height:1.2;">Komitmen Kami</h2>
+                        <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.3rem,2.5vw,1.8rem); font-weight:500; color:#1a3a2e; margin:0; line-height:1.2;">Komitmen Kami untuk Anda</h2>
                     </div>
                 </div>
                 <ul style="font-size:15px; color:#555; line-height:1.9; margin:0; padding-left:80px; display:flex; flex-direction:column; gap:12px;">
-                    <li>Mengintegrasikan ketenangan dari hutan kota ke dalam ruang kota yang semarak, menyelaraskan alam dengan kehidupan modern.</li>
-                    <li>Memprioritaskan nilai tambah, komitmen, dan keunggulan tanpa henti untuk mendapatkan kepercayaan dari pelanggan dan mitra.</li>
+                    <li>Menghadirkan harmoni antara ketenangan alam dan kehidupan modern melalui desain hunian yang menyatu dengan lingkungan hijau kota Pekanbaru.</li>
+                    <li>Membangun kepercayaan pelanggan dan mitra melalui komitmen nyata terhadap kualitas, integritas, dan nilai tambah yang berkelanjutan di setiap tahap pengembangan.</li>
                 </ul>
             </div>
 
@@ -84,12 +83,12 @@
             {{-- Grid --}}
             @php
             $values = [
-                ['letter' => 'H', 'name' => 'Humanity',     'desc' => 'Memprioritaskan kesejahteraan semua individu dengan mengakui pentingnya ketenangan dan keterkaitan antara manusia dan alam.'],
-                ['letter' => 'A', 'name' => 'Authenticity', 'desc' => 'Berusaha untuk menjadi unik dan orisinil dalam semua aspek produk bisnis kami.'],
-                ['letter' => 'R', 'name' => 'Respect',      'desc' => 'Komitmen terhadap keadilan, pertimbangan, dan memberikan nilai tambah bagi semua pemangku kepentingan, membangun hubungan yang harmonis.'],
-                ['letter' => 'M', 'name' => 'Mastery',      'desc' => 'Mengejar keunggulan dan peningkatan berkelanjutan, berjuang mencapai standar tertinggi keahlian dan profesionalisme.'],
-                ['letter' => 'O', 'name' => 'Openness',     'desc' => 'Mengedepankan transparansi, komunikasi, dan kolaborasi di dalam organisasi dan dengan mitra eksternal.'],
-                ['letter' => 'Y', 'name' => 'NoveltY',      'desc' => 'Merangkul inovasi, kreativitas, dan eksplorasi ide serta solusi baru untuk mengatasi tantangan dalam dinamika pasar.'],
+                ['letter' => 'H', 'name' => 'Humanity',     'desc' => 'Menempatkan kesejahteraan manusia sebagai prioritas utama, dengan mengakui betapa pentingnya keterhubungan antara manusia dan alam dalam menciptakan kehidupan yang bermakna.'],
+                ['letter' => 'A', 'name' => 'Authenticity', 'desc' => 'Menjunjung tinggi orisinalitas dan ketulusan dalam setiap produk dan layanan yang kami hadirkan — karena kejujuran adalah fondasi kepercayaan.'],
+                ['letter' => 'R', 'name' => 'Respect',      'desc' => 'Mengedepankan keadilan dan penghargaan kepada seluruh pemangku kepentingan, membangun hubungan yang saling menguntungkan dan harmonis.'],
+                ['letter' => 'M', 'name' => 'Mastery',      'desc' => 'Berkomitmen pada peningkatan berkelanjutan dan standar keahlian tertinggi dalam setiap aspek pengembangan properti yang kami lakukan.'],
+                ['letter' => 'O', 'name' => 'Openness',     'desc' => 'Membangun budaya transparansi, komunikasi terbuka, dan kolaborasi aktif — baik di dalam organisasi maupun bersama mitra dan pelanggan.'],
+                ['letter' => 'Y', 'name' => 'NoveltY',      'desc' => 'Merangkul inovasi dan kreativitas sebagai pendorong kemajuan, terus mengeksplorasi solusi baru untuk menjawab kebutuhan pasar yang terus berkembang.'],
             ];
             @endphp
 

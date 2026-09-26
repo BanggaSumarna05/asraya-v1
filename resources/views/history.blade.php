@@ -43,10 +43,10 @@
                             Hunian Asri di Tengah Hutan Kota Pekanbaru
                         </h2>
                         <p style="font-size:15px; color:#555; line-height:1.9; margin:0 0 16px;">
-                            <strong style="color:#1a3a2e;">Pesona Hutan Asraya</strong> merupakan sebuah kawasan hunian premium yang dirancang untuk menghadirkan keseimbangan sempurna antara kehidupan modern dan keindahan alam. Berlokasi strategis di Kota Pekanbaru, Riau, proyek ini dikembangkan dengan visi menciptakan lingkungan tempat tinggal yang eksklusif, nyaman, sehat, dan berkelanjutan bagi generasi masa kini maupun masa depan.
+                            <strong style="color:#1a3a2e;">Pesona Hutan Asraya</strong> adalah kawasan hunian premium yang dirancang untuk menghadirkan keseimbangan sempurna antara kehidupan modern dan keindahan alam. Berlokasi strategis di Kota Pekanbaru, Riau, proyek ini dikembangkan dengan visi menciptakan lingkungan tempat tinggal yang eksklusif, nyaman, sehat, dan berkelanjutan — untuk generasi masa kini maupun masa depan.
                         </p>
                         <p style="font-size:15px; color:#555; line-height:1.9; margin:0 0 32px;">
-                            Lebih dari sekadar perumahan, Pesona Hutan Asraya adalah sebuah destinasi hidup yang menggabungkan arsitektur modern, fasilitas kelas premium, ruang terbuka hijau, serta konsep <strong style="color:#1a3a2e;">resort living</strong> yang memberikan pengalaman tinggal berbeda dari kawasan hunian konvensional.
+                            Lebih dari sekadar perumahan, Pesona Hutan Asraya adalah sebuah destinasi hidup yang memadukan arsitektur modern berkelas, fasilitas premium, ruang terbuka hijau yang luas, serta konsep <strong style="color:#1a3a2e;">resort living</strong> — sebuah pengalaman tinggal yang jauh berbeda dari hunian konvensional.
                         </p>
 
                         {{-- Stats --}}
@@ -71,7 +71,7 @@
                 <p style="font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 12px;">Filosofi</p>
                 <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:300; color:#1a3a2e; line-height:1.2; margin:0 0 20px;">Makna "Āśraya"</h2>
                 <p style="font-size:15px; color:#555; line-height:1.9; margin:0;">
-                    Nama <strong style="color:#1a3a2e;">Āśraya</strong> berasal dari bahasa Sanskerta yang bermakna: tempat berlindung, tempat bertumpu, sumber kehidupan, dan tempat kembali. Dalam filosofi kehidupan Timur, Asraya melambangkan tempat di mana manusia menemukan keseimbangan antara kebutuhan fisik, emosional, sosial, dan spiritual.
+                    Nama <strong style="color:#1a3a2e;">Āśraya</strong> berasal dari bahasa Sanskerta yang bermakna: tempat berlindung, tempat bertumpu, sumber kehidupan, dan tempat kembali. Dalam filosofi kehidupan Timur, Asraya melambangkan tempat di mana manusia menemukan keseimbangan sejati — antara kebutuhan fisik, emosional, sosial, dan spiritual.
                 </p>
             </div>
             <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#e8e4de; border:1px solid #e8e4de; border-radius:2rem; overflow:hidden;">
@@ -142,10 +142,10 @@
                     <p style="font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 12px;">Developer</p>
                     <h2 style="font-family:'Outfit',sans-serif; font-size:clamp(1.6rem,3vw,2.4rem); font-weight:300; color:#1a3a2e; line-height:1.2; margin:0 0 20px;">Casa Asraya</h2>
                     <p style="font-size:15px; color:#555; line-height:1.9; margin:0 0 16px;">
-                        Dikembangkan oleh <strong style="color:#1a3a2e;">Casa Asraya</strong>, perusahaan pengembang properti yang berkomitmen menghadirkan standar baru dalam industri real estate Indonesia. Casa Asraya percaya bahwa properti bukan hanya sekadar bangunan, melainkan ruang kehidupan yang akan membentuk kualitas hidup penghuninya selama bertahun-tahun.
+                        Dikembangkan oleh <strong style="color:#1a3a2e;">Casa Asraya</strong>, perusahaan pengembang properti yang berkomitmen menghadirkan standar baru dalam industri real estate Indonesia. Casa Asraya percaya bahwa properti bukan sekadar bangunan — melainkan ruang kehidupan yang akan membentuk kualitas hidup penghuninya untuk jangka panjang.
                     </p>
                     <p style="font-size:15px; color:#555; line-height:1.9; margin:0 0 28px;">
-                        Dirancang oleh <strong style="color:#1a3a2e;">Atelier Riri</strong> yang dipimpin arsitek ternama <strong style="color:#1a3a2e;">Novriansyah Yakub</strong>, dengan pendekatan Modern Tropical Architecture, Sustainability Design, dan Human-Centered Design.
+                        Dirancang oleh <strong style="color:#1a3a2e;">Atelier Riri</strong>, dipimpin arsitek ternama <strong style="color:#1a3a2e;">Novriansyah Yakub</strong>, dengan pendekatan Modern Tropical Architecture, Sustainable Design, dan Human-Centered Design.
                     </p>
                     <div style="display:flex; flex-wrap:wrap; gap:10px;">
                         @foreach(['Desain Berkelas & Timeless','Kualitas Konstruksi Terbaik','Inovasi Berkelanjutan','Keamanan Investasi','Harmoni dengan Lingkungan'] as $v)
@@ -157,7 +157,7 @@
                     <div style="background:#1a3a2e; border-radius:2.5rem; padding:40px;">
                         <p style="font-family:'Outfit',monospace; font-size:10px; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:#D4622A; margin:0 0 16px;">Visi Pengembangan</p>
                         <p style="font-size:15px; color:rgba(255,255,255,0.75); line-height:1.9; margin:0 0 28px;">
-                            Sebagai bagian dari visi jangka panjang, Casa Asraya tidak hanya mengembangkan hunian eksklusif, tetapi juga memperluas bisnis ke sektor hospitality, resort, kawasan wisata alam, restoran, dan fasilitas rekreasi keluarga yang saling terintegrasi dalam satu ekosistem gaya hidup modern.
+                            Sebagai bagian dari visi jangka panjang, Casa Asraya tidak hanya mengembangkan hunian eksklusif, tetapi juga memperluas bisnis ke sektor hospitality, resort, kawasan wisata alam, restoran, dan fasilitas rekreasi keluarga yang saling terintegrasi dalam satu ekosistem gaya hidup modern yang menyeluruh.
                         </p>
                         <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
                             @foreach([['Hunian Premium','Residential'],['Hospitality & Resort','Hotel & Resort'],['Wisata Alam','Eco Tourism'],['Kuliner & Rekreasi','F&B & Lifestyle']] as $v)
@@ -183,10 +183,10 @@
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px;">
                 @php
                 $features = [
-                    ['icon' => 'fa-solid fa-tree',         'title' => 'Green Environment',   'desc' => 'Dikelilingi ruang terbuka hijau dan brandgang yang menciptakan suasana segar dan alami.'],
-                    ['icon' => 'fa-solid fa-star',          'title' => 'Premium Design',      'desc' => 'Arsitektur modern dari Atelier Riri dengan material berkualitas tinggi untuk kenyamanan optimal.'],
-                    ['icon' => 'fa-solid fa-shield-halved', 'title' => 'Smart Home Ready',   'desc' => 'Infrastruktur siap untuk integrasi sistem smart home guna kehidupan modern yang lebih efisien.'],
-                    ['icon' => 'fa-solid fa-location-dot',  'title' => 'Lokasi Strategis',   'desc' => 'Aksesibilitas tinggi ke berbagai fasilitas penting Pekanbaru dalam hitungan menit.'],
+                    ['icon' => 'fa-solid fa-tree',         'title' => 'Green Environment',   'desc' => 'Dikelilingi ruang terbuka hijau dan brandgang yang menciptakan atmosfer segar, asri, dan menenangkan sepanjang waktu.'],
+                    ['icon' => 'fa-solid fa-star',          'title' => 'Premium Design',      'desc' => 'Arsitektur modern tropis karya Atelier Riri, menggunakan material berkualitas tinggi yang dirancang untuk kenyamanan dan keindahan jangka panjang.'],
+                    ['icon' => 'fa-solid fa-shield-halved', 'title' => 'Smart Home Ready',   'desc' => 'Infrastruktur hunian siap diintegrasikan dengan sistem smart home untuk mendukung gaya hidup modern yang praktis dan efisien.'],
+                    ['icon' => 'fa-solid fa-location-dot',  'title' => 'Lokasi Strategis',   'desc' => 'Terhubung dengan mudah ke berbagai fasilitas utama Pekanbaru — pusat bisnis, sekolah, rumah sakit, dan mal — hanya dalam hitungan menit.'],
                 ];
                 @endphp
                 @foreach($features as $f)
